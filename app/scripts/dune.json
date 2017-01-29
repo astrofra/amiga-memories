@@ -1,0 +1,193 @@
+/*
+	File: stage_script.json
+	Author: Astrofra
+*/
+
+/* Camera list :
+front
+top
+left
+right
+left_close
+right_close
+grendizer
+harlock
+df0
+game_box_left
+*/
+
+/* Special commands :
+"text": "pause"
+*/
+
+{
+	"stage_script" : [
+		{	"text": "pause", 
+			"duration": 3.0,
+			"fade": "In",
+			"led": [{"power": 1, "drive": 0}],
+			"music": { "command": "Start", "file": "blue_moon", "gain": 0.15	},
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "pause", 
+			"duration": 2.0,
+			"titler": { "text": "Episode 0 - Dune Amiga Intro", "command": "In"},
+			"led": [{"power": 1, "drive": 1}],
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "pause", 
+			"duration": 2.0,
+			"led": [{"power": 1, "drive": 0}],
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "pause", 
+			"titler": { "command": "Out"},
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "A beginning, is a very delicate time.", 
+			"sub": { "fr": ["Un commençement est un moment d'une délicatesse extrême."],
+					"en": ["A beginning, is a very delicate time."]
+				},
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "pause",
+			"duration": 1.5,
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "pause",
+			"duration": 0.5,
+			"camera": {"name": "front", "motion": "DollyFront"}	},
+
+		{	"text": "Know then, that this is the year ten thousand one ninety one.",
+			"sub": { "fr": ["Sachez donc que l'on est en l'an 10191"],
+					"en": ["Know then, that this is the year 10191"],
+				},
+			"camera": {"name": "front", "motion": "DollyFront"}	},
+
+		{	"text": "pause",
+			"duration": 0.5,
+			"camera": {"name": "right", "motion": "PanLeft"}	},
+
+		{	"text": "The Known Universe is ruled by the Padishah Emperor Shaddam IV, my father.",
+			"sub": { "fr": ["L'Univers Connu est gouverné par l'Empereur Padishah Shaddam IV", "... mon père."],
+					"en": ["The Known Universe is ruled by the Padishah Emperor Shaddam IV", "... my father."],
+				},
+			"camera": {"name": "right", "motion": "PanLeft"}	},
+
+		{	"text": "pause",
+			"duration": 0.5,
+			"camera": {"name": "right", "motion": "PanLeft"}	},
+
+		{	"text": "In this time, the most precious substance in the universe is the spice Melanjeh.", 
+			"sub": { "fr": ["A cette époque, la plus précieuse substance de l'univers", "est l'Epice, le Mélange"],
+					"en": ["In this time", "the most precious substance in the universe is the spice Melange."],
+				},
+			"camera": {"name": "front", "motion": "DollyBack"}	},
+
+		{	"text": "pause", 
+			"duration": 0.5,
+			"led": [{"power": 1, "drive": 0}],
+			"camera": {"name": "front", "motion": "DollyBack"}	},
+
+		{	"text": "pause", 
+			"duration": 0.5,
+			"led": [{"power": 1, "drive": 0}],
+			"camera": {"name": "left_close", "motion": "PanLeft"}	},
+
+		{	"text": "The spice extends life.", 
+			"sub": { "fr": ["L'Epice accroît la longévité."],
+					"en": ["The spice extends life."],
+				},
+			"camera": {"name": "left_close", "motion": "PanLeft"}	},
+
+		{	"text": "The spice expands consciousness.", 
+			"sub": { "fr": ["L'Epice amplifie le champ de conscience."],
+					"en": ["The spice expands consciousness."],
+				},
+			"camera": {"name": "left_close", "motion": "PanLeft"}	},
+
+		{	"text": "The spice is vital to space travel!", 
+			"sub": { "fr": ["L'épice est vitale aux voyages dans l'espace."],
+					"en": ["The spice is vital to space travel!"],
+				},
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "pause", 
+			"duration": 2.0,
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "The Spacing Guild and its navigators, who the spice has ,mutated, over 4,000 years, use the orange spice gas, which gives them the ability to fold space!", 
+			"sub": { "fr": ["Les navigateurs de la Guilde Spatiale,", "que l'epice a fait muter après 4000 ans d'usage", "en absorbent le gaz orange", "qui leur donne le pouvoir de replier l'espace!"],
+					"en": ["The Spacing Guild and its navigators,", "who the spice has mutated over 4,000 years", "use the orange spice gas", "which gives them the ability to fold space!"],
+				},
+			"camera": {"name": "front", "motion": "DollyFront"}	},
+
+		{	"text": "That is, travel, to any part of the universe, without moving.", 
+			"sub": { "fr": ["C'est à dire...", "de se transporter n'importe où dans l'univers, sans se déplacer."],
+					"en": ["That is travel to any part of the universe without moving."],
+				},
+			"camera": {"name": "poster_0", "motion": "DollyBack"}	},
+
+		{	"text": "pause",
+			"duration": 2.5,
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "Oh? yes? I forgot to tell you! The spice! exists on only one planet, in the entire universe.", 
+			"sub": { "fr": ["Ah oui ... j'oubliais de vous dire...", "L'Epice n'existe que sur une seule planète dans tout l'univers."],
+					"en": ["Oh yes... I forgot to tell you!", "The spice exists on only one planet, in the entire universe."],
+				},
+			"camera": {"name": "right_top", "motion": "PanLeft"}	},
+
+		{	"text": "A desolate, dry planet! with vast dezzerts!", 
+			"sub": { "fr": ["Désolée, arride, cette planète possède de vaste déserts."],
+					"en": ["A desolate dry planet with vast deserts!"],
+				},
+			"camera": {"name": "left_close", "motion": "DollyBack"}	},
+
+		{	"text": "pause",
+			"duration": 0.5,
+			"camera": {"name": "right_close", "motion": "PanLeft"}	},
+
+		{	"text": "Hidden away, within the rocks of these dezzerts, are a people known as the Fremen!",
+			"sub": { "fr": ["Cachés dans le rochers des cavernes de ces déserts...", "...vit un peuple connu sous le nom de Fremen..."],
+					"en": ["Hidden away within the rocks of these deserts...", "...are a people known as the Fremen ..."],
+				},
+			"led": [{"power": 1, "drive": 0}, {"power": 1, "drive": 1}], 
+			"camera": {"name": "right_close", "motion": "PanLeft"}	},
+
+		{	"text": "Who have long held a prophecy! That a man would come... A messiah! who would lead them to true freedom.", 
+			"video": [{"file": "dune", "frame":  75	}],
+			"sub": { "fr": ["...qui depuis longtemps prophétise la venue d'un homme", "d'un messie qui les conduirait vers la véritable liberté."],
+					"en": ["...who have long held a prophecy that a man would come...", "a messiah who would lead them to true freedom."],
+				},
+			"led": [{"power": 1, "drive": 1}, {"power": 1, "drive": 0}, {"power": 1, "drive": 1}, {"power": 1, "drive": 0}], 
+			"camera": {"name": "right_close", "motion": "PanLeft"}	},
+
+		{	"text": "pause",
+			"duration": 1.5,
+			"video": [{"file": "dune"}],
+			"camera": {"name": "right_close", "motion": "PanLeft"}	},
+
+		{	"text": "The planet, is Arrakis! also known as... Dune!", 
+			"sub": { "fr": ["Cette planète, c'est Arrakis, connue aussi sous le nom de ...", "Dune." ],
+					"en": ["The planet is Arrakis also known as...", "Dune." ],
+				},
+			"video": [{"file": "dune"}],
+			"camera": {"name": "front", "motion": "DollyFront"}	},
+
+		{	"text": "pause", 
+			"video": [{"file": "dune"}],
+			"camera": {"name": "front", "motion": "DollyFront"}	},
+
+		{	"text": "pause", 
+			"video": [{"file": "dune"}],
+			"music": { "command": "FadeOut"	},
+			"camera": {"name": "front", "motion": "DollyFront"}	},
+
+		{	"text": "pause", 
+			"duration": 2.0,
+			"fade": "Out",
+			"video": [{"file": "dune"}],
+			"camera": {"name": "front", "motion": "DollyFront"}	},
+	]
+}
