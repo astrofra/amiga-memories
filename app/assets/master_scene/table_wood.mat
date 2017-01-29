@@ -1,0 +1,36 @@
+{
+	"Material": {
+		"Shader": "@core/surfaces/diffuse_map_specular_map.isl",
+		"MaterialValues": {
+			"Value": {
+				"Name": "diffuse_map",
+				"Type": "tex2D",
+				"Value": "assets/master_scene/wood_color.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat"
+			},
+			"Value": {
+				"Name": "specular_map",
+				"Type": "tex2D",
+				"Value": "assets/master_scene/wood_specular.png",
+				"WrapU": "Repeat",
+				"WrapV": "Repeat"
+			},
+			"Value": {
+				"Name": "diffuse_color",
+				"Type": "vec4",
+				"Value": "vec4(0.6902, 0.5451, 0.4863, 1.0000)"
+			},
+			"Value": {
+				"Name": "specular_color",
+				"Type": "vec4",
+				"Value": "vec4(0.8667, 0.5216, 0.3490, 1.0000)"
+			},
+			"Value": {
+				"Name": "self_color",
+				"Type": "vec4",
+				"Value": "vec4(0.0000, 0.0000, 0.0000, 1.0000)"
+			}
+		}
+	}
+}
