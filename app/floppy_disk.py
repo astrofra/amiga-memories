@@ -33,70 +33,57 @@ class	FloppyDisk:
 
 		self.track_read_duration = SoundGetDuration(ResourceFactoryLoadSound(g_factory, "tmp/disk_drive_track-read-16.wav")) * 10.0 * 0.9
 
-	function	SetPowerOff()
-	{	self.led_power = False	}
 
-	function	SetPowerOn()
-	{	self.led_power = true	}
+	def SetPowerOff(self):
+		self.led_power = False
 
-	function	SetDriveOff()
-	{
-		if (self.led_drive)
-		{
+
+	def SetPowerOn(self):
+		self.led_power = True
+
+
+	def SetDriveOff(self):
+		if self.led_drive:
 			self.led_drive = False
-			self.drive_was_stopped = true
-		}
-	}
+			self.drive_was_stopped = True
 
-	function	SetDriveOn()
-	{
-		if (!self.led_drive)
-		{
-			self.led_drive = true
+	def SetDriveOn(self):
+		if not self.led_drive:
+			self.led_drive = True
 			self.drive_was_stopped = False
 			self.motor_sound_timer = g_clock
-		}
-	}
 
-	function	Update()
-	{
-		local	led_tick = (g_dt_frame * 60.0)
-		if (self.led_power)
+
+	def Update(self):
+		led_tick = g_dt_frame * 60.0
+		if self.led_power:
 			self.led_power_intensity += led_tick
-		else	
+		else:
 			self.led_power_intensity -= led_tick
 
 		self.led_power_intensity = Clamp(self.led_power_intensity, 0.0, 1.0)
 
-		if (self.led_drive)
+		if self.led_drive:
 			self.led_drive_intensity += led_tick
-		else	
+		else:
 			self.led_drive_intensity -= led_tick
 
 		self.led_drive_intensity = Clamp(self.led_drive_intensity, 0.0, 1.0)
 
-		UpdateLedColors()
-		UpdateSounds()
-	}
+		self.UpdateLedColors()
+		self.UpdateSounds()
 
-	function	UpdateSounds()
-	{
-		if (self.led_drive && (g_clock - self.motor_sound_timer > self.track_read_duration))
-		{
+
+	def UpdateSounds(self):
+		if self.led_drive and (g_clock - self.motor_sound_timer > self.track_read_duration):
 			self.audio_mixer.PlaySound("disk_drive_track-read-16.wav", g_clock, "floppy")
 			self.motor_sound_timer = g_clock
-		}
 
-		if (!self.led_drive && self.drive_was_stopped && (g_clock - self.motor_sound_timer > self.track_read_duration))
-		{
+		if (not self.led_drive) and self.drive_was_stopped and (g_clock - self.motor_sound_timer > self.track_read_duration):
 			self.audio_mixer.PlaySound("disk_drive_motor-stop-16.wav", g_clock, "floppy")
 			self.drive_was_stopped = False
-		}
-	}
 
-	function	UpdateLedColors()
-	{
+
+	def UpdateLedColors(self):
 		MaterialSetSelf(self.led_power_mat, Vector(0.9,0.1,0).Scale(self.led_power_intensity))
 		MaterialSetSelf(self.led_drive_mat, Vector(0.2,0.8,0).Scale(self.led_drive_intensity))
-	}
-}

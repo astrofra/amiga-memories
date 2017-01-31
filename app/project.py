@@ -25,89 +25,72 @@ g_cursor 					=	0
 
 g_project_instance		=	0
 
-class	ProjectHandler
-{
-	# dispatch				=	0
-	# story_filename			=	""
-	# scene_filename			=	""
-	# scene					=	0
-	# emulator_scene			=	0
+class	ProjectHandler:
+	self.dispatch = 0
+	self.story_filename = ""
+	self.scene_filename = ""
+	self.scene = 0
+	self.emulator_scene = 0
 
-	# # 	PUBLIC METHODS
+	# 	PUBLIC METHODS
+	def PreloadStory(self):
+		self.story_filename = "assets/scenes/" + g_story + ".nms"
+		self.scene_filename = "scenes/preloader.nms"
+		self.dispatch = self.ExitFromCurrentScene
 
-	# function	PreloadStory()
-	# {
-	# 	story_filename = "assets/scenes/" + g_story + ".nms"
-	# 	scene_filename = "scenes/preloader.nms"
-	# 	dispatch = ExitFromCurrentScene
-	# }
 
-	# function	PlayStory()
-	# {
-	# 	scene_filename = story_filename
-	# 	dispatch = ExitFromCurrentScene
-	# }
+	def PlayStory(self):
+		self.scene_filename = self.story_filename
+		self.dispatch = ExitFromCurrentScene
 
-	# function	LoadMainMenu()
-	# {
-	# 	scene_filename = "scenes/main_menu_screen.nms"
-	# 	dispatch = ExitFromCurrentScene
-	# }
 
-	# # 	PRIVATE	METHODS
+	def LoadMainMenu(self):
+		self.scene_filename = "scenes/main_menu_screen.nms"
+		self.dispatch = ExitFromCurrentScene
 
-	# function	OnUpdate(project)
-	# {
-	# 	dispatch(project)
-	# }
 
-	# function	OnSetup(project)
-	# {
-	# 	g_project_instance = ProjectGetScriptInstance(project)
-	# 	print("ProjectHandler::OnSetup()")
-	# }
+	# 	PRIVATE	METHODS
+	def OnUpdate(self, project):
+		self.dispatch(project)
 
-	# function	LoadScene(project)
-	# {
-	# 	if (scene != 0)	ProjectUnloadScene(project, scene)
 
-	# 	if (FileExists(scene_filename))
-	# 	{
-	# 		print("ProjectHandler::LoadScene('" + scene_filename + "')")
-	# 		scene = ProjectInstantiateScene(project, scene_filename)
-	# 		ProjectAddLayer(project, scene, 0.5)
-	# 		if (g_WindowsManager != 0)
-	# 			g_WindowsManager.current_ui = SceneGetUI(ProjectSceneGetInstance(scene))
-	# 	}
-	# 	else
-	# 		error("ProjectHandler::LoadNextTest() Could not find '" + scene_filename + "'.")
+	def OnSetup(self, project):
+		g_project_instance = ProjectGetScriptInstance(project)
+		print("ProjectHandler::OnSetup()")
 
-	# 	dispatch = MainUpdate
-	# }
+	def LoadScene(self, project):
+		if self.scene is not None:
+			ProjectUnloadScene(project, self.scene)
 
-	# function	ExitFromCurrentScene(project)
-	# {
-	# 	UISetCommandList(SceneGetUI(g_scene), "globalfade 0.25,1.0;")
-	# 	dispatch = WaitEndOfCommandList
-	# }
+		if os.path.FileExists(self.scene_filename):
+			print("ProjectHandler::LoadScene('" + self.scene_filename + "')")
+			self.scene = ProjectInstantiateScene(project, self.scene_filename)
+			ProjectAddLayer(project, self.scene, 0.5)
+			if (g_WindowsManager != 0)
+				g_WindowsManager.current_ui = SceneGetUI(ProjectSceneGetInstance(self.scene))
+		else:
+			error("ProjectHandler::LoadNextTest() Could not find '" + self.scene_filename + "'.")
 
-	# function	WaitEndOfCommandList(project)
-	# {
-	# 	if (UIIsCommandListDone(SceneGetUI(g_scene)))
-	# 		dispatch = LoadScene
-	# }
+		self.dispatch = MainUpdate
+
+
+	def ExitFromCurrentScene(self, project):
+		UISetCommandList(SceneGetUI(g_scene), "globalfade 0.25,1.0;")
+		self.dispatch = WaitEndOfCommandList
+
+
+	def WaitEndOfCommandList(self, project):
+		if UIIsCommandListDone(SceneGetUI(g_scene)):
+			self.dispatch = LoadScene
+
 	
-	# function	MainUpdate(project)
-	# {
-	# }
-	
-	# constructor()
-	# {
-	# 	print("ProjectHandler::constructor()")
-	# 	if (1)
-	# 		scene_filename = "assets/scenes/" + g_story + ".nms"
-	# 	else
-	# 		scene_filename = "scenes/main_menu_screen.nms"
-	# 	dispatch =  LoadScene
-	# }
-}
+	def MainUpdate(self, project):
+		pass
+
+	def __init__(self):
+		print("ProjectHandler::constructor()")
+		if True:
+			self.scene_filename = "assets/scenes/" + g_story + ".nms"
+		else:
+			self.scene_filename = "scenes/main_menu_screen.nms"
+		self.dispatch =  LoadScene
