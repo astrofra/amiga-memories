@@ -31,21 +31,21 @@ class ProjectHandler:
 
 	def __init__(self, plus):
 		print("ProjectHandler::constructor()")
-		self.dispatch = 0
+		self.dispatch = None
 		self.story_filename = ""
 		self.scene_filename = ""
 		self.scene = None
-		self.emulator_scene = 0
+		self.emulator_scene = None
 		self.scene_filename = "assets/master_scene/master_scene.scn"
 		self.dispatch = self.LoadScene
 		self.plus = plus
+		self.dt = None
 
 	# 	PUBLIC METHODS
 	def PreloadStory(self):
 		self.story_filename = "assets/scenes/" + g_story + ".nms"
 		self.scene_filename = "scenes/preloader.nms"
 		self.dispatch = self.ExitFromCurrentScene
-
 
 	def PlayStory(self):
 		self.scene_filename = self.story_filename
@@ -56,20 +56,21 @@ class ProjectHandler:
 		self.scene_filename = "scenes/main_menu_screen.nms"
 		self.dispatch = self.ExitFromCurrentScene
 
-
 	# 	PRIVATE	METHODS
 	def OnUpdate(self, dt):
-		print("ProjectHandler:OnUpdate(), calling '" + str(self.dispatch) + "'.")
+		# print("ProjectHandler:OnUpdate(), calling '" + str(self.dispatch) + "'.")
+		self.dt = dt
 		self.dispatch()
-		if self.scene is not None:
-			self.plus.UpdateScene(self.scene, dt)
-
 
 	def OnSetup(self):
 		# g_project_instance = ProjectGetScriptInstance(project)
 		global g_project_instance
 		g_project_instance = self
 		print("ProjectHandler::OnSetup()")
+
+	def SceneUpdate(self):
+		if self.scene is not None:
+			self.plus.UpdateScene(self.scene, self.dt)
 
 	def LoadScene(self):
 		if self.scene is not None:
@@ -82,12 +83,12 @@ class ProjectHandler:
 			# self.scene = ProjectInstantiateScene(project, self.scene_filename)
 			self.scene = self.plus.NewScene()
 			self.scene.Load(self.scene_filename, gs.SceneLoadContext(self.plus.GetRenderSystem()))
-			# ProjectAddLayer(project, self.scene, 0.5)
-			# if (g_WindowsManager != 0)
+			self.plus.AddCamera(self.scene, gs.Matrix4.TranslationMatrix((0, 1, -2.5)))
+			self.dispatch = self.WaitTilSceneIsReady
 			# 	g_WindowsManager.current_ui = SceneGetUI(ProjectSceneGetInstance(self.scene))
 		else:
 			print("ProjectHandler::LoadNextTest() Could not find '" + self.scene_filename + "'.")
-		self.dispatch = self.MainUpdate
+			self.dispatch = self.MainUpdate
 
 
 	def ExitFromCurrentScene(self):
@@ -99,6 +100,12 @@ class ProjectHandler:
 		# if UIIsCommandListDone(SceneGetUI(g_scene)):
 		# 	self.dispatch = self.LoadScene
 		self.dispatch = self.LoadScene
+
+	def WaitTilSceneIsReady(self):
+		self.plus.UpdateScene(self.scene, self.dt)
+		if self.scene.IsReady():
+			print("ProjectHandler::WaitTilSceneIsReady() Scene is ready!")
+			self.dispatch = self.SceneUpdate
 	
 	def MainUpdate(self):
 		# Purposedly do nothing
