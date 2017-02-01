@@ -1,4 +1,5 @@
-import stage_manager
+from stage_manager import *
+import os
 
 # ---------- BEGIN PUBLIC
 
@@ -26,11 +27,19 @@ g_cursor 					=	0
 g_project_instance		=	0
 
 class	ProjectHandler:
-	self.dispatch = 0
-	self.story_filename = ""
-	self.scene_filename = ""
-	self.scene = 0
-	self.emulator_scene = 0
+
+	def __init__(self):
+		print("ProjectHandler::constructor()")
+		self.dispatch = 0
+		self.story_filename = ""
+		self.scene_filename = ""
+		self.scene = 0
+		self.emulator_scene = 0
+		if True:
+			self.scene_filename = "assets/scenes/" + g_story + ".nms"
+		else:
+			self.scene_filename = "scenes/main_menu_screen.nms"
+		self.dispatch = self.LoadScene
 
 	# 	PUBLIC METHODS
 	def PreloadStory(self):
@@ -41,56 +50,49 @@ class	ProjectHandler:
 
 	def PlayStory(self):
 		self.scene_filename = self.story_filename
-		self.dispatch = ExitFromCurrentScene
+		self.dispatch = self.ExitFromCurrentScene
 
 
 	def LoadMainMenu(self):
 		self.scene_filename = "scenes/main_menu_screen.nms"
-		self.dispatch = ExitFromCurrentScene
+		self.dispatch = self.ExitFromCurrentScene
 
 
 	# 	PRIVATE	METHODS
-	def OnUpdate(self, project):
-		self.dispatch(project)
+	def OnUpdate(self):
+		self.dispatch()
 
 
-	def OnSetup(self, project):
-		g_project_instance = ProjectGetScriptInstance(project)
+	def OnSetup(self):
+		# g_project_instance = ProjectGetScriptInstance(project)
 		print("ProjectHandler::OnSetup()")
 
-	def LoadScene(self, project):
+	def LoadScene(self):
 		if self.scene is not None:
-			ProjectUnloadScene(project, self.scene)
+			# ProjectUnloadScene(project, self.scene)
+			pass
 
-		if os.path.FileExists(self.scene_filename):
+		if os.path.exists(self.scene_filename):
 			print("ProjectHandler::LoadScene('" + self.scene_filename + "')")
-			self.scene = ProjectInstantiateScene(project, self.scene_filename)
-			ProjectAddLayer(project, self.scene, 0.5)
-			if (g_WindowsManager != 0)
-				g_WindowsManager.current_ui = SceneGetUI(ProjectSceneGetInstance(self.scene))
+			# self.scene = ProjectInstantiateScene(project, self.scene_filename)
+			# ProjectAddLayer(project, self.scene, 0.5)
+			# if (g_WindowsManager != 0)
+			# 	g_WindowsManager.current_ui = SceneGetUI(ProjectSceneGetInstance(self.scene))
 		else:
-			error("ProjectHandler::LoadNextTest() Could not find '" + self.scene_filename + "'.")
-
-		self.dispatch = MainUpdate
-
-
-	def ExitFromCurrentScene(self, project):
-		UISetCommandList(SceneGetUI(g_scene), "globalfade 0.25,1.0;")
-		self.dispatch = WaitEndOfCommandList
+			print("ProjectHandler::LoadNextTest() Could not find '" + self.scene_filename + "'.")
+		self.dispatch = self.MainUpdate
 
 
-	def WaitEndOfCommandList(self, project):
-		if UIIsCommandListDone(SceneGetUI(g_scene)):
-			self.dispatch = LoadScene
+	def ExitFromCurrentScene(self):
+		# UISetCommandList(SceneGetUI(g_scene), "globalfade 0.25,1.0;")
+		self.dispatch = self.WaitEndOfCommandList
 
-	
-	def MainUpdate(self, project):
+
+	def WaitEndOfCommandList(self):
+		# if UIIsCommandListDone(SceneGetUI(g_scene)):
+		# 	self.dispatch = self.LoadScene
 		pass
 
-	def __init__(self):
-		print("ProjectHandler::constructor()")
-		if True:
-			self.scene_filename = "assets/scenes/" + g_story + ".nms"
-		else:
-			self.scene_filename = "scenes/main_menu_screen.nms"
-		self.dispatch =  LoadScene
+	
+	def MainUpdate(self):
+		pass

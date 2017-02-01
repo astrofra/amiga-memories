@@ -1,4 +1,5 @@
 import gs
+from project import ProjectHandler
 
 plus = gs.GetPlus()
 plus.CreateWorkers()
@@ -8,19 +9,23 @@ plus.RenderInit(1280, 720)
 gs.MountFileDriver(gs.StdFileDriver())
 gs.LoadPlugins()
 
-scn = plus.NewScene()
+project = ProjectHandler()
+project.OnSetup()
 
-cam = plus.AddCamera(scn, gs.Matrix4.TranslationMatrix((0, 1, -10)))
+# scn = plus.NewScene()
 
-scn.Load("assets/master_scene/master_scene.scn ", gs.SceneLoadContext(plus.GetRenderSystem()))
+# cam = plus.AddCamera(scn, gs.Matrix4.TranslationMatrix((0, 1, -10)))
 
-fps = gs.FPSController(0, 2, -10)
+# scn.Load("assets/master_scene/master_scene.scn ", gs.SceneLoadContext(plus.GetRenderSystem()))
+
+# fps = gs.FPSController(0, 2, -10)
 
 while not plus.IsAppEnded():
 	dt = plus.UpdateClock()
+	project.OnUpdate()
 
-	fps.UpdateAndApplyToNode(cam, dt)
+	# fps.UpdateAndApplyToNode(cam, dt)
 
-	plus.UpdateScene(scn, dt)
+	# plus.UpdateScene(scn, dt)
 	plus.Text2D(5, 5, "Move around with QSZD, left mouse button to look around")
 	plus.Flip()

@@ -27,11 +27,12 @@
 # Include("scripts/paths.nut")
 # Include("scripts/command_line.nut")
 
+import gs
 
-def	FixedSecToTick(s)
-	if (g_fixed_step_enabled)
+def	FixedSecToTick(s):
+	if g_fixed_step_enabled:
 		return 10000.0 * s
-	else
+	else:
 		return SecToTick(s)
 
 def	SceneGroupSetup(scene, group):
@@ -49,7 +50,7 @@ class	StageManager:
 
 		self.current_clip =	0
 		self.clip_idx =	0
-		self.current_clip_duration 	0.0
+		self.current_clip_duration = 0.0
 
 		self.lip_sync_tracker =	0
 		self.camera_tracker =	0
@@ -156,7 +157,7 @@ class	StageManager:
 	# ----------------------------
 	def	SaveCurrentFrame(self):
 	# ----------------------------
-		if not self.start_recording
+		if not self.start_recording:
 			return
 
 		print("StageManager::SaveCurrentFrame(" + frame_idx + ")")
@@ -172,7 +173,7 @@ class	StageManager:
 		do_save = True
 		frame_fname = "tmp/tga/frame_" + str(idx) + ".tga"
 
-		if g_skip_rendered_frames and os.path.FileExists(frame_fname):
+		if g_skip_rendered_frames and os.path.exists(frame_fname):
 			do_save = False
 
 		if do_save:
@@ -209,7 +210,7 @@ class	StageManager:
 		self.update_function = self.TTSSetup
 
 	# --------------------
-	def	TTSSetup(self)
+	def	TTSSetup(self):
 		if g_demo_mode:
 			self.update_function = self.CreateTTSTracks
 		else:
@@ -240,27 +241,27 @@ class	StageManager:
 		self.update_function = self.TrackerSetup
 
 	# -------------------------
-	def	LoadEmulators(self)
+	def	LoadEmulators(self):
 	# -------------------------
 		print("StageManager::LoadEmulators()")
 
-		local	_group_position	=	gs.Vector3(0,0,0)
+		_group_position	=	gs.Vector3(0,0,0)
 
 		for _clip in g_stage_script:
 			if "emulator" in _clip:
-				local	emu_fname = _clip.emulator.name
+				emu_fname = _clip.emulator.name
 				emu_fname = "assets/games/" + emu_fname + "/scene.nms"
-				if os.path.FileExists(emu_fname):
+				if os.path.exists(emu_fname):
 					if _clip.emulator.name in self.emulator_assets:
 						print("StageManager::LoadEmulator() " + emu_fname + " already loaded!")
 					else:
-						local	emulator_group = SceneLoadAndStoreGroup(g_scene, emu_fname, ImportFlagCamera + ImportFlagObject + ImportFlagLight) #  ImportFlagAll & ~ImportFlagGlobals)
+						emulator_group = SceneLoadAndStoreGroup(g_scene, emu_fname, ImportFlagCamera + ImportFlagObject + ImportFlagLight) #  ImportFlagAll & ~ImportFlagGlobals)
 						SceneGroupSetup(g_scene, emulator_group)
 						# 	GroupSetup(emulator_group)
 
 						_group_position.y -= Mtr(50.0)
 
-						local	_emu_items_handler = GroupFindItem(emulator_group, "emulator_handler")
+						_emu_items_handler = GroupFindItem(emulator_group, "emulator_handler")
 						ItemSetPosition(_emu_items_handler, _group_position)
 
 						# 	Add the emulator to the assets group
@@ -276,7 +277,7 @@ class	StageManager:
 		print("StageManager::HandleSpecialEvent()")
 		if "event" in _current_clip:
 			print("StageManager::HandleSpecialEvent() Loading : " + "assets/" + _current_clip.event)
-			local	_item_list = SceneGetItemList(g_scene)
+			_item_list = SceneGetItemList(g_scene)
 			for _item in _item_list:
 				if ItemGetName(_item) == _current_clip.event:
 					ItemGetScriptInstance(_item).EventStart()
@@ -284,7 +285,7 @@ class	StageManager:
 	def	HandleFading(self, _current_clip):
 		print("StageManager::HandleFading()")
 		if "fade" in _current_clip:
-			local	_ui = SceneGetUI(g_scene)
+			_ui = SceneGetUI(g_scene)
 
 			if _current_clip.fade.toupper() == "IN":
 				UISetGlobalFadeEffect(_ui, 1.0)
