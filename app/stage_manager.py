@@ -46,51 +46,46 @@ class	StageManager:
 # ------------------
 
 	def __init__(self):
-		self.fps =	30.0
+		self.fps = 30.0
 
-		self.current_clip =	0
-		self.clip_idx =	0
+		self.current_clip = 0
+		self.clip_idx = 0
 		self.current_clip_duration = 0.0
 
-		self.lip_sync_tracker =	0
-		self.camera_tracker =	0
-		self.subtitle_tracker =	0
-		self.titler_tracker =	0
-		self.video_tracker =	0
-		self.led_tracker =	0
-		self.rtt_tracker =	0
-		self.music_tracker =	0
+		self.lip_sync_tracker = 0
+		self.camera_tracker = 0
+		self.subtitle_tracker = 0
+		self.titler_tracker = 0
+		self.video_tracker = 0
+		self.led_tracker = 0
+		self.rtt_tracker = 0
+		self.music_tracker = 0
 
-		self.audio_mixer =	0
+		self.audio_mixer = 0
 
-		self.all_done =	False
+		self.all_done = False
 
-		self.update_function =	0
-		self.wait_clock =	0
+		self.update_function = 0
+		self.wait_clock = 0
 
-		# self.assets =	0
-		self.emulator_assets =	0
+		# self.assets = 0
+		self.emulator_assets = 0
 
-		self.keyboard_device =	0
+		self.keyboard_device = 0
 
 		# 	TGA Save
-		self.start_recording =	False
-		self.frame_buffer =	0
-		self.frame_idx =	0
+		self.start_recording = False
+		self.frame_buffer = 0
+		self.frame_idx = 0
 
-		self.render_stats =	0
+		self.render_stats = 0
 
-		self.thread_handler =	0
+		self.thread_handler = 0
 
-	# -----------------------------
 	def	OnRenderUser(self, scene):
-	# -----------------------------
 		self.render_stats.RenderUser()
 
-
-	# -------------------------
 	def	OnUpdate(self, scene):
-	# -------------------------
 		# print("g_clock = " + g_clock)
 		if g_save_enabled and not self.all_done:
 			SaveCurrentFrame()
@@ -245,7 +240,7 @@ class	StageManager:
 	# -------------------------
 		print("StageManager::LoadEmulators()")
 
-		_group_position	=	gs.Vector3(0,0,0)
+		_group_position	= gs.Vector3(0,0,0)
 
 		for _clip in g_stage_script:
 			if "emulator" in _clip:

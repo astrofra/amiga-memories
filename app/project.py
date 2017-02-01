@@ -1,5 +1,6 @@
-from stage_manager import *
 import os
+import gs
+from stage_manager import *
 
 # ---------- BEGIN PUBLIC
 
@@ -26,20 +27,18 @@ g_cursor 					=	0
 
 g_project_instance		=	0
 
-class	ProjectHandler:
+class ProjectHandler:
 
-	def __init__(self):
+	def __init__(self, plus):
 		print("ProjectHandler::constructor()")
 		self.dispatch = 0
 		self.story_filename = ""
 		self.scene_filename = ""
-		self.scene = 0
+		self.scene = None
 		self.emulator_scene = 0
-		if True:
-			self.scene_filename = "assets/scenes/" + g_story + ".nms"
-		else:
-			self.scene_filename = "scenes/main_menu_screen.nms"
+		self.scene_filename = "assets/master_scene/master_scene.scn"
 		self.dispatch = self.LoadScene
+		self.plus = plus
 
 	# 	PUBLIC METHODS
 	def PreloadStory(self):
@@ -59,22 +58,30 @@ class	ProjectHandler:
 
 
 	# 	PRIVATE	METHODS
-	def OnUpdate(self):
+	def OnUpdate(self, dt):
+		print("ProjectHandler:OnUpdate(), calling '" + str(self.dispatch) + "'.")
 		self.dispatch()
+		if self.scene is not None:
+			self.plus.UpdateScene(self.scene, dt)
 
 
 	def OnSetup(self):
 		# g_project_instance = ProjectGetScriptInstance(project)
+		global g_project_instance
+		g_project_instance = self
 		print("ProjectHandler::OnSetup()")
 
 	def LoadScene(self):
 		if self.scene is not None:
 			# ProjectUnloadScene(project, self.scene)
-			pass
+			self.scene.Clear()
+			self.scene = None
 
 		if os.path.exists(self.scene_filename):
 			print("ProjectHandler::LoadScene('" + self.scene_filename + "')")
 			# self.scene = ProjectInstantiateScene(project, self.scene_filename)
+			self.scene = self.plus.NewScene()
+			self.scene.Load(self.scene_filename, gs.SceneLoadContext(self.plus.GetRenderSystem()))
 			# ProjectAddLayer(project, self.scene, 0.5)
 			# if (g_WindowsManager != 0)
 			# 	g_WindowsManager.current_ui = SceneGetUI(ProjectSceneGetInstance(self.scene))
@@ -91,8 +98,8 @@ class	ProjectHandler:
 	def WaitEndOfCommandList(self):
 		# if UIIsCommandListDone(SceneGetUI(g_scene)):
 		# 	self.dispatch = self.LoadScene
-		pass
-
+		self.dispatch = self.LoadScene
 	
 	def MainUpdate(self):
+		# Purposedly do nothing
 		pass
