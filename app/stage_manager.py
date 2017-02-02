@@ -41,9 +41,7 @@ def	SceneGroupSetup(scene, group):
 	# foreach (item in items)
 	# 	ItemRenderSetup(item, g_factory)
 
-# ------------------
 class	StageManager:
-# ------------------
 
 	def __init__(self):
 		self.fps = 30.0
@@ -71,8 +69,6 @@ class	StageManager:
 		# self.assets = 0
 		self.emulator_assets = 0
 
-		self.keyboard_device = 0
-
 		# 	TGA Save
 		self.start_recording = False
 		self.frame_buffer = 0
@@ -82,18 +78,27 @@ class	StageManager:
 
 		self.thread_handler = 0
 
-	def	OnRenderUser(self, scene):
+	def	OnRenderUser(self):
 		self.render_stats.RenderUser()
 
-	def	OnUpdate(self, scene):
+	def	OnUpdate(self):
 		# print("g_clock = " + g_clock)
 		if g_save_enabled and not self.all_done:
-			SaveCurrentFrame()
+			self.SaveCurrentFrame()
 
 		self.thread_handler.Update()
 
 		if self.update_function != 0:
-			update_function()
+			self.update_function()
+
+	def LoadStageScript(self, filename):
+		global g_stage_script
+		if os.path.exists(filename):
+			print("StageManager::LoadStageScript(), loading " + filename)
+			json_file = open(filename)
+			g_stage_script = json.loads(json_file.read())[0]
+		else:
+			print("StageManager::LoadStageScript(), cannot find file " + filename)
 
 	def	SaveEditList(self):
 		if not g_demo_mode:
@@ -104,11 +109,9 @@ class	StageManager:
 		self.update_function = 0
 		self.audio_mixer.Delete()
 		self.music_tracker.Delete()
-		ProjectGetScriptInstance(g_project).LoadMainMenu()
+		# ProjectGetScriptInstance(g_project).LoadMainMenu()
 
-	# ------------------------
 	def	UpdateScript(self):
-	# ------------------------
 		self.lip_sync_tracker.Update()
 		self.camera_tracker.Update()
 		self.subtitle_tracker.Update()
@@ -133,12 +136,9 @@ class	StageManager:
 				self.HandleSpecialEvent(self.current_clip)
 				self.HandleFading(self.current_clip)
 
-		# if (!DeviceWasKeyDown(self.keyboard_device, KeyEscape) && DeviceIsKeyDown(self.keyboard_device, KeyEscape))
-		# 	QuitApp()
-
-	# -----------------------
 	def	GetNextClip(self):
 		print("StageManager::GetNextClip()")
+		global g_stage_script
 
 		if self.clip_idx < g_stage_script.len():
 			current_clip = clone(g_stage_script[self.clip_idx])
@@ -149,9 +149,7 @@ class	StageManager:
 
 		return 	self.all_done
 
-	# ----------------------------
 	def	SaveCurrentFrame(self):
-	# ----------------------------
 		if not self.start_recording:
 			return
 
@@ -180,31 +178,26 @@ class	StageManager:
 
 		frame_idx += 1
 
-	# ----------------------------------
 	def	AllocateFrameBuffer(self):
 		frame_buffer = None # PictureNew()
 
-	# ------------------------
 	def	OnSetup(self, scene):
-		self.keyboard_device = GetInputDevice("keyboard")
-
 		if g_fixed_step_enabled:
 			SceneSetFixedDeltaFrame(scene, (1.0 / fps))
 
-		SceneSetRenderless(scene, True)
+		# SceneSetRenderless(scene, True)
 
-		Include("assets/scripts/" + g_story + ".nut")
+		self.LoadStageScript("scripts/" + g_story + ".json")
 
 		self.emulator_assets = {}
 		self.thread_handler = ThreadHandler()
 		self.audio_mixer	= AudioMixer()
 
 		if g_save_enabled:
-			AllocateFrameBuffer()
+			self.AllocateFrameBuffer()
 
 		self.update_function = self.TTSSetup
 
-	# --------------------
 	def	TTSSetup(self):
 		if g_demo_mode:
 			self.update_function = self.CreateTTSTracks
@@ -216,14 +209,13 @@ class	StageManager:
 			else:
 				self.update_function = self.CreateTTSTracks
 
-	# ------------------------------
 	def AwaitMaryTTSLaunch(self):
 		if not WaitForTimer("maryttslaunch", Sec(10.0)):
 			# 	Speech synthesis & lipsync extraction
 			self.update_function = self.CreateTTSTracks
 
-	# ---------------------------
 	def CreateTTSTracks(self):
+		global g_stage_script
 		_text_array = []
 		
 		for clip in g_stage_script:
@@ -235,47 +227,44 @@ class	StageManager:
 
 		self.update_function = self.TrackerSetup
 
-	# -------------------------
 	def	LoadEmulators(self):
-	# -------------------------
 		print("StageManager::LoadEmulators()")
+		global g_stage_script
 
-		_group_position	= gs.Vector3(0,0,0)
+		# _group_position	= gs.Vector3(0,0,0)
 
-		for _clip in g_stage_script:
-			if "emulator" in _clip:
-				emu_fname = _clip.emulator.name
-				emu_fname = "assets/games/" + emu_fname + "/scene.nms"
-				if os.path.exists(emu_fname):
-					if _clip.emulator.name in self.emulator_assets:
-						print("StageManager::LoadEmulator() " + emu_fname + " already loaded!")
-					else:
-						emulator_group = SceneLoadAndStoreGroup(g_scene, emu_fname, ImportFlagCamera + ImportFlagObject + ImportFlagLight) #  ImportFlagAll & ~ImportFlagGlobals)
-						SceneGroupSetup(g_scene, emulator_group)
-						# 	GroupSetup(emulator_group)
+		# for _clip in g_stage_script:
+		# 	if "emulator" in _clip:
+		# 		emu_fname = _clip.emulator.name
+		# 		emu_fname = "assets/games/" + emu_fname + "/scene.nms"
+		# 		if os.path.exists(emu_fname):
+		# 			if _clip.emulator.name in self.emulator_assets:
+		# 				print("StageManager::LoadEmulator() " + emu_fname + " already loaded!")
+		# 			else:
+		# 				emulator_group = SceneLoadAndStoreGroup(g_scene, emu_fname, ImportFlagCamera + ImportFlagObject + ImportFlagLight) #  ImportFlagAll & ~ImportFlagGlobals)
+		# 				SceneGroupSetup(g_scene, emulator_group)
+		# 				# 	GroupSetup(emulator_group)
 
-						_group_position.y -= Mtr(50.0)
+		# 				_group_position.y -= Mtr(50.0)
 
-						_emu_items_handler = GroupFindItem(emulator_group, "emulator_handler")
-						ItemSetPosition(_emu_items_handler, _group_position)
+		# 				_emu_items_handler = GroupFindItem(emulator_group, "emulator_handler")
+		# 				ItemSetPosition(_emu_items_handler, _group_position)
 
-						# 	Add the emulator to the assets group
-						self.emulator_assets.rawset(_clip.emulator.name, emulator_group)
+		# 				# 	Add the emulator to the assets group
+		# 				self.emulator_assets.rawset(_clip.emulator.name, emulator_group)
 
-						print("StageManager::LoadEmulator() Succesfully Loaded : " + emu_fname)
-				else:
-					print("StageManager::LoadEmulator() Cannot find : " + emu_fname)
+		# 				print("StageManager::LoadEmulator() Succesfully Loaded : " + emu_fname)
+		# 		else:
+		# 			print("StageManager::LoadEmulator() Cannot find : " + emu_fname)
 
-	# -------------------------------------------
 	def	HandleSpecialEvent(self, _current_clip):
-	# -------------------------------------------
 		print("StageManager::HandleSpecialEvent()")
 		if "event" in _current_clip:
 			print("StageManager::HandleSpecialEvent() Loading : " + "assets/" + _current_clip.event)
-			_item_list = SceneGetItemList(g_scene)
-			for _item in _item_list:
-				if ItemGetName(_item) == _current_clip.event:
-					ItemGetScriptInstance(_item).EventStart()
+			# _item_list = SceneGetItemList(g_scene)
+			# for _item in _item_list:
+			# 	if ItemGetName(_item) == _current_clip.event:
+			# 		ItemGetScriptInstance(_item).EventStart()
 
 	def	HandleFading(self, _current_clip):
 		print("StageManager::HandleFading()")
@@ -304,8 +293,6 @@ class	StageManager:
 #		self.assets = SceneLoadAndStoreGroup(g_scene, g_main_scene, ImportFlagAll)
 #		SceneGroupSetup(g_scene, self.assets)
 #		# 			GroupSetup(self.assets)
-#
-
 		self.LoadEmulators()
 
 		self.render_stats = RenderingStats()
