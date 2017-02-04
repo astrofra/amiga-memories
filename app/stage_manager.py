@@ -28,6 +28,7 @@
 # Include("scripts/command_line.nut")
 
 import gs
+from globals import *
 
 def	FixedSecToTick(s):
 	if g_fixed_step_enabled:
@@ -46,24 +47,24 @@ class	StageManager:
 	def __init__(self):
 		self.fps = 30.0
 
-		self.current_clip = 0
+		self.current_clip = None
 		self.clip_idx = 0
 		self.current_clip_duration = 0.0
 
-		self.lip_sync_tracker = 0
-		self.camera_tracker = 0
-		self.subtitle_tracker = 0
-		self.titler_tracker = 0
-		self.video_tracker = 0
-		self.led_tracker = 0
-		self.rtt_tracker = 0
-		self.music_tracker = 0
+		self.lip_sync_tracker = None
+		self.camera_tracker = None
+		self.subtitle_tracker = None
+		self.titler_tracker = None
+		self.video_tracker = None
+		self.led_tracker = None
+		self.rtt_tracker = None
+		self.music_tracker = None
 
-		self.audio_mixer = 0
+		self.audio_mixer = None
 
 		self.all_done = False
 
-		self.update_function = 0
+		self.update_function = None
 		self.wait_clock = 0
 
 		# self.assets = 0
@@ -83,12 +84,12 @@ class	StageManager:
 
 	def	OnUpdate(self):
 		# print("g_clock = " + g_clock)
-		if g_save_enabled and not self.all_done:
-			self.SaveCurrentFrame()
+		# if g_save_enabled and not self.all_done:
+		# 	self.SaveCurrentFrame()
+		#
+		# self.thread_handler.Update()
 
-		self.thread_handler.Update()
-
-		if self.update_function != 0:
+		if self.update_function is not None:
 			self.update_function()
 
 	def LoadStageScript(self, filename):
@@ -96,9 +97,10 @@ class	StageManager:
 		if os.path.exists(filename):
 			print("StageManager::LoadStageScript(), loading " + filename)
 			json_file = open(filename)
-			g_stage_script = json.loads(json_file.read())[0]
+			return json.loads(json_file.read())[0]
 		else:
 			print("StageManager::LoadStageScript(), cannot find file " + filename)
+			return {}
 
 	def	SaveEditList(self):
 		if not g_demo_mode:
@@ -106,7 +108,7 @@ class	StageManager:
 		self.update_function = QuitApp
 
 	def	QuitApp(self):
-		self.update_function = 0
+		self.update_function = None
 		self.audio_mixer.Delete()
 		self.music_tracker.Delete()
 		# ProjectGetScriptInstance(g_project).LoadMainMenu()
@@ -114,40 +116,40 @@ class	StageManager:
 	def	UpdateScript(self):
 		self.lip_sync_tracker.Update()
 		self.camera_tracker.Update()
-		self.subtitle_tracker.Update()
-		self.video_tracker.Update()
-		self.led_tracker.Update()
-		self.rtt_tracker.Update()
-		self.titler_tracker.Update()
-		self.music_tracker.Update()
-		self.render_stats.Update()
+		# self.subtitle_tracker.Update()
+		# self.video_tracker.Update()
+		# self.led_tracker.Update()
+		# self.rtt_tracker.Update()
+		# self.titler_tracker.Update()
+		# self.music_tracker.Update()
+		# self.render_stats.Update()
 
-		if self.lip_sync_tracker.all_done and self.rtt_tracker.all_done:
+		if self.lip_sync_tracker.all_done: # and self.rtt_tracker.all_done:
 			self.GetNextClip()
 			if not self.all_done:
 				self.current_clip_duration = self.lip_sync_tracker.Feed(self.current_clip)
 				self.camera_tracker.Feed(self.current_clip, fps)
-				self.subtitle_tracker.Feed(self.current_clip)
-				self.titler_tracker.Feed(self.current_clip)
-				self.video_tracker.Feed(self.current_clip, fps)
-				self.led_tracker.Feed(self.current_clip)
-				self.rtt_tracker.Feed(self.current_clip, self.emulator_assets)
-				self.music_tracker.Feed(self.current_clip)
-				self.HandleSpecialEvent(self.current_clip)
-				self.HandleFading(self.current_clip)
+				# self.subtitle_tracker.Feed(self.current_clip)
+				# self.titler_tracker.Feed(self.current_clip)
+				# self.video_tracker.Feed(self.current_clip, fps)
+				# self.led_tracker.Feed(self.current_clip)
+				# self.rtt_tracker.Feed(self.current_clip, self.emulator_assets)
+				# self.music_tracker.Feed(self.current_clip)
+				# self.HandleSpecialEvent(self.current_clip)
+				# self.HandleFading(self.current_clip)
 
 	def	GetNextClip(self):
 		print("StageManager::GetNextClip()")
 		global g_stage_script
 
-		if self.clip_idx < g_stage_script.len():
-			current_clip = clone(g_stage_script[self.clip_idx])
+		if self.clip_idx < len(g_stage_script):
+			self.current_clip = g_stage_script[self.clip_idx]
 			self.clip_idx += 1
 		else:
 			self.all_done = True
 			self.update_function = self.SaveEditList
 
-		return 	self.all_done
+		return self.all_done
 
 	def	SaveCurrentFrame(self):
 		if not self.start_recording:
@@ -182,16 +184,17 @@ class	StageManager:
 		frame_buffer = None # PictureNew()
 
 	def	OnSetup(self, scene):
-		if g_fixed_step_enabled:
-			SceneSetFixedDeltaFrame(scene, (1.0 / fps))
+		global g_story, g_stage_script
+		# if g_fixed_step_enabled:
+		# 	SceneSetFixedDeltaFrame(scene, (1.0 / fps))
 
 		# SceneSetRenderless(scene, True)
 
-		self.LoadStageScript("scripts/" + g_story + ".json")
+		g_stage_script = self.LoadStageScript("scripts/" + g_story + ".json")
 
 		self.emulator_assets = {}
-		self.thread_handler = ThreadHandler()
-		self.audio_mixer	= AudioMixer()
+		# self.thread_handler = ThreadHandler()
+		# self.audio_mixer	= AudioMixer()
 
 		if g_save_enabled:
 			self.AllocateFrameBuffer()
@@ -199,6 +202,7 @@ class	StageManager:
 		self.update_function = self.TTSSetup
 
 	def	TTSSetup(self):
+		global g_demo_mode, g_tts_mary
 		if g_demo_mode:
 			self.update_function = self.CreateTTSTracks
 		else:
