@@ -13,6 +13,7 @@ class ProjectHandler:
 		self.story_filename = ""
 		self.scene_filename = ""
 		self.scene = None
+		self.scene_manager = None
 		self.emulator_scene = None
 		self.scene_filename = "assets/master_scene/master_scene.scn"
 		self.dispatch = self.LoadScene
@@ -28,7 +29,6 @@ class ProjectHandler:
 	def PlayStory(self):
 		self.scene_filename = self.story_filename
 		self.dispatch = self.ExitFromCurrentScene
-
 
 	def LoadMainMenu(self):
 		self.scene_filename = "scenes/main_menu_screen.nms"
@@ -48,6 +48,8 @@ class ProjectHandler:
 
 	def SceneUpdate(self):
 		if self.scene is not None:
+			if self.scene_manager is not None:
+				self.scene_manager.OnUpdate(self.dt)
 			self.plus.UpdateScene(self.scene, self.dt)
 
 	def LoadScene(self):
@@ -62,6 +64,7 @@ class ProjectHandler:
 			self.scene = self.plus.NewScene()
 			self.scene.Load(self.scene_filename, gs.SceneLoadContext(self.plus.GetRenderSystem()))
 			self.plus.AddCamera(self.scene, gs.Matrix4.TranslationMatrix((0, 1, -2.5)))
+			self.scene_manager = StageManager()
 			self.dispatch = self.WaitTilSceneIsReady
 			# 	g_WindowsManager.current_ui = SceneGetUI(ProjectSceneGetInstance(self.scene))
 		else:
@@ -83,6 +86,7 @@ class ProjectHandler:
 		self.plus.UpdateScene(self.scene, self.dt)
 		if self.scene.IsReady():
 			print("ProjectHandler::WaitTilSceneIsReady() Scene is ready!")
+			self.scene_manager.OnSetup(self.scene)
 			self.dispatch = self.SceneUpdate
 	
 	def MainUpdate(self):

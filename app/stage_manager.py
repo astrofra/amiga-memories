@@ -28,9 +28,15 @@
 # Include("scripts/command_line.nut")
 
 import gs
+import os
+import json
 from globals import *
+from thread_handler import *
+from tracker_lip_sync import *
+from mary_tts import *
 
 def	FixedSecToTick(s):
+	global g_fixed_step_enabled
 	if g_fixed_step_enabled:
 		return 10000.0 * s
 	else:
@@ -42,10 +48,11 @@ def	SceneGroupSetup(scene, group):
 	# foreach (item in items)
 	# 	ItemRenderSetup(item, g_factory)
 
-class	StageManager:
+class StageManager:
 
 	def __init__(self):
 		self.fps = 30.0
+		self.scene = None
 
 		self.current_clip = None
 		self.clip_idx = 0
@@ -75,14 +82,9 @@ class	StageManager:
 		self.frame_buffer = 0
 		self.frame_idx = 0
 
-		self.render_stats = 0
+		self.thread_handler = None
 
-		self.thread_handler = 0
-
-	def	OnRenderUser(self):
-		self.render_stats.RenderUser()
-
-	def	OnUpdate(self):
+	def	OnUpdate(self, dt):
 		# print("g_clock = " + g_clock)
 		# if g_save_enabled and not self.all_done:
 		# 	self.SaveCurrentFrame()
@@ -97,7 +99,7 @@ class	StageManager:
 		if os.path.exists(filename):
 			print("StageManager::LoadStageScript(), loading " + filename)
 			json_file = open(filename)
-			return json.loads(json_file.read())[0]
+			return json.loads(json_file.read())['stage_script']
 		else:
 			print("StageManager::LoadStageScript(), cannot find file " + filename)
 			return {}
@@ -122,7 +124,6 @@ class	StageManager:
 		# self.rtt_tracker.Update()
 		# self.titler_tracker.Update()
 		# self.music_tracker.Update()
-		# self.render_stats.Update()
 
 		if self.lip_sync_tracker.all_done: # and self.rtt_tracker.all_done:
 			self.GetNextClip()
@@ -152,17 +153,19 @@ class	StageManager:
 		return self.all_done
 
 	def	SaveCurrentFrame(self):
+		global g_skip_rendered_frames
+
 		if not self.start_recording:
 			return
 
-		print("StageManager::SaveCurrentFrame(" + frame_idx + ")")
+		print("StageManager::SaveCurrentFrame(" + self.frame_idx + ")")
 
-		idx = str(frame_idx)
-		if frame_idx < 10:
+		idx = str(self.frame_idx)
+		if self.frame_idx < 10:
 			idx = "0" + idx
-		if frame_idx < 100:
+		if self.frame_idx < 100:
 			idx = "0" + idx
-		if frame_idx < 1000:
+		if self.frame_idx < 1000:
 			idx = "0" + idx
 
 		do_save = True
@@ -190,10 +193,11 @@ class	StageManager:
 
 		# SceneSetRenderless(scene, True)
 
+		self.scene = scene
 		g_stage_script = self.LoadStageScript("scripts/" + g_story + ".json")
 
 		self.emulator_assets = {}
-		# self.thread_handler = ThreadHandler()
+		self.thread_handler = ThreadHandler()
 		# self.audio_mixer	= AudioMixer()
 
 		if g_save_enabled:
@@ -208,13 +212,13 @@ class	StageManager:
 		else:
 			# 	Start Mary TTS (if needed) via a coroutine here
 			if g_tts_mary:
-				self.thread_handler.CreateThread(ThreadLaunchMaryTTS)
+				# self.thread_handler.CreateThread(ThreadLaunchMaryTTS)
 				self.update_function  = self.AwaitMaryTTSLaunch
 			else:
 				self.update_function = self.CreateTTSTracks
 
 	def AwaitMaryTTSLaunch(self):
-		if not WaitForTimer("maryttslaunch", Sec(10.0)):
+		if True: # not WaitForTimer("maryttslaunch", Sec(10.0)):
 			# 	Speech synthesis & lipsync extraction
 			self.update_function = self.CreateTTSTracks
 
@@ -224,10 +228,10 @@ class	StageManager:
 		
 		for clip in g_stage_script:
 			if "text" in clip:
-				_text_array.append(clip.text)
+				_text_array.append(clip['text'])
 
-		if not g_demo_mode:
-			TextToSpeech(_text_array)
+		# if not g_demo_mode:
+		# 	TextToSpeech(_text_array)
 
 		self.update_function = self.TrackerSetup
 
@@ -299,8 +303,6 @@ class	StageManager:
 #		# 			GroupSetup(self.assets)
 		self.LoadEmulators()
 
-		self.render_stats = RenderingStats()
-
 		self.start_recording = True
 		g_clock = 0.0
 
@@ -310,26 +312,26 @@ class	StageManager:
 		self.camera_tracker = CameraTrack()
 		self.camera_tracker.Feed(self.current_clip, fps)
 
-		self.subtitle_tracker = SubtitleTrack()
-		self.subtitle_tracker.Feed(self.current_clip)
-
-		self.titler_tracker = VideoTitlerTrack()
-		self.titler_tracker.Feed(self.current_clip)
-
-		self.video_tracker = VideoTrack()
-		self.video_tracker.Feed(self.current_clip, fps)
-
-		self.led_tracker = LedTrack(self.audio_mixer)
-		self.led_tracker.Feed(self.current_clip)
-
-		self.rtt_tracker	= RenderToTextureTracker()
-		self.rtt_tracker.Feed(self.current_clip, self.emulator_assets)
-
-		self.music_tracker = MusicTrack()
-		self.music_tracker.Feed(self.current_clip)
-
-		self.HandleSpecialEvent(self.current_clip)
-		self.HandleFading(self.current_clip)
+		# self.subtitle_tracker = SubtitleTrack()
+		# self.subtitle_tracker.Feed(self.current_clip)
+		#
+		# self.titler_tracker = VideoTitlerTrack()
+		# self.titler_tracker.Feed(self.current_clip)
+		#
+		# self.video_tracker = VideoTrack()
+		# self.video_tracker.Feed(self.current_clip, fps)
+		#
+		# self.led_tracker = LedTrack(self.audio_mixer)
+		# self.led_tracker.Feed(self.current_clip)
+		#
+		# self.rtt_tracker	= RenderToTextureTracker()
+		# self.rtt_tracker.Feed(self.current_clip, self.emulator_assets)
+		#
+		# self.music_tracker = MusicTrack()
+		# self.music_tracker.Feed(self.current_clip)
+		#
+		# self.HandleSpecialEvent(self.current_clip)
+		# self.HandleFading(self.current_clip)
 
 # local	_ch = MixerStreamStart(g_mixer, "tmp/radix_tournesol.ogg")
 # MixerChannelSetGain(g_mixer, _ch, 0.1)

@@ -1,60 +1,72 @@
 # 
 #	File: scripts/lipsync_test.nut
 #	Author: Astrofra
-# 
+#
 
-g_viseme_set = "assets/visemes/sven-robot/"
+import gs
+import os
+from globals import *
+from compat import *
 
 # Include(g_viseme_set + "phoneme_to_viseme.nut")
-
-def LipSyncNutInclude(_key):
-		_nut_fname = "voice_" + g_story + "_" + _key + ".nut"
-		print("LipSyncNutInclude() : loading '" + _nut_fname + "'.")
-
-		if os.paths.FileExists("tmp/" + _nut_fname):
-			print("Loading from 'tmp/'")
-			Include("tmp/" + _nut_fname)
-		else:
-			print("Loading from 'archived_files/'")
-			Include("archived_files/" + _nut_fname)
 
 # !
 #	@short	lipsync_test
 #	@author	Astrofra
 # 
-class	LipSyncTrack:
+class LipSyncTrack:
 
 	def __init__(self):
-		self.ui = SceneGetUI(g_scene)
+		self.ui = None # SceneGetUI(g_scene)
 		self.external_material_list = []
 
-		self.current_clip			=	0
-		self.text					=	0
-		self.current_phoneme_index 	=	0
-		self.current_phoneme 		=	0
-		self.lipsync_clock			=	0.0
-		self.duration				=	-1.0
-		self.all_done				=	False
-		self.current_viseme_sprite	=	0
-		self.mouth_2d				=	False
-		self.disable_narrator		=	False
+		self.current_clip = 0
+		self.text = 0
+		self.current_phoneme_index = 0
+		self.current_phoneme = 0
+		self.lipsync_clock = 0.0
+		self.duration = -1.0
+		self.all_done = False
+		self.current_viseme_sprite = 0
+		self.mouth_2d = False
+		self.disable_narrator = False
+		self.visemes = None
+
+	def LipSyncNutInclude(self, _key):
+			global g_story
+			_nut_fname = "voice_" + g_story + "_" + _key + ".json"
+			print("LipSyncNutInclude() : loading '" + _nut_fname + "'.")
+
+			json_file = None
+			if os.path.exists("tmp/" + _nut_fname):
+				print("Loading from 'tmp/'")
+				json_file = open("tmp/" + _nut_fname)
+			else:
+				print("Loading from 'archived_files/'")
+				json_file = open("archived_files/" + _nut_fname)
+
+			if json_file is not None:
+				self.visemes = json.loads(json_file.read())
+			else:
+				self.visemes = {}
 
 	# !
 	#	@short	OnUpdate
 	#	Called each frame.
 	# 
 	def Update(self):
-		_clock = g_clock - self.lipsync_clock
+		# _clock = g_clock - self.lipsync_clock
 
-		if self.all_done:
-			return
+		# if self.all_done:
+		# 	return
 
-		if _clock > self.current_phoneme.last_time:
-			self.GetNextPhoneme()
+		# if _clock > self.current_phoneme.last_time:
+		# 	self.GetNextPhoneme()
+		pass
 
 
 	def GetNextPhoneme(self):
-		if self.current_phoneme_index < list_phoneme.len():
+		if self.current_phoneme_index < len(list_phoneme):
 			if self.text != "pause":
 				self.current_phoneme = list_phoneme[self.current_phoneme_index]
 				# 	print("GetNextPhoneme() : '" + self.current_phoneme.phoneme_type + "'.")
@@ -77,10 +89,10 @@ class	LipSyncTrack:
 
 		if pho == "_":
 			pho = "closed"
-		pho = pho.toupper()
+		pho = pho.upper()
 
-		if pho in visemes:
-			vi = visemes[pho]
+		if pho in self.visemes:
+			vi = self.visemes[pho]
 
 			if self.disable_narrator:
 				return
@@ -108,7 +120,7 @@ class	LipSyncTrack:
 
 	def AddPauseAtEnd(self):
 		print("LipSyncTrack::AddPauseAtEnd()")
-		_last_idx = list_phoneme.len() - 1
+		_last_idx = len(list_phoneme) - 1
 		clip_duration = 0.0
 		if _last_idx >= 0:
 			list_phoneme[_last_idx].last_time += FixedSecToTick(Sec(1.0))
@@ -126,7 +138,7 @@ class	LipSyncTrack:
 		clip_duration = -1.0
 		self.duration = -1.0
 		self.current_clip = _current_clip
-		self.text = self.current_clip.self.text
+		self.text = self.current_clip['text']
 		key = SHA1(self.text)
 		self.lipsync_clock = g_clock
 		self.all_done = False
@@ -134,7 +146,7 @@ class	LipSyncTrack:
 		self.current_phoneme =	0
 
 		print("LipSyncTrack::Feed(" + key + ")")
-		LipSyncNutInclude(key)
+		self.LipSyncNutInclude(key)
 
 		if "self.duration" in _current_clip:
 			clip_duration = FixedSecToTick(Sec(_current_clip.self.duration))

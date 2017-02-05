@@ -2,6 +2,7 @@
 # ---------- BEGIN PUBLIC
 
 g_story						=	"dune"
+g_viseme_set 				= "assets/visemes/sven-robot/"
 g_enable_audio_output		=	True
 g_demo_mode					=	False	# 	Don't (re)generate the voice.
 g_french_voice				=	True	# 	Not always available (depends on the TTS System)
@@ -17,6 +18,7 @@ g_stage_script = None
 
 # ---------- END PUBLIC
 
-g_project_instance			=	0
-g_WindowsManager			=	0
-g_cursor 					=	0
+g_project_instance = 0
+g_WindowsManager = 0
+g_cursor = 0
+g_clock = 0
