@@ -1,0 +1,304 @@
+{
+	"canvas": {
+		"clear_color": true,
+		"clear_z": true,
+		"color": [
+			0,
+			0,
+			0,
+			255
+		]
+	},
+	"environment": {
+		"ambient": [
+			0,
+			0,
+			0,
+			0
+		],
+		"brdf_map": "core/pbr/brdf.dds",
+		"current_camera": null,
+		"fog_color": [
+			0,
+			0,
+			0,
+			0
+		],
+		"fog_far": 0.0,
+		"fog_near": 0.0,
+		"irradiance_map": "core/pbr/probe.hdr.irradiance",
+		"radiance_map": "core/pbr/probe.hdr.radiance"
+	},
+	"key_values": null,
+	"nodes": [
+		{
+			"components": [
+				4,
+				4294967295,
+				4,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 0,
+			"name": "bike_wheel_rear"
+		},
+		{
+			"components": [
+				3,
+				4294967295,
+				3,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 1,
+			"name": "bike_seat"
+		},
+		{
+			"components": [
+				2,
+				4294967295,
+				2,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 2,
+			"name": "bik_wheel_front"
+		},
+		{
+			"components": [
+				1,
+				4294967295,
+				1,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 3,
+			"name": "bike_steering"
+		},
+		{
+			"components": [
+				0,
+				4294967295,
+				0,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 4,
+			"name": "bike_body"
+		}
+	],
+	"objects": [
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "dummy_mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "main/master_scene/bike_body_90.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "dummy_mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "main/master_scene/bike_steering_91.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "dummy_mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "main/master_scene/bik_wheel_front_92.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "dummy_mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "main/master_scene/bike_seat_93.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
+				{
+					"name": "dummy_mat"
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "main/master_scene/bike_wheel_rear_94.geo"
+		}
+	],
+	"transforms": [
+		{
+			"parent": null,
+			"pos": [
+				0.0,
+				0.6721731424331665,
+				0.0
+			],
+			"rot": [
+				-75.37869262695313,
+				-5.817395210266113,
+				177.28414916992188
+			],
+			"scl": [
+				1.0000001192092896,
+				1.0000001192092896,
+				1.0000001192092896
+			]
+		},
+		{
+			"parent": 4,
+			"pos": [
+				0.5433248281478882,
+				-1.7881393432617188e-07,
+				0.10797035694122314
+			],
+			"rot": [
+				49.53330993652344,
+				-111.77147674560547,
+				-90.00000762939453
+			],
+			"scl": [
+				0.9999999403953552,
+				1.0000001192092896,
+				1.0
+			]
+		},
+		{
+			"parent": 3,
+			"pos": [
+				0.03672470152378082,
+				-0.5386092662811279,
+				-1.1920928955078125e-07
+			],
+			"rot": [
+				-3.4150941701227566e-06,
+				-4.152133897150634e-06,
+				-21.771484375
+			],
+			"scl": [
+				0.9999998807907104,
+				0.9999999403953552,
+				1.0
+			]
+		},
+		{
+			"parent": 4,
+			"pos": [
+				-0.03417697548866272,
+				-5.464980888658697e-18,
+				0.08924990892410278
+			],
+			"rot": [
+				90.0,
+				136.18275451660156,
+				157.06788635253906
+			],
+			"scl": [
+				0.9999999403953552,
+				0.9999999403953552,
+				1.0000001192092896
+			]
+		},
+		{
+			"parent": 4,
+			"pos": [
+				-0.27418506145477295,
+				-1.7881393432617188e-07,
+				-0.3800085186958313
+			],
+			"rot": [
+				90.0,
+				-178.53533935546875,
+				-178.53533935546875
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		}
+	]
+}
