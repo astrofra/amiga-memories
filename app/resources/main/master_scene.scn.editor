@@ -67,13 +67,13 @@
 			"show_node_uid": false
 		},
 		"navigation_plugin": {
-			"orbit_distance": 2.8791592121124268,
+			"orbit_distance": 0.5289526581764221,
 			"speed": 0.10000000149011612,
 			"turbo": 1.0
 		},
 		"transform_gizmo_plugin": {
-			"mode": "local",
-			"tool": "move"
+			"mode": "global",
+			"tool": "rotation"
 		},
 		"view_plugin": {
 			"show_node_origin": false

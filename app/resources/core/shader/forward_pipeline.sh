@@ -47,8 +47,12 @@ SAMPLER2DSHADOW(uLinearShadowMap, 14);
 SAMPLER2DSHADOW(uSpotShadowMap, 15);
 
 //
+float sRGB2linear(float v) {
+	return (v < 0.04045) ? (v * 0.0773993808) : pow((v + 0.055) / 1.055, 2.4);
+}
+
 vec3 sRGB2linear(vec3 v) {
-	return any(lessThanEqual(v, vec3_splat(0.04045))) ? v * 0.0773993808 : pow((v + 0.055) / 1.055, vec3_splat(2.4));
+	return vec3(sRGB2linear(v.x), sRGB2linear(v.y), sRGB2linear(v.z));
 }
 
 //

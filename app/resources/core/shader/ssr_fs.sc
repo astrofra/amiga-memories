@@ -27,7 +27,10 @@ void main() {
 	vec3 n = attr0.xyz;
 
 	// compute ray origin & direction
-	vec3 ray_o = v_viewRay * attr0.w;
+	float near = -uMainProjection[2].w / uMainProjection[2].z;
+	float far  = -near * uMainProjection[2].z / (1.0 - uMainProjection[2].z);
+	float z = (attr0.w * (far - near) + near*far) / far;
+	vec3 ray_o = v_viewRay * z;
 	vec3 ray_d = reflect(normalize(ray_o), n);
 
 	// roughness
