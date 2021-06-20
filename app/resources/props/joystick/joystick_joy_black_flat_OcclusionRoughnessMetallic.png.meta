@@ -1,0 +1,11 @@
+{
+	"profiles": {
+		"default": {
+			"compression": "RAW",
+			"generate-mips": true,
+			"max-size": 4096,
+			"wrap-U": "Repeat",
+			"wrap-V": "Repeat"
+		}
+	}
+}

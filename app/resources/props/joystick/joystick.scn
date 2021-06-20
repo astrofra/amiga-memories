@@ -1,11 +1,22 @@
 {
+	"cameras": [
+		{
+			"fov": 0.4710899591445923,
+			"ortho": false,
+			"size": 1.0,
+			"zrange": {
+				"zfar": 100.0,
+				"znear": 0.10000000149011612
+			}
+		}
+	],
 	"canvas": {
 		"clear_color": true,
 		"clear_z": true,
 		"color": [
-			0,
-			0,
-			0,
+			48,
+			48,
+			48,
 			255
 		]
 	},
@@ -30,90 +41,179 @@
 		"radiance_map": "core/pbr/probe.hdr.radiance"
 	},
 	"key_values": null,
+	"lights": [
+		{
+			"diffuse": [
+				1500,
+				1300,
+				1100,
+				255
+			],
+			"inner_angle": 0.1745329201221466,
+			"outer_angle": 0.3490658402442932,
+			"priority": 0.0,
+			"pssm_split": [
+				10.0,
+				50.0,
+				100.0,
+				500.0
+			],
+			"radius": 0.0,
+			"shadow_bias": 9.999999747378752e-06,
+			"shadow_type": "map",
+			"specular": [
+				0,
+				0,
+				0,
+				255
+			],
+			"type": "spot"
+		}
+	],
 	"nodes": [
 		{
 			"components": [
 				0,
-				4294967295,
 				0,
+				4294967295,
 				4294967295,
 				4294967295
 			],
 			"disabled": false,
 			"idx": 0,
-			"name": "joy_main_body"
+			"name": "Camera"
 		},
 		{
 			"components": [
 				1,
 				4294967295,
-				1,
+				0,
 				4294967295,
 				4294967295
 			],
 			"disabled": false,
 			"idx": 1,
-			"name": "joy_stick"
+			"name": "joy_main_body"
 		},
 		{
 			"components": [
 				2,
 				4294967295,
-				2,
+				1,
 				4294967295,
 				4294967295
 			],
 			"disabled": false,
 			"idx": 2,
-			"name": "joy_cord_input"
+			"name": "joy_main_body.001"
 		},
 		{
 			"components": [
 				3,
 				4294967295,
-				3,
+				2,
 				4294967295,
 				4294967295
 			],
 			"disabled": false,
 			"idx": 3,
-			"name": "joy_square"
+			"name": "joy_main_body.002"
 		},
 		{
 			"components": [
 				4,
 				4294967295,
-				4,
+				3,
 				4294967295,
 				4294967295
 			],
 			"disabled": false,
 			"idx": 4,
-			"name": "joy_wire"
+			"name": "joy_stick"
 		},
 		{
 			"components": [
 				5,
 				4294967295,
-				5,
+				4,
 				4294967295,
 				4294967295
 			],
 			"disabled": false,
 			"idx": 5,
-			"name": "joy_button_r"
+			"name": "joy_stick.001"
 		},
 		{
 			"components": [
 				6,
+				4294967295,
+				5,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 6,
+			"name": "joy_cord_input"
+		},
+		{
+			"components": [
+				7,
 				4294967295,
 				6,
 				4294967295,
 				4294967295
 			],
 			"disabled": false,
-			"idx": 6,
+			"idx": 7,
+			"name": "joy_square"
+		},
+		{
+			"components": [
+				8,
+				4294967295,
+				7,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 8,
+			"name": "joy_wire"
+		},
+		{
+			"components": [
+				9,
+				4294967295,
+				8,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 9,
+			"name": "joy_button_r"
+		},
+		{
+			"components": [
+				10,
+				4294967295,
+				9,
+				4294967295,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 10,
 			"name": "joy_button_l"
+		},
+		{
+			"components": [
+				11,
+				4294967295,
+				4294967295,
+				0,
+				4294967295
+			],
+			"disabled": false,
+			"idx": 11,
+			"name": "Light"
 		}
 	],
 	"objects": [
@@ -122,10 +222,148 @@
 			"material_infos": [
 				{
 					"name": "joy_black_grainy"
-				},
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_black_grainy_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_black_grainy_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_black_grainy_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.09803922474384308,
+								0.09803922474384308,
+								0.09803922474384308,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/joystick/joy_main_body_52.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
 				{
 					"name": "joy_black_flat"
-				},
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_black_flat_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_black_flat_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_black_flat_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.09803922474384308,
+								0.09803922474384308,
+								0.09803922474384308,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/joystick/joy_main_body.001_43.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
 				{
 					"name": "joy_black_wire"
 				}
@@ -137,94 +375,23 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
-					"values": [
+					"textures": [
 						{
-							"name": "uBaseOpacityColor",
-							"type": "vec4",
-							"value": [
-								9.999999974752427e-07,
-								9.999899930335232e-07,
-								9.999899930335232e-07,
-								1.0
-							]
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_black_wire_BaseColor.png",
+							"stage": 0
 						},
 						{
-							"name": "uOcclusionRoughnessMetalnessColor",
-							"type": "vec4",
-							"value": [
-								1.0,
-								0.4000000059604645,
-								0.20000000298023224,
-								0.03125
-							]
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_black_wire_Normal.png",
+							"stage": 2
 						},
 						{
-							"name": "uSelfColor",
-							"type": "vec4",
-							"value": [
-								0.0,
-								0.0,
-								0.0,
-								-1.0
-							]
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_black_wire_OcclusionRoughnessMetallic.png",
+							"stage": 1
 						}
 					],
-					"write_a": true,
-					"write_b": true,
-					"write_g": true,
-					"write_r": true,
-					"write_z": true
-				},
-				{
-					"blend_mode": "opaque",
-					"depth_test": "less",
-					"face_culling": "cw",
-					"flags": [],
-					"program": "core/shader/pbr.hps",
-					"values": [
-						{
-							"name": "uBaseOpacityColor",
-							"type": "vec4",
-							"value": [
-								9.999999974752427e-07,
-								9.999899930335232e-07,
-								9.999899930335232e-07,
-								1.0
-							]
-						},
-						{
-							"name": "uOcclusionRoughnessMetalnessColor",
-							"type": "vec4",
-							"value": [
-								1.0,
-								0.20000000298023224,
-								0.20000000298023224,
-								0.5
-							]
-						},
-						{
-							"name": "uSelfColor",
-							"type": "vec4",
-							"value": [
-								0.0,
-								0.0,
-								0.0,
-								-1.0
-							]
-						}
-					],
-					"write_a": true,
-					"write_b": true,
-					"write_g": true,
-					"write_r": true,
-					"write_z": true
-				},
-				{
-					"blend_mode": "opaque",
-					"depth_test": "less",
-					"face_culling": "cw",
-					"flags": [],
-					"program": "core/shader/pbr.hps",
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
@@ -241,9 +408,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.20000000298023224,
-								0.20000000298023224,
-								0.0883883461356163
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
 							]
 						},
 						{
@@ -264,14 +431,83 @@
 					"write_z": true
 				}
 			],
-			"name": "props/joystick/joy_main_body_38.geo"
+			"name": "props/joystick/joy_main_body.002_44.geo"
 		},
 		{
 			"bones": [],
 			"material_infos": [
 				{
 					"name": "joy_red_flat"
-				},
+				}
+			],
+			"materials": [
+				{
+					"blend_mode": "opaque",
+					"depth_test": "less",
+					"face_culling": "cw",
+					"flags": [],
+					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_red_flat_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_red_flat_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_red_flat_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
+					"values": [
+						{
+							"name": "uBaseOpacityColor",
+							"type": "vec4",
+							"value": [
+								0.9215686917304993,
+								0.09803922474384308,
+								0.09803922474384308,
+								1.0
+							]
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessColor",
+							"type": "vec4",
+							"value": [
+								1.0,
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
+							]
+						},
+						{
+							"name": "uSelfColor",
+							"type": "vec4",
+							"value": [
+								0.0,
+								0.0,
+								0.0,
+								-1.0
+							]
+						}
+					],
+					"write_a": true,
+					"write_b": true,
+					"write_g": true,
+					"write_r": true,
+					"write_z": true
+				}
+			],
+			"name": "props/joystick/joy_stick_46.geo"
+		},
+		{
+			"bones": [],
+			"material_infos": [
 				{
 					"name": "joy_red_grainy"
 				}
@@ -283,50 +519,23 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
-					"values": [
+					"textures": [
 						{
-							"name": "uBaseOpacityColor",
-							"type": "vec4",
-							"value": [
-								0.9215686917304993,
-								0.09803922474384308,
-								0.09803922474384308,
-								1.0
-							]
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_red_grainy_BaseColor.png",
+							"stage": 0
 						},
 						{
-							"name": "uOcclusionRoughnessMetalnessColor",
-							"type": "vec4",
-							"value": [
-								1.0,
-								0.20000000298023224,
-								0.20000000298023224,
-								0.03125
-							]
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_red_grainy_Normal.png",
+							"stage": 2
 						},
 						{
-							"name": "uSelfColor",
-							"type": "vec4",
-							"value": [
-								0.0,
-								0.0,
-								0.0,
-								-1.0
-							]
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_red_grainy_OcclusionRoughnessMetallic.png",
+							"stage": 1
 						}
 					],
-					"write_a": true,
-					"write_b": true,
-					"write_g": true,
-					"write_r": true,
-					"write_z": true
-				},
-				{
-					"blend_mode": "opaque",
-					"depth_test": "less",
-					"face_culling": "cw",
-					"flags": [],
-					"program": "core/shader/pbr.hps",
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
@@ -343,9 +552,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.4000000059604645,
-								0.20000000298023224,
-								0.0883883461356163
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
 							]
 						},
 						{
@@ -366,7 +575,7 @@
 					"write_z": true
 				}
 			],
-			"name": "props/joystick/joy_stick_39.geo"
+			"name": "props/joystick/joy_stick.001_45.geo"
 		},
 		{
 			"bones": [],
@@ -382,14 +591,31 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_black_wire_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_black_wire_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_black_wire_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
 							"type": "vec4",
 							"value": [
-								9.999999974752427e-07,
-								9.999899930335232e-07,
-								9.999899930335232e-07,
+								0.09803922474384308,
+								0.09803922474384308,
+								0.09803922474384308,
 								1.0
 							]
 						},
@@ -398,9 +624,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.20000000298023224,
-								0.20000000298023224,
-								0.0883883461356163
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
 							]
 						},
 						{
@@ -421,7 +647,7 @@
 					"write_z": true
 				}
 			],
-			"name": "props/joystick/joy_cord_input_40.geo"
+			"name": "props/joystick/joy_cord_input_47.geo"
 		},
 		{
 			"bones": [],
@@ -437,14 +663,31 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_black_flat_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_black_flat_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_black_flat_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
 							"type": "vec4",
 							"value": [
-								9.999999974752427e-07,
-								9.999899930335232e-07,
-								9.999899930335232e-07,
+								0.09803922474384308,
+								0.09803922474384308,
+								0.09803922474384308,
 								1.0
 							]
 						},
@@ -453,9 +696,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.20000000298023224,
-								0.20000000298023224,
-								0.5
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
 							]
 						},
 						{
@@ -476,7 +719,7 @@
 					"write_z": true
 				}
 			],
-			"name": "props/joystick/joy_square_41.geo"
+			"name": "props/joystick/joy_square_48.geo"
 		},
 		{
 			"bones": [],
@@ -492,14 +735,31 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_black_wire_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_black_wire_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_black_wire_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
 							"type": "vec4",
 							"value": [
-								9.999999974752427e-07,
-								9.999899930335232e-07,
-								9.999899930335232e-07,
+								0.09803922474384308,
+								0.09803922474384308,
+								0.09803922474384308,
 								1.0
 							]
 						},
@@ -508,9 +768,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.20000000298023224,
-								0.20000000298023224,
-								0.0883883461356163
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
 							]
 						},
 						{
@@ -531,7 +791,7 @@
 					"write_z": true
 				}
 			],
-			"name": "props/joystick/joy_wire_42.geo"
+			"name": "props/joystick/joy_wire_49.geo"
 		},
 		{
 			"bones": [],
@@ -547,6 +807,23 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_red_flat_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_red_flat_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_red_flat_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
@@ -563,9 +840,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.43529415130615234,
-								0.43529415130615234,
-								0.03125
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
 							]
 						},
 						{
@@ -586,7 +863,7 @@
 					"write_z": true
 				}
 			],
-			"name": "props/joystick/joy_button_r_43.geo"
+			"name": "props/joystick/joy_button_r_50.geo"
 		},
 		{
 			"bones": [],
@@ -602,6 +879,23 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/joystick/joystick_joy_red_flat_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/joystick/joystick_joy_red_flat_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/joystick/joystick_joy_red_flat_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
@@ -618,9 +912,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.43529415130615234,
-								0.43529415130615234,
-								0.03125
+								0.04901961237192154,
+								0.04901961237192154,
+								0.3125
 							]
 						},
 						{
@@ -641,10 +935,28 @@
 					"write_z": true
 				}
 			],
-			"name": "props/joystick/joy_button_l_44.geo"
+			"name": "props/joystick/joy_button_l_51.geo"
 		}
 	],
 	"transforms": [
+		{
+			"parent": null,
+			"pos": [
+				7.358891487121582,
+				4.958309173583984,
+				-6.925790786743164
+			],
+			"rot": [
+				-26.44069480895996,
+				133.30799865722656,
+				6.858790129626868e-06
+			],
+			"scl": [
+				1.0,
+				1.0,
+				0.9999999403953552
+			]
+		},
 		{
 			"parent": null,
 			"pos": [
@@ -653,9 +965,9 @@
 				0.0
 			],
 			"rot": [
-				-7.016708279672639e-15,
-				0.0,
-				0.0
+				90.0,
+				180.0,
+				180.0
 			],
 			"scl": [
 				1.0,
@@ -664,11 +976,11 @@
 			]
 		},
 		{
-			"parent": 0,
+			"parent": 1,
 			"pos": [
 				0.0,
-				0.052085913717746735,
-				0.01038047019392252
+				0.0,
+				0.0
 			],
 			"rot": [
 				-0.0,
@@ -682,11 +994,11 @@
 			]
 		},
 		{
-			"parent": 0,
+			"parent": 1,
 			"pos": [
 				0.0,
-				0.02013709954917431,
-				-0.052874088287353516
+				0.0,
+				0.0
 			],
 			"rot": [
 				-0.0,
@@ -700,11 +1012,11 @@
 			]
 		},
 		{
-			"parent": 0,
+			"parent": 1,
 			"pos": [
 				0.0,
-				0.034685611724853516,
-				0.01038062572479248
+				0.06378555297851563,
+				3.9057388165513396e-18
 			],
 			"rot": [
 				-0.0,
@@ -718,11 +1030,11 @@
 			]
 		},
 		{
-			"parent": 0,
+			"parent": 4,
 			"pos": [
 				0.0,
-				-2.282916966578341e-09,
-				0.06378555297851563
+				0.0,
+				0.0
 			],
 			"rot": [
 				-0.0,
@@ -736,11 +1048,11 @@
 			]
 		},
 		{
-			"parent": 0,
+			"parent": 1,
 			"pos": [
 				0.0,
-				-3.9057388165513396e-18,
-				0.06378555297851563
+				0.06378555297851563,
+				3.9057388165513396e-18
 			],
 			"rot": [
 				-0.0,
@@ -754,11 +1066,11 @@
 			]
 		},
 		{
-			"parent": 0,
+			"parent": 1,
 			"pos": [
 				0.0,
-				-3.9057388165513396e-18,
-				0.06378555297851563
+				0.01038062572479248,
+				-0.034685611724853516
 			],
 			"rot": [
 				-0.0,
@@ -769,6 +1081,78 @@
 				1.0,
 				1.0,
 				1.0
+			]
+		},
+		{
+			"parent": 1,
+			"pos": [
+				0.0,
+				0.06378555297851563,
+				2.282916966578341e-09
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": 1,
+			"pos": [
+				0.0,
+				0.06378555297851563,
+				3.9057388165513396e-18
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": 1,
+			"pos": [
+				0.0,
+				0.06378555297851563,
+				3.9057388165513396e-18
+			],
+			"rot": [
+				-0.0,
+				0.0,
+				0.0
+			],
+			"scl": [
+				1.0,
+				1.0,
+				1.0
+			]
+		},
+		{
+			"parent": null,
+			"pos": [
+				0.8739035129547119,
+				2.053067684173584,
+				0.11632031202316284
+			],
+			"rot": [
+				55.22140121459961,
+				-102.59011840820313,
+				-65.303466796875
+			],
+			"scl": [
+				0.999999463558197,
+				0.9999996423721313,
+				0.9999997615814209
 			]
 		}
 	]
