@@ -3,9 +3,9 @@
 		"clear_color": true,
 		"clear_z": true,
 		"color": [
-			0,
-			0,
-			0,
+			65,
+			65,
+			65,
 			255
 		]
 	},
@@ -53,7 +53,7 @@
 			],
 			"disabled": false,
 			"idx": 1,
-			"name": "table_basket"
+			"name": "table.001"
 		},
 		{
 			"components": [
@@ -65,7 +65,7 @@
 			],
 			"disabled": false,
 			"idx": 2,
-			"name": "table_paper_sheets"
+			"name": "table.002"
 		},
 		{
 			"components": [
@@ -77,19 +77,7 @@
 			],
 			"disabled": false,
 			"idx": 3,
-			"name": "table_foot"
-		},
-		{
-			"components": [
-				4,
-				4294967295,
-				4,
-				4294967295,
-				4294967295
-			],
-			"disabled": false,
-			"idx": 4,
-			"name": "table_foot001"
+			"name": "table.003"
 		}
 	],
 	"objects": [
@@ -97,7 +85,7 @@
 			"bones": [],
 			"material_infos": [
 				{
-					"name": "table_wood"
+					"name": "table_wood.001"
 				}
 			],
 			"materials": [
@@ -110,12 +98,17 @@
 					"textures": [
 						{
 							"name": "uBaseOpacityMap",
-							"path": "props/table/wood_color.png",
+							"path": "props/table/table_table_wood.001_BaseColor.png",
 							"stage": 0
 						},
 						{
+							"name": "uNormalMap",
+							"path": "props/table/table_table_wood.001_Normal.png",
+							"stage": 2
+						},
+						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "props/table/wood_orm.png",
+							"path": "props/table/table_table_wood.001_OcclusionRoughnessMetallic.png",
 							"stage": 1
 						}
 					],
@@ -135,9 +128,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.5215686559677124,
-								0.3490196168422699,
-								0.03124999813735485
+								0.272549033164978,
+								0.24313727021217346,
+								0.3125
 							]
 						},
 						{
@@ -174,6 +167,23 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/table/table_table_basket_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/table/table_table_basket_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/table/table_table_basket_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
@@ -190,9 +200,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.5584313869476318,
-								0.28968629240989685,
-								0.12499997764825821
+								0.027450982481241226,
+								0.0,
+								0.3125
 							]
 						},
 						{
@@ -213,7 +223,7 @@
 					"write_z": true
 				}
 			],
-			"name": "props/table/table_basket_42.geo"
+			"name": "props/table/table.001_38.geo"
 		},
 		{
 			"bones": [],
@@ -232,7 +242,7 @@
 					"textures": [
 						{
 							"name": "uOcclusionRoughnessMetalnessMap",
-							"path": "props/table/paper_orm.png",
+							"path": "props/table/table_table_paper_OcclusionRoughnessMetallic.png",
 							"stage": 1
 						}
 					],
@@ -252,9 +262,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								1.0,
-								0.0,
-								0.03124999813735485
+								0.46666669845581055,
+								0.46666669845581055,
+								0.3125
 							]
 						},
 						{
@@ -275,7 +285,7 @@
 					"write_z": true
 				}
 			],
-			"name": "props/table/table_paper_sheets_43.geo"
+			"name": "props/table/table.002_39.geo"
 		},
 		{
 			"bones": [],
@@ -291,6 +301,23 @@
 					"face_culling": "cw",
 					"flags": [],
 					"program": "core/shader/pbr.hps",
+					"textures": [
+						{
+							"name": "uBaseOpacityMap",
+							"path": "props/table/table_table_chrome_BaseColor.png",
+							"stage": 0
+						},
+						{
+							"name": "uNormalMap",
+							"path": "props/table/table_table_chrome_Normal.png",
+							"stage": 2
+						},
+						{
+							"name": "uOcclusionRoughnessMetalnessMap",
+							"path": "props/table/table_table_chrome_OcclusionRoughnessMetallic.png",
+							"stage": 1
+						}
+					],
 					"values": [
 						{
 							"name": "uBaseOpacityColor",
@@ -307,9 +334,9 @@
 							"type": "vec4",
 							"value": [
 								1.0,
-								0.20000000298023224,
-								0.800000011920929,
-								0.5
+								0.29411765933036804,
+								0.29411765933036804,
+								0.3125
 							]
 						},
 						{
@@ -330,107 +357,34 @@
 					"write_z": true
 				}
 			],
-			"name": "props/table/table_foot_44.geo"
-		},
-		{
-			"bones": [],
-			"material_infos": [
-				{
-					"name": "table_chrome"
-				}
-			],
-			"materials": [
-				{
-					"blend_mode": "opaque",
-					"depth_test": "less",
-					"face_culling": "cw",
-					"flags": [],
-					"program": "core/shader/pbr.hps",
-					"values": [
-						{
-							"name": "uBaseOpacityColor",
-							"type": "vec4",
-							"value": [
-								0.5882353186607361,
-								0.5882353186607361,
-								0.5882353186607361,
-								1.0
-							]
-						},
-						{
-							"name": "uOcclusionRoughnessMetalnessColor",
-							"type": "vec4",
-							"value": [
-								1.0,
-								0.20000000298023224,
-								0.800000011920929,
-								0.5
-							]
-						},
-						{
-							"name": "uSelfColor",
-							"type": "vec4",
-							"value": [
-								0.0,
-								0.0,
-								0.0,
-								-1.0
-							]
-						}
-					],
-					"write_a": true,
-					"write_b": true,
-					"write_g": true,
-					"write_r": true,
-					"write_z": true
-				}
-			],
-			"name": "props/table/table_foot001_45.geo"
+			"name": "props/table/table.003_40.geo"
 		}
 	],
 	"transforms": [
 		{
 			"parent": null,
 			"pos": [
-				-0.012038350105285645,
-				0.667540431022644,
-				0.007323674391955137
+				0.0,
+				0.0,
+				0.0
 			],
 			"rot": [
-				-7.016708279672639e-15,
+				90.0,
 				0.0,
 				0.0
 			],
 			"scl": [
-				1.0,
-				1.0,
-				1.0
+				9.999999747378752e-05,
+				9.999999747378752e-05,
+				9.999999747378752e-05
 			]
 		},
 		{
 			"parent": 0,
 			"pos": [
-				0.016087889671325684,
-				-0.025725483894348145,
-				-0.22065769135951996
-			],
-			"rot": [
-				-0.0,
+				0.0,
 				0.0,
 				0.0
-			],
-			"scl": [
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"parent": 1,
-			"pos": [
-				-0.004049540497362614,
-				-0.053213417530059814,
-				-0.02034631371498108
 			],
 			"rot": [
 				-0.0,
@@ -446,9 +400,9 @@
 		{
 			"parent": 0,
 			"pos": [
-				-0.5206946730613708,
-				-0.021710753440856934,
-				0.022643398493528366
+				0.0,
+				0.0,
+				0.0
 			],
 			"rot": [
 				-0.0,
@@ -464,9 +418,9 @@
 		{
 			"parent": 0,
 			"pos": [
-				0.45940786600112915,
-				-0.021710753440856934,
-				0.022643398493528366
+				0.0,
+				0.0,
+				0.0
 			],
 			"rot": [
 				-0.0,

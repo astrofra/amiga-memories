@@ -4,7 +4,7 @@
 "anim_simplify_scale_tolerance":"0.001000"
 "anim_simplify_translation_tolerance":"0.001000"
 "detect_geometry_instances":"1"
-"fbx_file_path":"c:/NOTWORKS/amiga-memories/workflow/3dsmax/monitor/monitor.fbx"
+"fbx_file_path":"c:/Users/fra/Documents/amiga-memories/workflow/3dsmax/monitor/substance/monitor.fbx"
 "finalizer_script":""
 "fix_geometry_orientation":"1"
 "frames_per_second":"24"
