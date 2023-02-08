@@ -6,7 +6,7 @@ _A walk along memory lane_ (An automatic review generator)
 
 ## How does Amiga Memories work?
 
-Amiga Memories is a project that aims to make video programmes that can be published on the internet. The images and sound produced by Amiga Memories are 100% automatically calculated.
+Amiga Memories is a project (started & released in 2013) that aims to make video programmes that can be published on the internet. The images and sound produced by Amiga Memories are 100% automatically calculated.
 
 ### The script
 
