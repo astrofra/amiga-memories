@@ -1,8 +1,0 @@
-{
-	"profiles": {
-		"default": {
-			"generate-probe": true,
-			"radiance-edge-fixup": true
-		}
-	}
-}
