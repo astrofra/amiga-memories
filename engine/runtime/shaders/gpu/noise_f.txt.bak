@@ -1,0 +1,38 @@
+vec2	ref_uv = %in.fragcoord%.xy * u_ibs;
+vec4	ref = texture2D(u_tex, ref_uv);
+vec4	refcc; // = texture2D(u_tex, ref_uv);
+
+vec2	noise_uv = %in.fragcoord%.xy / 128.0;
+vec4	noise_a = texture2D(u_noise, noise_uv + vec2(u_random.x * 3.456, u_random.x * 7.145)),
+		noise_b = texture2D(u_noise, noise_uv + vec2(u_random.y * 2.789, u_random.y * 9.781));
+
+vec4	noise = noise_a.r > 0.5 ? noise_b.barg : noise_a.rgba;
+noise = mix(noise, noise.rrrr, u_mono);
+
+//--
+float	strength = u_strength * 6.0;
+float	luma = dot(ref.rgb, vec3(0.299, 0.587, 0.114));
+
+if	(u_bias < 0.5)
+	strength *= pow(clamp(1.0 + luma * (u_bias - 0.5) * 2.0, 0.0, 1.0), 5.0);
+if	(u_bias > 0.5)
+	strength *= pow(clamp(1.0 - (1.0 - luma) * (u_bias - 0.5) * 2.0, 0.0, 1.0), 5.0);
+
+refcc.rgb.r = pow(ref.rgb.r, 1.25);
+refcc.rgb.g = pow(ref.rgb.g, 1.05);
+refcc.rgb.b = pow(ref.rgb.b, 0.85);
+
+refcc = mix(refcc, ref, pow(luma, 2.0));
+
+float	luma_cc = pow(luma, 0.5);
+refcc = mix(refcc, vec4(luma_cc,luma_cc * 0.9,luma_cc * 0.75,1), pow(luma, 1.5));
+
+refcc.rgb.r = pow(refcc.rgb.r, 0.85);
+refcc.rgb.g = pow(refcc.rgb.g, 0.85);
+refcc.rgb.b = pow(refcc.rgb.b, 0.85);
+
+refcc.rgb.r = pow(refcc.rgb.r, 1.15);
+refcc.rgb.g = pow(refcc.rgb.g, 1.15);
+refcc.rgb.b = pow(refcc.rgb.b, 1.15);
+
+%out.color% = vec4(refcc.rgb * (1.0 + (noise.rgb - 0.5) * strength * 2.0), ref.a);

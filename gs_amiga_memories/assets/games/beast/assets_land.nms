@@ -1,0 +1,1669 @@
+<Version=1.0>
+<Scene=
+	<Items=
+		<MObject=
+			<MItem=
+				<Id="land_mountains">
+				<UId=0>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****®w½Ý+**ªi®w½Ý>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****’`ê+**ªi’`ê>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****²ÝÞ+**ªi²ÝÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-2.850000>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_mountains">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_grass_1">
+				<UId=1>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Z]ê+**ªiZ]ê>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****ÂäÜÞ+**ªiÂäÜÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-6.849998>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_grass_1">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_grass_2">
+				<UId=2>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Z]ê+**ªiZ]ê>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****:ÚÞ+**ªi:ÚÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-7.349998>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_grass_2">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_grass_3">
+				<UId=3>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****úö*ë+**ªiúö*ë>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****B*ÌÞ+**ªiB*ÌÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-8.050003>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_grass_3">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_grass_4">
+				<UId=4>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Z]9ë+**ªiZ]9ë>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****b½ÅÞ+**ªib½ÅÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-8.949997>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_grass_4">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_grass_0">
+				<UId=5>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Z]ýê+**ªiZ]ýê>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****"¤áÞ+**ªi"¤áÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=-6.599998>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_grass_0">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_cloud_4">
+				<UId=6>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****úö¶i+**ªiúö¶i>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****‚^+**ªi‚^>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=1.100000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_cloud_4">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_cloud_3">
+				<UId=7>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****úöi+**ªiúöi>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****JÏ^+**ªiJÏ^>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=1.850000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_cloud_3">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_cloud_2">
+				<UId=8>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******zj+**ªi**zj>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Z/^+**ªiZ/^>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=3.250000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_cloud_2">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_cloud_1">
+				<UId=9>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****ÂÃãj+**ªiÂÃãj>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Z/^+**ªiZ/^>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=5.799999>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_cloud_1">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_cloud_0">
+				<UId=10>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****=J®&Ü+**ªi=J®&Ü>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****Z]1k+**ªiZ]1k>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==20:18@
++****’F=M^+**ªi’F=M^>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-0.000000>
+						<Y=8.449997>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="land_cloud_0">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="sky_raster">
+				<UId=11>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****W-üë+**ªiW-üë>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++********+**ªi****>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-26.251551>
+						<Y=0.000000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="sky_raster">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_moon">
+				<UId=12>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****¢óGì+**ªi¢óGì>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****jd«ê+**ªijd«ê>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****C´gÞ+**ªiC´gÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-39.446747>
+						<Y=-4.038361>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/games/beast/land_moon.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="land_barrier">
+				<UId=13>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions=
+						<Motion=
+							<Id="Take 001">
+							<UseQuaternion=True>
+							<QChannel=
+								<BinaryKeys=
+									<Count=21>
+									<Data==426:420@
+****Xçå\***ª******ªi÷övgXçå\***ª******ªi÷öögXçå\***ª******ªiÄÃCh
+Xçå\***ª******ªi÷övhXçå\***ª******ªi**ªhXçå\***ª******ªiÄÃÃhXçå\
+***ª******ªi]]ÝhXçå\***ª******ªi÷ööhXçå\***ª******ªihXçå\***ª
+******ªi***iXçå\***ª******ªi÷ö6iXçå\***ª******ªiÄÃCiXçå\***ª****
+**ªiPiXçå\***ª******ªi]]]iXçå\***ª******ªi**jiXçå\***ª******ªi
+÷öviXçå\***ª******ªiÄÃƒiXçå\***ª******ªiiXçå\***ª******ªi]]i
+Xçå\***ª******ªi**ªiXçå\***ª******ªi>
+								>
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****{ì+**ªi{ì>
+									>
+								>
+								<Id="PositionX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****æM1ë+**ªiæM1ë>
+									>
+								>
+								<Id="PositionY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++****_ðÞ+**ªi_ðÞ>
+									>
+								>
+								<Id="PositionZ">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleX">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleY">
+							>
+							<Channel=
+								<Curve=
+									<BinaryKnot=
+										<Count=2>
+										<Data==18:18@
++******ªi+**ªi**ªi>
+									>
+								>
+								<Id="ScaleZ">
+							>
+						>
+					>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-52.482285>
+						<Y=-8.446224>
+						<Z=-0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/games/beast/land_barrier.nmg">
+				<CacheGeometry=True>
+			>
+		>
+	>
+	<Constraints>
+	<Globals=
+		<BackgroundColor=
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=0.000000>
+		>
+		<AmbientColor=
+			<X=0.400000>
+			<Y=0.400000>
+			<Z=0.400000>
+		>
+		<TimeOfDay=0.500000>
+		<AmbientIntensity=1.000000>
+		<TargetExposure=0.250000>
+		<FogNear=0.000000>
+		<FogFar=0.000000>
+		<FogColor=
+			<X=1.000000>
+			<Y=1.000000>
+			<Z=1.000000>
+		>
+	>
+	<Physics=
+		<Frequency=59.999996>
+	>
+>

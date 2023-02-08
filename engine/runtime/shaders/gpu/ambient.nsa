@@ -1,0 +1,12 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Uniform=<Name="gbuffer1"><Semantic="GBuffer1">>
+		<Uniform=<Name="gbuffer3"><Semantic="GBuffer3">>
+		<Uniform=<Name="u_ambientc"><Semantic="AmbientColor">>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+	>
+	<Vertex="@core/shaders/gpu/position_no_transform_v.txt">
+	<Fragment="@core/shaders/gpu/ambient_f.txt">
+>

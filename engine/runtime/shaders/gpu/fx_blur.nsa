@@ -1,0 +1,16 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="u_source"><Semantic="NativeTexture">>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+		<Uniform=<Name="u_fx_scale"><Semantic="FxScale">>
+		
+		<Uniform=<Name="u_pass"><Type="float">>
+		<Uniform=<Name="u_attenuation"><Type="float">>
+		<Uniform=<Name="u_blur_d"><Type="vec2">>
+	>
+	<Vertex="@core/shaders/gpu/position_no_transform_v.txt">
+	<Fragment="@core/shaders/gpu/fx_blur_f.txt">
+>

@@ -1,0 +1,2 @@
+vec4	ref = texture2D(u_tex, v_uv);
+%out.color% = vec4(max(ref.rgb - u_cutoff, 0.0), ref.a);

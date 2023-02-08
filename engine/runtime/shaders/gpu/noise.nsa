@@ -1,0 +1,18 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="u_mvp"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_tex"><Semantic="NativeTexture">>
+		<Uniform=<Name="u_noise"><Semantic="NoiseMap">>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+
+		<Uniform=<Name="u_strength"><Type="float">>
+		<Uniform=<Name="u_mono"><Type="float">>
+		<Uniform=<Name="u_bias"><Type="float">>
+		<Uniform=<Name="u_random"><Type="vec2">>
+	>
+	<Vertex="@core/shaders/gpu/simple_v.txt">
+	<Fragment="@core/shaders/gpu/noise_f.txt">
+>

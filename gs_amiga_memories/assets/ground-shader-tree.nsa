@@ -1,0 +1,112 @@
+<Version=1.0>
+<ShaderMap=
+	<Pos=
+		<X=0.000000>
+		<Y=0.000000>
+	>
+	<Map=
+		<Entry=
+			<Type="Geometry Normal">
+			<Pos=
+				<X=0.000000>
+				<Y=0.000000>
+			>
+			<Param>
+		>
+		<Entry=
+			<Type="Material Parameter">
+			<Pos=
+				<X=0.000000>
+				<Y=0.000000>
+			>
+			<Param=
+				<Param=0>
+			>
+		>
+		<Entry=
+			<Type="Material Parameter">
+			<Pos=
+				<X=0.000000>
+				<Y=0.000000>
+			>
+			<Param=
+				<Param=1>
+			>
+		>
+		<Entry=
+			<Type="Material Parameter">
+			<Pos=
+				<X=0.000000>
+				<Y=0.000000>
+			>
+			<Param=
+				<Param=4>
+			>
+		>
+		<Entry=
+			<Type="Material Parameter">
+			<Pos=
+				<X=0.000000>
+				<Y=0.000000>
+			>
+			<Param=
+				<Param=2>
+			>
+		>
+		<Entry=
+			<Type="Material Parameter">
+			<Pos=
+				<X=0.000000>
+				<Y=0.000000>
+			>
+			<Param=
+				<Param=5>
+			>
+		>
+		<Entry=
+			<Type="Material Parameter">
+			<Pos=
+				<X=0.000000>
+				<Y=0.000000>
+			>
+			<Param=
+				<Param=6>
+			>
+		>
+	>
+	<Normal=
+		<Block=
+			<Index=0>
+		>
+	>
+	<Diffuse=
+		<Block=
+			<Index=1>
+		>
+	>
+	<Specular=
+		<Block=
+			<Index=2>
+		>
+	>
+	<Glossiness=
+		<Block=
+			<Index=3>
+		>
+	>
+	<Constant=
+		<Block=
+			<Index=4>
+		>
+	>
+	<Opacity=
+		<Block=
+			<Index=5>
+		>
+	>
+	<Reflection=
+		<Block=
+			<Index=6>
+		>
+	>
+>

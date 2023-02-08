@@ -1,0 +1,8 @@
+#(UnpackNormalDepth)
+
+%main%
+{
+	vec2	UV = %in.fragcoord%.xy * u_ibs;
+	vec4	norm_dpth = UnpackNormalDepth(UV);
+	%out.color% = vec4(u_fog_col.rgb, clamp((norm_dpth.w - u_fog_near) * u_fog_irange, 0.0, 1.0));
+}

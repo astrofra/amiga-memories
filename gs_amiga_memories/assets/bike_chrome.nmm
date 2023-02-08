@@ -1,0 +1,44 @@
+<Version=1.0>
+<Material=
+	<Diffuse=
+		<X=0.384314>
+		<Y=0.384314>
+		<Z=0.384314>
+		<W=1.000000>
+	>
+	<Ambient=
+		<X=0.588000>
+		<Y=0.588000>
+		<Z=0.588000>
+	>
+	<Glossiness=0.750000>
+	<AlphaThreshold=0.100000>
+	<PhysicMaterial=
+		<StaticFriction=0.750000>
+		<DynamicFriction=0.500000>
+		<Restitution=0.100000>
+	>
+	<RenderMask=
+		<Smoothing>
+	>
+	<TextureStage=
+		<Index=0>
+		<Texture="assets/envmap_room_reflection_blur_dark.tga">
+		<UV=0>
+		<Channel="SelfIllum">
+		<UVSource="LSNormal">
+	>
+	<TextureStage=
+		<Index=1>
+		<Texture="assets/fallof_map_0.png">
+		<UV=0>
+		<Channel="Light">
+		<UVSource="LSNormal">
+	>
+	<TextureStage=
+		<Index=2>
+		<Texture="assets/a500_case_spec.png">
+		<UV=0>
+		<Channel="Specular">
+	>
+>

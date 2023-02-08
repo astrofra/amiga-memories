@@ -1,0 +1,3 @@
+phonemes.exe test.wav  -> fichier brut, milliseconde et phoneme
+
+phonemes.exe test.wav -x  -> en xml

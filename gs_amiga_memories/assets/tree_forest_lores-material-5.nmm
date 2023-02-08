@@ -1,0 +1,33 @@
+<Version=1.0>
+<Material=
+	<Specular=
+		<X=0.000000>
+		<Y=0.000000>
+		<Z=0.000000>
+	>
+	<Glossiness=0.100000>
+	<PhysicMaterial=
+		<StaticFriction=0.750000>
+		<DynamicFriction=0.500000>
+		<Restitution=0.100000>
+	>
+	<RenderMask=
+		<Smoothing>
+		<VertexColor>
+	>
+	<TextureStage=
+		<Index=0>
+		<Active>
+		<Texture="assets/tree_japanese_maple_a.dds">
+		<UV=0>
+		<NoWrapV>
+		<Channel="Color">
+	>
+	<TextureStage=
+		<Index=1>
+		<Texture="assets/tree_japanese_maple_a.dds">
+		<UV=0>
+		<NoWrapV>
+		<Channel="Opacity">
+	>
+>

@@ -1,0 +1,19 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="u_tex"><Semantic="NativeTexture">>
+		<Uniform=<Name="u_normal_depth"><Semantic="NativeTexture">>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+		<Uniform=<Name="u_ivs"><Semantic="InverseViewportSize">>
+		<Uniform=<Name="u_fx_scale"><Semantic="FxScale">>
+
+		<Uniform=<Name="u_znear"><Semantic="ZNear">>
+		<Uniform=<Name="u_zfar"><Semantic="ZFar">>
+
+		<Uniform=<Name="u_blur_radius"><Type="float">>
+	>
+	<Vertex="@core/shaders/gpu/position_no_transform_v.txt">
+	<Fragment="@core/shaders/gpu/ssao_blur_f.txt">
+>

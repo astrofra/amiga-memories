@@ -1,0 +1,37 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="gbuffer0"><Semantic="GBuffer0">>
+		<Uniform=<Name="gbuffer1"><Semantic="GBuffer1">>
+		<Uniform=<Name="gbuffer2"><Semantic="GBuffer2">>
+
+		<Uniform=<Name="u_mvp"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_mv"><Semantic="ModelViewMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+		<Uniform=<Name="u_vdo"><Semantic="ViewDepthOffset">>
+		<Uniform=<Name="u_lvp"><Semantic="LightViewPosition">>
+		<Uniform=<Name="u_diffc"><Semantic="LightDiffuseColor">>
+		<Uniform=<Name="u_specc"><Semantic="LightSpecularColor">>
+		<Uniform=<Name="u_shadowc"><Semantic="LightShadowColor">>
+		<Uniform=<Name="u_lsb"><Semantic="LightShadowBias">>
+		<Uniform=<Name="u_iss"><Semantic="InverseShadowMapSize">>
+		<Uniform=<Name="u_lr"><Semantic="LightRange">>
+		<Uniform=<Name="u_vtl"><Semantic="ViewToLightMatrix">>
+
+		<Uniform=<Name="psm"><Semantic="LightShadowMap0">>
+		<Uniform=<Name="psm_0_projection_matrix"><Semantic="LightShadowMatrix0">>
+		<Uniform=<Name="psm_1_projection_matrix"><Semantic="LightShadowMatrix1">>
+		<Uniform=<Name="psm_2_projection_matrix"><Semantic="LightShadowMatrix2">>
+		<Uniform=<Name="psm_3_projection_matrix"><Semantic="LightShadowMatrix3">>
+		<Uniform=<Name="psm_4_projection_matrix"><Semantic="LightShadowMatrix4">>
+		<Uniform=<Name="psm_5_projection_matrix"><Semantic="LightShadowMatrix5">>
+		<Uniform=<Name="u_noise"><Semantic="NoiseMap">>
+	>
+	<Varying=
+		<Variable=<Name="forward"><Type="vec3">>
+	>
+	<Vertex="@core/shaders/gpu/deferred/pointlight_shadow_v.txt">
+	<Fragment="@core/shaders/gpu/deferred/pointlight_shadow_f.txt">
+>

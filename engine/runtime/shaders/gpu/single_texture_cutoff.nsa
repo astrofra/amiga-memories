@@ -1,0 +1,17 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Attribute=<Name="a_uv"><Semantic="UV0">>
+
+		<Uniform=<Name="u_mvp"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_tex"><Semantic="NativeTexture">>
+
+		<Uniform=<Name="u_cutoff"><Type="float">>
+	>
+	<Varying=
+		<Variable=<Name="v_uv"><Type="vec2">>
+	>
+	<Vertex="@core/shaders/gpu/single_texture_v.txt">
+	<Fragment="@core/shaders/gpu/single_texture_cutoff_f.txt">
+>

@@ -1,0 +1,19 @@
+<Version=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Attribute=<Name="a_uv"><Semantic="UV0">>
+
+		<Uniform=<Name="u_tex"><Semantic="MaterialTexture0"><Scope=<Fragment>>>
+	>
+	<Varying=
+		<Variable=<Name="v_uv"><Type="vec2">>
+	>
+	<VertexSource="
+v_uv = a_uv;
+	">
+	<PixelSource="
+vec4 rgba = texture2D(u_tex, v_uv);
+%constant% = rgba;
+	">
+>

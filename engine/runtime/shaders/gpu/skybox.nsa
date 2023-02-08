@@ -1,0 +1,32 @@
+<Version=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="u_sky"><Semantic="NormalMatrix">>
+		<Uniform=<Name="u_time"><Semantic="TimeOfDay">>
+		<Uniform=<Name="u_ratio"><Semantic="ViewportRatio"><Scope=<Vertex>>>
+
+		<Uniform=<Name="u_layer0"><Semantic="CubeTexture">>
+		<Uniform=<Name="u_layer1"><Semantic="CubeTexture">>
+
+		<Uniform=<Name="u_mytex"><Semantic="Texture"><Texture="graphics/pop.jpg">>
+	>
+	<Varying=
+		<Variable=<Name="v_uv"><Type="vec2">>
+	>
+	<VertexSource=
+"
+v_uv = (a_position.xy * vec2(0.4, 0.4)) / u_ratio;
+%out.position% = vec4(a_position, 1.0);
+"
+	>
+	<FragmentSource=
+"
+vec3 v = vec3(v_uv, 1.0);
+v = n_mtx_mul(u_sky, normalize(v));
+
+%out.color% = mix(textureCube(u_layer0, v), textureCube(u_layer1, v), u_time);
+"
+	>
+>

@@ -1,0 +1,2 @@
+v_uv = a_uv;
+%out.position% = n_mtx_mul(u_mvp, vec4(a_position, 1.0));

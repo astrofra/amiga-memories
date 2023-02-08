@@ -1,0 +1,4198 @@
+<Version=1.0>
+<Scene=
+	<SceneMotionContainer=
+		<SceneMotion=
+			<Name="Take 001">
+			<ItemMotions=
+				<ItemMotion=
+					<UId=0>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****Xçå\***ª******ªiÔÔTgXçå\***ª******ªiÕÔÔgXçå\***ª******ªi***h
+Xçå\***ª******ªiÕÔThXçå\***ª******ªihXçå\***ª******ªi**ªhXçå\
+***ª******ªi¿hXçå\***ª******ªiÕÔÔhXçå\***ª******ªi**êhXçå\***ª
+******ªiÿhXçå\***ª******ªiÕÔhXçå\***ª******ªi***iXçå\***ª****
+**ªiÕÔ4iXçå\***ª******ªi?iXçå\***ª******ªi**JiXçå\***ª******ªi
+ÕÔTiXçå\***ª******ªi_iXçå\***ª******ªi**jiXçå\***ª******ªiÕÔti
+Xçå\***ª******ªiiXçå\***ª******ªi**ŠiXçå\***ª******ªiÕÔ”iXçå\
+***ª******ªiŸiXçå\***ª******ªi**ªiXçå\***ª******ªi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=1>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****KYéÚQahÚQahKYiÔÔTgKYéÚQahÚQahKYiÕÔÔgKYéÚQahÚQahKYi***h
+KYéÚQahÚQahKYiÕÔThKYéÚQahÚQahKYihKYéÚQahÚQahKYi**ªhKYé
+ÚQahÚQahKYi¿hKYéÚQahÚQahKYiÕÔÔhKYéÚQahÚQahKYi**êhKYéÚQah
+ÚQahKYiÿhKYéÚQahÚQahKYiÕÔhKYéÚQahÚQahKYi***iKYéÚQahÚQah
+KYiÕÔ4iKYéÚQahÚQahKYi?iKYéÚQahÚQahKYi**JiKYéÚQahÚQahKYi
+ÕÔTiKYéÚQahÚQahKYi_iKYéÚQahÚQahKYi**jiKYéÚQahÚQahKYiÕÔti
+KYéÚQahÚQahKYiiKYéÚQahÚQahKYi**ŠiKYéÚQahÚQahKYiÕÔ”iKYé
+ÚQahÚQahKYiŸiKYéÚQahÚQahKYi**ªiKYéÚQahÚQahKYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****ÍUAì+ÔÔTgÍUAì+ÕÔÔgÍUAì+***hÍUAì+ÕÔThÍUAì+hÍUAì+**ªhÍUAì+
+¿hÍUAì+ÕÔÔhÍUAì+**êhÍUAì+ÿhÍUAì+ÕÔhÍUAì+***iÍUAì+ÕÔ4iÍUAì+
+?iÍUAì+**JiÍUAì+ÕÔTiÍUAì+_iÍUAì+**jiÍUAì+ÕÔtiÍUAì+iÍUAì+**
+ŠiÍUAì+ÕÔ”iÍUAì+ŸiÍUAì+**ªiÍUAì>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****€Xk+ÔÔTg€Xk+ÕÔÔg€Xk+***h€Xk+ÕÔTh€Xk+h€Xk+**ªh€Xk+
+¿h€Xk+ÕÔÔh€Xk+**êh€Xk+ÿh€Xk+ÕÔh€Xk+***i€Xk+ÕÔ4i€Xk+
+?i€Xk+**Ji€Xk+ÕÔTi€Xk+_i€Xk+**ji€Xk+ÕÔti€Xk+i€Xk+**
+Ši€Xk+ÕÔ”i€Xk+Ÿi€Xk+**ªi€Xk>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=2>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****P#YééïShéïShP#YiÔÔTgP#YééïShéïShP#YiÕÔÔgP#YééïShéïShP#Yi***h
+P#YééïShéïShP#YiÕÔThP#YééïShéïShP#YihP#YééïShéïShP#Yi**ªhP#Yé
+éïShéïShP#Yi¿hP#YééïShéïShP#YiÕÔÔhP#YééïShéïShP#Yi**êhP#YééïSh
+éïShP#YiÿhP#YééïShéïShP#YiÕÔhP#YééïShéïShP#Yi***iP#YééïShéïSh
+P#YiÕÔ4iP#YééïShéïShP#Yi?iP#YééïShéïShP#Yi**JiP#YééïShéïShP#Yi
+ÕÔTiP#YééïShéïShP#Yi_iP#YééïShéïShP#Yi**jiP#YééïShéïShP#YiÕÔti
+P#YééïShéïShP#YiiP#YééïShéïShP#Yi**ŠiP#YééïShéïShP#YiÕÔ”iP#Yé
+éïShéïShP#YiŸiP#YééïShéïShP#Yi**ªiP#YééïShéïShP#Yi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Øµ‘l+ÔÔTgØµ‘l+ÕÔÔgØµ‘l+***hØµ‘l+ÕÔThØµ‘l+hØµ‘l+**ªhØµ‘l+
+¿hØµ‘l+ÕÔÔhØµ‘l+**êhØµ‘l+ÿhØµ‘l+ÕÔhØµ‘l+***iØµ‘l+ÕÔ4iØµ‘l+
+?iØµ‘l+**JiØµ‘l+ÕÔTiØµ‘l+_iØµ‘l+**jiØµ‘l+ÕÔtiØµ‘l+iØµ‘l+**
+ŠiØµ‘l+ÕÔ”iØµ‘l+ŸiØµ‘l+**ªiØµ‘l>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****³|Îk+ÔÔTg³|Îk+ÕÔÔg³|Îk+***h³|Îk+ÕÔTh³|Îk+h³|Îk+**ªh³|Îk+
+¿h³|Îk+ÕÔÔh³|Îk+**êh³|Îk+ÿh³|Îk+ÕÔh³|Îk+***i³|Îk+ÕÔ4i³|Îk+
+?i³|Îk+**Ji³|Îk+ÕÔTi³|Îk+_i³|Îk+**ji³|Îk+ÕÔti³|Îk+i³|Îk+**
+Ši³|Îk+ÕÔ”i³|Îk+Ÿi³|Îk+**ªi³|Îk>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=3>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****Ó}^éE§gE§gÒ}^iÔÔTgÓ}^éE§gE§gÒ}^iÕÔÔgÓ}^éE§gE§gÒ}^i***h
+Ó}^éE§gE§gÒ}^iÕÔThÓ}^éE§gE§gÒ}^ihÓ}^éE§gE§gÒ}^i**ªhÓ}^é
+E§gE§gÒ}^i¿hÓ}^éE§gE§gÒ}^iÕÔÔhÓ}^éE§gE§gÒ}^i**êhÓ}^éE§g
+E§gÒ}^iÿhÓ}^éE§gE§gÒ}^iÕÔhÓ}^éE§gE§gÒ}^i***iÓ}^éE§gE§g
+Ò}^iÕÔ4iÓ}^éE§gE§gÒ}^i?iÓ}^éE§gE§gÒ}^i**JiÓ}^éE§gE§gÒ}^i
+ÕÔTiÓ}^éE§gE§gÒ}^i_iÓ}^éE§gE§gÒ}^i**jiÓ}^éE§gE§gÒ}^iÕÔti
+Ó}^éE§gE§gÒ}^iiÓ}^éE§gE§gÒ}^i**ŠiÓ}^éE§gE§gÒ}^iÕÔ”iÓ}^é
+E§gE§gÒ}^iŸiÓ}^éE§gE§gÒ}^i**ªiÓ}^éE§gE§gÒ}^i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Ì8m+ÔÔTgÌ8m+ÕÔÔgÌ8m+***hÌ8m+ÕÔThÌ8m+hÌ8m+**ªhÌ8m+
+¿hÌ8m+ÕÔÔhÌ8m+**êhÌ8m+ÿhÌ8m+ÕÔhÌ8m+***iÌ8m+ÕÔ4iÌ8m+
+?iÌ8m+**JiÌ8m+ÕÔTiÌ8m+_iÌ8m+**jiÌ8m+ÕÔtiÌ8m+iÌ8m+**
+ŠiÌ8m+ÕÔ”iÌ8m+ŸiÌ8m+**ªiÌ8m>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****l¥Ök+ÔÔTgl¥Ök+ÕÔÔgl¥Ök+***hl¥Ök+ÕÔThl¥Ök+hl¥Ök+**ªhl¥Ök+
+¿hl¥Ök+ÕÔÔhl¥Ök+**êhl¥Ök+ÿhl¥Ök+ÕÔhl¥Ök+***il¥Ök+ÕÔ4il¥Ök+
+?il¥Ök+**Jil¥Ök+ÕÔTil¥Ök+_il¥Ök+**jil¥Ök+ÕÔtil¥Ök+il¥Ök+**
+Šil¥Ök+ÕÔ”il¥Ök+Ÿil¥Ök+**ªil¥Ök>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=4>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****Ó}^éE§gE§gÒ}^iÔÔTgÓ}^éE§gE§gÒ}^iÕÔÔgÓ}^éE§gE§gÒ}^i***h
+Ó}^éE§gE§gÒ}^iÕÔThÓ}^éE§gE§gÒ}^ihÓ}^éE§gE§gÒ}^i**ªhÓ}^é
+E§gE§gÒ}^i¿hÓ}^éE§gE§gÒ}^iÕÔÔhÓ}^éE§gE§gÒ}^i**êhÓ}^éE§g
+E§gÒ}^iÿhÓ}^éE§gE§gÒ}^iÕÔhÓ}^éE§gE§gÒ}^i***iÓ}^éE§gE§g
+Ò}^iÕÔ4iÓ}^éE§gE§gÒ}^i?iÓ}^éE§gE§gÒ}^i**JiÓ}^éE§gE§gÒ}^i
+ÕÔTiÓ}^éE§gE§gÒ}^i_iÓ}^éE§gE§gÒ}^i**jiÓ}^éE§gE§gÒ}^iÕÔti
+Ó}^éE§gE§gÒ}^iiÓ}^éE§gE§gÒ}^i**ŠiÓ}^éE§gE§gÒ}^iÕÔ”iÓ}^é
+E§gE§gÒ}^iŸiÓ}^éE§gE§gÒ}^i**ªiÓ}^éE§gE§gÒ}^i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****](:m+ÔÔTg](:m+ÕÔÔg](:m+***h](:m+ÕÔTh](:m+h](:m+**ªh](:m+
+¿h](:m+ÕÔÔh](:m+**êh](:m+ÿh](:m+ÕÔh](:m+***i](:m+ÕÔ4i](:m+
+?i](:m+**Ji](:m+ÕÔTi](:m+_i](:m+**ji](:m+ÕÔti](:m+i](:m+**
+Ši](:m+ÕÔ”i](:m+Ÿi](:m+**ªi](:m>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****N¸5l+ÔÔTgN¸5l+ÕÔÔgN¸5l+***hN¸5l+ÕÔThN¸5l+hN¸5l+**ªhN¸5l+
+¿hN¸5l+ÕÔÔhN¸5l+**êhN¸5l+ÿhN¸5l+ÕÔhN¸5l+***iN¸5l+ÕÔ4iN¸5l+
+?iN¸5l+**JiN¸5l+ÕÔTiN¸5l+_iN¸5l+**jiN¸5l+ÕÔtiN¸5l+iN¸5l+**
+ŠiN¸5l+ÕÔ”iN¸5l+ŸiN¸5l+**ªiN¸5l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=5>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****Ý^éIrUgIrUgÝ^iÔÔTgÝ^éIrUgIrUgÝ^iÕÔÔgÝ^éIrUgIrUgÝ^i***h
+Ý^éIrUgIrUgÝ^iÕÔThÝ^éIrUgIrUgÝ^ihÝ^éIrUgIrUgÝ^i**ªhÝ^é
+IrUgIrUgÝ^i¿hÝ^éIrUgIrUgÝ^iÕÔÔhÝ^éIrUgIrUgÝ^i**êhÝ^éIrUg
+IrUgÝ^iÿhÝ^éIrUgIrUgÝ^iÕÔhÝ^éIrUgIrUgÝ^i***iÝ^éIrUgIrUg
+Ý^iÕÔ4iÝ^éIrUgIrUgÝ^i?iÝ^éIrUgIrUgÝ^i**JiÝ^éIrUgIrUgÝ^i
+ÕÔTiÝ^éIrUgIrUgÝ^i_iÝ^éIrUgIrUgÝ^i**jiÝ^éIrUgIrUgÝ^iÕÔti
+Ý^éIrUgIrUgÝ^iiÝ^éIrUgIrUgÝ^i**ŠiÝ^éIrUgIrUgÝ^iÕÔ”iÝ^é
+IrUgIrUgÝ^iŸiÝ^éIrUgIrUgÝ^i**ªiÝ^éIrUgIrUgÝ^i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==253:225@
++****÷¤=@l+ÔÔTg÷¤=@l+ÕÔÔg÷¤=@l+***h÷¤=@l+ÕÔTh÷¤=@l+h÷¤=@l+**ª
+h÷¤=@l+¿h÷¤=@l+ÕÔÔh÷¤=@l+**êh÷¤=@l+ÿh÷¤=@l+ÕÔh÷¤=@l+***i÷¤=@
+l+ÕÔ4i÷¤=@l+?i÷¤=@l+**Ji÷¤=@l+ÕÔTi÷¤=@l+_i÷¤=@l+**ji÷¤=@l+ÕÔ
+ti÷¤=@l+i÷¤=@l+**Ši÷¤=@l+ÕÔ”i÷¤=@l+Ÿi÷¤=@l+**ªi÷¤=@l>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Œ2l+ÔÔTgŒ2l+ÕÔÔgŒ2l+***hŒ2l+ÕÔThŒ2l+hŒ2l+**ªhŒ2l+
+¿hŒ2l+ÕÔÔhŒ2l+**êhŒ2l+ÿhŒ2l+ÕÔhŒ2l+***iŒ2l+ÕÔ4iŒ2l+
+?iŒ2l+**JiŒ2l+ÕÔTiŒ2l+_iŒ2l+**jiŒ2l+ÕÔtiŒ2l+iŒ2l+**
+ŠiŒ2l+ÕÔ”iŒ2l+ŸiŒ2l+**ªiŒ2l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=6>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****._é********._iÔÔTg._é********._iÕÔÔg._é********._i***h
+._é********._iÕÔTh._é********._ih._é********._i**ªh._é
+********._i¿h._é********._iÕÔÔh._é********._i**êh._é****
+****._iÿh._é********._iÕÔh._é********._i***i._é********
+._iÕÔ4i._é********._i?i._é********._i**Ji._é********._i
+ÕÔTi._é********._i_i._é********._i**ji._é********._iÕÔti
+._é********._ii._é********._i**Ši._é********._iÕÔ”i._é
+********._iŸi._é********._i**ªi._é********._i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****aLÉl+ÔÔTgaLÉl+ÕÔÔgaLÉl+***haLÉl+ÕÔThaLÉl+haLÉl+**ªhaLÉl+
+¿haLÉl+ÕÔÔhaLÉl+**êhaLÉl+ÿhaLÉl+ÕÔhaLÉl+***iaLÉl+ÕÔ4iaLÉl+
+?iaLÉl+**JiaLÉl+ÕÔTiaLÉl+_iaLÉl+**jiaLÉl+ÕÔtiaLÉl+iaLÉl+**
+ŠiaLÉl+ÕÔ”iaLÉl+ŸiaLÉl+**ªiaLÉl>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++*****çnl+ÔÔTg*çnl+ÕÔÔg*çnl+***h*çnl+ÕÔTh*çnl+h*çnl+**ªh*çnl+
+¿h*çnl+ÕÔÔh*çnl+**êh*çnl+ÿh*çnl+ÕÔh*çnl+***i*çnl+ÕÔ4i*çnl+
+?i*çnl+**Ji*çnl+ÕÔTi*çnl+_i*çnl+**ji*çnl+ÕÔti*çnl+i*çnl+**
+Ši*çnl+ÕÔ”i*çnl+Ÿi*çnl+**ªi*çnl>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=7>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****KYéÚQahÚQahKYiÔÔTgKYéÚQahÚQahKYiÕÔÔgKYéÚQahÚQahKYi***h
+KYéÚQahÚQahKYiÕÔThKYéÚQahÚQahKYihKYéÚQahÚQahKYi**ªhKYé
+ÚQahÚQahKYi¿hKYéÚQahÚQahKYiÕÔÔhKYéÚQahÚQahKYi**êhKYéÚQah
+ÚQahKYiÿhKYéÚQahÚQahKYiÕÔhKYéÚQahÚQahKYi***iKYéÚQahÚQah
+KYiÕÔ4iKYéÚQahÚQahKYi?iKYéÚQahÚQahKYi**JiKYéÚQahÚQahKYi
+ÕÔTiKYéÚQahÚQahKYi_iKYéÚQahÚQahKYi**jiKYéÚQahÚQahKYiÕÔti
+KYéÚQahÚQahKYiiKYéÚQahÚQahKYi**ŠiKYéÚQahÚQahKYiÕÔ”iKYé
+ÚQahÚQahKYiŸiKYéÚQahÚQahKYi**ªiKYéÚQahÚQahKYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****×Óqí+ÔÔTg×Óqí+ÕÔÔg×Óqí+***h×Óqí+ÕÔTh×Óqí+h×Óqí+**ªh×Óqí+
+¿h×Óqí+ÕÔÔh×Óqí+**êh×Óqí+ÿh×Óqí+ÕÔh×Óqí+***i×Óqí+ÕÔ4i×Óqí+
+?i×Óqí+**Ji×Óqí+ÕÔTi×Óqí+_i×Óqí+**ji×Óqí+ÕÔti×Óqí+i×Óqí+**
+Ši×Óqí+ÕÔ”i×Óqí+Ÿi×Óqí+**ªi×Óqí>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****¸N7j+ÔÔTg¸N7j+ÕÔÔg¸N7j+***h¸N7j+ÕÔTh¸N7j+h¸N7j+**ªh¸N7j+
+¿h¸N7j+ÕÔÔh¸N7j+**êh¸N7j+ÿh¸N7j+ÕÔh¸N7j+***i¸N7j+ÕÔ4i¸N7j+
+?i¸N7j+**Ji¸N7j+ÕÔTi¸N7j+_i¸N7j+**ji¸N7j+ÕÔti¸N7j+i¸N7j+**
+Ši¸N7j+ÕÔ”i¸N7j+Ÿi¸N7j+**ªi¸N7j>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=8>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****.ßè.ßèšîFi›îFiÔÔTg.ßè.ßèšîFi›îFiÕÔÔg.ßè.ßèšîFi›îFi***h
+.ßè.ßèšîFi›îFiÕÔTh.ßè.ßèšîFi›îFih.ßè.ßèšîFi›îFi**ªh.ßè
+.ßèšîFi›îFi¿h.ßè.ßèšîFi›îFiÕÔÔh.ßè.ßèšîFi›îFi**êh.ßè.ßè
+šîFi›îFiÿh.ßè.ßèšîFi›îFiÕÔh.ßè.ßèšîFi›îFi***i.ßè.ßèšîFi
+›îFiÕÔ4i.ßè.ßèšîFi›îFi?i.ßè.ßèšîFi›îFi**Ji.ßè.ßèšîFi›îFi
+ÕÔTi.ßè.ßèšîFi›îFi_i.ßè.ßèšîFi›îFi**ji.ßè.ßèšîFi›îFiÕÔti
+.ßè.ßèšîFi›îFii.ßè.ßèšîFi›îFi**Ši.ßè.ßèšîFi›îFiÕÔ”i.ßè
+.ßèšîFi›îFiŸi.ßè.ßèšîFi›îFi**ªi.ßè.ßèšîFi›îFi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****(Æ;í+ÔÔTg(Æ;í+ÕÔÔg(Æ;í+***h(Æ;í+ÕÔTh(Æ;í+h(Æ;í+**ªh(Æ;í+
+¿h(Æ;í+ÕÔÔh(Æ;í+**êh(Æ;í+ÿh(Æ;í+ÕÔh(Æ;í+***i(Æ;í+ÕÔ4i(Æ;í+
+?i(Æ;í+**Ji(Æ;í+ÕÔTi(Æ;í+_i(Æ;í+**ji(Æ;í+ÕÔti(Æ;í+i(Æ;í+**
+Ši(Æ;í+ÕÔ”i(Æ;í+Ÿi(Æ;í+**ªi(Æ;í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****ƒDîk+ÔÔTgƒDîk+ÕÔÔgƒDîk+***hƒDîk+ÕÔThƒDîk+hƒDîk+**ªhƒDîk+
+¿hƒDîk+ÕÔÔhƒDîk+**êhƒDîk+ÿhƒDîk+ÕÔhƒDîk+***iƒDîk+ÕÔ4iƒDîk+
+?iƒDîk+**JiƒDîk+ÕÔTiƒDîk+_iƒDîk+**jiƒDîk+ÕÔtiƒDîk+iƒDîk+**
+ŠiƒDîk+ÕÔ”iƒDîk+ŸiƒDîk+**ªiƒDîk>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==253:225@
++****C=}žj+ÔÔTgC=}žj+ÕÔÔgC=}žj+***hC=}žj+ÕÔThC=}žj+hC=}žj+**ª
+hC=}žj+¿hC=}žj+ÕÔÔhC=}žj+**êhC=}žj+ÿhC=}žj+ÕÔhC=}žj+***iC=}
+žj+ÕÔ4iC=}žj+?iC=}žj+**JiC=}žj+ÕÔTiC=}žj+_iC=}žj+**jiC=}žj+Õ
+ÔtiC=}žj+iC=}žj+**ŠiC=}žj+ÕÔ”iC=}žj+ŸiC=}žj+**ªiC=}žj>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****')©i+ÔÔTg')©i+ÕÔÔg')©i+***h')©i+ÕÔTh')©i+h')©i+**ªh')©i+
+¿h')©i+ÕÔÔh')©i+**êh')©i+ÿh')©i+ÕÔh')©i+***i')©i+ÕÔ4i')©i+
+?i')©i+**Ji')©i+ÕÔTi')©i+_i')©i+**ji')©i+ÕÔti')©i+i')©i+**
+Ši')©i+ÕÔ”i')©i+Ÿi')©i+**ªi')©i>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****ñMüi+ÔÔTgñMüi+ÕÔÔgñMüi+***hñMüi+ÕÔThñMüi+hñMüi+**ªhñMüi+
+¿hñMüi+ÕÔÔhñMüi+**êhñMüi+ÿhñMüi+ÕÔhñMüi+***iñMüi+ÕÔ4iñMüi+
+?iñMüi+**JiñMüi+ÕÔTiñMüi+_iñMüi+**jiñMüi+ÕÔtiñMüi+iñMüi+**
+ŠiñMüi+ÕÔ”iñMüi+ŸiñMüi+**ªiñMüi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=9>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****âYéuZThuZTháYiÔÔTgâYéuZThuZTháYiÕÔÔgâYéuZThuZTháYi***h
+âYéuZThuZTháYiÕÔThâYéuZThuZTháYihâYéuZThuZTháYi**ªhâYé
+uZThuZTháYi¿hâYéuZThuZTháYiÕÔÔhâYéuZThuZTháYi**êhâYéuZTh
+uZTháYiÿhâYéuZThuZTháYiÕÔhâYéuZThuZTháYi***iâYéuZThuZTh
+áYiÕÔ4iâYéuZThuZTháYi?iâYéuZThuZTháYi**JiâYéuZThuZTháYi
+ÕÔTiâYéuZThuZTháYi_iâYéuZThuZTháYi**jiâYéuZThuZTháYiÕÔti
+âYéuZThuZTháYiiâYéuZThuZTháYi**ŠiâYéuZThuZTháYiÕÔ”iâYé
+uZThuZTháYiŸiâYéuZThuZTháYi**ªiâYéuZThuZTháYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****-Cí+ÔÔTg-Cí+ÕÔÔg-Cí+***h-Cí+ÕÔTh-Cí+h-Cí+**ªh-Cí+
+¿h-Cí+ÕÔÔh-Cí+**êh-Cí+ÿh-Cí+ÕÔh-Cí+***i-Cí+ÕÔ4i-Cí+
+?i-Cí+**Ji-Cí+ÕÔTi-Cí+_i-Cí+**ji-Cí+ÕÔti-Cí+i-Cí+**
+Ši-Cí+ÕÔ”i-Cí+Ÿi-Cí+**ªi-Cí>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Ñ^®l+ÔÔTgÑ^®l+ÕÔÔgÑ^®l+***hÑ^®l+ÕÔThÑ^®l+hÑ^®l+**ªhÑ^®l+
+¿hÑ^®l+ÕÔÔhÑ^®l+**êhÑ^®l+ÿhÑ^®l+ÕÔhÑ^®l+***iÑ^®l+ÕÔ4iÑ^®l+
+?iÑ^®l+**JiÑ^®l+ÕÔTiÑ^®l+_iÑ^®l+**jiÑ^®l+ÕÔtiÑ^®l+iÑ^®l+**
+ŠiÑ^®l+ÕÔ”iÑ^®l+ŸiÑ^®l+**ªiÑ^®l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=10>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****âYéuZThuZTháYiÔÔTgâYéuZThuZTháYiÕÔÔgâYéuZThuZTháYi***h
+âYéuZThuZTháYiÕÔThâYéuZThuZTháYihâYéuZThuZTháYi**ªhâYé
+uZThuZTháYi¿hâYéuZThuZTháYiÕÔÔhâYéuZThuZTháYi**êhâYéuZTh
+uZTháYiÿhâYéuZThuZTháYiÕÔhâYéuZThuZTháYi***iâYéuZThuZTh
+áYiÕÔ4iâYéuZThuZTháYi?iâYéuZThuZTháYi**JiâYéuZThuZTháYi
+ÕÔTiâYéuZThuZTháYi_iâYéuZThuZTháYi**jiâYéuZThuZTháYiÕÔti
+âYéuZThuZTháYiiâYéuZThuZTháYi**ŠiâYéuZThuZTháYiÕÔ”iâYé
+uZThuZTháYiŸiâYéuZThuZTháYi**ªiâYéuZThuZTháYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****H±kí+ÔÔTgH±kí+ÕÔÔgH±kí+***hH±kí+ÕÔThH±kí+hH±kí+**ªhH±kí+
+¿hH±kí+ÕÔÔhH±kí+**êhH±kí+ÿhH±kí+ÕÔhH±kí+***iH±kí+ÕÔ4iH±kí+
+?iH±kí+**JiH±kí+ÕÔTiH±kí+_iH±kí+**jiH±kí+ÕÔtiH±kí+iH±kí+**
+ŠiH±kí+ÕÔ”iH±kí+ŸiH±kí+**ªiH±kí>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****‰§l+ÔÔTg‰§l+ÕÔÔg‰§l+***h‰§l+ÕÔTh‰§l+h‰§l+**ªh‰§l+
+¿h‰§l+ÕÔÔh‰§l+**êh‰§l+ÿh‰§l+ÕÔh‰§l+***i‰§l+ÕÔ4i‰§l+
+?i‰§l+**Ji‰§l+ÕÔTi‰§l+_i‰§l+**ji‰§l+ÕÔti‰§l+i‰§l+**
+Ši‰§l+ÕÔ”i‰§l+Ÿi‰§l+**ªi‰§l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=11>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****âYéuZThuZTháYiÔÔTgâYéuZThuZTháYiÕÔÔgâYéuZThuZTháYi***h
+âYéuZThuZTháYiÕÔThâYéuZThuZTháYihâYéuZThuZTháYi**ªhâYé
+uZThuZTháYi¿hâYéuZThuZTháYiÕÔÔhâYéuZThuZTháYi**êhâYéuZTh
+uZTháYiÿhâYéuZThuZTháYiÕÔhâYéuZThuZTháYi***iâYéuZThuZTh
+áYiÕÔ4iâYéuZThuZTháYi?iâYéuZThuZTháYi**JiâYéuZThuZTháYi
+ÕÔTiâYéuZThuZTháYi_iâYéuZThuZTháYi**jiâYéuZThuZTháYiÕÔti
+âYéuZThuZTháYiiâYéuZThuZTháYi**ŠiâYéuZThuZTháYiÕÔ”iâYé
+uZThuZTháYiŸiâYéuZThuZTháYi**ªiâYéuZThuZTháYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****B^í+ÔÔTgB^í+ÕÔÔgB^í+***hB^í+ÕÔThB^í+hB^í+**ªhB^í+
+¿hB^í+ÕÔÔhB^í+**êhB^í+ÿhB^í+ÕÔhB^í+***iB^í+ÕÔ4iB^í+
+?iB^í+**JiB^í+ÕÔTiB^í+_iB^í+**jiB^í+ÕÔtiB^í+iB^í+**
+ŠiB^í+ÕÔ”iB^í+ŸiB^í+**ªiB^í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****ÇÆŒl+ÔÔTgÇÆŒl+ÕÔÔgÇÆŒl+***hÇÆŒl+ÕÔThÇÆŒl+hÇÆŒl+**ªhÇÆŒl+
+¿hÇÆŒl+ÕÔÔhÇÆŒl+**êhÇÆŒl+ÿhÇÆŒl+ÕÔhÇÆŒl+***iÇÆŒl+ÕÔ4iÇÆŒl+
+?iÇÆŒl+**JiÇÆŒl+ÕÔTiÇÆŒl+_iÇÆŒl+**jiÇÆŒl+ÕÔtiÇÆŒl+iÇÆŒl+**
+ŠiÇÆŒl+ÕÔ”iÇÆŒl+ŸiÇÆŒl+**ªiÇÆŒl>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=12>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==558:500@
+****Sf[élr=}hlr=}hSf[iÔÔTgSf[élr=}hlr=}hSf[iÕÔÔgSf[élr=}hlr=}hSf
+[i***hSf[élr=}hlr=}hSf[iÕÔThSf[élr=}hlr=}hSf[ihSf[élr=}hlr=}h
+Sf[i**ªhSf[élr=}hlr=}hSf[i¿hSf[élr=}hlr=}hSf[iÕÔÔhSf[élr=}hlr=}
+hSf[i**êhSf[élr=}hlr=}hSf[iÿhSf[élr=}hlr=}hSf[iÕÔhSf[élr=}hlr
+=}hSf[i***iSf[élr=}hlr=}hSf[iÕÔ4iSf[élr=}hlr=}hSf[i?iSf[élr=}h
+lr=}hSf[i**JiSf[élr=}hlr=}hSf[iÕÔTiSf[élr=}hlr=}hSf[i_iSf[élr=}
+hlr=}hSf[i**jiSf[élr=}hlr=}hSf[iÕÔtiSf[élr=}hlr=}hSf[iiSf[élr
+=}hlr=}hSf[i**ŠiSf[élr=}hlr=}hSf[iÕÔ”iSf[élr=}hlr=}hSf[iŸiSf[é
+lr=}hlr=}hSf[i**ªiSf[élr=}hlr=}hSf[i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****¹¥‰í+ÔÔTg¹¥‰í+ÕÔÔg¹¥‰í+***h¹¥‰í+ÕÔTh¹¥‰í+h¹¥‰í+**ªh¹¥‰í+
+¿h¹¥‰í+ÕÔÔh¹¥‰í+**êh¹¥‰í+ÿh¹¥‰í+ÕÔh¹¥‰í+***i¹¥‰í+ÕÔ4i¹¥‰í+
+?i¹¥‰í+**Ji¹¥‰í+ÕÔTi¹¥‰í+_i¹¥‰í+**ji¹¥‰í+ÕÔti¹¥‰í+i¹¥‰í+**
+Ši¹¥‰í+ÕÔ”i¹¥‰í+Ÿi¹¥‰í+**ªi¹¥‰í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****™r‚l+ÔÔTg™r‚l+ÕÔÔg™r‚l+***h™r‚l+ÕÔTh™r‚l+h™r‚l+**ªh™r‚l+
+¿h™r‚l+ÕÔÔh™r‚l+**êh™r‚l+ÿh™r‚l+ÕÔh™r‚l+***i™r‚l+ÕÔ4i™r‚l+
+?i™r‚l+**Ji™r‚l+ÕÔTi™r‚l+_i™r‚l+**ji™r‚l+ÕÔti™r‚l+i™r‚l+**
+Ši™r‚l+ÕÔ”i™r‚l+Ÿi™r‚l+**ªi™r‚l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=13>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==558:500@
+****Sf[élr=}hlr=}hSf[iÔÔTgSf[élr=}hlr=}hSf[iÕÔÔgSf[élr=}hlr=}hSf
+[i***hSf[élr=}hlr=}hSf[iÕÔThSf[élr=}hlr=}hSf[ihSf[élr=}hlr=}h
+Sf[i**ªhSf[élr=}hlr=}hSf[i¿hSf[élr=}hlr=}hSf[iÕÔÔhSf[élr=}hlr=}
+hSf[i**êhSf[élr=}hlr=}hSf[iÿhSf[élr=}hlr=}hSf[iÕÔhSf[élr=}hlr
+=}hSf[i***iSf[élr=}hlr=}hSf[iÕÔ4iSf[élr=}hlr=}hSf[i?iSf[élr=}h
+lr=}hSf[i**JiSf[élr=}hlr=}hSf[iÕÔTiSf[élr=}hlr=}hSf[i_iSf[élr=}
+hlr=}hSf[i**jiSf[élr=}hlr=}hSf[iÕÔtiSf[élr=}hlr=}hSf[iiSf[élr
+=}hlr=}hSf[i**ŠiSf[élr=}hlr=}hSf[iÕÔ”iSf[élr=}hlr=}hSf[iŸiSf[é
+lr=}hlr=}hSf[i**ªiSf[élr=}hlr=}hSf[i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****:›jí+ÔÔTg:›jí+ÕÔÔg:›jí+***h:›jí+ÕÔTh:›jí+h:›jí+**ªh:›jí+
+¿h:›jí+ÕÔÔh:›jí+**êh:›jí+ÿh:›jí+ÕÔh:›jí+***i:›jí+ÕÔ4i:›jí+
+?i:›jí+**Ji:›jí+ÕÔTi:›jí+_i:›jí+**ji:›jí+ÕÔti:›jí+i:›jí+**
+Ši:›jí+ÕÔ”i:›jí+Ÿi:›jí+**ªi:›jí>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****"ó3l+ÔÔTg"ó3l+ÕÔÔg"ó3l+***h"ó3l+ÕÔTh"ó3l+h"ó3l+**ªh"ó3l+
+¿h"ó3l+ÕÔÔh"ó3l+**êh"ó3l+ÿh"ó3l+ÕÔh"ó3l+***i"ó3l+ÕÔ4i"ó3l+
+?i"ó3l+**Ji"ó3l+ÕÔTi"ó3l+_i"ó3l+**ji"ó3l+ÕÔti"ó3l+i"ó3l+**
+Ši"ó3l+ÕÔ”i"ó3l+Ÿi"ó3l+**ªi"ó3l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=14>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****µ^éÌ{çÌ{ç‘µ^iÔÔTgµ^éÌ{çÌ{ç‘µ^iÕÔÔgµ^éÌ{çÌ{ç‘µ^i***h
+µ^éÌ{çÌ{ç‘µ^iÕÔThµ^éÌ{çÌ{ç‘µ^ihµ^éÌ{çÌ{ç‘µ^i**ªhµ^é
+Ì{çÌ{ç‘µ^i¿hµ^éÌ{çÌ{ç‘µ^iÕÔÔhµ^éÌ{çÌ{ç‘µ^i**êhµ^éÌ{ç
+Ì{ç‘µ^iÿhµ^éÌ{çÌ{ç‘µ^iÕÔhµ^éÌ{çÌ{ç‘µ^i***iµ^éÌ{çÌ{ç
+‘µ^iÕÔ4iµ^éÌ{çÌ{ç‘µ^i?iµ^éÌ{çÌ{ç‘µ^i**Jiµ^éÌ{çÌ{ç‘µ^i
+ÕÔTiµ^éÌ{çÌ{ç‘µ^i_iµ^éÌ{çÌ{ç‘µ^i**jiµ^éÌ{çÌ{ç‘µ^iÕÔti
+µ^éÌ{çÌ{ç‘µ^iiµ^éÌ{çÌ{ç‘µ^i**Šiµ^éÌ{çÌ{ç‘µ^iÕÔ”iµ^é
+Ì{çÌ{ç‘µ^iŸiµ^éÌ{çÌ{ç‘µ^i**ªiµ^éÌ{çÌ{ç‘µ^i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Õ?aí+ÔÔTgÕ?aí+ÕÔÔgÕ?aí+***hÕ?aí+ÕÔThÕ?aí+hÕ?aí+**ªhÕ?aí+
+¿hÕ?aí+ÕÔÔhÕ?aí+**êhÕ?aí+ÿhÕ?aí+ÕÔhÕ?aí+***iÕ?aí+ÕÔ4iÕ?aí+
+?iÕ?aí+**JiÕ?aí+ÕÔTiÕ?aí+_iÕ?aí+**jiÕ?aí+ÕÔtiÕ?aí+iÕ?aí+**
+ŠiÕ?aí+ÕÔ”iÕ?aí+ŸiÕ?aí+**ªiÕ?aí>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****h7/l+ÔÔTgh7/l+ÕÔÔgh7/l+***hh7/l+ÕÔThh7/l+hh7/l+**ªhh7/l+
+¿hh7/l+ÕÔÔhh7/l+**êhh7/l+ÿhh7/l+ÕÔhh7/l+***ih7/l+ÕÔ4ih7/l+
+?ih7/l+**Jih7/l+ÕÔTih7/l+_ih7/l+**jih7/l+ÕÔtih7/l+ih7/l+**
+Ših7/l+ÕÔ”ih7/l+Ÿih7/l+**ªih7/l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=15>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****âYéuZThuZTháYiÔÔTgâYéuZThuZTháYiÕÔÔgâYéuZThuZTháYi***h
+âYéuZThuZTháYiÕÔThâYéuZThuZTháYihâYéuZThuZTháYi**ªhâYé
+uZThuZTháYi¿hâYéuZThuZTháYiÕÔÔhâYéuZThuZTháYi**êhâYéuZTh
+uZTháYiÿhâYéuZThuZTháYiÕÔhâYéuZThuZTháYi***iâYéuZThuZTh
+áYiÕÔ4iâYéuZThuZTháYi?iâYéuZThuZTháYi**JiâYéuZThuZTháYi
+ÕÔTiâYéuZThuZTháYi_iâYéuZThuZTháYi**jiâYéuZThuZTháYiÕÔti
+âYéuZThuZTháYiiâYéuZThuZTháYi**ŠiâYéuZThuZTháYiÕÔ”iâYé
+uZThuZTháYiŸiâYéuZThuZTháYi**ªiâYéuZThuZTháYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****j?²í+ÔÔTgj?²í+ÕÔÔgj?²í+***hj?²í+ÕÔThj?²í+hj?²í+**ªhj?²í+
+¿hj?²í+ÕÔÔhj?²í+**êhj?²í+ÿhj?²í+ÕÔhj?²í+***ij?²í+ÕÔ4ij?²í+
+?ij?²í+**Jij?²í+ÕÔTij?²í+_ij?²í+**jij?²í+ÕÔtij?²í+ij?²í+**
+Šij?²í+ÕÔ”ij?²í+Ÿij?²í+**ªij?²í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****-Œl+ÔÔTg-Œl+ÕÔÔg-Œl+***h-Œl+ÕÔTh-Œl+h-Œl+**ªh-Œl+
+¿h-Œl+ÕÔÔh-Œl+**êh-Œl+ÿh-Œl+ÕÔh-Œl+***i-Œl+ÕÔ4i-Œl+
+?i-Œl+**Ji-Œl+ÕÔTi-Œl+_i-Œl+**ji-Œl+ÕÔti-Œl+i-Œl+**
+Ši-Œl+ÕÔ”i-Œl+Ÿi-Œl+**ªi-Œl>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=16>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****âYéuZThuZTháYiÔÔTgâYéuZThuZTháYiÕÔÔgâYéuZThuZTháYi***h
+âYéuZThuZTháYiÕÔThâYéuZThuZTháYihâYéuZThuZTháYi**ªhâYé
+uZThuZTháYi¿hâYéuZThuZTháYiÕÔÔhâYéuZThuZTháYi**êhâYéuZTh
+uZTháYiÿhâYéuZThuZTháYiÕÔhâYéuZThuZTháYi***iâYéuZThuZTh
+áYiÕÔ4iâYéuZThuZTháYi?iâYéuZThuZTháYi**JiâYéuZThuZTháYi
+ÕÔTiâYéuZThuZTháYi_iâYéuZThuZTháYi**jiâYéuZThuZTháYiÕÔti
+âYéuZThuZTháYiiâYéuZThuZTháYi**ŠiâYéuZThuZTháYiÕÔ”iâYé
+uZThuZTháYiŸiâYéuZThuZTháYi**ªiâYéuZThuZTháYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****X ­í+ÔÔTgX ­í+ÕÔÔgX ­í+***hX ­í+ÕÔThX ­í+hX ­í+**ªhX ­í+
+¿hX ­í+ÕÔÔhX ­í+**êhX ­í+ÿhX ­í+ÕÔhX ­í+***iX ­í+ÕÔ4iX ­í+
+?iX ­í+**JiX ­í+ÕÔTiX ­í+_iX ­í+**jiX ­í+ÕÔtiX ­í+iX ­í+**
+ŠiX ­í+ÕÔ”iX ­í+ŸiX ­í+**ªiX ­í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****{ø`l+ÔÔTg{ø`l+ÕÔÔg{ø`l+***h{ø`l+ÕÔTh{ø`l+h{ø`l+**ªh{ø`l+
+¿h{ø`l+ÕÔÔh{ø`l+**êh{ø`l+ÿh{ø`l+ÕÔh{ø`l+***i{ø`l+ÕÔ4i{ø`l+
+?i{ø`l+**Ji{ø`l+ÕÔTi{ø`l+_i{ø`l+**ji{ø`l+ÕÔti{ø`l+i{ø`l+**
+Ši{ø`l+ÕÔ”i{ø`l+Ÿi{ø`l+**ªi{ø`l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=17>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****á>éñ$÷hñ$÷hà>iÔÔTgá>éñ$÷hñ$÷hà>iÕÔÔgá>éñ$÷hñ$÷hà>i***h
+á>éñ$÷hñ$÷hà>iÕÔThá>éñ$÷hñ$÷hà>ihá>éñ$÷hñ$÷hà>i**ªhá>é
+ñ$÷hñ$÷hà>i¿há>éñ$÷hñ$÷hà>iÕÔÔhá>éñ$÷hñ$÷hà>i**êhá>éñ$÷h
+ñ$÷hà>iÿhá>éñ$÷hñ$÷hà>iÕÔhá>éñ$÷hñ$÷hà>i***iá>éñ$÷hñ$÷h
+à>iÕÔ4iá>éñ$÷hñ$÷hà>i?iá>éñ$÷hñ$÷hà>i**Jiá>éñ$÷hñ$÷hà>i
+ÕÔTiá>éñ$÷hñ$÷hà>i_iá>éñ$÷hñ$÷hà>i**jiá>éñ$÷hñ$÷hà>iÕÔti
+á>éñ$÷hñ$÷hà>iiá>éñ$÷hñ$÷hà>i**Šiá>éñ$÷hñ$÷hà>iÕÔ”iá>é
+ñ$÷hñ$÷hà>iŸiá>éñ$÷hñ$÷hà>i**ªiá>éñ$÷hñ$÷hà>i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****úöží+ÔÔTgúöží+ÕÔÔgúöží+***húöží+ÕÔThúöží+húöží+**ªhúöží+
+¿húöží+ÕÔÔhúöží+**êhúöží+ÿhúöží+ÕÔhúöží+***iúöží+ÕÔ4iúöží+
+?iúöží+**Jiúöží+ÕÔTiúöží+_iúöží+**jiúöží+ÕÔtiúöží+iúöží+**
+Šiúöží+ÕÔ”iúöží+Ÿiúöží+**ªiúöží>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****?‹l+ÔÔTg?‹l+ÕÔÔg?‹l+***h?‹l+ÕÔTh?‹l+h?‹l+**ªh?‹l+
+¿h?‹l+ÕÔÔh?‹l+**êh?‹l+ÿh?‹l+ÕÔh?‹l+***i?‹l+ÕÔ4i?‹l+
+?i?‹l+**Ji?‹l+ÕÔTi?‹l+_i?‹l+**ji?‹l+ÕÔti?‹l+i?‹l+**
+Ši?‹l+ÕÔ”i?‹l+Ÿi?‹l+**ªi?‹l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****))©i+ÔÔTg))©i+ÕÔÔg))©i+***h))©i+ÕÔTh))©i+h))©i+**ªh))©i+
+¿h))©i+ÕÔÔh))©i+**êh))©i+ÿh))©i+ÕÔh))©i+***i))©i+ÕÔ4i))©i+
+?i))©i+**Ji))©i+ÕÔTi))©i+_i))©i+**ji))©i+ÕÔti))©i+i))©i+**
+Ši))©i+ÕÔ”i))©i+Ÿi))©i+**ªi))©i>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****))©i+ÔÔTg))©i+ÕÔÔg))©i+***h))©i+ÕÔTh))©i+h))©i+**ªh))©i+
+¿h))©i+ÕÔÔh))©i+**êh))©i+ÿh))©i+ÕÔh))©i+***i))©i+ÕÔ4i))©i+
+?i))©i+**Ji))©i+ÕÔTi))©i+_i))©i+**ji))©i+ÕÔti))©i+i))©i+**
+Ši))©i+ÕÔ”i))©i+Ÿi))©i+**ªi))©i>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=18>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****KYéÚQahÚQahKYiÔÔTgKYéÚQahÚQahKYiÕÔÔgKYéÚQahÚQahKYi***h
+KYéÚQahÚQahKYiÕÔThKYéÚQahÚQahKYihKYéÚQahÚQahKYi**ªhKYé
+ÚQahÚQahKYi¿hKYéÚQahÚQahKYiÕÔÔhKYéÚQahÚQahKYi**êhKYéÚQah
+ÚQahKYiÿhKYéÚQahÚQahKYiÕÔhKYéÚQahÚQahKYi***iKYéÚQahÚQah
+KYiÕÔ4iKYéÚQahÚQahKYi?iKYéÚQahÚQahKYi**JiKYéÚQahÚQahKYi
+ÕÔTiKYéÚQahÚQahKYi_iKYéÚQahÚQahKYi**jiKYéÚQahÚQahKYiÕÔti
+KYéÚQahÚQahKYiiKYéÚQahÚQahKYi**ŠiKYéÚQahÚQahKYiÕÔ”iKYé
+ÚQahÚQahKYiŸiKYéÚQahÚQahKYi**ªiKYéÚQahÚQahKYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==253:225@
++****9=M†í+ÔÔTg9=M†í+ÕÔÔg9=M†í+***h9=M†í+ÕÔTh9=M†í+h9=M†í+**ª
+h9=M†í+¿h9=M†í+ÕÔÔh9=M†í+**êh9=M†í+ÿh9=M†í+ÕÔh9=M†í+***i9=M
+†í+ÕÔ4i9=M†í+?i9=M†í+**Ji9=M†í+ÕÔTi9=M†í+_i9=M†í+**ji9=M†í+Õ
+Ôti9=M†í+i9=M†í+**Ši9=M†í+ÕÔ”i9=M†í+Ÿi9=M†í+**ªi9=M†í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****„*k+ÔÔTg„*k+ÕÔÔg„*k+***h„*k+ÕÔTh„*k+h„*k+**ªh„*k+
+¿h„*k+ÕÔÔh„*k+**êh„*k+ÿh„*k+ÕÔh„*k+***i„*k+ÕÔ4i„*k+
+?i„*k+**Ji„*k+ÕÔTi„*k+_i„*k+**ji„*k+ÕÔti„*k+i„*k+**
+Ši„*k+ÕÔ”i„*k+Ÿi„*k+**ªi„*k>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=19>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****è-_éÐ‰ÑeÐ‰Ñeç-_iÔÔTgè-_éÐ‰ÑeÐ‰Ñeç-_iÕÔÔgè-_éÐ‰ÑeÐ‰Ñeç-_i***h
+è-_éÐ‰ÑeÐ‰Ñeç-_iÕÔThè-_éÐ‰ÑeÐ‰Ñeç-_ihè-_éÐ‰ÑeÐ‰Ñeç-_i**ªhè-_é
+Ð‰ÑeÐ‰Ñeç-_i¿hè-_éÐ‰ÑeÐ‰Ñeç-_iÕÔÔhè-_éÐ‰ÑeÐ‰Ñeç-_i**êhè-_éÐ‰Ñe
+Ð‰Ñeç-_iÿhè-_éÐ‰ÑeÐ‰Ñeç-_iÕÔhè-_éÐ‰ÑeÐ‰Ñeç-_i***iè-_éÐ‰ÑeÐ‰Ñe
+ç-_iÕÔ4iè-_éÐ‰ÑeÐ‰Ñeç-_i?iè-_éÐ‰ÑeÐ‰Ñeç-_i**Jiè-_éÐ‰ÑeÐ‰Ñeç-_i
+ÕÔTiè-_éÐ‰ÑeÐ‰Ñeç-_i_iè-_éÐ‰ÑeÐ‰Ñeç-_i**jiè-_éÐ‰ÑeÐ‰Ñeç-_iÕÔti
+è-_éÐ‰ÑeÐ‰Ñeç-_iiè-_éÐ‰ÑeÐ‰Ñeç-_i**Šiè-_éÐ‰ÑeÐ‰Ñeç-_iÕÔ”iè-_é
+Ð‰ÑeÐ‰Ñeç-_iŸiè-_éÐ‰ÑeÐ‰Ñeç-_i**ªiè-_éÐ‰ÑeÐ‰Ñeç-_i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Ï…í+ÔÔTgÏ…í+ÕÔÔgÏ…í+***hÏ…í+ÕÔThÏ…í+hÏ…í+**ªhÏ…í+
+¿hÏ…í+ÕÔÔhÏ…í+**êhÏ…í+ÿhÏ…í+ÕÔhÏ…í+***iÏ…í+ÕÔ4iÏ…í+
+?iÏ…í+**JiÏ…í+ÕÔTiÏ…í+_iÏ…í+**jiÏ…í+ÕÔtiÏ…í+iÏ…í+**
+ŠiÏ…í+ÕÔ”iÏ…í+ŸiÏ…í+**ªiÏ…í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****·ö´k+ÔÔTg·ö´k+ÕÔÔg·ö´k+***h·ö´k+ÕÔTh·ö´k+h·ö´k+**ªh·ö´k+
+¿h·ö´k+ÕÔÔh·ö´k+**êh·ö´k+ÿh·ö´k+ÕÔh·ö´k+***i·ö´k+ÕÔ4i·ö´k+
+?i·ö´k+**Ji·ö´k+ÕÔTi·ö´k+_i·ö´k+**ji·ö´k+ÕÔti·ö´k+i·ö´k+**
+Ši·ö´k+ÕÔ”i·ö´k+Ÿi·ö´k+**ªi·ö´k>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=20>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****•2é¸ðèºðè•2iÔÔTg•2é¸ðèºðè•2iÕÔÔg•2é¸ðèºðè•2i***h
+•2é¸ðèºðè•2iÕÔTh•2é¸ðèºðè•2ih•2é¸ðèºðè•2i**ªh•2é
+¸ðèºðè•2i¿h•2é¸ðèºðè•2iÕÔÔh•2é¸ðèºðè•2i**êh•2é¸ðè
+ºðè•2iÿh•2é¸ðèºðè•2iÕÔh•2é¸ðèºðè•2i***i•2é¸ðèºðè
+•2iÕÔ4i•2é¸ðèºðè•2i?i•2é¸ðèºðè•2i**Ji•2é¸ðèºðè•2i
+ÕÔTi•2é¸ðèºðè•2i_i•2é¸ðèºðè•2i**ji•2é¸ðèºðè•2iÕÔti
+•2é¸ðèºðè•2ii•2é¸ðèºðè•2i**Ši•2é¸ðèºðè•2iÕÔ”i•2é
+¸ðèºðè•2iŸi•2é¸ðèºðè•2i**ªi•2é¸ðèºðè•2i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****f¹˜í+ÔÔTgf¹˜í+ÕÔÔgf¹˜í+***hf¹˜í+ÕÔThf¹˜í+hf¹˜í+**ªhf¹˜í+
+¿hf¹˜í+ÕÔÔhf¹˜í+**êhf¹˜í+ÿhf¹˜í+ÕÔhf¹˜í+***if¹˜í+ÕÔ4if¹˜í+
+?if¹˜í+**Jif¹˜í+ÕÔTif¹˜í+_if¹˜í+**jif¹˜í+ÕÔtif¹˜í+if¹˜í+**
+Šif¹˜í+ÕÔ”if¹˜í+Ÿif¹˜í+**ªif¹˜í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****VRl+ÔÔTgVRl+ÕÔÔgVRl+***hVRl+ÕÔThVRl+hVRl+**ªhVRl+
+¿hVRl+ÕÔÔhVRl+**êhVRl+ÿhVRl+ÕÔhVRl+***iVRl+ÕÔ4iVRl+
+?iVRl+**JiVRl+ÕÔTiVRl+_iVRl+**jiVRl+ÕÔtiVRl+iVRl+**
+ŠiVRl+ÕÔ”iVRl+ŸiVRl+**ªiVRl>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++*****ái+ÔÔTg*ái+ÕÔÔg*ái+***h*ái+ÕÔTh*ái+h*ái+**ªh*ái+
+¿h*ái+ÕÔÔh*ái+**êh*ái+ÿh*ái+ÕÔh*ái+***i*ái+ÕÔ4i*ái+
+?i*ái+**Ji*ái+ÕÔTi*ái+_i*ái+**ji*ái+ÕÔti*ái+i*ái+**
+Ši*ái+ÕÔ”i*ái+Ÿi*ái+**ªi*ái>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****±âDi+ÔÔTg±âDi+ÕÔÔg±âDi+***h±âDi+ÕÔTh±âDi+h±âDi+**ªh±âDi+
+¿h±âDi+ÕÔÔh±âDi+**êh±âDi+ÿh±âDi+ÕÔh±âDi+***i±âDi+ÕÔ4i±âDi+
+?i±âDi+**Ji±âDi+ÕÔTi±âDi+_i±âDi+**ji±âDi+ÕÔti±âDi+i±âDi+**
+Ši±âDi+ÕÔ”i±âDi+Ÿi±âDi+**ªi±âDi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=21>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****âYétZThtZTháYiÔÔTgâYétZThtZTháYiÕÔÔgâYétZThtZTháYi***h
+âYétZThtZTháYiÕÔThâYétZThtZTháYihâYétZThtZTháYi**ªhâYé
+tZThtZTháYi¿hâYétZThtZTháYiÕÔÔhâYétZThtZTháYi**êhâYétZTh
+tZTháYiÿhâYétZThtZTháYiÕÔhâYétZThtZTháYi***iâYétZThtZTh
+áYiÕÔ4iâYétZThtZTháYi?iâYétZThtZTháYi**JiâYétZThtZTháYi
+ÕÔTiâYétZThtZTháYi_iâYétZThtZTháYi**jiâYétZThtZTháYiÕÔti
+âYétZThtZTháYiiâYétZThtZTháYi**ŠiâYétZThtZTháYiÕÔ”iâYé
+tZThtZTháYiŸiâYétZThtZTháYi**ªiâYétZThtZTháYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****ö…©í+ÔÔTgö…©í+ÕÔÔgö…©í+***hö…©í+ÕÔThö…©í+hö…©í+**ªhö…©í+
+¿hö…©í+ÕÔÔhö…©í+**êhö…©í+ÿhö…©í+ÕÔhö…©í+***iö…©í+ÕÔ4iö…©í+
+?iö…©í+**Jiö…©í+ÕÔTiö…©í+_iö…©í+**jiö…©í+ÕÔtiö…©í+iö…©í+**
+Šiö…©í+ÕÔ”iö…©í+Ÿiö…©í+**ªiö…©í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****€äYl+ÔÔTg€äYl+ÕÔÔg€äYl+***h€äYl+ÕÔTh€äYl+h€äYl+**ªh€äYl+
+¿h€äYl+ÕÔÔh€äYl+**êh€äYl+ÿh€äYl+ÕÔh€äYl+***i€äYl+ÕÔ4i€äYl+
+?i€äYl+**Ji€äYl+ÕÔTi€äYl+_i€äYl+**ji€äYl+ÕÔti€äYl+i€äYl+**
+Ši€äYl+ÕÔ”i€äYl+Ÿi€äYl+**ªi€äYl>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****¤öh+ÔÔTg¤öh+ÕÔÔg¤öh+***h¤öh+ÕÔTh¤öh+h¤öh+**ªh¤öh+
+¿h¤öh+ÕÔÔh¤öh+**êh¤öh+ÿh¤öh+ÕÔh¤öh+***i¤öh+ÕÔ4i¤öh+
+?i¤öh+**Ji¤öh+ÕÔTi¤öh+_i¤öh+**ji¤öh+ÕÔti¤öh+i¤öh+**
+Ši¤öh+ÕÔ”i¤öh+Ÿi¤öh+**ªi¤öh>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****L…i+ÔÔTgL…i+ÕÔÔgL…i+***hL…i+ÕÔThL…i+hL…i+**ªhL…i+
+¿hL…i+ÕÔÔhL…i+**êhL…i+ÿhL…i+ÕÔhL…i+***iL…i+ÕÔ4iL…i+
+?iL…i+**JiL…i+ÕÔTiL…i+_iL…i+**jiL…i+ÕÔtiL…i+iL…i+**
+ŠiL…i+ÕÔ”iL…i+ŸiL…i+**ªiL…i>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=22>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****¸SFéCáèCáè¸SFiÔÔTg¸SFéCáèCáè¸SFiÕÔÔg¸SFéCáèCáè¸SFi***h
+¸SFéCáèCáè¸SFiÕÔTh¸SFéCáèCáè¸SFih¸SFéCáèCáè¸SFi**ªh¸SFé
+CáèCáè¸SFi¿h¸SFéCáèCáè¸SFiÕÔÔh¸SFéCáèCáè¸SFi**êh¸SFéCáè
+Cáè¸SFiÿh¸SFéCáèCáè¸SFiÕÔh¸SFéCáèCáè¸SFi***i¸SFéCáèCáè
+¸SFiÕÔ4i¸SFéCáèCáè¸SFi?i¸SFéCáèCáè¸SFi**Ji¸SFéCáèCáè¸SFi
+ÕÔTi¸SFéCáèCáè¸SFi_i¸SFéCáèCáè¸SFi**ji¸SFéCáèCáè¸SFiÕÔti
+¸SFéCáèCáè¸SFii¸SFéCáèCáè¸SFi**Ši¸SFéCáèCáè¸SFiÕÔ”i¸SFé
+CáèCáè¸SFiŸi¸SFéCáèCáè¸SFi**ªi¸SFéCáèCáè¸SFi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****†—ªí+ÔÔTg†—ªí+ÕÔÔg†—ªí+***h†—ªí+ÕÔTh†—ªí+h†—ªí+**ªh†—ªí+
+¿h†—ªí+ÕÔÔh†—ªí+**êh†—ªí+ÿh†—ªí+ÕÔh†—ªí+***i†—ªí+ÕÔ4i†—ªí+
+?i†—ªí+**Ji†—ªí+ÕÔTi†—ªí+_i†—ªí+**ji†—ªí+ÕÔti†—ªí+i†—ªí+**
+Ši†—ªí+ÕÔ”i†—ªí+Ÿi†—ªí+**ªi†—ªí>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****„4l+ÔÔTg„4l+ÕÔÔg„4l+***h„4l+ÕÔTh„4l+h„4l+**ªh„4l+
+¿h„4l+ÕÔÔh„4l+**êh„4l+ÿh„4l+ÕÔh„4l+***i„4l+ÕÔ4i„4l+
+?i„4l+**Ji„4l+ÕÔTi„4l+_i„4l+**ji„4l+ÕÔti„4l+i„4l+**
+Ši„4l+ÕÔ”i„4l+Ÿi„4l+**ªi„4l>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=23>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****fî2éËVèËVèeî2iÔÔTgfî2éËVèËVèeî2iÕÔÔgfî2éËVèËVèeî2i***h
+fî2éËVèËVèeî2iÕÔThfî2éËVèËVèeî2ihfî2éËVèËVèeî2i**ªhfî2é
+ËVèËVèeî2i¿hfî2éËVèËVèeî2iÕÔÔhfî2éËVèËVèeî2i**êhfî2éËVè
+ËVèeî2iÿhfî2éËVèËVèeî2iÕÔhfî2éËVèËVèeî2i***ifî2éËVèËVè
+eî2iÕÔ4ifî2éËVèËVèeî2i?ifî2éËVèËVèeî2i**Jifî2éËVèËVèeî2i
+ÕÔTifî2éËVèËVèeî2i_ifî2éËVèËVèeî2i**jifî2éËVèËVèeî2iÕÔti
+fî2éËVèËVèeî2iifî2éËVèËVèeî2i**Šifî2éËVèËVèeî2iÕÔ”ifî2é
+ËVèËVèeî2iŸifî2éËVèËVèeî2i**ªifî2éËVèËVèeî2i>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****r–í+ÔÔTgr–í+ÕÔÔgr–í+***hr–í+ÕÔThr–í+hr–í+**ªhr–í+
+¿hr–í+ÕÔÔhr–í+**êhr–í+ÿhr–í+ÕÔhr–í+***ir–í+ÕÔ4ir–í+
+?ir–í+**Jir–í+ÕÔTir–í+_ir–í+**jir–í+ÕÔtir–í+ir–í+**
+Šir–í+ÕÔ”ir–í+Ÿir–í+**ªir–í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****HiNl+ÔÔTgHiNl+ÕÔÔgHiNl+***hHiNl+ÕÔThHiNl+hHiNl+**ªhHiNl+
+¿hHiNl+ÕÔÔhHiNl+**êhHiNl+ÿhHiNl+ÕÔhHiNl+***iHiNl+ÕÔ4iHiNl+
+?iHiNl+**JiHiNl+ÕÔTiHiNl+_iHiNl+**jiHiNl+ÕÔtiHiNl+iHiNl+**
+ŠiHiNl+ÕÔ”iHiNl+ŸiHiNl+**ªiHiNl>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=24>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****Í4Xé£Cqè£CqèÍ4XiÔÔTgÍ4Xé£Cqè£CqèÍ4XiÕÔÔgÍ4Xé£Cqè£CqèÍ4Xi***h
+Í4Xé£Cqè£CqèÍ4XiÕÔThÍ4Xé£Cqè£CqèÍ4XihÍ4Xé£Cqè£CqèÍ4Xi**ªhÍ4Xé
+£Cqè£CqèÍ4Xi¿hÍ4Xé£Cqè£CqèÍ4XiÕÔÔhÍ4Xé£Cqè£CqèÍ4Xi**êhÍ4Xé£Cqè
+£CqèÍ4XiÿhÍ4Xé£Cqè£CqèÍ4XiÕÔhÍ4Xé£Cqè£CqèÍ4Xi***iÍ4Xé£Cqè£Cqè
+Í4XiÕÔ4iÍ4Xé£Cqè£CqèÍ4Xi?iÍ4Xé£Cqè£CqèÍ4Xi**JiÍ4Xé£Cqè£CqèÍ4Xi
+ÕÔTiÍ4Xé£Cqè£CqèÍ4Xi_iÍ4Xé£Cqè£CqèÍ4Xi**jiÍ4Xé£Cqè£CqèÍ4XiÕÔti
+Í4Xé£Cqè£CqèÍ4XiiÍ4Xé£Cqè£CqèÍ4Xi**ŠiÍ4Xé£Cqè£CqèÍ4XiÕÔ”iÍ4Xé
+£Cqè£CqèÍ4XiŸiÍ4Xé£Cqè£CqèÍ4Xi**ªiÍ4Xé£Cqè£CqèÍ4Xi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****k'„í+ÔÔTgk'„í+ÕÔÔgk'„í+***hk'„í+ÕÔThk'„í+hk'„í+**ªhk'„í+
+¿hk'„í+ÕÔÔhk'„í+**êhk'„í+ÿhk'„í+ÕÔhk'„í+***ik'„í+ÕÔ4ik'„í+
+?ik'„í+**Jik'„í+ÕÔTik'„í+_ik'„í+**jik'„í+ÕÔtik'„í+ik'„í+**
+Šik'„í+ÕÔ”ik'„í+Ÿik'„í+**ªik'„í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Úk+ÔÔTgÚk+ÕÔÔgÚk+***hÚk+ÕÔThÚk+hÚk+**ªhÚk+
+¿hÚk+ÕÔÔhÚk+**êhÚk+ÿhÚk+ÕÔhÚk+***iÚk+ÕÔ4iÚk+
+?iÚk+**JiÚk+ÕÔTiÚk+_iÚk+**jiÚk+ÕÔtiÚk+iÚk+**
+ŠiÚk+ÕÔ”iÚk+ŸiÚk+**ªiÚk>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=25>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****Í4Xé£Cqè£CqèÍ4XiÔÔTgÍ4Xé£Cqè£CqèÍ4XiÕÔÔgÍ4Xé£Cqè£CqèÍ4Xi***h
+Í4Xé£Cqè£CqèÍ4XiÕÔThÍ4Xé£Cqè£CqèÍ4XihÍ4Xé£Cqè£CqèÍ4Xi**ªhÍ4Xé
+£Cqè£CqèÍ4Xi¿hÍ4Xé£Cqè£CqèÍ4XiÕÔÔhÍ4Xé£Cqè£CqèÍ4Xi**êhÍ4Xé£Cqè
+£CqèÍ4XiÿhÍ4Xé£Cqè£CqèÍ4XiÕÔhÍ4Xé£Cqè£CqèÍ4Xi***iÍ4Xé£Cqè£Cqè
+Í4XiÕÔ4iÍ4Xé£Cqè£CqèÍ4Xi?iÍ4Xé£Cqè£CqèÍ4Xi**JiÍ4Xé£Cqè£CqèÍ4Xi
+ÕÔTiÍ4Xé£Cqè£CqèÍ4Xi_iÍ4Xé£Cqè£CqèÍ4Xi**jiÍ4Xé£Cqè£CqèÍ4XiÕÔti
+Í4Xé£Cqè£CqèÍ4XiiÍ4Xé£Cqè£CqèÍ4Xi**ŠiÍ4Xé£Cqè£CqèÍ4XiÕÔ”iÍ4Xé
+£Cqè£CqèÍ4XiŸiÍ4Xé£Cqè£CqèÍ4Xi**ªiÍ4Xé£Cqè£CqèÍ4Xi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****™‰‚í+ÔÔTg™‰‚í+ÕÔÔg™‰‚í+***h™‰‚í+ÕÔTh™‰‚í+h™‰‚í+**ªh™‰‚í+
+¿h™‰‚í+ÕÔÔh™‰‚í+**êh™‰‚í+ÿh™‰‚í+ÕÔh™‰‚í+***i™‰‚í+ÕÔ4i™‰‚í+
+?i™‰‚í+**Ji™‰‚í+ÕÔTi™‰‚í+_i™‰‚í+**ji™‰‚í+ÕÔti™‰‚í+i™‰‚í+**
+Ši™‰‚í+ÕÔ”i™‰‚í+Ÿi™‰‚í+**ªi™‰‚í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****6>Ýk+ÔÔTg6>Ýk+ÕÔÔg6>Ýk+***h6>Ýk+ÕÔTh6>Ýk+h6>Ýk+**ªh6>Ýk+
+¿h6>Ýk+ÕÔÔh6>Ýk+**êh6>Ýk+ÿh6>Ýk+ÕÔh6>Ýk+***i6>Ýk+ÕÔ4i6>Ýk+
+?i6>Ýk+**Ji6>Ýk+ÕÔTi6>Ýk+_i6>Ýk+**ji6>Ýk+ÕÔti6>Ýk+i6>Ýk+**
+Ši6>Ýk+ÕÔ”i6>Ýk+Ÿi6>Ýk+**ªi6>Ýk>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****™åki+ÔÔTg™åki+ÕÔÔg™åki+***h™åki+ÕÔTh™åki+h™åki+**ªh™åki+
+¿h™åki+ÕÔÔh™åki+**êh™åki+ÿh™åki+ÕÔh™åki+***i™åki+ÕÔ4i™åki+
+?i™åki+**Ji™åki+ÕÔTi™åki+_i™åki+**ji™åki+ÕÔti™åki+i™åki+**
+Ši™åki+ÕÔ”i™åki+Ÿi™åki+**ªi™åki>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=26>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****KYéÚQahÚQahKYiÔÔTgKYéÚQahÚQahKYiÕÔÔgKYéÚQahÚQahKYi***h
+KYéÚQahÚQahKYiÕÔThKYéÚQahÚQahKYihKYéÚQahÚQahKYi**ªhKYé
+ÚQahÚQahKYi¿hKYéÚQahÚQahKYiÕÔÔhKYéÚQahÚQahKYi**êhKYéÚQah
+ÚQahKYiÿhKYéÚQahÚQahKYiÕÔhKYéÚQahÚQahKYi***iKYéÚQahÚQah
+KYiÕÔ4iKYéÚQahÚQahKYi?iKYéÚQahÚQahKYi**JiKYéÚQahÚQahKYi
+ÕÔTiKYéÚQahÚQahKYi_iKYéÚQahÚQahKYi**jiKYéÚQahÚQahKYiÕÔti
+KYéÚQahÚQahKYiiKYéÚQahÚQahKYi**ŠiKYéÚQahÚQahKYiÕÔ”iKYé
+ÚQahÚQahKYiŸiKYéÚQahÚQahKYi**ªiKYéÚQahÚQahKYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****CÞ˜í+ÔÔTgCÞ˜í+ÕÔÔgCÞ˜í+***hCÞ˜í+ÕÔThCÞ˜í+hCÞ˜í+**ªhCÞ˜í+
+¿hCÞ˜í+ÕÔÔhCÞ˜í+**êhCÞ˜í+ÿhCÞ˜í+ÕÔhCÞ˜í+***iCÞ˜í+ÕÔ4iCÞ˜í+
+?iCÞ˜í+**JiCÞ˜í+ÕÔTiCÞ˜í+_iCÞ˜í+**jiCÞ˜í+ÕÔtiCÞ˜í+iCÞ˜í+**
+ŠiCÞ˜í+ÕÔ”iCÞ˜í+ŸiCÞ˜í+**ªiCÞ˜í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****ïÐòë+ÔÔTgïÐòë+ÕÔÔgïÐòë+***hïÐòë+ÕÔThïÐòë+hïÐòë+**ªhïÐòë+
+¿hïÐòë+ÕÔÔhïÐòë+**êhïÐòë+ÿhïÐòë+ÕÔhïÐòë+***iïÐòë+ÕÔ4iïÐòë+
+?iïÐòë+**JiïÐòë+ÕÔTiïÐòë+_iïÐòë+**jiïÐòë+ÕÔtiïÐòë+iïÐòë+**
+ŠiïÐòë+ÕÔ”iïÐòë+ŸiïÐòë+**ªiïÐòë>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=27>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****KYéÚQahÚQahKYiÔÔTgKYéÚQahÚQahKYiÕÔÔgKYéÚQahÚQahKYi***h
+KYéÚQahÚQahKYiÕÔThKYéÚQahÚQahKYihKYéÚQahÚQahKYi**ªhKYé
+ÚQahÚQahKYi¿hKYéÚQahÚQahKYiÕÔÔhKYéÚQahÚQahKYi**êhKYéÚQah
+ÚQahKYiÿhKYéÚQahÚQahKYiÕÔhKYéÚQahÚQahKYi***iKYéÚQahÚQah
+KYiÕÔ4iKYéÚQahÚQahKYi?iKYéÚQahÚQahKYi**JiKYéÚQahÚQahKYi
+ÕÔTiKYéÚQahÚQahKYi_iKYéÚQahÚQahKYi**jiKYéÚQahÚQahKYiÕÔti
+KYéÚQahÚQahKYiiKYéÚQahÚQahKYi**ŠiKYéÚQahÚQahKYiÕÔ”iKYé
+ÚQahÚQahKYiŸiKYéÚQahÚQahKYi**ªiKYéÚQahÚQahKYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****µ€í+ÔÔTgµ€í+ÕÔÔgµ€í+***hµ€í+ÕÔThµ€í+hµ€í+**ªhµ€í+
+¿hµ€í+ÕÔÔhµ€í+**êhµ€í+ÿhµ€í+ÕÔhµ€í+***iµ€í+ÕÔ4iµ€í+
+?iµ€í+**Jiµ€í+ÕÔTiµ€í+_iµ€í+**jiµ€í+ÕÔtiµ€í+iµ€í+**
+Šiµ€í+ÕÔ”iµ€í+Ÿiµ€í+**ªiµ€í>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****ÉÜ7ë+ÔÔTgÉÜ7ë+ÕÔÔgÉÜ7ë+***hÉÜ7ë+ÕÔThÉÜ7ë+hÉÜ7ë+**ªhÉÜ7ë+
+¿hÉÜ7ë+ÕÔÔhÉÜ7ë+**êhÉÜ7ë+ÿhÉÜ7ë+ÕÔhÉÜ7ë+***iÉÜ7ë+ÕÔ4iÉÜ7ë+
+?iÉÜ7ë+**JiÉÜ7ë+ÕÔTiÉÜ7ë+_iÉÜ7ë+**jiÉÜ7ë+ÕÔtiÉÜ7ë+iÉÜ7ë+**
+ŠiÉÜ7ë+ÕÔ”iÉÜ7ë+ŸiÉÜ7ë+**ªiÉÜ7ë>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+				<ItemMotion=
+					<UId=28>
+					<Motion=
+						<Id="Take 001">
+						<UseQuaternion=True>
+						<QChannel=
+							<BinaryKeys=
+								<Count=25>
+								<Data==507:500@
+****KYéÚQahÚQahKYiÔÔTgKYéÚQahÚQahKYiÕÔÔgKYéÚQahÚQahKYi***h
+KYéÚQahÚQahKYiÕÔThKYéÚQahÚQahKYihKYéÚQahÚQahKYi**ªhKYé
+ÚQahÚQahKYi¿hKYéÚQahÚQahKYiÕÔÔhKYéÚQahÚQahKYi**êhKYéÚQah
+ÚQahKYiÿhKYéÚQahÚQahKYiÕÔhKYéÚQahÚQahKYi***iKYéÚQahÚQah
+KYiÕÔ4iKYéÚQahÚQahKYi?iKYéÚQahÚQahKYi**JiKYéÚQahÚQahKYi
+ÕÔTiKYéÚQahÚQahKYi_iKYéÚQahÚQahKYi**jiKYéÚQahÚQahKYiÕÔti
+KYéÚQahÚQahKYiiKYéÚQahÚQahKYi**ŠiKYéÚQahÚQahKYiÕÔ”iKYé
+ÚQahÚQahKYiŸiKYéÚQahÚQahKYi**ªiKYéÚQahÚQahKYi>
+							>
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****a[Ží+ÔÔTga[Ží+ÕÔÔga[Ží+***ha[Ží+ÕÔTha[Ží+ha[Ží+**ªha[Ží+
+¿ha[Ží+ÕÔÔha[Ží+**êha[Ží+ÿha[Ží+ÕÔha[Ží+***ia[Ží+ÕÔ4ia[Ží+
+?ia[Ží+**Jia[Ží+ÕÔTia[Ží+_ia[Ží+**jia[Ží+ÕÔtia[Ží+ia[Ží+**
+Šia[Ží+ÕÔ”ia[Ží+Ÿia[Ží+**ªia[Ží>
+								>
+							>
+							<Id="PositionX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++********+ÔÔTg****+ÕÔÔg****+***h****+ÕÔTh****+h****+**ªh****+
+¿h****+ÕÔÔh****+**êh****+ÿh****+ÕÔh****+***i****+ÕÔ4i****+
+?i****+**Ji****+ÕÔTi****+_i****+**ji****+ÕÔti****+i****+**
+Ši****+ÕÔ”i****+Ÿi****+**ªi****>
+								>
+							>
+							<Id="PositionY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++****Â"é+ÔÔTgÂ"é+ÕÔÔgÂ"é+***hÂ"é+ÕÔThÂ"é+hÂ"é+**ªhÂ"é+
+¿hÂ"é+ÕÔÔhÂ"é+**êhÂ"é+ÿhÂ"é+ÕÔhÂ"é+***iÂ"é+ÕÔ4iÂ"é+
+?iÂ"é+**JiÂ"é+ÕÔTiÂ"é+_iÂ"é+**jiÂ"é+ÕÔtiÂ"é+iÂ"é+**
+ŠiÂ"é+ÕÔ”iÂ"é+ŸiÂ"é+**ªiÂ"é>
+								>
+							>
+							<Id="PositionZ">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleX">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleY">
+						>
+						<Channel=
+							<Curve=
+								<BinaryKnot=
+									<Count=25>
+									<Data==228:225@
++******ªi+ÔÔTg**ªi+ÕÔÔg**ªi+***h**ªi+ÕÔTh**ªi+h**ªi+**ªh**ªi+
+¿h**ªi+ÕÔÔh**ªi+**êh**ªi+ÿh**ªi+ÕÔh**ªi+***i**ªi+ÕÔ4i**ªi+
+?i**ªi+**Ji**ªi+ÕÔTi**ªi+_i**ªi+**ji**ªi+ÕÔti**ªi+i**ªi+**
+Ši**ªi+ÕÔ”i**ªi+Ÿi**ªi+**ªi**ªi>
+								>
+							>
+							<Id="ScaleZ">
+						>
+					>
+				>
+			>
+		>
+	>
+	<Items=
+		<MObject=
+			<MItem=
+				<Id="full_map">
+				<UId=0>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/full_map.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_01">
+				<UId=1>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-37.792614>
+						<Y=0.000000>
+						<Z=10.899740>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.511455>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_01.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_02">
+				<UId=2>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=57.886406>
+						<Y=0.000000>
+						<Z=20.540300>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.473341>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_02.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_03">
+				<UId=3>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=142.636307>
+						<Y=0.000000>
+						<Z=21.560184>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.175004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_03.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_04">
+				<UId=4>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=144.992966>
+						<Y=0.000000>
+						<Z=34.888809>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.175004>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_04.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_05">
+				<UId=5>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=107.239845>
+						<Y=0.000000>
+						<Z=34.096550>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.118345>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_05.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_06">
+				<UId=6>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=79.566826>
+						<Y=0.000000>
+						<Z=49.184570>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_06.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_07">
+				<UId=7>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-199.662796>
+						<Y=0.000000>
+						<Z=2.205356>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.511455>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_07.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_wheel">
+				<UId=8>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-145.613251>
+						<Y=24.512865>
+						<Z=3.813666>
+					>
+					<Rotation=
+						<X=0.000000>
+						<Y=-1.047198>
+						<Z=1.570796>
+					>
+					<Scale=
+						<X=1.000000>
+						<Y=1.000000>
+						<Z=1.641717>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_wheel.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_09">
+				<UId=9>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-153.015335>
+						<Y=0.000000>
+						<Z=66.102837>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.474524>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_09.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_10">
+				<UId=10>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-193.527802>
+						<Y=0.000000>
+						<Z=63.343613>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.474524>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_10.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_11">
+				<UId=11>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-180.906616>
+						<Y=0.000000>
+						<Z=56.652943>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.474524>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_11.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_12">
+				<UId=12>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-223.482651>
+						<Y=0.000000>
+						<Z=54.070736>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.409672>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_12.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_13">
+				<UId=13>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-192.441650>
+						<Y=0.000000>
+						<Z=34.447235>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.409672>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_13.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_14">
+				<UId=14>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-183.084641>
+						<Y=0.000000>
+						<Z=33.262932>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=-0.144888>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_14.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_15">
+				<UId=15>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-272.166016>
+						<Y=0.000000>
+						<Z=56.727551>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.474524>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_15.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_16">
+				<UId=16>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-263.923279>
+						<Y=0.000000>
+						<Z=45.701481>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.474524>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_16.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_17">
+				<UId=17>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-244.800049>
+						<Y=0.000000>
+						<Z=56.474689>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=1.210441>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_17.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_18">
+				<UId=18>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-220.886948>
+						<Y=0.000000>
+						<Z=8.022202>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.511455>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_18.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_19">
+				<UId=19>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-219.947830>
+						<Y=0.000000>
+						<Z=17.349878>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.014447>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_19.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_20">
+				<UId=20>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-238.559509>
+						<Y=0.000000>
+						<Z=42.043293>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=-1.425737>
+					>
+					<Scale=
+						<X=1.724335>
+						<Y=0.604378>
+						<Z=1.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_20.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_21">
+				<UId=21>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-255.358582>
+						<Y=0.000000>
+						<Z=43.931969>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.474524>
+					>
+					<Scale=
+						<X=0.400287>
+						<Y=0.858996>
+						<Z=1.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_21.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_22">
+				<UId=22>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-256.854370>
+						<Y=0.000000>
+						<Z=34.714211>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=-1.060490>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_22.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_23">
+				<UId=23>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-236.891724>
+						<Y=0.000000>
+						<Z=41.061638>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=-1.428650>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_23.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_24">
+				<UId=24>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-218.989273>
+						<Y=0.000000>
+						<Z=27.461359>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=-0.557117>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_24.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_25">
+				<UId=25>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-216.372787>
+						<Y=0.000000>
+						<Z=22.384789>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=-0.000000>
+						<Z=-0.557117>
+					>
+					<Scale=
+						<X=0.756766>
+						<Y=1.000000>
+						<Z=1.000000>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_25.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_26">
+				<UId=26>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-238.703506>
+						<Y=0.000000>
+						<Z=-25.081430>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.511455>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_26.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_27">
+				<UId=27>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-230.338058>
+						<Y=0.000000>
+						<Z=-8.856109>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.511455>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_27.nmg">
+				<CacheGeometry=True>
+			>
+		>
+		<MObject=
+			<MItem=
+				<Id="building_28">
+				<UId=28>
+				<Active>
+				<Priority=0.500000>
+				<MotionPlayer=
+					<Motions>
+				>
+				<PhysicItem=
+					<SelfMask=1>
+					<Mask=1>
+					<LinearDamping_v2=1.000000>
+					<AngularDamping_v2=1.000000>
+					<CharacterRadius=1.000000>
+					<CharacterHeight=1.000000>
+					<CharacterMaxStep=0.200000>
+					<Mode="None">
+				>
+			>
+			<Object=
+				<Item=
+					<Position=
+						<X=-228.192245>
+						<Y=0.000000>
+						<Z=-1.944507>
+					>
+					<Rotation=
+						<X=-1.570796>
+						<Y=0.000000>
+						<Z=0.511455>
+					>
+					<Target=
+						<X=0.000000>
+						<Y=0.000000>
+						<Z=1.000000>
+					>
+					<RotationOrder="YXZ">
+					<Registry>
+				>
+				<Geometry="assets/building_28.nmg">
+				<CacheGeometry=True>
+			>
+		>
+	>
+	<Links>
+	<Constraints>
+	<Globals=
+		<BackgroundColor=
+			<X=0.000000>
+			<Y=0.000000>
+			<Z=0.000000>
+		>
+		<AmbientColor=
+			<X=0.400000>
+			<Y=0.400000>
+			<Z=0.400000>
+		>
+		<TimeOfDay=0.500000>
+		<AmbientIntensity=1.000000>
+		<TargetExposure=0.250000>
+		<FogNear=0.000000>
+		<FogFar=0.000000>
+		<FogColor=
+			<X=1.000000>
+			<Y=1.000000>
+			<Z=1.000000>
+		>
+	>
+	<Physics=
+		<Frequency=59.999996>
+	>
+>

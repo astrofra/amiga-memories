@@ -1,0 +1,2 @@
+vec4 txl = texture2D(u_tex, v_uv);
+%out.color% = txl * v_color;

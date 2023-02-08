@@ -1,0 +1,11 @@
+<Version=1.0>
+<Profiles=
+	<Profile=
+		<Name="Default">
+		<Version="Default">
+		<Target="Win32">
+		<RuntimeCmd="-ignore_esc -ignore_missing -r @renderer_dx11.dll -CC ./ -fallback_disk_fs">
+		<CookingQuality=1>
+		<CompressionLevel=2>
+	>
+>

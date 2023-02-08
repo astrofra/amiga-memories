@@ -1,0 +1,4 @@
+vec2	UV = %in.fragcoord%.xy * u_ibs;
+vec4	diff_alpha = texture2D(gbuffer1, UV);
+vec4	const_unkn = texture2D(gbuffer3, UV);
+%out.color% = vec4(diff_alpha.rgb * u_ambientc + const_unkn.xyz, 1.0);

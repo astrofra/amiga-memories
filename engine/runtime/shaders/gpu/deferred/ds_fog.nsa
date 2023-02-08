@@ -1,0 +1,15 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="gbuffer0"><Semantic="GBuffer0">>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+
+		<Uniform=<Name="u_fog_col"><Semantic="FogColor">>
+		<Uniform=<Name="u_fog_near"><Semantic="FogNear">>
+		<Uniform=<Name="u_fog_irange"><Semantic="FogInverseRange">>
+	>
+	<Vertex="@core/shaders/gpu/position_no_transform_v.txt">
+	<Fragment="@core/shaders/gpu/deferred/ds_fog_f.txt">
+>

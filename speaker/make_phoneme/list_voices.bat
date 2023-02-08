@@ -1,0 +1,2 @@
+ptts.exe -vl
+pause

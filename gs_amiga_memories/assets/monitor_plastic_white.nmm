@@ -1,0 +1,37 @@
+<Version=1.0>
+<Material=
+	<Diffuse=
+		<X=0.886275>
+		<Y=0.854902>
+		<Z=0.796078>
+		<W=1.000000>
+	>
+	<Specular=
+		<X=0.764706>
+		<Y=0.745098>
+		<Z=0.709804>
+	>
+	<Ambient=
+		<X=0.890196>
+		<Y=0.854902>
+		<Z=0.796079>
+	>
+	<Glossiness=1.000000>
+	<AlphaThreshold=0.100000>
+	<PhysicMaterial=
+		<StaticFriction=0.750000>
+		<DynamicFriction=0.500000>
+		<Restitution=0.100000>
+	>
+	<RenderMask=
+		<Smoothing>
+		<NormalMapTangent>
+	>
+	<TextureStage=
+		<Index=0>
+		<Texture="assets/planet_envmap_0.png">
+		<UV=0>
+		<Channel="Reflection">
+		<UVSource="LSNormal">
+	>
+>

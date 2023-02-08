@@ -1,0 +1,231 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Abs	.\vector2.nut	/^	function	Abs()			{	return Vector2(x < 0 ? -x : x, y < 0 ? -y : y);	}$/;"	f	class:Vector2	file:
+Alloc	.\oo\picture.nut	/^	function		Alloc(...)$/;"	f	class:Picture	file:
+ApplyConvolution	.\oo\picture.nut	/^	function        ApplyConvolution(kernel_width, kernel_height, kernel)$/;"	f	class:Picture	file:
+Camera	.\oo\camera.nut	/^class		Camera	extends	ItemDerived$/;"	c	file:
+CameraWorldToScene2d	.\ui.nut	/^function	CameraWorldToScene2d(camera, world, scene2d)$/;"	f
+ChannelLock	.\oo\mixer.nut	/^	function        ChannelLock()$/;"	f	class:Mixer	file:
+ChannelSetTexture	.\oo\material.nut	/^	function		ChannelSetTexture(channel, texture)$/;"	f	class:Material	file:
+ChannelSetUVMatrix	.\oo\material.nut	/^	function		ChannelSetUVMatrix(channel, matrix)$/;"	f	class:Material	file:
+ChannelStart	.\oo\mixer.nut	/^	function        ChannelStart(channel, sound)$/;"	f	class:Mixer	file:
+ChannelStopAll	.\oo\mixer.nut	/^	function        ChannelStopAll()$/;"	f	class:Mixer	file:
+Clamp	.\math.nut	/^function	Clamp(v, min, max)$/;"	f
+Clamp	.\vector2.nut	/^	function	Clamp(min, max)$/;"	f	class:Vector2	file:
+Clamp2d	.\vector2.nut	/^	function	Clamp2d(vmin, vmax)$/;"	f	class:Vector2	file:
+Cm	.\math.nut	/^function	Cm(v)	{	return v * 0.01;	}$/;"	f
+CreateProfiler	.\oo\scene.nut	/^	function        CreateProfiler(desc, face)$/;"	f	class:Scene	file:
+CreateTexture	.\oo\engine.nut	/^	function		CreateTexture(width, height, render_target)$/;"	f	class:Engine	file:
+Debug	.\oo\scene.nut	/^	function        Debug()$/;"	f	class:Scene	file:
+DebugCollisionSystem	.\oo\scene.nut	/^	function        DebugCollisionSystem()$/;"	f	class:Scene	file:
+DebugPath	.\oo\scene.nut	/^	function        DebugPath()$/;"	f	class:Scene	file:
+DebugPhysicSystem	.\oo\scene.nut	/^	function        DebugPhysicSystem()$/;"	f	class:Scene	file:
+DeleteContent	.\oo\scene.nut	/^	function        DeleteContent()$/;"	f	class:Scene	file:
+Dist	.\vector2.nut	/^	function    Dist(b)         {	return (b - this).Len();	}$/;"	f	class:Vector2	file:
+DrawBillboardQuad	.\billboard.nut	/^function	DrawBillboardQuad(matrix, center, size, color = Vector(1, 1, 1), blend = MaterialBlendNone, flag = MaterialRenderDefault)$/;"	f
+DrawBillboardQuadTextured	.\billboard.nut	/^function	DrawBillboardQuadTextured(matrix, center, size, texture, uvmin = UV(0, 0), uvmax = UV(1, 1), color = Vector(1, 1, 1), blend = MaterialBlendNone, flag = MaterialRenderDefault)$/;"	f
+EndReplay	.\oo\scene.nut	/^	function		EndReplay()$/;"	f	class:Record	file:
+Engine	.\oo\engine.nut	/^class		Engine$/;"	c	file:
+EngineLoadGeometry	.\compat.nut	/^function	EngineLoadGeometry(engine, path)$/;"	f
+EngineLoadPicture	.\compat.nut	/^function	EngineLoadPicture(engine, path)$/;"	f
+EngineLoadSound	.\compat.nut	/^function	EngineLoadSound(engine, path)$/;"	f
+EngineLoadTexture	.\compat.nut	/^function	EngineLoadTexture(engine, path)$/;"	f
+EngineSetClockScale	.\compat.nut	/^function	EngineSetClockScale(engine, k)$/;"	f
+Fill	.\oo\picture.nut	/^	function		Fill(...)$/;"	f	class:Picture	file:
+FindItemChild	.\oo\scene.nut	/^	function		FindItemChild(item, child_id)$/;"	f	class:Scene	file:
+FromNMLStoreGroup	.\oo\scene.nut	/^	function		FromNMLStoreGroup(path, flag)$/;"	f	class:Scene	file:
+Geometry	.\oo\geometry.nut	/^class		Geometry$/;"	c	file:
+GetCenter	.\rect.nut	/^	function	GetCenter()$/;"	f	class:Rect	file:
+GetClockScale	.\oo\engine.nut	/^	function		GetClockScale()$/;"	f	class:Engine	file:
+GetCurrentCamera	.\oo\scene.nut	/^	function        GetCurrentCamera()$/;"	f	class:Scene	file:
+GetDuration	.\oo\scene.nut	/^	function		GetDuration()$/;"	f	class:Record	file:
+GetDuration	.\oo\sound.nut	/^	function        GetDuration()$/;"	f	class:Sound	file:
+GetGeometry	.\oo\object.nut	/^	function		GetGeometry()$/;"	f	class:Object	file:
+GetHandle	.\oo\camera.nut	/^	function		GetHandle()$/;"	f	class:Camera	file:
+GetHandle	.\oo\engine.nut	/^	function		GetHandle()$/;"	f	class:Engine	file:
+GetHandle	.\oo\geometry.nut	/^	function		GetHandle()$/;"	f	class:Geometry	file:
+GetHandle	.\oo\group.nut	/^	function		GetHandle()$/;"	f	class:Group	file:
+GetHandle	.\oo\material.nut	/^	function		GetHandle()$/;"	f	class:Material	file:
+GetHandle	.\oo\mixer.nut	/^	function		GetHandle()$/;"	f	class:Mixer	file:
+GetHandle	.\oo\motion.nut	/^	function		GetHandle()$/;"	f	class:Motion	file:
+GetHandle	.\oo\picture.nut	/^	function		GetHandle()$/;"	f	class:Picture	file:
+GetHandle	.\oo\scene.nut	/^	function		GetHandle()$/;"	f	class:Scene	file:
+GetHandle	.\oo\sound.nut	/^	function		GetHandle()$/;"	f	class:Sound	file:
+GetHandle	.\oo\texture.nut	/^	function		GetHandle()$/;"	f	class:Texture	file:
+GetHandle	.\oo\ui.nut	/^	function		GetHandle()$/;"	f	class:UI	file:
+GetHeight	.\rect.nut	/^	function	GetHeight()$/;"	f	class:Rect	file:
+GetItem	.\oo\camera.nut	/^	function		GetItem()$/;"	f	class:Camera	file:
+GetItem	.\oo\object.nut	/^	function		GetItem()$/;"	f	class:Object	file:
+GetLength	.\oo\motion.nut	/^	function        GetLength()$/;"	f	class:Motion	file:
+GetName	.\oo\motion.nut	/^	function    	GetName()$/;"	f	class:Motion	file:
+GetPhysicFrequency	.\oo\scene.nut	/^	function		GetPhysicFrequency()$/;"	f	class:Scene	file:
+GetPicture	.\oo\texture.nut	/^	function		GetPicture()$/;"	f	class:Texture	file:
+GetPixel	.\oo\picture.nut	/^	function		GetPixel(x,y)$/;"	f	class:Picture	file:
+GetPosition	.\oo\item_derived.nut	/^	function		GetPosition()$/;"	f	class:ItemDerived	file:
+GetRect	.\oo\picture.nut	/^	function		GetRect()$/;"	f	class:Picture	file:
+GetRootItem	.\oo\group.nut	/^	function	GetRootItem()$/;"	f	class:Group	file:
+GetSize	.\rect.nut	/^	function	GetSize()$/;"	f	class:Rect	file:
+GetUI	.\oo\scene.nut	/^	function		GetUI()$/;"	f	class:Scene	file:
+GetValues	.\helper.nut	/^	function	GetValues()$/;"	f	class:Historic	file:
+GetWidth	.\rect.nut	/^	function	GetWidth()$/;"	f	class:Rect	file:
+Gr	.\math.nut	/^function	Gr(v)	{	return v * 0.001;	}$/;"	f
+Group	.\oo\group.nut	/^class		Group$/;"	c	file:
+Historic	.\helper.nut	/^class	Historic$/;"	c	file:
+Irand	.\math.nut	/^function	Irand(min, max)$/;"	f
+IsSetup	.\oo\scene.nut	/^	function    IsSetup()$/;"	f	class:Scene	file:
+IsValid	.\oo\geometry.nut	/^	function		IsValid()$/;"	f	class:Geometry	file:
+Item	.\oo\item.nut	/^class		Item$/;"	c	file:
+ItemActivate	.\compat.nut	/^function	ItemActivate(item, v)$/;"	f
+ItemActivateHierarchy	.\compat.nut	/^function	ItemActivateHierarchy(item, v)$/;"	f
+ItemDerived	.\oo\item_derived.nut	/^class		ItemDerived$/;"	c	file:
+Kg	.\math.nut	/^function	Kg(v)	{	return v;	}$/;"	f
+Km	.\math.nut	/^function	Km(v)	{	return v * 1000.0;	}$/;"	f
+Kmh	.\math.nut	/^function	Kmh(v)	{	return v \/ 3.6;	}$/;"	f
+Len	.\vector2.nut	/^	function	Len()			{	local l = Len2(); return l ? sqrt(l) : 0.0;	}$/;"	f	class:Vector2	file:
+Len2	.\vector2.nut	/^	function	Len2()			{	return x * x + y * y;	}$/;"	f	class:Vector2	file:
+Lerp	.\math.nut	/^function	Lerp(k, a, b)$/;"	f
+Lerp	.\vector2.nut	/^	function	Lerp(k, b)$/;"	f	class:Vector2	file:
+Loop	.\math.nut	/^function	Loop(v, min, max)$/;"	f
+Material	.\oo\material.nut	/^class		Material$/;"	c	file:
+Max	.\math.nut	/^function	Max(a, b)$/;"	f
+Max	.\vector2.nut	/^	function	Max(b)			{	return Vector2(x > b.x ? x : b.x, y > b.y ? y : b.y);	}$/;"	f	class:Vector2	file:
+MemoryFootprint	.\oo\scene.nut	/^	function		MemoryFootprint()$/;"	f	class:Record	file:
+Min	.\math.nut	/^function	Min(a, b)$/;"	f
+Min	.\vector2.nut	/^	function	Min(b)			{	return Vector2(x < b.x ? x : b.x, y < b.y ? y : b.y);	}$/;"	f	class:Vector2	file:
+MinMax	.\minmax.nut	/^class	MinMax$/;"	c	file:
+Mixer	.\oo\mixer.nut	/^class		Mixer$/;"	c	file:
+Mm	.\math.nut	/^function	Mm(v)	{	return v * 0.001;	}$/;"	f
+Mod	.\math.nut	/^function	Mod(v, m)$/;"	f
+Motion	.\oo\motion.nut	/^class		Motion$/;"	c	file:
+Mtr	.\math.nut	/^function	Mtr(v)	{	return v;	}$/;"	f
+MtrToKm	.\math.nut	/^function	MtrToKm(v)	{	return v \/ 1000.0;	}$/;"	f
+Mtrs	.\math.nut	/^function	Mtrs(v)	{	return v;	}$/;"	f
+Normalize	.\math.nut	/^function	Normalize(v, a, b)$/;"	f
+Normalize	.\vector2.nut	/^	function	Normalize(length = 1.0)$/;"	f	class:Vector2	file:
+Null	.\oo\texture.nut	/^	function        Null()$/;"	f	class:Texture	file:
+Object	.\oo\object.nut	/^class		Object$/;"	c	file:
+Offset	.\rect.nut	/^	function	Offset(x, y)$/;"	f	class:Rect	file:
+PhysicAllocateCollisionNode	.\oo\scene.nut	/^	function		PhysicAllocateCollisionNode(max_node, max_contact)$/;"	f	class:Scene	file:
+Picture	.\oo\picture.nut	/^class		Picture$/;"	c	file:
+Point	.\rect.nut	/^class Point$/;"	c	file:
+Print	.\rect.nut	/^	function	Print()$/;"	f	class:Rect	file:
+Print	.\vector2.nut	/^	function	Print()$/;"	f	class:Vector2	file:
+PrintItemList	.\oo\scene.nut	/^	function        PrintItemList()$/;"	f	class:Scene	file:
+ProjectSceneFromFile	.\project.nut	/^function    ProjectSceneFromFile(scene, file)$/;"	f
+QueueEvent	.\timeout_handler.nut	/^	function	QueueEvent(time_out, _code, _instance)$/;"	f	class:TimeoutHandler	file:
+Rand	.\math.nut	/^function    Rand(min, max)$/;"	f
+Randomize	.\vector2.nut	/^	function	Randomize(a, b)$/;"	f	class:Vector2	file:
+RangeAdjust	.\math.nut	/^function	RangeAdjust(k, a, b, u, v)$/;"	f
+RangeAdjustClamped	.\math.nut	/^function	RangeAdjustClamped(k, a, b, u, v)$/;"	f
+RaytraceTriggerList	.\oo\scene.nut	/^	function	RaytraceTriggerList(s, d, l)$/;"	f	class:Scene	file:
+Raytracer	.\oo\raytracer.nut	/^class		Raytracer$/;"	c	file:
+Record	.\oo\scene.nut	/^class		Record$/;"	c	file:
+RecordLocation	.\oo\scene.nut	/^	function    RecordLocation()$/;"	f	class:Scene	file:
+RecordNew	.\oo\scene.nut	/^	function		RecordNew()$/;"	f	class:Scene	file:
+Rect	.\rect.nut	/^class Rect$/;"	c	file:
+Render	.\oo\scene.nut	/^	function        Render()$/;"	f	class:Scene	file:
+RenderQueue	.\oo\scene.nut	/^	function        RenderQueue()$/;"	f	class:Scene	file:
+RenderUI	.\oo\scene.nut	/^	function        RenderUI()$/;"	f	class:Scene	file:
+RendererLoadWriterFont	.\compat.nut	/^function	RendererLoadWriterFont(renderer, base_path, path)$/;"	f
+Reset	.\helper.nut	/^	function	Reset()$/;"	f	class:Historic	file:
+Reset	.\oo\group.nut	/^	function	Reset()$/;"	f	class:Group	file:
+Reset	.\oo\scene.nut	/^	function 	Reset()$/;"	f	class:Scene	file:
+ResetClock	.\oo\engine.nut	/^	function		ResetClock()$/;"	f	class:Engine	file:
+ResetScript	.\oo\scene.nut	/^	function 	ResetScript()$/;"	f	class:Scene	file:
+Reverse	.\vector2.nut	/^	function	Reverse()		{	return Vector2(-x, -y);	}$/;"	f	class:Vector2	file:
+Scale	.\vector2.nut	/^	function	Scale(k)		{	return Vector2(x * k, y * k);		}$/;"	f	class:Vector2	file:
+Scene	.\oo\scene.nut	/^class		Scene$/;"	c	file:
+Sec	.\math.nut	/^function	Sec(v)	{	return v;	}$/;"	f
+Set	.\minmax.nut	/^	function        Set(_min = Vector(), _max = Vector())$/;"	f	class:MinMax	file:
+Set	.\rect.nut	/^	function	Set(u, v, s, t)	{	sx = u; sy = v; ex = s; ey = t;	}$/;"	f	class:Rect	file:
+Set	.\vector2.nut	/^	function	Set(u, v)	{	x = u; y = v	}$/;"	f	class:Vector2	file:
+SetAntialias	.\oo\raytracer.nut	/^	function		SetAntialias(enable, sample_count, threshold, jitter)$/;"	f	class:Raytracer	file:
+SetAspectRatio	.\oo\camera.nut	/^	function		SetAspectRatio(ar = -1)$/;"	f	class:Camera	file:
+SetAspectRatioVertical	.\oo\camera.nut	/^	function		SetAspectRatioVertical(is_vertical = false)$/;"	f	class:Camera	file:
+SetGlobalIllum	.\oo\raytracer.nut	/^		function	SetGlobalIllum(enable, sample_count, max_indirect_bounce)$/;"	f	class:Raytracer	file:
+SetInterlace	.\oo\raytracer.nut	/^	function		SetInterlace(interlaced, even_frame)$/;"	f	class:Raytracer	file:
+SetPixel	.\oo\picture.nut	/^	function		SetPixel(x,y,rgba)$/;"	f	class:Picture	file:
+Setup	.\oo\group.nut	/^	function	Setup()$/;"	f	class:Group	file:
+Setup	.\oo\scene.nut	/^	function    Setup()$/;"	f	class:Scene	file:
+SignedPow	.\math.nut	/^function	SignedPow(v, e)$/;"	f
+Snapshot	.\oo\scene.nut	/^	function		Snapshot()$/;"	f	class:Record	file:
+Sound	.\oo\sound.nut	/^class		Sound$/;"	c	file:
+StartInterlacedSequence	.\oo\raytracer.nut	/^	function		StartInterlacedSequence()$/;"	f	class:Raytracer	file:
+StartReplay	.\oo\scene.nut	/^	function		StartReplay()$/;"	f	class:Record	file:
+TextRender	.\oo\picture.nut	/^	function		TextRender(rect, text, font, parm)$/;"	f	class:Picture	file:
+Texture	.\oo\texture.nut	/^class		Texture$/;"	c	file:
+TimeoutHandler	.\timeout_handler.nut	/^class		TimeoutHandler$/;"	c	file:
+Tn	.\math.nut	/^function	Tn(v)	{	return v * 1000.0;	}$/;"	f
+Trace	.\oo\raytracer.nut	/^	function		Trace(path, width, height)$/;"	f	class:Raytracer	file:
+UI	.\oo\ui.nut	/^class		UI$/;"	c	file:
+UIAddBitmapWindow	.\compat.nut	/^function	UIAddBitmapWindow(ui, id, path, x, y, w, h)$/;"	f
+UIAddWindow	.\compat.nut	/^function	UIAddWindow(ui, id, x, y, w, h)$/;"	f
+Update	.\oo\material.nut	/^	function		Update()$/;"	f	class:Material	file:
+Update	.\oo\scene.nut	/^	function 	Update()$/;"	f	class:Scene	file:
+Update	.\oo\texture.nut	/^	function		Update()$/;"	f	class:Texture	file:
+Update	.\timeout_handler.nut	/^	function	Update()$/;"	f	class:TimeoutHandler	file:
+Vector2	.\vector2.nut	/^class 	Vector2$/;"	c	file:
+VectorFromRGBHex	.\vector.nut	/^function	VectorFromRGBHex(rgb, argb = false)$/;"	f
+activate	.\oo\item.nut	/^	function		activate(active = true)$/;"	f	class:Item	file:
+activateHierarchy	.\oo\item.nut	/^	function		activateHierarchy(active = true)$/;"	f	class:Item	file:
+alpha	.\oo\item.nut	/^	function        alpha()$/;"	f	class:Item	file:
+constructor	.\minmax.nut	/^	constructor(_min = Vector(), _max = Vector())$/;"	f	class:MinMax	file:
+constructor	.\oo\engine.nut	/^	constructor()$/;"	f	class:Engine	file:
+constructor	.\oo\picture.nut	/^	constructor(...)$/;"	f	class:Picture	file:
+constructor	.\oo\scene.nut	/^	constructor(s, h)$/;"	f	class:Record	file:
+constructor	.\rect.nut	/^	constructor(...)$/;"	f	class:Point	file:
+constructor	.\rect.nut	/^	constructor(...)$/;"	f	class:Rect	file:
+constructor	.\timeout_handler.nut	/^	constructor()$/;"	f	class:TimeoutHandler	file:
+constructor	.\vector2.nut	/^	constructor(_x = 0.0, _y = 0.0)$/;"	f	class:Vector2	file:
+entry	.\helper.nut	/^	entry		=	8;$/;"	m	class:Historic	file:
+event_array	.\timeout_handler.nut	/^	event_array			=	0;$/;"	m	class:TimeoutHandler	file:
+ex	.\rect.nut	/^	sx = 0.0; sy = 0.0; ex = 0.0; ey = 1.0;$/;"	m	class:Rect	file:
+ey	.\rect.nut	/^	sx = 0.0; sy = 0.0; ex = 0.0; ey = 1.0;$/;"	m	class:Rect	file:
+fill	.\helper.nut	/^	fill		=	0;$/;"	m	class:Historic	file:
+geometry	.\oo\item.nut	/^	function		geometry()$/;"	f	class:Item	file:
+handle	.\oo\camera.nut	/^	handle			=	0;$/;"	m	class:Camera	file:
+handle	.\oo\engine.nut	/^	handle			=	0;$/;"	m	class:Engine	file:
+handle	.\oo\geometry.nut	/^	handle			=	0;$/;"	m	class:Geometry	file:
+handle	.\oo\group.nut	/^	handle			=	0;$/;"	m	class:Group	file:
+handle	.\oo\material.nut	/^	handle			=	0;$/;"	m	class:Material	file:
+handle	.\oo\mixer.nut	/^	handle			=	0;$/;"	m	class:Mixer	file:
+handle	.\oo\motion.nut	/^	handle			=	0;$/;"	m	class:Motion	file:
+handle	.\oo\object.nut	/^	handle			=	0;$/;"	m	class:Object	file:
+handle	.\oo\picture.nut	/^	handle			=	0;$/;"	m	class:Picture	file:
+handle	.\oo\raytracer.nut	/^	handle			=	0;$/;"	m	class:Raytracer	file:
+handle	.\oo\scene.nut	/^	handle			=	0;$/;"	m	class:Record	file:
+handle	.\oo\scene.nut	/^	handle			=	0;$/;"	m	class:Scene	file:
+handle	.\oo\sound.nut	/^	handle			=	0;$/;"	m	class:Sound	file:
+handle	.\oo\texture.nut	/^	handle			=	0;$/;"	m	class:Texture	file:
+handle	.\oo\ui.nut	/^	handle			=	0;$/;"	m	class:UI	file:
+isCommandListDone	.\oo\item.nut	/^	function		isCommandListDone()$/;"	f	class:Item	file:
+isValid	.\oo\item.nut	/^	function		isValid()$/;"	f	class:Item	file:
+max	.\minmax.nut	/^	max			=	0$/;"	m	class:MinMax	file:
+min	.\minmax.nut	/^	min			=	0$/;"	m	class:MinMax	file:
+name	.\oo\item.nut	/^	function		name()$/;"	f	class:Item	file:
+position	.\oo\item.nut	/^	function		position()$/;"	f	class:Item	file:
+rotation	.\oo\item.nut	/^	function		rotation()$/;"	f	class:Item	file:
+rotationMatrix	.\oo\item.nut	/^	function		rotationMatrix()$/;"	f	class:Item	file:
+scale	.\oo\item.nut	/^	function		scale()$/;"	f	class:Item	file:
+scene	.\oo\scene.nut	/^	scene			=	0;$/;"	m	class:Record	file:
+scriptInstance	.\oo\item.nut	/^	function		scriptInstance()$/;"	f	class:Item	file:
+serializeArrayToMetatag	.\metafile.nut	/^function	serializeArrayToMetatag(object, tag)$/;"	f
+serializeObjectToMetatag	.\metafile.nut	/^function	serializeObjectToMetatag(value, tag)$/;"	f
+serializeTableToMetatag	.\metafile.nut	/^function	serializeTableToMetatag(object, tag)$/;"	f
+setInvisible	.\oo\item.nut	/^	function		setInvisible(invisible = false)$/;"	f	class:Item	file:
+setMotion	.\oo\item.nut	/^	function		setMotion(slot, motion, blend = 0, weight = 1, start = 0, scale = 1)$/;"	f	class:Item	file:
+setupScript	.\oo\item.nut	/^	function		setupScript()$/;"	f	class:Item	file:
+size	.\helper.nut	/^	size		=	8;$/;"	m	class:Historic	file:
+stopMotion	.\oo\item.nut	/^	function        stopMotion()$/;"	f	class:Item	file:
+sx	.\rect.nut	/^	sx = 0.0; sy = 0.0; ex = 0.0; ey = 1.0;$/;"	m	class:Rect	file:
+sy	.\rect.nut	/^	sx = 0.0; sy = 0.0; ex = 0.0; ey = 1.0;$/;"	m	class:Rect	file:
+values	.\helper.nut	/^	values		=	array(8, 0.0);$/;"	m	class:Historic	file:
+worldPosition	.\oo\item.nut	/^	function		worldPosition()$/;"	f	class:Item	file:
+x	.\rect.nut	/^	x = 0.0; y = 0.0;$/;"	m	class:Point	file:
+x	.\vector2.nut	/^	x = 0.0; y = 0.0;$/;"	m	class:Vector2	file:
+y	.\rect.nut	/^	x = 0.0; y = 0.0;$/;"	m	class:Point	file:
+y	.\vector2.nut	/^	x = 0.0; y = 0.0;$/;"	m	class:Vector2	file:

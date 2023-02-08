@@ -1,0 +1,28 @@
+float	DecodeDepth(vec2 UV)
+{	return texture2D(u_normal_depth, UV).w;	}
+
+vec4	BlurSample(vec2 UV, float ref_depth, vec4 ref_source)
+{
+#if	0
+	float val_depth = DecodeDepth(UV);
+	if	(abs(val_depth - ref_depth) > (u_ao_radius / 1000.0))
+		return ref_source;
+#endif
+	return texture2D(u_tex, UV);
+}
+
+%main%
+{
+	vec2	UV = %in.fragcoord%.xy * u_ibs * u_fx_scale;
+	float	ref_depth = DecodeDepth(UV);
+	vec4	ref_source = texture2D(u_tex, UV);
+
+	vec2	blur_factor = u_blur_radius * u_ivs;
+
+	vec4	txl = vec4(0.0, 0.0, 0.0, 0.0);
+	for	(float v = -0.5; v < 0.51; v += 0.25)
+		for	(float u = -0.5; u < 0.51; u += 0.25)
+				txl += BlurSample(UV + vec2(u, v) * blur_factor, ref_depth, ref_source);
+
+	%out.color% = txl / 25.0;
+}

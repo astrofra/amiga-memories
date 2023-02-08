@@ -1,0 +1,7 @@
+<Version=1.0>
+<TextureParm=
+	<WrapU="Repeat">
+	<WrapV="Clamp">
+	<Filtering="Trilinear">
+	<Anisotropy="16x">
+>

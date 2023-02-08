@@ -1,0 +1,28 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="gbuffer0"><Semantic="GBuffer0">>
+		<Uniform=<Name="gbuffer1"><Semantic="GBuffer1">>
+		<Uniform=<Name="gbuffer2"><Semantic="GBuffer2">>
+
+		<Uniform=<Name="u_mvp"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_mv"><Semantic="ModelViewMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+		<Uniform=<Name="u_vdo"><Semantic="ViewDepthOffset">>
+
+		<Uniform=<Name="u_lvp"><Semantic="LightViewPosition">>
+		<Uniform=<Name="u_lvd"><Semantic="LightViewDirection">>
+		<Uniform=<Name="u_lr"><Semantic="LightRange">>
+		<Uniform=<Name="u_ledge"><Semantic="LightSpotEdge">>
+		<Uniform=<Name="u_lcone"><Semantic="LightSpotCone">>
+		<Uniform=<Name="u_diffc"><Semantic="LightDiffuseColor">>
+		<Uniform=<Name="u_specc"><Semantic="LightSpecularColor">>
+	>
+	<Varying=
+		<Variable=<Name="forward"><Type="vec3">>
+	>
+	<Vertex="@core/shaders/gpu/deferred/spotlight_v.txt">
+	<Fragment="@core/shaders/gpu/deferred/spotlight_f.txt">
+>

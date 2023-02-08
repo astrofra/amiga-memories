@@ -1,0 +1,4 @@
+<Version=1.0>
+<Material=
+	<Shader="@core/builtin/shader/missing_material.nsa">
+>

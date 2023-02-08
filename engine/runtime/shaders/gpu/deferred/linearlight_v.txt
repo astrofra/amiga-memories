@@ -1,0 +1,2 @@
+%out.position% = vec4(a_position, 1.0);
+forward = a_position.xyz;

@@ -1,0 +1,45 @@
+<Version=1.0>
+<Material=
+	<Id="assets/joy_red_flat.nmm">
+	<Diffuse=
+		<X=0.921569>
+		<Y=0.098039>
+		<Z=0.098039>
+		<W=1.000000>
+	>
+	<Specular=
+		<X=0.921569>
+		<Y=0.435294>
+		<Z=0.435294>
+	>
+	<Ambient=
+		<X=0.921569>
+		<Y=0.098039>
+		<Z=0.098039>
+	>
+	<Glossiness=0.250000>
+	<AlphaThreshold=0.100000>
+	<PhysicMaterial=
+		<StaticFriction=0.750000>
+		<DynamicFriction=0.500000>
+		<Restitution=0.100000>
+	>
+	<RenderMask=
+		<Smoothing>
+		<NormalMapTangent>
+	>
+	<Shader="assets/joy_red_flat.nsa">
+	<TextureStage=
+		<Index=0>
+		<Texture="assets/planet_envmap_0.png">
+		<UV=0>
+		<Channel="Reflection">
+		<UVSource="LSNormal">
+	>
+	<TextureStage=
+		<Index=1>
+		<Texture="assets/joy_main_bodyAmbient Occlusion.tga">
+		<UV=1>
+		<Channel="Specular">
+	>
+>

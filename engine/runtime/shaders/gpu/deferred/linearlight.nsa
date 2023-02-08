@@ -1,0 +1,22 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="gbuffer0"><Semantic="GBuffer0">>
+		<Uniform=<Name="gbuffer1"><Semantic="GBuffer1">>
+		<Uniform=<Name="gbuffer2"><Semantic="GBuffer2">>
+
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+		<Uniform=<Name="u_vdo"><Semantic="ViewDepthOffset">>
+
+		<Uniform=<Name="u_lvd"><Semantic="LightViewDirection">>
+		<Uniform=<Name="u_diffc"><Semantic="LightDiffuseColor">>
+		<Uniform=<Name="u_specc"><Semantic="LightSpecularColor">>
+	>
+	<Varying=
+		<Variable=<Name="forward"><Type="vec3">>
+	>
+	<Vertex="@core/shaders/gpu/deferred/linearlight_v.txt">
+	<Fragment="@core/shaders/gpu/deferred/linearlight_f.txt">
+>

@@ -1,0 +1,15 @@
+<Version=1.0>
+<TextureParm=
+	<WrapU="Clamp">
+	<WrapV="Clamp">
+	<Filtering="Trilinear">
+	<Anisotropy="16x">
+	<Swizzle="RGBA">
+	<InvertR=False>
+	<InvertG=False>
+	<InvertB=False>
+	<InvertA=False>
+	<FlipU=False>
+	<FlipV=False>
+	<LODBias=0.000000>
+>

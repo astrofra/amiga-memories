@@ -1,0 +1,40 @@
+<Version=1.0>
+<Material=
+	<Diffuse=
+		<X=0.588235>
+		<Y=0.588235>
+		<Z=0.588235>
+		<W=1.000000>
+	>
+	<Specular=
+		<X=0.384314>
+		<Y=0.384314>
+		<Z=0.384314>
+	>
+	<Ambient=
+		<X=0.588235>
+		<Y=0.588235>
+		<Z=0.588235>
+	>
+	<Glossiness=0.500000>
+	<AlphaThreshold=0.100000>
+	<PhysicMaterial=
+		<StaticFriction=0.750000>
+		<DynamicFriction=0.500000>
+		<Restitution=0.100000>
+	>
+	<RenderMask=
+		<Smoothing>
+	>
+	<TextureStage=
+		<Index=0>
+		<Texture="assets/portrait_dale-luck.png">
+		<UV=0>
+	>
+	<TextureStage=
+		<Index=1>
+		<Texture="assets/box_art_spec.png">
+		<UV=0>
+		<Channel="Specular">
+	>
+>

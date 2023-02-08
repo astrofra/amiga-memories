@@ -1,0 +1,13 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Attribute=<Name="a_color"><Semantic="VertexColor">>
+		<Uniform=<Name="u_mvp"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+	>
+	<Varying=
+		<Variable=<Name="v_color"><Type="vec4">>
+	>
+	<Vertex="@core/shaders/gpu/single_color_v.txt">
+	<Fragment="@core/shaders/gpu/single_color_f.txt">
+>

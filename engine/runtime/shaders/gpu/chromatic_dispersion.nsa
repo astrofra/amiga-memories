@@ -1,0 +1,14 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="u_mvp"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_tex"><Semantic="NativeTexture">>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+
+		<Uniform=<Name="u_width"><Type="float">>
+	>
+	<Vertex="@core/shaders/gpu/simple_v.txt">
+	<Fragment="@core/shaders/gpu/chromatic_dispersion_f.txt">
+>

@@ -1,0 +1,56 @@
+<Version=1.0>
+<Shader=
+	<Input=
+		<Uniform=
+			<Name="u_n_matrix">
+			<Semantic="NormalMatrix">
+			<Scope=
+				<Vertex>
+			>
+		>
+		<Uniform=
+			<Name="u_view">
+			<Semantic="ViewVector">
+		>
+		<Uniform=
+			<Name="u_cube">
+			<Semantic="CubeTexture">
+			<Texture="Samples - 3D/Shader - Reflection Mapping/humus.dds">
+		>
+		<Uniform=
+			<Name="u_diffuse">
+			<Semantic="MaterialDiffuse">
+		>
+		<Uniform=
+			<Name="u_framebuffer">
+			<Semantic="FrameBuffer">
+		>
+		<Uniform=
+			<Name="u_ibs">
+			<Semantic="InverseBufferSize">
+		>
+	>
+	<Varying=
+		<Variable=
+			<Name="v_world_normal">
+			<Type="vec3">
+		>
+	>
+	<VertexSource="
+v_world_normal = n_mtx_mul(u_n_matrix, a_normal);
+	">
+	<PixelSource="
+vec3 reflected_world_view = reflect(u_view, normalize(v_world_normal));	// note: could do without the normalize for performance sake...
+
+float k_fresnel = min(pow(max(1.0 + dot(u_view, v_world_normal), 0.0), 2.0) * 1.5, 1.0);
+
+%diffuse% = vec4(u_diffuse.xyz * k_fresnel * 0.5, 1.0);
+
+vec3 reflection = textureCube(u_cube, reflected_world_view).xyz;
+
+vec2 refraction_offset = %in.normal%.xy * -0.02;
+vec3 refraction = texture2D(u_framebuffer, %in.fragcoord%.xy * u_ibs + refraction_offset).xyz;
+
+%constant% = vec4(mix(refraction, reflection, k_fresnel), 1.0);
+	">
+>

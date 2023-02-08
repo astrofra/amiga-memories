@@ -1,0 +1,13 @@
+<Version=1.0>
+<Environment=
+	<Name="gs_amiga_memories">
+	<Authors="Astrofra">
+	<Description="New project">
+	<Company="Copyright 2011">
+	<ScriptUnit=
+		<ScriptPath="scripts/project.nut">
+		<Class="ProjectHandler">
+	>
+	<Include>
+	<SearchPaths>
+>

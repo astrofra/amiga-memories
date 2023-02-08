@@ -1,0 +1,377 @@
+[S] GetDosPathFromSquirrelPath() : input = c:/works/projects/svn_amiga_memories/gs_amiga_memories/tmp
+[S] GetDosPathFromSquirrelPath() : output = c:\\works\\projects\\svn_amiga_memories\\gs_amiga_memories\\tmp\\
+[S] ProjectHandler::constructor()
+[S] ProjectHandler::OnSetup()
+[S] ProjectHandler::LoadScene('scenes/main_menu_screen.nms')
+[S] MainMenuScreen::ClickOnStart() = (instance : 0x097257E8)
+[S] ProjectHandler::LoadScene('scenes/preloader.nms')
+[S] Preload::OnSetup()
+[S] Preload::OnUpdate() progress = 0
+[S] Preload::OnUpdate() progress = 1
+[S] Preload::OnUpdate() progress = 2
+[S] Preload::OnUpdate() progress = 3
+[S] Preload::OnUpdate() progress = 4
+[S] Preload::OnUpdate() progress = 4
+[S] Preload::OnUpdate() progress = 5
+[S] Preload::OnUpdate() progress = 6
+[S] Preload::OnUpdate() progress = 7
+[S] Preload::OnUpdate() progress = 7
+[S] Preload::OnUpdate() progress = 8
+[S] Preload::OnUpdate() progress = 9
+[S] Preload::OnUpdate() progress = 10
+[S] Preload::OnUpdate() progress = 10
+[S] Preload::OnUpdate() progress = 11
+[S] Preload::OnUpdate() progress = 12
+[S] Preload::OnUpdate() progress = 13
+[S] Preload::OnUpdate() progress = 13
+[S] Preload::OnUpdate() progress = 14
+[S] Preload::OnUpdate() progress = 15
+[S] Preload::OnUpdate() progress = 16
+[S] Preload::OnUpdate() progress = 16
+[S] Preload::OnUpdate() progress = 17
+[S] Preload::OnUpdate() progress = 18
+[S] Preload::OnUpdate() progress = 19
+[S] Preload::OnUpdate() progress = 19
+[S] Preload::OnUpdate() progress = 20
+[S] Preload::OnUpdate() progress = 21
+[S] Preload::OnUpdate() progress = 22
+[S] Preload::OnUpdate() progress = 22
+[S] Preload::OnUpdate() progress = 23
+[S] Preload::OnUpdate() progress = 24
+[S] Preload::OnUpdate() progress = 25
+[S] Preload::OnUpdate() progress = 25
+[S] Preload::OnUpdate() progress = 26
+[S] Preload::OnUpdate() progress = 27
+[S] Preload::OnUpdate() progress = 28
+[S] Preload::OnUpdate() progress = 28
+[S] Preload::OnUpdate() progress = 29
+[S] Preload::OnUpdate() progress = 30
+[S] Preload::OnUpdate() progress = 31
+[S] Preload::OnUpdate() progress = 31
+[S] Preload::OnUpdate() progress = 32
+[S] Preload::OnUpdate() progress = 33
+[S] Preload::OnUpdate() progress = 34
+[S] Preload::OnUpdate() progress = 34
+[S] Preload::OnUpdate() progress = 35
+[S] Preload::OnUpdate() progress = 36
+[S] Preload::OnUpdate() progress = 37
+[S] Preload::OnUpdate() progress = 37
+[S] Preload::OnUpdate() progress = 38
+[S] Preload::OnUpdate() progress = 39
+[S] Preload::OnUpdate() progress = 40
+[S] Preload::OnUpdate() progress = 40
+[S] Preload::OnUpdate() progress = 41
+[S] Preload::OnUpdate() progress = 42
+[S] Preload::OnUpdate() progress = 43
+[S] Preload::OnUpdate() progress = 43
+[S] Preload::OnUpdate() progress = 44
+[S] Preload::OnUpdate() progress = 45
+[S] Preload::OnUpdate() progress = 46
+[S] Preload::OnUpdate() progress = 46
+[S] Preload::OnUpdate() progress = 47
+[S] Preload::OnUpdate() progress = 48
+[S] Preload::OnUpdate() progress = 49
+[S] Preload::OnUpdate() progress = 49
+[S] Preload::OnUpdate() progress = 50
+[S] Preload::OnUpdate() progress = 51
+[S] Preload::OnUpdate() progress = 52
+[S] Preload::OnUpdate() progress = 52
+[S] Preload::OnUpdate() progress = 53
+[S] Preload::OnUpdate() progress = 54
+[S] Preload::OnUpdate() progress = 55
+[S] Preload::OnUpdate() progress = 55
+[S] Preload::OnUpdate() progress = 56
+[S] Preload::OnUpdate() progress = 57
+[S] Preload::OnUpdate() progress = 58
+[S] Preload::OnUpdate() progress = 58
+[S] Preload::OnUpdate() progress = 59
+[S] Preload::OnUpdate() progress = 60
+[S] Preload::OnUpdate() progress = 61
+[S] Preload::OnUpdate() progress = 61
+[S] Preload::OnUpdate() progress = 62
+[S] Preload::OnUpdate() progress = 63
+[S] Preload::OnUpdate() progress = 64
+[S] Preload::OnUpdate() progress = 64
+[S] Preload::OnUpdate() progress = 65
+[S] Preload::OnUpdate() progress = 66
+[S] Preload::OnUpdate() progress = 67
+[S] Preload::OnUpdate() progress = 67
+[S] Preload::OnUpdate() progress = 68
+[S] Preload::OnUpdate() progress = 69
+[S] Preload::OnUpdate() progress = 70
+[S] Preload::OnUpdate() progress = 70
+[S] Preload::OnUpdate() progress = 71
+[S] Preload::OnUpdate() progress = 72
+[S] Preload::OnUpdate() progress = 73
+[S] Preload::OnUpdate() progress = 73
+[S] Preload::OnUpdate() progress = 74
+[S] Preload::OnUpdate() progress = 75
+[S] Preload::OnUpdate() progress = 76
+[S] Preload::OnUpdate() progress = 76
+[S] Preload::OnUpdate() progress = 77
+[S] Preload::OnUpdate() progress = 78
+[S] Preload::OnUpdate() progress = 79
+[S] Preload::OnUpdate() progress = 79
+[S] Preload::OnUpdate() progress = 80
+[S] Preload::OnUpdate() progress = 81
+[S] Preload::OnUpdate() progress = 82
+[S] Preload::OnUpdate() progress = 82
+[S] Preload::OnUpdate() progress = 83
+[S] Preload::OnUpdate() progress = 84
+[S] Preload::OnUpdate() progress = 85
+[S] Preload::OnUpdate() progress = 85
+[S] Preload::OnUpdate() progress = 86
+[S] Preload::OnUpdate() progress = 87
+[S] Preload::OnUpdate() progress = 88
+[S] Preload::OnUpdate() progress = 88
+[S] Preload::OnUpdate() progress = 89
+[S] Preload::OnUpdate() progress = 90
+[S] Preload::OnUpdate() progress = 91
+[S] Preload::OnUpdate() progress = 91
+[S] Preload::OnUpdate() progress = 92
+[S] Preload::OnUpdate() progress = 93
+[S] Preload::OnUpdate() progress = 94
+[S] Preload::OnUpdate() progress = 94
+[S] Preload::OnUpdate() progress = 95
+[S] Preload::OnUpdate() progress = 96
+[S] Preload::OnUpdate() progress = 97
+[S] Preload::OnUpdate() progress = 97
+[S] Preload::OnUpdate() progress = 98
+[S] Preload::OnUpdate() progress = 99
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] Preload::OnUpdate() progress = 100
+[S] ProjectHandler::LoadScene('assets/scenes/dune.nms')
+[S] GetDosPathFromSquirrelPath() : input = c:/works/projects/svn_amiga_memories/gs_amiga_memories/tmp
+[S] GetDosPathFromSquirrelPath() : output = c:\\works\\projects\\svn_amiga_memories\\gs_amiga_memories\\tmp\\
+[S] AudioMixer::constructor()
+[S] StageManager::TrackerSetup()
+[S] StageManager::LoadEmulators()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] VideoTitlerTrack::constructor()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::constructor()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::constructor()
+[S] MusicTrack::Feed()
+[S] MusicTrack::Feed() Found 'music' key.
+[S] MusicTrack::Feed() Found 'command' = Start
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] LedTrack::GetNextLeds()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] LedTrack::GetNextLeds()
+[S] AudioMixer::PlaySound() sound_filename, timecode = disk_drive_track-read-16.wav, 184687
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = disk_drive_track-read-16.wav, 184687, 1
+[S] AudioMixer::AppendToEditList() : timecode (s) = 18.4687
+[S] AudioSoundGetDuration::slen = 500
+[S] AudioMixer::AppendToEditList() : play_in = 814469
+[S] AudioMixer::AppendToEditList() : rec_out = 22050
+[S] AudioMixer::AppendToEditList() : edit_list[1].len() = 1
+[S] AudioMixer::PlaySound() sound_filename, timecode = disk_drive_track-read-16.wav, 189246
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = disk_drive_track-read-16.wav, 189246, 1
+[S] AudioMixer::AppendToEditList() : timecode (s) = 18.9246
+[S] AudioSoundGetDuration::slen = 500
+[S] AudioMixer::AppendToEditList() : play_in = 834574
+[S] AudioMixer::AppendToEditList() : rec_out = 22050
+[S] AudioMixer::AppendToEditList() : edit_list[1].len() = 2
+[S] AudioMixer::PlaySound() sound_filename, timecode = disk_drive_track-read-16.wav, 193806
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = disk_drive_track-read-16.wav, 193806, 1
+[S] AudioMixer::AppendToEditList() : timecode (s) = 19.3806
+[S] AudioSoundGetDuration::slen = 500
+[S] AudioMixer::AppendToEditList() : play_in = 854684
+[S] AudioMixer::AppendToEditList() : rec_out = 22050
+[S] AudioMixer::AppendToEditList() : edit_list[1].len() = 3
+[S] AudioMixer::PlaySound() sound_filename, timecode = disk_drive_track-read-16.wav, 198365
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = disk_drive_track-read-16.wav, 198365, 1
+[S] AudioMixer::AppendToEditList() : timecode (s) = 19.8365
+[S] AudioSoundGetDuration::slen = 500
+[S] AudioMixer::AppendToEditList() : play_in = 874789
+[S] AudioMixer::AppendToEditList() : rec_out = 22050
+[S] AudioMixer::AppendToEditList() : edit_list[1].len() = 4
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] AudioMixer::PlaySound() sound_filename, timecode = disk_drive_motor-stop-16.wav, 202925
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = disk_drive_motor-stop-16.wav, 202925, 1
+[S] AudioMixer::AppendToEditList() : timecode (s) = 20.2925
+[S] AudioSoundGetDuration::slen = 250
+[S] AudioMixer::AppendToEditList() : play_in = 894899
+[S] AudioMixer::AppendToEditList() : rec_out = 11025
+[S] AudioMixer::AppendToEditList() : edit_list[1].len() = 5
+[S] LedTrack::GetNextLeds()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] LipSyncTrack::AddPauseAtEnd()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] LipSyncTrack::AddPauseAtEnd()
+[S] AudioMixer::PlaySound() sound_filename, timecode = voice_dune_e4aa78d65f6011e83e54d1c21b4aa4ef60ff4f32.ogg, 232903
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = voice_dune_e4aa78d65f6011e83e54d1c21b4aa4ef60ff4f32.ogg, 232903, 0
+[S] AudioMixer::AppendToEditList() : timecode (s) = 23.2903
+[S] AudioMixer::AudioSoundGetDuration() Cannot find 'tmp/voice_dune_e4aa78d65f6011e83e54d1c21b4aa4ef60ff4f32.ogg'
+[S] AudioMixer::AppendToEditList() : play_in = 1027102
+[S] AudioMixer::AppendToEditList() : rec_out = -44
+[S] AudioMixer::AppendToEditList() : edit_list[0].len() = 1
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] SubtitleTrack::Feed() subtitle text = A beginning, is a very delicate time.
+[S]  [first_time, last_time = 0, 32700]
+[S] LipSyncTrack::GetNextSub()
+[S] SubtitleTrack::DisplaySub(A beginning, is a very delicate time.)
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] LipSyncTrack::GetNextSub()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] LipSyncTrack::AddPauseAtEnd()
+[S] AudioMixer::PlaySound() sound_filename, timecode = voice_dune_39a22b213de54a058d315f756eac26ad87b6b244.ogg, 293856
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = voice_dune_39a22b213de54a058d315f756eac26ad87b6b244.ogg, 293856, 0
+[S] AudioMixer::AppendToEditList() : timecode (s) = 29.3856
+[S] AudioMixer::AudioSoundGetDuration() Cannot find 'tmp/voice_dune_39a22b213de54a058d315f756eac26ad87b6b244.ogg'
+[S] AudioMixer::AppendToEditList() : play_in = 1295904
+[S] AudioMixer::AppendToEditList() : rec_out = -44
+[S] AudioMixer::AppendToEditList() : edit_list[0].len() = 2
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] SubtitleTrack::Feed() subtitle text = Know then, that this is the year ten thousand one ninety one.
+[S]  [first_time, last_time = 0, 44300]
+[S] LipSyncTrack::GetNextSub()
+[S] SubtitleTrack::DisplaySub(Know then, that this is the year 10191)
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] LipSyncTrack::GetNextSub()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LipSyncTrack::GetNextSub()
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()
+[S] StageManager::GetNextClip()
+[S] LipSyncTrack::Feed()
+[S] LipSyncTrack::AddPauseAtEnd()
+[S] AudioMixer::PlaySound() sound_filename, timecode = voice_dune_eeaae2ce21f964f8681734ffd186cd2ae1fab60f.ogg, 351149
+[S] AudioMixer::AppendToEditList() : sound_filename, timecode, track = voice_dune_eeaae2ce21f964f8681734ffd186cd2ae1fab60f.ogg, 351149, 0
+[S] AudioMixer::AppendToEditList() : timecode (s) = 35.1149
+[S] AudioMixer::AudioSoundGetDuration() Cannot find 'tmp/voice_dune_eeaae2ce21f964f8681734ffd186cd2ae1fab60f.ogg'
+[S] AudioMixer::AppendToEditList() : play_in = 1548567
+[S] AudioMixer::AppendToEditList() : rec_out = -44
+[S] AudioMixer::AppendToEditList() : edit_list[0].len() = 3
+[S] SubtitleTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] SubtitleTrack::Feed() subtitle text = The Known Universe is ruled by the Padishah Emperor Shaddam IV, my father.
+[S]  [first_time, last_time = 0, 49110]
+[S]  [first_time, last_time = 49110, 60199]
+[S] LipSyncTrack::GetNextSub()
+[S] SubtitleTrack::DisplaySub(The Known Universe is ruled by the Padishah Emperor Shaddam IV)
+[S] VideoTitlerTrack::Feed()
+[S] LedTrack::Feed()
+[S] SubtitleTrack::GetSubtitleDuration()
+[S] LedTrack::GetNextLeds()
+[S] RenderToTextureTracker::Feed()
+[S] MusicTrack::Feed()
+[S] StageManager::HandleSpecialEvent()
+[S] StageManager::HandleFading()

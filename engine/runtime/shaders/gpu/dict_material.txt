@@ -1,0 +1,288 @@
+<Version=1.0>
+
+<InputPosition=
+	// The engine automatically declares skinning related inputs & varyings.
+	<Input =
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Uniform=<Name="u_mvp_matrix"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+	>
+	<Vertex="
+//-----------------------------------------------------------------------------
+#ifdef	_SKINNED
+	vec4 _preskin_position_ = %position%; // Save position before skinning so that motion blur can properly compute previous skin...
+	v_skin_mtx = bone_mtx[int(bone_idx.x)] * bone_w.x + bone_mtx[int(bone_idx.y)] * bone_w.y + bone_mtx[int(bone_idx.z)] * bone_w.z + bone_mtx[int(bone_idx.w)] * bone_w.w;
+	%position% = n_mtx_mul(v_skin_mtx, %position%);
+#endif
+//-----------------------------------------------------------------------------
+	">
+	<Fragment="
+//-----------------------------------------------------------------------------
+#ifdef	_SKINNED
+	%normal% = normalize(n_mtx_mul(_mat4_to_mat3(v_skin_mtx), %normal%));
+#endif
+//-----------------------------------------------------------------------------
+	">
+>
+
+<OutputVelocity=
+	// The engine automatically declares skinning related inputs.
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Uniform=<Name="u_previous_mvp_matrix"><Semantic="PreviousModelViewProjectionMatrix"><Scope=<Vertex>>>
+
+		<Attribute=<Name="a_normal"><Semantic="Normal">>
+
+		<Uniform=<Name="u_mv_matrix"><Semantic="ModelViewMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_previous_mv_matrix"><Semantic="PreviousModelViewMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_p_matrix"><Semantic="ProjectionMatrix"><Scope=<Vertex>>>
+	>
+	<Varying=
+		<Variable=<Name="v_ppos"><Type="vec4">>
+		<Variable=<Name="v_previous_ppos"><Type="vec4">>
+	>
+	<Vertex="
+//-----------------------------------------------------------------------------
+#ifdef	_SKINNED
+	mat4 previous_skin_mtx = previous_bone_mtx[int(bone_idx.x)] * bone_w.x + previous_bone_mtx[int(bone_idx.y)] * bone_w.y + previous_bone_mtx[int(bone_idx.z)] * bone_w.z + previous_bone_mtx[int(bone_idx.w)] * bone_w.w;
+	vec4 f_previous_position = n_mtx_mul(previous_skin_mtx, _preskin_position_);	// we can't use %position% here as it is already skinned...
+#else
+	vec4 f_previous_position = %position%;
+#endif
+
+	// Projected vertice.
+	v_ppos = n_mtx_mul(u_mvp_matrix, %position%);
+	v_previous_ppos = n_mtx_mul(u_previous_mvp_matrix, f_previous_position);
+
+	/*
+		Volume expansion along the motion vector.
+		Extrusions are slightly overshot to minimize trail clipping.
+	*/
+#if		1
+#ifdef	_SKINNED
+	vec3 mv_normal = normalize(n_mtx_mul(_mat4_to_mat3(v_skin_mtx), a_normal));
+#else
+	vec3 mv_normal = normalize(n_mtx_mul(_mat4_to_mat3(u_mv_matrix), a_normal));
+#endif
+	vec4 vpos = n_mtx_mul(u_mv_matrix, %position%);
+	vec4 previous_vpos = n_mtx_mul(u_previous_mv_matrix, f_previous_position);
+
+	vec4 dt_vpos = vpos - previous_vpos;
+	vpos += dt_vpos * dot(mv_normal, normalize(dt_vpos.xyz)) * 1.1;		// Slightly overshot.
+
+	%out.position% = n_mtx_mul(u_p_matrix, vpos);
+#else
+	%out.position% = n_mtx_mul(u_mvp_matrix, %position%);
+#endif
+//-----------------------------------------------------------------------------
+	">
+	<Fragment="
+//-----------------------------------------------------------------------------
+	vec2 V = (v_previous_ppos.xy / v_previous_ppos.w) - (v_ppos.xy / v_ppos.w);
+	%out.color% = vec4(V, 0.0, 1.0);
+//-----------------------------------------------------------------------------
+	">
+>
+
+<OutputDepth=
+	<Vertex="
+//-----------------------------------------------------------------------------
+%out.position% = n_mtx_mul(u_mvp_matrix, %position%);
+//-----------------------------------------------------------------------------
+	">
+	<Fragment="
+//-----------------------------------------------------------------------------
+// ATI requires color to be written for depth only.
+%out.color% = vec4(%in.fragcoord%.zzz, 1.0);
+// nVidia requires depth to be written for depth only.
+%out.depth% = %in.fragcoord%.z;
+//-----------------------------------------------------------------------------
+	">
+>
+
+<OutputNormalDepth=
+	<Input=
+		<Uniform=<Name="u_mv_matrix"><Semantic="ModelViewMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_nmv_matrix"><Semantic="NormalViewMatrix"><Scope=<Fragment>>>
+	>
+	<Varying=
+		<Variable=<Name="v_depth"><Type="float">>
+	>
+	<Vertex="
+//-----------------------------------------------------------------------------
+v_depth = n_mtx_mul(u_mv_matrix, %position%).z;
+%out.position% = n_mtx_mul(u_mvp_matrix, %position%);
+//-----------------------------------------------------------------------------
+	">
+	<Fragment="
+//-----------------------------------------------------------------------------
+vec3 v_normal_view = n_mtx_mul(u_nmv_matrix, %normal%);
+%out.color% = vec4(v_normal_view, v_depth);
+//-----------------------------------------------------------------------------
+	">
+>
+
+<OutputDeferred=
+	<Input=
+		<Uniform=<Name="u_mv_matrix"><Semantic="ModelViewMatrix"><Scope=<Vertex>>>
+		<Uniform=<Name="u_nmv_matrix"><Semantic="NormalViewMatrix"><Scope=<Fragment>>>
+	>
+	<Varying=
+		<Variable=<Name="v_depth"><Type="float">>
+	>
+	<Vertex="
+//-----------------------------------------------------------------------------
+	v_depth = n_mtx_mul(u_mv_matrix, %position%).z;
+	vec4 tmp_out_pos = n_mtx_mul(u_mvp_matrix, %position%);
+
+#ifdef	_USE_DEPTH_BIAS
+	tmp_out_pos.z += _DEPTH_BIAS;
+#endif
+	%out.position% = tmp_out_pos;
+//-----------------------------------------------------------------------------
+	">
+	<Fragment="
+//-----------------------------------------------------------------------------
+vec3 v_normal_view = n_mtx_mul(u_nmv_matrix, %normal%);
+%out.color0% = vec4(v_normal_view, v_depth);
+%out.color1% = vec4(%diffuse%.xyz, 1.0);
+%out.color2% = vec4(%specular%.xyz, %glossiness%);
+%out.color3% = vec4(%constant%.xyz, 0.0);
+//-----------------------------------------------------------------------------
+	">
+>
+
+<OutputForwardLightModel=
+	// The engine automatically declares shadow related inputs.
+	<Input=
+		<Uniform=<Name="u_mv_matrix"><Semantic="ModelViewMatrix"><Scope=<Vertex>>>
+
+		// Uniform default scope is fragment.
+		<Uniform=<Name="u_nmv_matrix"><Semantic="NormalViewMatrix">>
+
+		<Uniform=<Name="u_lvp"><Semantic="LightViewPosition">>
+		<Uniform=<Name="u_lvd"><Semantic="LightViewDirection">>
+		<Uniform=<Name="u_lr"><Semantic="LightRange">>
+
+		<Uniform=<Name="u_ldiff"><Semantic="LightDiffuseColor">>
+		<Uniform=<Name="u_lspec"><Semantic="LightSpecularColor">>
+
+		<Uniform=<Name="u_lcone"><Semantic="LightSpotCone">>
+		<Uniform=<Name="u_ledge"><Semantic="LightSpotEdge">>
+
+		<Uniform=<Name="u_shadow_color"><Semantic="LightShadowColor">>
+
+		<Uniform=<Name="u_fog_color"><Semantic="FogColor"><Scope=<Fragment>>>
+		<Uniform=<Name="u_fog_near"><Semantic="FogNear"><Scope=<Fragment>>>
+		<Uniform=<Name="u_fog_inverse_range"><Semantic="FogInverseRange"><Scope=<Fragment>>>
+	>
+	<Varying=
+		<Variable=<Name="v_vpos"><Type="vec3">>
+	>
+	<Vertex="
+//-----------------------------------------------------------------------------
+	v_vpos = n_mtx_mul(u_mv_matrix, %position%).xyz;
+	vec4 tmp_out_pos = n_mtx_mul(u_mvp_matrix, %position%);
+
+#ifdef	_USE_DEPTH_BIAS
+	tmp_out_pos.z += _DEPTH_BIAS;
+#endif
+	%out.position% = tmp_out_pos;
+//-----------------------------------------------------------------------------
+	">
+	<Fragment="
+//-----------------------------------------------------------------------------
+	vec3 frag_viewpos = v_vpos;
+	vec3 v_normal_view = n_mtx_mul(u_nmv_matrix, %normal%);
+
+#if		defined(_SPOT_LIGHT) || defined(_POINT_LIGHT)
+
+	vec3 light_to_fragment = v_vpos - u_lvp;
+	float light_to_fragment_d = length(light_to_fragment);
+
+	float k_attn = u_lr > 0.0 ? max(1.0 - light_to_fragment_d / u_lr, 0.0) : 1.0;
+
+	light_to_fragment /= light_to_fragment_d;
+
+#elif	defined(_LINEAR_LIGHT)
+
+	vec3 light_to_fragment = u_lvd;
+	float k_attn = 1.0;
+
+#endif
+
+#if		defined(_SPOT_LIGHT)
+
+	// Cone/edge attenuation.
+	float c_attn = dot(u_lvd, light_to_fragment);
+	if	(c_attn < u_lcone)
+		k_attn *= c_attn < 0.0 ? 0.0 : max((c_attn - u_ledge) / (u_lcone - u_ledge), 0.0);
+
+#endif
+
+	// Compute Phong factors.
+	float idiff = max(-dot(light_to_fragment, v_normal_view), 0.0) * k_attn;
+	vec3 e = reflect(v_vpos, v_normal_view);
+	float ispec = pow(max(-dot(light_to_fragment, normalize(e)), 0.0), %glossiness% * 96.0) * k_attn;
+
+	vec3 _f_color = %diffuse%.xyz * u_ldiff * idiff + %specular%.xyz * u_lspec * ispec;
+
+#ifdef	_PROJECTION_MAP
+	vec4 _pjm_uv = n_mtx_mul(u_pjm_projection, vec4(v_vpos, 1.0));
+	_f_color *= texture2D(u_pjm, _pjm_uv.xy / _pjm_uv.w).rgb;
+#endif
+
+#ifdef	_CAST_SHADOW
+
+	float pcf = 1.0;
+	#if		defined(_SPOT_LIGHT)
+		pcf = ComputePCF(v_vpos, u_ssm_projection, u_ssm, 1.0);
+	#elif	defined(_LINEAR_LIGHT)
+		%pssm_pcf_evaluation%
+	#elif	defined(_POINT_LIGHT)
+		%psm_pcf_evaluation%
+	#endif
+
+	_f_color = mix(u_shadow_color, _f_color, pcf);
+
+#endif
+
+	float _t_opacity = %opacity%;
+	_t_opacity *= u_fog_inverse_range > 0.0 ? clamp(1.0 - (v_vpos.z - u_fog_near) * u_fog_inverse_range, 0.0, 1.0) : 1.0;
+
+	%out.color% = vec4(_f_color, _t_opacity);
+//-----------------------------------------------------------------------------
+	">
+>
+
+<OutputForwardConstant=
+	<Input=
+		<Uniform=<Name="u_ambient"><Semantic="AmbientColor">>
+		<Uniform=<Name="u_mv_matrix"><Semantic="ModelViewMatrix"><Scope=<Vertex>>>
+
+		<Uniform=<Name="u_fog_color"><Semantic="FogColor"><Scope=<Fragment>>>
+		<Uniform=<Name="u_fog_near"><Semantic="FogNear"><Scope=<Fragment>>>
+		<Uniform=<Name="u_fog_inverse_range"><Semantic="FogInverseRange"><Scope=<Fragment>>>
+	>
+	<Varying=
+		<Variable=<Name="v_depth"><Type="float">>
+	>
+	<Vertex="
+//-----------------------------------------------------------------------------
+	v_depth = n_mtx_mul(u_mv_matrix, %position%).z;
+	vec4 tmp_out_pos = n_mtx_mul(u_mvp_matrix, %position%);
+
+#ifdef	_USE_DEPTH_BIAS
+	tmp_out_pos.z += _DEPTH_BIAS;
+#endif
+	%out.position% = tmp_out_pos;
+//-----------------------------------------------------------------------------
+	">
+	<Fragment="
+//-----------------------------------------------------------------------------
+	vec3 _f_rgb = %diffuse%.xyz * u_ambient + %constant%.xyz;
+	float k_fog = u_fog_inverse_range > 0.0 ? clamp((v_depth - u_fog_near) * u_fog_inverse_range, 0.0, 1.0) : 0.0;
+
+	%out.color% = vec4(mix(_f_rgb, u_fog_color, k_fog), %opacity%);
+//-----------------------------------------------------------------------------
+	">
+>

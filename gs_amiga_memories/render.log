@@ -1,0 +1,1675 @@
+[V] EGL new output window to handle: 262620.
+[V] OpenGL context version 4.6.
+[V] NPOT full support.
+[V] GS::GPU::Renderer::LoadCoreShaders
+[V] Creating shader '@core/shaders/gpu/single_texture_color.nsa'...
+[V] EGL shader linked successfully at id 3.
+[V] Creating shader '@core/shaders/gpu/single_texture.nsa'...
+[V] EGL shader linked successfully at id 6.
+[V] Creating shader '@core/shaders/gpu/single_color.nsa'...
+[V] EGL shader linked successfully at id 9.
+[V] Creating shader '@core/shaders/gpu/simple.nsa'...
+[V] EGL shader linked successfully at id 12.
+[V] Creating shader '@core/shaders/gpu/single_texture_cutoff.nsa'...
+[V] EGL shader linked successfully at id 15.
+[V] Creating shader '@core/shaders/gpu/single_texture_fx.nsa'...
+[V] EGL shader linked successfully at id 18.
+[V] Creating shader '@core/shaders/gpu/tone_mapping.nsa'...
+[V] EGL shader linked successfully at id 21.
+[V] Creating shader '@core/shaders/gpu/ambient.nsa'...
+[V] EGL shader linked successfully at id 24.
+[V] Creating shader '@core/shaders/gpu/deferred/spotlight.nsa'...
+[V] EGL shader linked successfully at id 27.
+[V] Creating shader '@core/shaders/gpu/deferred/spotlight_shadow.nsa'...
+[V] EGL shader linked successfully at id 30.
+[V] Creating shader '@core/shaders/gpu/deferred/pointlight.nsa'...
+[V] EGL shader linked successfully at id 33.
+[V] Creating shader '@core/shaders/gpu/deferred/pointlight_shadow.nsa'...
+[V] EGL shader linked successfully at id 36.
+[V] Creating shader '@core/shaders/gpu/deferred/linearlight.nsa'...
+[V] EGL shader linked successfully at id 39.
+[V] Creating shader '@core/shaders/gpu/deferred/linearlight_shadow.nsa'...
+[V] EGL shader linked successfully at id 42.
+[V] Creating shader '@core/shaders/gpu/deferred/ds_fog.nsa'...
+[V] EGL shader linked successfully at id 45.
+[V] Creating shader '@core/shaders/gpu/fx_blur.nsa'...
+[V] EGL shader linked successfully at id 48.
+[V] Creating shader '@core/shaders/gpu/noise.nsa'...
+[V] EGL shader linked successfully at id 51.
+[V] Creating shader '@core/shaders/gpu/sharpen.nsa'...
+[V] EGL shader linked successfully at id 54.
+[V] Creating shader '@core/shaders/gpu/hsl.nsa'...
+[V] EGL shader linked successfully at id 57.
+[V] Creating shader '@core/shaders/gpu/chromatic_dispersion.nsa'...
+[V] EGL shader linked successfully at id 60.
+[V] Creating shader '@core/shaders/gpu/ssaa.nsa'...
+[V] EGL shader linked successfully at id 63.
+[V] Creating shader '@core/shaders/gpu/ssao.nsa'...
+[V] EGL shader linked successfully at id 66.
+[V] Creating shader '@core/shaders/gpu/ssao_blur.nsa'...
+[V] EGL shader linked successfully at id 69.
+[V] Creating shader '@core/shaders/gpu/motion_blur.nsa'...
+[V] EGL shader linked successfully at id 72.
+[V] Creating shader '@core/shaders/gpu/radial_blur.nsa'...
+[V] EGL shader linked successfully at id 75.
+[V] Creating shader '@core/shaders/gpu/skybox.nsa'...
+[V] EGL shader linked successfully at id 78.
+Creating shadow maps (1024x1024).
+[V] New GL texture object id 1.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1024, H: 1024
+SetRenderTechnique(): 1280x720
+[V] New GL texture object id 2.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 3.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 4.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 5.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 6.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 7.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 8.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 9.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 10.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 11.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[V] New GL texture object id 12.
+[V] MIPMAP: False, NPOT: 2, RTT: True, W: 1280, H: 720
+[H] Setup terrain cache: 32 pages (3244800 bytes).
+[V] Entering DDS texture loader for '@core/noise.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/noise.tga'...
+Memory configuration: Little endian.
+[V] Invalid PVR header.
+[V] Creating texture '@core/noise.tga'.
+[V] EGL Delete texture 0x0, GL id 13.
+[V] New GL texture object id 13.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 128, H: 128
+[V] Entering DDS texture loader for '@core/fonts/profiler_base_00.tga'...
+[H] OpenAL ready on device 'OpenAL Soft'.
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/fonts/profiler_base_00.tga'...
+[V] Invalid PVR header.
+[V] Creating texture '@core/fonts/profiler_base_00.tga'.
+[V] EGL Delete texture 0x0, GL id 14.
+[V] New GL texture object id 14.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Entering DDS texture loader for '@core/fonts/profiler_bold_00.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/fonts/profiler_bold_00.tga'...
+[V] Invalid PVR header.
+[V] Creating texture '@core/fonts/profiler_bold_00.tga'.
+[V] EGL Delete texture 0x0, GL id 15.
+[V] New GL texture object id 15.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[*] No space character in font '@core/fonts/fps.nml'.
+[V] Entering DDS texture loader for '@core/fonts/fps_00.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for '@core/fonts/fps_00.tga'...
+[V] Invalid PVR header.
+[V] Creating texture '@core/fonts/fps_00.tga'.
+[V] EGL Delete texture 0x0, GL id 16.
+[V] New GL texture object id 16.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Input system is installing windows hook.
+[H] Freetype2: Loading font '@core/default.ttf'.
+Created a new font alias from '@core/default.ttf' to 'default'.
+Session type: 1
+[S] GetDosPathFromSquirrelPath() : input = d:/projects/svn_amiga_memories/gs_amiga_memories/tmp
+[S] GetDosPathFromSquirrelPath() : output = d:\\projects\\svn_amiga_memories\\gs_amiga_memories\\tmp\\
+[H] Freetype2: Loading font 'ui/gui_font.ttf'.
+Created a new font alias from 'ui/gui_font.ttf' to 'gui_font'.
+[S] ProjectHandler::constructor()
+[S] ProjectHandler::OnSetup()
+[H] Session running.
+[S] ProjectHandler::LoadScene('assets/scenes/deadline.nms')
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 29 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 7 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 8 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 10 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 5 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 6 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 10 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 6 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 2 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 1 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 4 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 19 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 37 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 1 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 3 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 2 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 2 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 2 item(s).
+Done loading scene in 0.000ms.
+Group 'SceneGroup': 32 item(s).
+Done loading scene in 0.000ms.
+Scene 'assets/floppy_stack.nms' render setup...
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 58412 vertice, 112660 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Amiga_up.nmg'.
+[H] Load render material 'assets/a500_top.nmm'.
+[V] Entering DDS texture loader for 'assets/amiga_case_grey-light.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/amiga_case_grey-light.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/amiga_case_grey-light.png'.
+[V] EGL Delete texture 0x0, GL id 17.
+[V] New GL texture object id 17.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 128, H: 128
+[V] Entering DDS texture loader for 'assets/a500_case_spec.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/a500_case_spec.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/a500_case_spec.png'.
+[V] EGL Delete texture 0x0, GL id 18.
+[V] New GL texture object id 18.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Entering DDS texture loader for 'assets/Amiga_cpu_logo_normal.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/Amiga_cpu_logo_normal.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/Amiga_cpu_logo_normal.png'.
+[V] EGL Delete texture 0x0, GL id 19.
+[V] New GL texture object id 19.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 630, H: 120
+[V] Entering DDS texture loader for 'assets/Amiga_cpu_logo_lightmap.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/Amiga_cpu_logo_lightmap.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/Amiga_cpu_logo_lightmap.png'.
+[V] EGL Delete texture 0x0, GL id 20.
+[V] New GL texture object id 20.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 630, H: 120
+[V] Entering DDS texture loader for 'assets/planet_envmap_0.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/planet_envmap_0.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/planet_envmap_0.png'.
+[V] EGL Delete texture 0x0, GL id 21.
+[V] New GL texture object id 21.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 128, H: 128
+[V] Creating material shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3UV0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5' variants.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3UV0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_Depth'...
+[V] EGL shader linked successfully at id 81.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3UV0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 84.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3UV0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 87.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3UV0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 90.
+Building geometry triangle list...
+Done, average: 16094.286 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 9275 vertice, 16960 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Keyboard_light.nmg'.
+[H] Load render material 'assets/a500_Keyboard_light.nmm'.
+[V] Entering DDS texture loader for 'assets/keyboard MASK.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/keyboard MASK.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/keyboard MASK.png'.
+[V] EGL Delete texture 0x0, GL id 22.
+[V] New GL texture object id 22.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 4638, H: 1209
+[V] Creating material shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 93.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 96.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 99.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 102.
+Building geometry triangle list...
+Done, average: 8480.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 8 vertice, 12 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Matt_1.nmg'.
+[H] Load render material 'assets/a500_black.nmm'.
+[V] Creating material shader 'NormalSmoothMatParm0MatParm1MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 105.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 108.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 111.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 114.
+Building geometry triangle list...
+Done, average: 12.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 8 vertice, 4 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Matt_2.nmg'.
+Building geometry triangle list...
+Done, average: 8.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 12336 vertice, 24384 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/amiga_Down.nmg'.
+[H] Load render material 'assets/a500_case.nmm'.
+[V] Creating material shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 117.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 120.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 123.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 126.
+Building geometry triangle list...
+Done, average: 12192.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 470 vertice, 864 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Keyboard_NUM.nmg'.
+[H] Load render material 'assets/a500_Keyboard_NUM.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_Keyboard_NUM.nmm'.
+Building geometry triangle list...
+Done, average: 864.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 4103 vertice, 7552 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Keyboard_dark.nmg'.
+[H] Load render material 'assets/a500_Keyboard_dark.nmm'.
+[V] Entering DDS texture loader for 'assets/amiga_case_grey-dark.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/amiga_case_grey-dark.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/amiga_case_grey-dark.png'.
+[V] EGL Delete texture 0x0, GL id 23.
+[V] New GL texture object id 23.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 128, H: 128
+[V] Reusing cached material shader for material 'assets/a500_Keyboard_dark.nmm'.
+Building geometry triangle list...
+Done, average: 7552.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 700 vertice, 1280 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/num1.nmg'.
+[H] Load render material 'assets/a500_num1.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_num1.nmm'.
+Building geometry triangle list...
+Done, average: 1280.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 350 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/num2.nmg'.
+[H] Load render material 'assets/a500_num2.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_num2.nmm'.
+Building geometry triangle list...
+Done, average: 640.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 525 vertice, 960 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/num3.nmg'.
+[H] Load render material 'assets/a500_num3.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_num3.nmm'.
+Building geometry triangle list...
+Done, average: 960.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 350 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/num4.nmg'.
+[H] Load render material 'assets/a500_num4.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_num4.nmm'.
+Building geometry triangle list...
+Done, average: 640.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 175 vertice, 320 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Num_minus.nmg'.
+[H] Load render material 'assets/a500_Num_minus.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_Num_minus.nmm'.
+Building geometry triangle list...
+Done, average: 320.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 175 vertice, 320 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Num_plus.nmg'.
+[H] Load render material 'assets/a500_num_plus.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_num_plus.nmm'.
+Building geometry triangle list...
+Done, average: 320.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 277 vertice, 512 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Num_Enter.nmg'.
+[H] Load render material 'assets/a500_Num_Enter.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_Num_Enter.nmm'.
+Building geometry triangle list...
+Done, average: 512.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 175 vertice, 320 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Num_8.nmg'.
+[H] Load render material 'assets/a500_Num_8.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_Num_8.nmm'.
+Building geometry triangle list...
+Done, average: 320.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 175 vertice, 320 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Num_2.nmg'.
+[H] Load render material 'assets/a500_Num_2.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_Num_2.nmm'.
+Building geometry triangle list...
+Done, average: 320.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1585 vertice, 2912 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/KeyB_Side_Dark.nmg'.
+[H] Load render material 'assets/a500_KeyB_Side_Dark.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_KeyB_Side_Dark.nmm'.
+Building geometry triangle list...
+Done, average: 2912.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 175 vertice, 320 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/cap_lock.nmg'.
+[H] Load render material 'assets/a500_cap_lock.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_cap_lock.nmm'.
+Building geometry triangle list...
+Done, average: 320.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 314 vertice, 624 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/caps_led.nmg'.
+[H] Load render material 'assets/a500_keyb_led.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_keyb_led.nmm'.
+Building geometry triangle list...
+Done, average: 624.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1065 vertice, 1040 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/cpu_small_Logo.nmg'.
+[H] Load render material 'assets/a500_cpu_small_Logo.nmm'.
+[V] Entering DDS texture loader for 'assets/commodore_logo_white.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/commodore_logo_white.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/commodore_logo_white.png'.
+[V] EGL Delete texture 0x0, GL id 24.
+[V] New GL texture object id 24.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Entering DDS texture loader for 'assets/fallof_map_0.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/fallof_map_0.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/fallof_map_0.png'.
+[V] EGL Delete texture 0x0, GL id 25.
+[V] New GL texture object id 25.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Creating material shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 129.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 132.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 135.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 138.
+Building geometry triangle list...
+Done, average: 2080.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1237 vertice, 2466 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/power_text.nmg'.
+Building geometry triangle list...
+Done, average: 2466.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 906 vertice, 1490 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/Drive_text.nmg'.
+Building geometry triangle list...
+Done, average: 1490.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 146 vertice, 264 polygon(s), 2 material(s).
+[H] Setup geometry 'assets/Power_Drive_Lamp.nmg'.
+[H] Load render material 'assets/a500_Drive_Lamp.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_Drive_Lamp.nmm'.
+[H] Load render material 'assets/a500_Power_Lamp.nmm'.
+[V] Reusing cached material shader for material 'assets/a500_Power_Lamp.nmm'.
+Building geometry triangle list...
+Done, average: 132.000 tri/list, 0.000 bone/list.
+Compute vertex normal for @sys/gen/sphere.
+[H] Setup geometry '@sys/gen/sphere'.
+[H] Load render material '@core/builtin/material/default.nmm'.
+[V] Reusing cached material shader for material '@core/builtin/material/default.nmm'.
+Building geometry triangle list...
+Done, average: 224.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 10118 vertice, 9975 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/monitor.nmg'.
+[H] Load render material 'assets/monitor_plastic_white.nmm'.
+[V] Creating material shader 'NormalSmoothMatParm0MatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 141.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 144.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 147.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 150.
+Building geometry triangle list...
+Done, average: 9975.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 836 vertice, 792 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/monitor_frame.nmg'.
+[H] Load render material 'assets/monitor_plastic_grey.nmm'.
+[V] Reusing cached material shader for material 'assets/monitor_plastic_grey.nmm'.
+Building geometry triangle list...
+Done, average: 1584.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 437 vertice, 398 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/monitor_screen.nmg'.
+[H] Load render material 'assets/monitor_screen.nmm'.
+[V] Entering DDS texture loader for 'assets/ico_pixel.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/ico_pixel.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/ico_pixel.png'.
+[V] EGL Delete texture 0x0, GL id 26.
+[V] New GL texture object id 26.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1208, H: 1056
+[V] Entering DDS texture loader for 'assets/envmap_room_reflection.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/envmap_room_reflection.tga'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/envmap_room_reflection.tga'.
+[V] EGL Delete texture 0x0, GL id 27.
+[V] New GL texture object id 27.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Entering DDS texture loader for 'assets/radial_gradient.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/radial_gradient.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/radial_gradient.png'.
+[V] EGL Delete texture 0x0, GL id 28.
+[V] New GL texture object id 28.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 128, H: 128
+[V] Entering DDS texture loader for 'assets/monitor_crt_mask.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/monitor_crt_mask.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/monitor_crt_mask.png'.
+[V] EGL Delete texture 0x0, GL id 29.
+[V] New GL texture object id 29.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1280, H: 960
+[V] Creating material shader 'NormalSmoothMulMixTexSampler0MatTexture0UV0MatParm0Swizzle4000TexSampler0TexSampler0MatTexture3UV0MatParm1MatParm4AddMatParm3AddMulMulMatParm2MulTexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2Swizzle1200MatParm5' variants.
+[V] Creating shader 'NormalSmoothMulMixTexSampler0MatTexture0UV0MatParm0Swizzle4000TexSampler0TexSampler0MatTexture3UV0MatParm1MatParm4AddMatParm3AddMulMulMatParm2MulTexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2Swizzle1200MatParm5_Depth'...
+[V] EGL shader linked successfully at id 153.
+[V] Creating shader 'NormalSmoothMulMixTexSampler0MatTexture0UV0MatParm0Swizzle4000TexSampler0TexSampler0MatTexture3UV0MatParm1MatParm4AddMatParm3AddMulMulMatParm2MulTexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2Swizzle1200MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 156.
+[V] Creating shader 'NormalSmoothMulMixTexSampler0MatTexture0UV0MatParm0Swizzle4000TexSampler0TexSampler0MatTexture3UV0MatParm1MatParm4AddMatParm3AddMulMulMatParm2MulTexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2Swizzle1200MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 159.
+[V] Creating shader 'NormalSmoothMulMixTexSampler0MatTexture0UV0MatParm0Swizzle4000TexSampler0TexSampler0MatTexture3UV0MatParm1MatParm4AddMatParm3AddMulMulMatParm2MulTexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2Swizzle1200MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 162.
+Building geometry triangle list...
+Done, average: 796.000 tri/list, 0.000 bone/list.
+Compute vertex normal for @sys/gen/cube.
+[H] Setup geometry '@sys/gen/cube'.
+Building geometry triangle list...
+Done, average: 12.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 114 vertice, 154 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/monitor_front_branding.nmg'.
+[H] Load render material 'assets/monitor_front_branding.nmm'.
+[V] Entering DDS texture loader for 'assets/monitor_front.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/monitor_front.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/monitor_front.png'.
+[V] EGL Delete texture 0x0, GL id 30.
+[V] New GL texture object id 30.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 95
+[V] Entering DDS texture loader for 'assets/monitor_front-self.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/monitor_front-self.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/monitor_front-self.png'.
+[V] EGL Delete texture 0x0, GL id 31.
+[V] New GL texture object id 31.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 95
+[V] Creating material shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4AddTexSampler0MatTexture2UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothSwizzle4000TexSampler0MatTexture1UV0' variants.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4AddTexSampler0MatTexture2UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothSwizzle4000TexSampler0MatTexture1UV0_Depth'...
+[V] EGL shader linked successfully at id 165.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4AddTexSampler0MatTexture2UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothSwizzle4000TexSampler0MatTexture1UV0_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 168.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4AddTexSampler0MatTexture2UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothSwizzle4000TexSampler0MatTexture1UV0_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 171.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4AddTexSampler0MatTexture2UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothSwizzle4000TexSampler0MatTexture1UV0_PP_Velocity'...
+[V] EGL shader linked successfully at id 174.
+Building geometry triangle list...
+Done, average: 154.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 3402 vertice, 3360 polygon(s), 3 material(s).
+[H] Setup geometry 'assets/joy_main_body.nmg'.
+[H] Load render material 'assets/joy_black_grainy.nmm'.
+[V] Entering DDS texture loader for 'assets/box_art_normal.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_art_normal.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_art_normal.png'.
+[V] EGL Delete texture 0x0, GL id 32.
+[V] New GL texture object id 32.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Entering DDS texture loader for 'assets/noise.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/noise.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/noise.png'.
+[V] EGL Delete texture 0x0, GL id 33.
+[V] New GL texture object id 33.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Entering DDS texture loader for 'assets/joy_main_bodyAmbient Occlusion.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/joy_main_bodyAmbient Occlusion.tga'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/joy_main_bodyAmbient Occlusion.tga'.
+[V] EGL Delete texture 0x0, GL id 34.
+[V] New GL texture object id 34.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Creating material shader 'NormNormalSmoothMatParm0TexSampler0MatTexture3UV1MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5' variants.
+[V] Creating shader 'NormNormalSmoothMatParm0TexSampler0MatTexture3UV1MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_Depth'...
+[V] EGL shader linked successfully at id 177.
+[V] Creating shader 'NormNormalSmoothMatParm0TexSampler0MatTexture3UV1MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 180.
+[V] Creating shader 'NormNormalSmoothMatParm0TexSampler0MatTexture3UV1MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 183.
+[V] Creating shader 'NormNormalSmoothMatParm0TexSampler0MatTexture3UV1MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 186.
+[H] Load render material 'assets/joy_black_flat.nmm'.
+[V] Creating material shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 189.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 192.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 195.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 198.
+[H] Load render material 'assets/joy_black_wire.nmm'.
+[V] Reusing cached material shader for material 'assets/joy_black_wire.nmm'.
+Building geometry triangle list...
+Done, average: 2240.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1090 vertice, 1056 polygon(s), 2 material(s).
+[H] Setup geometry 'assets/joy_stick.nmg'.
+[H] Load render material 'assets/joy_red_flat.nmm'.
+[V] Reusing cached material shader for material 'assets/joy_red_flat.nmm'.
+[H] Load render material 'assets/joy_red_grainy.nmm'.
+[V] Creating material shader 'NormNormalSmoothMatParm0MulTexSampler0MatTexture3UV1TexSampler0MatTexture2UV0MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5' variants.
+[V] Creating shader 'NormNormalSmoothMatParm0MulTexSampler0MatTexture3UV1TexSampler0MatTexture2UV0MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_Depth'...
+[V] EGL shader linked successfully at id 201.
+[V] Creating shader 'NormNormalSmoothMatParm0MulTexSampler0MatTexture3UV1TexSampler0MatTexture2UV0MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 204.
+[V] Creating shader 'NormNormalSmoothMatParm0MulTexSampler0MatTexture3UV1TexSampler0MatTexture2UV0MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 207.
+[V] Creating shader 'NormNormalSmoothMatParm0MulTexSampler0MatTexture3UV1TexSampler0MatTexture2UV0MatParm4MulAddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormTexSampler0MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 210.
+Building geometry triangle list...
+Done, average: 1056.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 775 vertice, 741 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/joy_cord_input.nmg'.
+Building geometry triangle list...
+Done, average: 1422.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 2404 vertice, 2320 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/joy_square.nmg'.
+Building geometry triangle list...
+Done, average: 4640.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 626 vertice, 1248 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/joy_wire.nmg'.
+Building geometry triangle list...
+Done, average: 1248.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1668 vertice, 1664 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/joy_button_r.nmg'.
+Building geometry triangle list...
+Done, average: 3328.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1218 vertice, 1184 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/joy_button_l.nmg'.
+Building geometry triangle list...
+Done, average: 2368.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 2234 vertice, 2148 polygon(s), 2 material(s).
+[H] Setup geometry 'assets/lamp_pod.nmg'.
+[H] Load render material 'assets/lamp_paint.nmm'.
+[V] Creating material shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 213.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 216.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 219.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 222.
+[H] Load render material 'assets/lamp_chrome.nmm'.
+[V] Entering DDS texture loader for 'assets/envmap_room_reflection_blur_dark.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/envmap_room_reflection_blur_dark.tga'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/envmap_room_reflection_blur_dark.tga'.
+[V] EGL Delete texture 0x0, GL id 35.
+[V] New GL texture object id 35.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/lamp_chrome.nmm'.
+Building geometry triangle list...
+Done, average: 2148.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 292 vertice, 216 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/lamp_arm_0.nmg'.
+Building geometry triangle list...
+Done, average: 288.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 512 vertice, 456 polygon(s), 2 material(s).
+[H] Setup geometry 'assets/lamp_elbow.nmg'.
+Building geometry triangle list...
+Done, average: 456.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 292 vertice, 216 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/lamp_arm_1.nmg'.
+Building geometry triangle list...
+Done, average: 288.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 12682 vertice, 12668 polygon(s), 3 material(s).
+[H] Setup geometry 'assets/lamp_head.nmg'.
+[H] Load render material 'assets/lamp_reflector_paint.nmm'.
+[V] Creating material shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 225.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 228.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 231.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 234.
+[H] Load render material 'assets/lamp_wire.nmm'.
+[V] Reusing cached material shader for material 'assets/lamp_wire.nmm'.
+Building geometry triangle list...
+Done, average: 8445.333 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 715 vertice, 1226 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/lamp_wire.nmg'.
+Building geometry triangle list...
+Done, average: 1226.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 872 vertice, 1696 polygon(s), 2 material(s).
+[H] Setup geometry 'assets/lamp_bulb.nmg'.
+[H] Load render material 'assets/lamp_bulb.nmm'.
+[V] Reusing cached material shader for material 'assets/lamp_bulb.nmm'.
+Building geometry triangle list...
+Done, average: 848.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 442 vertice, 440 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/table.nmg'.
+[H] Load render material 'assets/table_wood.nmm'.
+[V] Entering DDS texture loader for 'assets/wood_color.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/wood_color.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/wood_color.png'.
+[V] EGL Delete texture 0x0, GL id 36.
+[V] New GL texture object id 36.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Entering DDS texture loader for 'assets/wood_specular.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/wood_specular.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/wood_specular.png'.
+[V] EGL Delete texture 0x0, GL id 37.
+[V] New GL texture object id 37.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Creating material shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0Swizzle1000TexSampler0MatTexture2UV0MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0Swizzle1000TexSampler0MatTexture2UV0MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 237.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0Swizzle1000TexSampler0MatTexture2UV0MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 240.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0Swizzle1000TexSampler0MatTexture2UV0MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 243.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0Swizzle1000TexSampler0MatTexture2UV0MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 246.
+Building geometry triangle list...
+Done, average: 880.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1788 vertice, 1800 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/table_basket.nmg'.
+[H] Load render material 'assets/table_basket.nmm'.
+[V] Reusing cached material shader for material 'assets/table_basket.nmm'.
+Building geometry triangle list...
+Done, average: 3600.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 125 vertice, 160 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/table_paper_sheets.nmg'.
+[H] Load render material 'assets/table_paper.nmm'.
+[V] Reusing cached material shader for material 'assets/table_paper.nmm'.
+Building geometry triangle list...
+Done, average: 160.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 512 vertice, 1024 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/table_foot.nmg'.
+[H] Load render material 'assets/table_chrome.nmm'.
+[V] Reusing cached material shader for material 'assets/table_chrome.nmm'.
+Building geometry triangle list...
+Done, average: 1024.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 50 vertice, 96 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/wall.nmg'.
+[H] Load render material 'assets/room_wall.nmm'.
+[V] Entering DDS texture loader for 'assets/wall_texture_2.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/wall_texture_2.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/wall_texture_2.png'.
+[V] EGL Delete texture 0x0, GL id 38.
+[V] New GL texture object id 38.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Creating material shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 249.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 252.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 255.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 258.
+Building geometry triangle list...
+Done, average: 96.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 272 vertice, 480 polygon(s), 2 material(s).
+[H] Setup geometry 'assets/wall_window.nmg'.
+[H] Load render material 'assets/wall_window_frame.nmm'.
+[V] Reusing cached material shader for material 'assets/wall_window_frame.nmm'.
+Building geometry triangle list...
+Done, average: 240.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 289 vertice, 512 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/ground.nmg'.
+[H] Load render material 'assets/room_ground.nmm'.
+[V] Entering DDS texture loader for 'assets/wall_texture.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/wall_texture.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/wall_texture.png'.
+[V] EGL Delete texture 0x0, GL id 39.
+[V] New GL texture object id 39.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Reusing cached material shader for material 'assets/room_ground.nmm'.
+Building geometry triangle list...
+Done, average: 512.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_menace.nmg'.
+[H] Load render material 'assets/box_art_menace.nmm'.
+[V] Entering DDS texture loader for 'assets/box_menace.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_menace.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_menace.png'.
+[V] EGL Delete texture 0x0, GL id 40.
+[V] New GL texture object id 40.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Entering DDS texture loader for 'assets/box_art_spec.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_art_spec.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_art_spec.png'.
+[V] EGL Delete texture 0x0, GL id 41.
+[V] New GL texture object id 41.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Creating material shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 261.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 264.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 267.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 270.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_bloodmoney.nmg'.
+[H] Load render material 'assets/box_art_bloodmoney.nmm'.
+[V] Entering DDS texture loader for 'assets/box_bloodmoney.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_bloodmoney.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_bloodmoney.png'.
+[V] EGL Delete texture 0x0, GL id 42.
+[V] New GL texture object id 42.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/box_art_bloodmoney.nmm'.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 5064 vertice, 5028 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/mouse.nmg'.
+[H] Load render material 'assets/mouse.nmm'.
+[V] Reusing cached material shader for material 'assets/mouse.nmm'.
+Building geometry triangle list...
+Done, average: 10056.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 512 vertice, 1020 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/mouse_wire.nmg'.
+Building geometry triangle list...
+Done, average: 1020.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 776 vertice, 1548 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/mouse_to_cord.nmg'.
+Building geometry triangle list...
+Done, average: 1548.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 378 vertice, 340 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/mouse_buttons.nmg'.
+Building geometry triangle list...
+Done, average: 680.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 777 vertice, 706 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_body_bottom.nmg'.
+[H] Load render material 'assets/power_supply.nmm'.
+[V] Reusing cached material shader for material 'assets/power_supply.nmm'.
+Building geometry triangle list...
+Done, average: 1408.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 4218 vertice, 7840 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_wire_connector.nmg'.
+Building geometry triangle list...
+Done, average: 7840.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 616 vertice, 612 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_wire_in.nmg'.
+Building geometry triangle list...
+Done, average: 1228.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 113 vertice, 192 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_label.nmg'.
+Building geometry triangle list...
+Done, average: 192.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 544 vertice, 540 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_wire_out.nmg'.
+Building geometry triangle list...
+Done, average: 1084.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 32 vertice, 60 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_inside.nmg'.
+Building geometry triangle list...
+Done, average: 60.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 3381 vertice, 2444 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_body_top.nmg'.
+Building geometry triangle list...
+Done, average: 6040.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 95 vertice, 172 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/psu_switch.nmg'.
+Building geometry triangle list...
+Done, average: 172.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_dune.nmg'.
+[H] Load render material 'assets/box_art_dune.nmm'.
+[V] Entering DDS texture loader for 'assets/box_dune.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_dune.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_dune.jpg'.
+[V] EGL Delete texture 0x0, GL id 43.
+[V] New GL texture object id 43.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/box_art_dune.nmm'.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 210 vertice, 416 polygon(s), 4 material(s).
+[H] Setup geometry 'assets/magazine_dune.nmg'.
+[H] Load render material 'assets/mag_dune_page-0.nmm'.
+[V] Entering DDS texture loader for 'assets/dune_magazine_page_0.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/dune_magazine_page_0.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/dune_magazine_page_0.jpg'.
+[V] EGL Delete texture 0x0, GL id 44.
+[V] New GL texture object id 44.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 2048
+[V] Entering DDS texture loader for 'assets/mag_spec.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/mag_spec.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/mag_spec.png'.
+[V] EGL Delete texture 0x0, GL id 45.
+[V] New GL texture object id 45.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Reusing cached material shader for material 'assets/mag_dune_page-0.nmm'.
+[H] Load render material 'assets/mag_dune_page-1.nmm'.
+[V] Entering DDS texture loader for 'assets/dune_magazine_page_1.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/dune_magazine_page_1.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/dune_magazine_page_1.jpg'.
+[V] EGL Delete texture 0x0, GL id 46.
+[V] New GL texture object id 46.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 2048
+[V] Reusing cached material shader for material 'assets/mag_dune_page-1.nmm'.
+[H] Load render material 'assets/mag_side.nmm'.
+[V] Entering DDS texture loader for 'assets/mag_side.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/mag_side.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/mag_side.png'.
+[V] EGL Delete texture 0x0, GL id 47.
+[V] New GL texture object id 47.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 64, H: 64
+[V] Reusing cached material shader for material 'assets/mag_side.nmm'.
+[H] Load render material 'assets/mag_back.nmm'.
+[V] Creating material shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV1MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV1MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 273.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV1MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 276.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV1MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 279.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV1MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 282.
+Building geometry triangle list...
+Done, average: 104.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 713 vertice, 1340 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/poster_dune.nmg'.
+[H] Load render material 'assets/poster_dune.nmm'.
+[V] Entering DDS texture loader for 'assets/poster_dune.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/poster_dune.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/poster_dune.png'.
+[V] EGL Delete texture 0x0, GL id 48.
+[V] New GL texture object id 48.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/poster_dune.nmm'.
+Building geometry triangle list...
+Done, average: 1340.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 901 vertice, 1685 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/poster_scanners.nmg'.
+[H] Load render material 'assets/poster_scanners.nmm'.
+[V] Entering DDS texture loader for 'assets/poster_scanners.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/poster_scanners.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/poster_scanners.png'.
+[V] EGL Delete texture 0x0, GL id 49.
+[V] New GL texture object id 49.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/poster_scanners.nmm'.
+Building geometry triangle list...
+Done, average: 1685.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1266 vertice, 2421 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/poster_eraserhead.nmg'.
+[H] Load render material 'assets/poster_eraserhead.nmm'.
+[V] Entering DDS texture loader for 'assets/poster_eraserhead.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/poster_eraserhead.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/poster_eraserhead.png'.
+[V] EGL Delete texture 0x0, GL id 50.
+[V] New GL texture object id 50.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/poster_eraserhead.nmm'.
+Building geometry triangle list...
+Done, average: 2421.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 5513 vertice, 10522 polygon(s), 7 material(s).
+[H] Setup geometry 'assets/bike_body.nmg'.
+[H] Load render material 'assets/bike_tyre.nmm'.
+[V] Reusing cached material shader for material 'assets/bike_tyre.nmm'.
+[H] Load render material 'assets/bike_chrome.nmm'.
+[V] Creating material shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2UV0MatParm4TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2UV0MatParm4TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 285.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2UV0MatParm4TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 288.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2UV0MatParm4TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 291.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture2UV0MatParm4TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 294.
+[H] Load render material 'assets/bike_dark_metal.nmm'.
+[V] Reusing cached material shader for material 'assets/bike_dark_metal.nmm'.
+[H] Load render material 'assets/bike_gum.nmm'.
+[V] Reusing cached material shader for material 'assets/bike_gum.nmm'.
+[H] Load render material 'assets/bike_frame.nmm'.
+[V] Creating material shader 'NormalSmoothMulMatParm0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 297.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 300.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 303.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothTexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 306.
+[H] Load render material 'assets/bike_leather.nmm'.
+[V] Creating material shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 309.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 312.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 315.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0MatParm4AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 318.
+[H] Load render material 'assets/bike_cables.nmm'.
+[V] Reusing cached material shader for material 'assets/bike_cables.nmm'.
+Building geometry triangle list...
+Done, average: 2104.400 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1243 vertice, 2222 polygon(s), 7 material(s).
+[H] Setup geometry 'assets/bike_steering.nmg'.
+Building geometry triangle list...
+Done, average: 444.400 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 7925 vertice, 15378 polygon(s), 7 material(s).
+[H] Setup geometry 'assets/bik_wheel_front.nmg'.
+Building geometry triangle list...
+Done, average: 5126.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 744 vertice, 1476 polygon(s), 7 material(s).
+[H] Setup geometry 'assets/bike_seat.nmg'.
+Building geometry triangle list...
+Done, average: 738.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 8658 vertice, 16820 polygon(s), 7 material(s).
+[H] Setup geometry 'assets/bike_wheel_rear.nmg'.
+Building geometry triangle list...
+Done, average: 5606.667 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 3724 vertice, 6784 polygon(s), 3 material(s).
+[H] Setup geometry 'assets/tennis_ball.nmg'.
+[H] Load render material 'assets/tennis_ball_joint.nmm'.
+[V] Reusing cached material shader for material 'assets/tennis_ball_joint.nmm'.
+[H] Load render material 'assets/tennis_ball_yellow.nmm'.
+[V] Entering DDS texture loader for 'assets/tennis_ball_fur_opaque.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/tennis_ball_fur_opaque.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/tennis_ball_fur_opaque.png'.
+[V] EGL Delete texture 0x0, GL id 51.
+[V] New GL texture object id 51.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Entering DDS texture loader for 'assets/tennis_ball_fur_normal.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/tennis_ball_fur_normal.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/tennis_ball_fur_normal.png'.
+[V] EGL Delete texture 0x0, GL id 52.
+[V] New GL texture object id 52.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Entering DDS texture loader for 'assets/tennis_ball_envmap_0.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/tennis_ball_envmap_0.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/tennis_ball_envmap_0.png'.
+[V] EGL Delete texture 0x0, GL id 53.
+[V] New GL texture object id 53.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 128, H: 128
+[V] Creating material shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5' variants.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_Depth'...
+[V] EGL shader linked successfully at id 321.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 324.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 327.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 330.
+[H] Load render material 'assets/tennis_ball_fur.nmm'.
+[V] Entering DDS texture loader for 'assets/tennis_ball_fur.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/tennis_ball_fur.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/tennis_ball_fur.png'.
+[V] EGL Delete texture 0x0, GL id 54.
+[V] New GL texture object id 54.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Creating material shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormSwizzle4000TexSampler0MatTexture2UV0' variants.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormSwizzle4000TexSampler0MatTexture2UV0_Depth'...
+[V] EGL shader linked successfully at id 333.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormSwizzle4000TexSampler0MatTexture2UV0_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 336.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormSwizzle4000TexSampler0MatTexture2UV0_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 339.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1MatParm4AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormSwizzle4000TexSampler0MatTexture2UV0_PP_Velocity'...
+[V] EGL shader linked successfully at id 342.
+Building geometry triangle list...
+Done, average: 2261.333 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 2972 vertice, 5775 polygon(s), 4 material(s).
+[H] Setup geometry 'assets/basile_toy.nmg'.
+[H] Load render material 'assets/basile_base.nmm'.
+[V] Entering DDS texture loader for 'assets/basile_toyAmbient.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/basile_toyAmbient.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/basile_toyAmbient.png'.
+[V] EGL Delete texture 0x0, GL id 55.
+[V] New GL texture object id 55.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Creating material shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 345.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 348.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 351.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MatParm1MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 354.
+[H] Load render material 'assets/basile_body.nmm'.
+[V] Creating material shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MulTexSampler0MatParm1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MulTexSampler0MatParm1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 357.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MulTexSampler0MatParm1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 360.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MulTexSampler0MatParm1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 363.
+[V] Creating shader 'NormalSmoothMulMatParm0TexSampler0MatTexture0UV0MulTexSampler0MatParm1MatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture1Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 366.
+[H] Load render material 'assets/basile_mouth.nmm'.
+[V] Reusing cached material shader for material 'assets/basile_mouth.nmm'.
+[H] Load render material 'assets/basile_eyes.nmm'.
+[V] Reusing cached material shader for material 'assets/basile_eyes.nmm'.
+Building geometry triangle list...
+Done, average: 1443.750 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 112 vertice, 108 polygon(s), 3 material(s).
+[H] Setup geometry 'assets/mag_tilt_44.nmg'.
+[H] Load render material 'assets/mag_tilt_cover_44.nmm'.
+[V] Entering DDS texture loader for 'assets/mag_tilt_44.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/mag_tilt_44.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/mag_tilt_44.png'.
+[V] EGL Delete texture 0x0, GL id 56.
+[V] New GL texture object id 56.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/mag_tilt_cover_44.nmm'.
+Building geometry triangle list...
+Done, average: 73.333 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 112 vertice, 108 polygon(s), 3 material(s).
+[H] Setup geometry 'assets/mag_tilt_52.nmg'.
+[H] Load render material 'assets/mag_tilt_cover_52.nmm'.
+[V] Entering DDS texture loader for 'assets/mag_tilt_52.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/mag_tilt_52.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/mag_tilt_52.png'.
+[V] EGL Delete texture 0x0, GL id 57.
+[V] New GL texture object id 57.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/mag_tilt_cover_52.nmm'.
+Building geometry triangle list...
+Done, average: 73.333 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 112 vertice, 108 polygon(s), 3 material(s).
+[H] Setup geometry 'assets/mag_tilt_55.nmg'.
+[H] Load render material 'assets/mag_tilt_cover_55.nmm'.
+[V] Entering DDS texture loader for 'assets/mag_tilt_55.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/mag_tilt_55.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/mag_tilt_55.png'.
+[V] EGL Delete texture 0x0, GL id 58.
+[V] New GL texture object id 58.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/mag_tilt_cover_55.nmm'.
+Building geometry triangle list...
+Done, average: 73.333 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 112 vertice, 108 polygon(s), 3 material(s).
+[H] Setup geometry 'assets/mag_tilt_67.nmg'.
+[H] Load render material 'assets/mag_tilt_cover_67.nmm'.
+[V] Entering DDS texture loader for 'assets/mag_tilt_67.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/mag_tilt_67.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/mag_tilt_67.png'.
+[V] EGL Delete texture 0x0, GL id 59.
+[V] New GL texture object id 59.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 1024
+[V] Reusing cached material shader for material 'assets/mag_tilt_cover_67.nmm'.
+Building geometry triangle list...
+Done, average: 73.333 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_fs2.nmg'.
+[H] Load render material 'assets/box_art_fs2.nmm'.
+[V] Entering DDS texture loader for 'assets/box_fs2.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_fs2.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_fs2.png'.
+[V] EGL Delete texture 0x0, GL id 60.
+[V] New GL texture object id 60.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Creating material shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV1TexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV1TexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 369.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV1TexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 372.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV1TexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 375.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture2UV1TexSampler0MatTexture0UV0TexSampler0MatTexture1UV1MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 378.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_ballistix.nmg'.
+[H] Load render material 'assets/box_art_ballistix.nmm'.
+[V] Entering DDS texture loader for 'assets/box_ballistix.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_ballistix.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_ballistix.png'.
+[V] EGL Delete texture 0x0, GL id 61.
+[V] New GL texture object id 61.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/box_art_ballistix.nmm'.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1456 vertice, 1464 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-body.nmg'.
+[H] Load render material 'assets/floppy_plastic.nmm'.
+[V] Creating material shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0Swizzle1000TexSampler0MatTexture1UV0MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0Swizzle1000TexSampler0MatTexture1UV0MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 381.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0Swizzle1000TexSampler0MatTexture1UV0MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 384.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0Swizzle1000TexSampler0MatTexture1UV0MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 387.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture0UV0Swizzle1000TexSampler0MatTexture1UV0MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 390.
+Building geometry triangle list...
+Done, average: 2912.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 526 vertice, 522 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-cover.nmg'.
+[H] Load render material 'assets/floppy_metal.nmm'.
+[V] Creating material shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 393.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 396.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 399.
+[V] Creating shader 'NormalSmoothMatParm0TexSampler0MatTexture1UV0MatParm4AddMatParm2TexSampler0MatTexture0Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 402.
+Building geometry triangle list...
+Done, average: 1052.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 129 vertice, 108 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-label.nmg'.
+[H] Load render material 'assets/floppy_label.nmm'.
+[V] Entering DDS texture loader for 'assets/floppy-dungeon_master.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/floppy-dungeon_master.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/floppy-dungeon_master.jpg'.
+[V] EGL Delete texture 0x0, GL id 62.
+[V] New GL texture object id 62.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 387
+[V] Creating material shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 405.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 408.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 411.
+[V] Creating shader 'NormalSmoothTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 414.
+Building geometry triangle list...
+Done, average: 216.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 129 vertice, 108 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-label-dune.nmg'.
+[H] Load render material 'assets/floppy_label-dune.nmm'.
+[V] Entering DDS texture loader for 'assets/floppy-dune.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/floppy-dune.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/floppy-dune.jpg'.
+[V] EGL Delete texture 0x0, GL id 63.
+[V] New GL texture object id 63.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 378
+[V] Reusing cached material shader for material 'assets/floppy_label-dune.nmm'.
+Building geometry triangle list...
+Done, average: 216.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 129 vertice, 108 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-label-centurion.nmg'.
+[H] Load render material 'assets/floppy_label-centurion.nmm'.
+[V] Entering DDS texture loader for 'assets/floppy-centurion.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/floppy-centurion.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/floppy-centurion.jpg'.
+[V] EGL Delete texture 0x0, GL id 64.
+[V] New GL texture object id 64.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 386
+[V] Reusing cached material shader for material 'assets/floppy_label-centurion.nmm'.
+Building geometry triangle list...
+Done, average: 216.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 129 vertice, 108 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-label-falcon.nmg'.
+[H] Load render material 'assets/floppy_label-falcon.nmm'.
+[V] Entering DDS texture loader for 'assets/floppy-falcon.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/floppy-falcon.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/floppy-falcon.jpg'.
+[V] EGL Delete texture 0x0, GL id 65.
+[V] New GL texture object id 65.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 371
+[V] Reusing cached material shader for material 'assets/floppy_label-falcon.nmm'.
+Building geometry triangle list...
+Done, average: 216.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 129 vertice, 108 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-label-robocop.nmg'.
+[H] Load render material 'assets/floppy_label-robocop.nmm'.
+[V] Entering DDS texture loader for 'assets/floppy-robocop-3.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/floppy-robocop-3.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/floppy-robocop-3.jpg'.
+[V] EGL Delete texture 0x0, GL id 66.
+[V] New GL texture object id 66.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 363
+[V] Reusing cached material shader for material 'assets/floppy_label-robocop.nmm'.
+Building geometry triangle list...
+Done, average: 216.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 129 vertice, 108 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/floppy-label-maniac_mansion.nmg'.
+[H] Load render material 'assets/floppy_label-maniac_mansion.nmm'.
+[V] Entering DDS texture loader for 'assets/floppy-maniac_mansion.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/floppy-maniac_mansion.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/floppy-maniac_mansion.jpg'.
+[V] EGL Delete texture 0x0, GL id 67.
+[V] New GL texture object id 67.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 397
+[V] Reusing cached material shader for material 'assets/floppy_label-maniac_mansion.nmm'.
+Building geometry triangle list...
+Done, average: 216.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 184 vertice, 268 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/library.nmg'.
+[H] Load render material 'assets/library_wood.nmm'.
+[V] Entering DDS texture loader for 'assets/libraryAmbient_.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/libraryAmbient_.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/libraryAmbient_.png'.
+[V] EGL Delete texture 0x0, GL id 68.
+[V] New GL texture object id 68.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Creating material shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1TexSampler0MatTexture2UV0MatParm4MatParm2MatParm5' variants.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1TexSampler0MatTexture2UV0MatParm4MatParm2MatParm5_Depth'...
+[V] EGL shader linked successfully at id 417.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1TexSampler0MatTexture2UV0MatParm4MatParm2MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 420.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1TexSampler0MatTexture2UV0MatParm4MatParm2MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 423.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV1TexSampler0MatTexture2UV0MatParm4MatParm2MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 426.
+Building geometry triangle list...
+Done, average: 268.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_flashback.nmg'.
+[H] Load render material 'assets/box_art_flashback.nmm'.
+[V] Entering DDS texture loader for 'assets/box_flashback.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_flashback.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_flashback.png'.
+[V] EGL Delete texture 0x0, GL id 69.
+[V] New GL texture object id 69.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/box_art_flashback.nmm'.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_jinxter.nmg'.
+[H] Load render material 'assets/box_art_jinxter.nmm'.
+[V] Entering DDS texture loader for 'assets/box_jinxter.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_jinxter.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_jinxter.png'.
+[V] EGL Delete texture 0x0, GL id 70.
+[V] New GL texture object id 70.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/box_art_jinxter.nmm'.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 790 vertice, 976 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_theplague.nmg'.
+[H] Load render material 'assets/box_art_theplague.nmm'.
+[V] Entering DDS texture loader for 'assets/box_theplague.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_theplague.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_theplague.png'.
+[V] EGL Delete texture 0x0, GL id 71.
+[V] New GL texture object id 71.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 512
+[V] Reusing cached material shader for material 'assets/box_art_theplague.nmm'.
+Building geometry triangle list...
+Done, average: 1576.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_starglider.nmg'.
+[H] Load render material 'assets/box_art_starglider.nmm'.
+[V] Entering DDS texture loader for 'assets/box_starglider_2.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_starglider_2.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_starglider_2.png'.
+[V] EGL Delete texture 0x0, GL id 72.
+[V] New GL texture object id 72.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/box_art_starglider.nmm'.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 486 vertice, 640 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/box_fireandforget.nmg'.
+[H] Load render material 'assets/box_art_fireandforget.nmm'.
+[V] Entering DDS texture loader for 'assets/box_fire_and_forget.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/box_fire_and_forget.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/box_fire_and_forget.png'.
+[V] EGL Delete texture 0x0, GL id 73.
+[V] New GL texture object id 73.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/box_art_fireandforget.nmm'.
+Building geometry triangle list...
+Done, average: 968.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 2296 vertice, 2427 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/toy_harlock_cara_11.nmg'.
+[H] Load render material 'assets/harlock_cara_11.nmm'.
+[V] Entering DDS texture loader for 'assets/harlock_cara_11_diffuse.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/harlock_cara_11_diffuse.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/harlock_cara_11_diffuse.png'.
+[V] EGL Delete texture 0x0, GL id 74.
+[V] New GL texture object id 74.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Entering DDS texture loader for 'assets/planet_envmap_1.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/planet_envmap_1.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/planet_envmap_1.png'.
+[V] EGL Delete texture 0x0, GL id 75.
+[V] New GL texture object id 75.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 256, H: 256
+[V] Creating material shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 429.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 432.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 435.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 438.
+Building geometry triangle list...
+Done, average: 4510.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 2120 vertice, 2140 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/toy_harlock_cara_07.nmg'.
+[H] Load render material 'assets/harlock_cara_07.nmm'.
+[V] Entering DDS texture loader for 'assets/harlock_cara_07_diffuse.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/harlock_cara_07_diffuse.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/harlock_cara_07_diffuse.png'.
+[V] EGL Delete texture 0x0, GL id 76.
+[V] New GL texture object id 76.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/harlock_cara_07.nmm'.
+Building geometry triangle list...
+Done, average: 4162.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1731 vertice, 1794 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/toy_harlock_cara_01.nmg'.
+[H] Load render material 'assets/harlock_cara_01.nmm'.
+[V] Entering DDS texture loader for 'assets/harlock_cara_01.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/harlock_cara_01.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/harlock_cara_01.png'.
+[V] EGL Delete texture 0x0, GL id 77.
+[V] New GL texture object id 77.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/harlock_cara_01.nmm'.
+Building geometry triangle list...
+Done, average: 3412.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1615 vertice, 1690 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/toy_harlock_cara_10.nmg'.
+[H] Load render material 'assets/harlock_cara_10.nmm'.
+[V] Entering DDS texture loader for 'assets/harlock_cara_10_diffuse.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/harlock_cara_10_diffuse.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/harlock_cara_10_diffuse.png'.
+[V] EGL Delete texture 0x0, GL id 78.
+[V] New GL texture object id 78.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Creating material shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 441.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 444.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 447.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 450.
+Building geometry triangle list...
+Done, average: 3180.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1843 vertice, 1870 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/toy_harlock_cara_09.nmg'.
+[H] Load render material 'assets/harlock_cara_09.nmm'.
+[V] Entering DDS texture loader for 'assets/harlock_cara_09_diffuse.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/harlock_cara_09_diffuse.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/harlock_cara_09_diffuse.png'.
+[V] EGL Delete texture 0x0, GL id 79.
+[V] New GL texture object id 79.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Creating material shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 453.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 456.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 459.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm1Swizzle1000TexSampler0MatTexture1UV0TexSampler0MatTexture2Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 462.
+Building geometry triangle list...
+Done, average: 3540.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 5985 vertice, 11966 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/basketball.nmg'.
+[H] Load render material 'assets/basketball.nmm'.
+[V] Entering DDS texture loader for 'assets/basketball_diffuse.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/basketball_diffuse.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/basketball_diffuse.png'.
+[V] EGL Delete texture 0x0, GL id 80.
+[V] New GL texture object id 80.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Entering DDS texture loader for 'assets/basketball_normal.png'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/basketball_normal.png'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/basketball_normal.png'.
+[V] EGL Delete texture 0x0, GL id 81.
+[V] New GL texture object id 81.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Creating material shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1Swizzle1000TexSampler0MatTexture2UV0AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5' variants.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1Swizzle1000TexSampler0MatTexture2UV0AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_Depth'...
+[V] EGL shader linked successfully at id 465.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1Swizzle1000TexSampler0MatTexture2UV0AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 468.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1Swizzle1000TexSampler0MatTexture2UV0AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 471.
+[V] Creating shader 'NormMulTangentMtxNormalSmoothUnpackColorSwizzle1230TexSampler0MatTexture1UV0MulTexSampler0MatTexture0UV0TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormMatParm1Swizzle1000TexSampler0MatTexture2UV0AddMatParm2TexSampler0MatTexture4Swizzle1200PackVectorMulNormalViewMatrixNormMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 474.
+Building geometry triangle list...
+Done, average: 11966.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 8 vertice, 6 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/wall_wipe.nmg'.
+[H] Load render material 'assets/wall_wipe.nmm'.
+[V] Reusing cached material shader for material 'assets/wall_wipe.nmm'.
+Building geometry triangle list...
+Done, average: 12.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 85 vertice, 64 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/night-pan.nmg'.
+[H] Load render material 'assets/night-pan.nmm'.
+[V] Entering DDS texture loader for 'assets/sherbrooke_nuit_ville-bokeh.jpg'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/sherbrooke_nuit_ville-bokeh.jpg'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/sherbrooke_nuit_ville-bokeh.jpg'.
+[V] EGL Delete texture 0x0, GL id 82.
+[V] New GL texture object id 82.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 2048, H: 512
+[V] Creating material shader 'NormalSmoothMatParm0MatParm1MatParm4TexSampler0MatTexture0UV0MatParm5' variants.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4TexSampler0MatTexture0UV0MatParm5_Depth'...
+[V] EGL shader linked successfully at id 477.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4TexSampler0MatTexture0UV0MatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 480.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4TexSampler0MatTexture0UV0MatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 483.
+[V] Creating shader 'NormalSmoothMatParm0MatParm1MatParm4TexSampler0MatTexture0UV0MatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 486.
+Building geometry triangle list...
+Done, average: 128.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 625 vertice, 1200 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/long-lamp_feet.nmg'.
+[H] Load render material 'assets/long_lamp.nmm'.
+[V] Reusing cached material shader for material 'assets/long_lamp.nmm'.
+Building geometry triangle list...
+Done, average: 1200.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 26 vertice, 48 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/long-lamp_arm.nmg'.
+Building geometry triangle list...
+Done, average: 48.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 2141 vertice, 4224 polygon(s), 2 material(s).
+[H] Setup geometry 'assets/long-lamp_head.nmg'.
+[H] Load render material 'assets/long-lamp-illum.nmm'.
+[V] Reusing cached material shader for material 'assets/long-lamp-illum.nmm'.
+Building geometry triangle list...
+Done, average: 2112.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 3644 vertice, 6882 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/harlock_ship.nmg'.
+[H] Load render material 'assets/harlock_ship.nmm'.
+[V] Entering DDS texture loader for 'assets/harlock_shipDiffuseMap.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/harlock_shipDiffuseMap.tga'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/harlock_shipDiffuseMap.tga'.
+[V] EGL Delete texture 0x0, GL id 83.
+[V] New GL texture object id 83.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Entering DDS texture loader for 'assets/harlock_shipAmbient.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/harlock_shipAmbient.tga'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/harlock_shipAmbient.tga'.
+[V] EGL Delete texture 0x0, GL id 84.
+[V] New GL texture object id 84.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Creating material shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MulMatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5' variants.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MulMatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_Depth'...
+[V] EGL shader linked successfully at id 489.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MulMatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_DS_GBufferMRT4'...
+[V] EGL shader linked successfully at id 492.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MulMatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_NormalDepth'...
+[V] EGL shader linked successfully at id 495.
+[V] Creating shader 'NormalSmoothMulTexSampler0MatTexture0UV0TexSampler0MatTexture1UV0MulMatParm4MulTexSampler0AddMatParm2TexSampler0MatTexture3Swizzle1200PackVectorMulNormalViewMatrixNormalSmoothMatParm5_PP_Velocity'...
+[V] EGL shader linked successfully at id 498.
+Building geometry triangle list...
+Done, average: 6882.000 tri/list, 0.000 bone/list.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1633 vertice, 3202 polygon(s), 1 material(s).
+[H] Setup geometry 'assets/toy_grendizer.nmg'.
+[H] Load render material 'assets/grendizer_map.nmm'.
+[V] Entering DDS texture loader for 'assets/toy_grendizerDiffuseMap.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/toy_grendizerDiffuseMap.tga'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/toy_grendizerDiffuseMap.tga'.
+[V] EGL Delete texture 0x0, GL id 85.
+[V] New GL texture object id 85.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 1024, H: 1024
+[V] Entering DDS texture loader for 'assets/toy_grendizerAmbient.tga'...
+[V] Invalid DDS header.
+[V] Entering PVR texture loader for 'assets/toy_grendizerAmbient.tga'...
+[V] Invalid PVR header.
+[V] Creating texture 'assets/toy_grendizerAmbient.tga'.
+[V] EGL Delete texture 0x0, GL id 86.
+[V] New GL texture object id 86.
+[V] MIPMAP: True, NPOT: 2, RTT: False, W: 512, H: 512
+[V] Reusing cached material shader for material 'assets/grendizer_map.nmm'.
+Building geometry triangle list...
+Done, average: 3202.000 tri/list, 0.000 bone/list.
+[H] Setup scene 'assets/floppy_stack.nms'.
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 3402 vertice, 3360 polygon(s), 3 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1090 vertice, 1056 polygon(s), 2 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 2234 vertice, 2148 polygon(s), 2 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 292 vertice, 216 polygon(s), 1 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 512 vertice, 456 polygon(s), 2 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 292 vertice, 216 polygon(s), 1 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 5513 vertice, 10522 polygon(s), 7 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 1243 vertice, 2222 polygon(s), 7 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 7925 vertice, 15378 polygon(s), 7 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 744 vertice, 1476 polygon(s), 7 material(s).
+Geometry::FromMetaTag(Tag &tag) done in 0.000ms. 8658 vertice, 16820 polygon(s), 7 material(s).
+[H] Reset scene 'assets/floppy_stack.nms'.

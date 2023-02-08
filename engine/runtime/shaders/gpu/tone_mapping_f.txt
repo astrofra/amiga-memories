@@ -1,0 +1,2 @@
+vec4	ref = texture2D(u_tex, v_uv);
+%out.color% = vec4(ref.rgb * u_strength, ref.a);

@@ -1,0 +1,16 @@
+<Version=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+		<Uniform=<Name="u_mvp_matrix"><Semantic="ModelViewProjectionMatrix"><Scope=<Vertex>>>
+
+		<Uniform=<Name="u_t_error"><Semantic="Texture2D"><Texture="@core/builtin/maps/missing_material.png">>
+	>
+	<Varying=
+		<Variable=<Name="v_uv"><Type="vec2">>
+	>
+	<PixelSource="
+vec4 t = texture2D(u_t_error, %in.fragcoord%.xy * vec2(1.0 / 256.0, -1.0 / 256.0));
+%constant% = vec4(mix(t.rgb, vec3(1.0, 0.0, 0.4), 1.0 - t.a), 1.0);
+	">
+>

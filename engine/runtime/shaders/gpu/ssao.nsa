@@ -1,0 +1,23 @@
+<NML=1.0>
+<Shader=
+	<Input=
+		<Attribute=<Name="a_position"><Semantic="Position">>
+
+		<Uniform=<Name="u_tex"><Semantic="NativeTexture">>
+		<Uniform=<Name="u_ibs"><Semantic="InverseBufferSize">>
+		<Uniform=<Name="u_fx_scale"><Semantic="FxScale">>
+		<Uniform=<Name="u_ratio"><Semantic="DisplayBufferRatio">>
+
+		<Uniform=<Name="u_znear"><Semantic="ZNear">>
+		<Uniform=<Name="u_zfar"><Semantic="ZFar">>
+
+		<Uniform=<Name="u_noise"><Semantic="NoiseMap">>
+
+		<Uniform=<Name="u_strength"><Type="float">>
+		<Uniform=<Name="u_radius"><Type="float">>
+		<Uniform=<Name="u_distance_scale"><Type="float">>
+		<Uniform=<Name="u_iproj2d"><Type="vec2">>
+	>
+	<Vertex="@core/shaders/gpu/position_no_transform_v.txt">
+	<Fragment="@core/shaders/gpu/ssao_f.txt">
+>

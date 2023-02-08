@@ -1,0 +1,1 @@
+%out.color% = texture2D(u_tex, v_uv * u_fx_scale);
