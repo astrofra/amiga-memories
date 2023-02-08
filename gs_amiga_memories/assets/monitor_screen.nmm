@@ -35,7 +35,7 @@
 	<Shader="shaders/monitor-screen-shader-tree.nsa">
 	<TextureStage=
 		<Index=0>
-		<Texture="assets/robot_face.png">
+		<Texture="assets/ico_pixel.png">
 		<UV=0>
 		<Channel="Decal">
 	>

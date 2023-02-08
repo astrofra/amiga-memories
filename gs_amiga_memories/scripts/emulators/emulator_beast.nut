@@ -3,6 +3,8 @@
 	Author: Astrofra
 */
 
+Include("scripts/base_emulator.nut")
+
 /*!
 	@short	GameBeast
 	@author	Astrofra

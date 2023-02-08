@@ -276,7 +276,8 @@ class	StageManager
 		local	_text_array = []
 		
 		foreach(clip in stage_script)
-			_text_array.append(clip.text)
+			if ("text" in clip)
+				_text_array.append(clip.text)
 
 		if (!g_demo_mode)
 			TextToSpeech(_text_array)

@@ -8,16 +8,16 @@ Include("scripts/utils/rendering_stats.nut")
 
 //---------- BEGIN PUBLIC
 
-g_story						<-	"gng"
+g_story						<-	"deadline"
 g_enable_audio_output		<-	true
-g_demo_mode					<-	true	//	Don't (re)generate the voice.
+g_demo_mode					<-	false	//	Don't (re)generate the voice.
 g_french_voice				<-	true	//	Not always available (depends on the TTS System)
 g_tts_mary					<-	true	//	If set to false, will default to Windows SAPI5
 g_enable_voice_postprocess	<-	true	//	Pitch down the generated voice.
 g_save_enabled				<-	false
 g_skip_rendered_frames		<-	false
 g_fixed_step_enabled		<-	false
-g_enable_subtitles			<-	true
+g_enable_subtitles			<-	false
 g_display_fps				<-	false
 g_current_language			<-	"fr"
 
