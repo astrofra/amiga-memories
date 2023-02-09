@@ -6,7 +6,9 @@ _A walk along memory lane_ (An automatic review generator)
 
 ## How does Amiga Memories work?
 
-Amiga Memories is a project (started & released in 2013) that aims to make video programmes that can be published on the internet. The images and sound produced by Amiga Memories are 100% automatically calculated.
+Amiga Memories is a project (started & released in 2013) that aims to make video programmes that can be published on the internet. The images and sound produced by Amiga Memories are 100% automatically generated.
+
+The generator itself is implemented in Squirrel, the 3D rendering is done by GameStart3D.
 
 ### The script
 
@@ -24,6 +26,8 @@ A typical script would look like this:
 ```
 
 Here, in addition to the spoken & written narration, the script controls the camera movements as well as the LED activity of the computer.
+
+Scripts can be found in `gs_amiga_memories/assets/scripts/`. A script is, technically, a dictonnary stored as a `.nut` (Squirrel) file. It is almost identical to a _Json_ file.
 
 ### The video
 
