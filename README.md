@@ -76,6 +76,13 @@ Some of the scenes can be rendered into a texture and shown inside the monitor s
 
 ![](img/sotb-layers.png)
 
+## The episodes
+
+2 episodes are availabe, so far: 
+
+* "Dune" : https://youtu.be/NTZRHCQ-pqc
+* "The Boing Ball" : https://youtu.be/X6Xv8NsnVPs
+
 
 
 
