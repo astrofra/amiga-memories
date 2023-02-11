@@ -78,10 +78,14 @@ Some of the scenes can be rendered into a texture and shown inside the monitor s
 
 ## The episodes
 
-2 episodes are availabe, so far: 
+2 episodes are available, so far: 
 
-* "Dune" : https://youtu.be/NTZRHCQ-pqc
-* "The Boing Ball" : https://youtu.be/X6Xv8NsnVPs
+* "Dune" : https://youtu.be/NTZRHCQ-pqc (The monologue of Princess Irulan, told by the Amiga)
+* "The Boing Ball" : https://youtu.be/X6Xv8NsnVPs (How did the Amiga Corp team managed to create an audio sample for the Boing ball, when the OS wasn't even ready for production ?)
+
+Several other episodes where initially planned ... maybe some day :)
+* Ghost'n'Goblins
+* Athanor 2
 
 
 
