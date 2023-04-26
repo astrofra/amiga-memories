@@ -8,7 +8,8 @@ _A walk along memory lane_ (An automatic review generator)
 
 Amiga Memories is a project (started & released in 2013) that aims to make video programmes that can be published on the internet. The images and sound produced by Amiga Memories are 100% automatically generated.
 
-The generator itself is implemented in [Squirrel](http://squirrel-lang.org/), the 3D rendering is done on [GameStart 3D](https://www.youtube.com/@GameStart3D/videos).
+The generator itself is implemented in [Squirrel](http://squirrel-lang.org/), the 3D rendering is done on [GameStart 3D](https://www.youtube.com/@GameStart3D/videos).<br>
+It takes advantage of the [GameStart 3D Squirrel API](https://astrofra.github.io/amiga-memories/)
 
 ### The script
 
