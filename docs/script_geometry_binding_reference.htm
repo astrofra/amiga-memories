@@ -1,0 +1,46 @@
+<html>
+ <head>
+  <title>Geometry Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Geometry Binding Reference</div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="GeometryGeneric"><b>1. Generic functions</b></span></a><br>
+<div class="function_body">
+<table id="GeometryComputeIsoSurface" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryComputeIsoSurface</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a> item, <span class="script_type">int</span> nb_metaball, <span class="script_type">array</span> pos_metaball, <span class="script_type">array</span> value_metaball</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create an iso surface to the geometry with the array of metaball.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GeometryGetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryGetName</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get geometry name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GeometryOptimize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryOptimize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Optimize geometry for realtime rendering.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GeometrySetHidden" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometrySetHidden</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo, <span class="script_type">bool</span> hidden</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Hide or show geometry, items referring to this geometry will still be updated.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GeometrySetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometrySetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup geometry in the renderer.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="GeometryTopology"><b>2. Topology functions</b></span></a><br>
+<div class="function_body">
+<table id="GeometryGetMinMax" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryGetMinMax</b></td><td>MinMax: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get geometry minmax.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="GeometryMaterial"><b>3. Material functions</b></span></a><br>
+<div class="function_body">
+<table id="GeometryGetMaterial" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryGetMaterial</b></td><td><a class="engine_type" href=script_material_binding_reference.htm>Material</a>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material from name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GeometryGetMaterialCount" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryGetMaterialCount</b></td><td><span class="script_type">int</span>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get geometry material count.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GeometryGetMaterialFromIndex" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryGetMaterialFromIndex</b></td><td><a class="engine_type" href=script_material_binding_reference.htm>Material</a>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo, <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material from index.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GeometryGetMaterialList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GeometryGetMaterialList</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a> geo</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a list of all materials in a geometry.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

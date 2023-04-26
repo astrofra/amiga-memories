@@ -1,0 +1,46 @@
+<html>
+ <head>
+  <title>Texture Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Texture Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_streamstate">StreamState<br>None<ul><br><li><em>StreamPlaying</em><li><em>StreamPaused</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="TextureStream"><b>1. Data streaming functions</b></span></a><br>
+<div class="function_body">
+<table id="TextureRewindStream" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureRewindStream</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Rewind texture stream.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextureSetStreamState" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureSetStreamState</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <a class="engine_enum" href=script_texture_binding_reference.htm#enum_streamstate>StreamState</a> state</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the texture stream state.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextureSetWrapping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureSetWrapping</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <span class="script_type">bool</span> wrap_u, <span class="script_type">bool</span> wrap_v</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the texture U and V wrap modes.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="TextureStream"><b>2. Data streaming functions</b></span></a><br>
+<div class="function_body">
+<table id="TextureRewindStream" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureRewindStream</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Rewind texture stream.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextureSetStreamState" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureSetStreamState</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <a class="engine_enum" href=script_texture_binding_reference.htm#enum_streamstate>StreamState</a> state</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the texture stream state.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextureSetWrapping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureSetWrapping</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <span class="script_type">bool</span> wrap_u, <span class="script_type">bool</span> wrap_v</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the texture U and V wrap modes.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="TextureGeneric"><b>3. Generic functions</b></span></a><br>
+<div class="function_body">
+<table id="TextureGetHeight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureGetHeight</b></td><td><span class="script_type">int</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the texture height.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextureGetWidth" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureGetWidth</b></td><td><span class="script_type">int</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the texture width.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextureRelease" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureRelease</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Release the renderer data for a given texture. A subsequent call to TextureUpdate will then recreate the renderer object.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextureUpdate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextureUpdate</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Update the texture data from a picture object.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

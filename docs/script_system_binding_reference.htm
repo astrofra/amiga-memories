@@ -1,0 +1,52 @@
+<html>
+ <head>
+  <title>System Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">System Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_systemconstant">SystemConstant<br>None<ul><br><li><em>SystemClockFrequency</em></ul><br><li id="enum_hardwarebutton">HardwareButton<br>None<ul><br><li><em>HardwareButtonHome</em><li><em>HardwareButtonMenu</em><li><em>HardwareButtonBack</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="SystemGeneric"><b>1. Generic functions</b></span></a><br>
+<div class="function_body">
+<table id="FileDelete" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>FileDelete</b></td><td><span class="script_type">int</span>: <span class="script_type">string</span> filename</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">delete a file.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="FileRename" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>FileRename</b></td><td><span class="script_type">int</span>: <span class="script_type">string</span> old, <span class="script_type">string</span> new</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Rename a file.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShellExecute" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShellExecute</b></td><td><span class="script_type">int</span>: <span class="script_type">string</span> path, <span class="script_type">string</span> param</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Execute an external program, returns its return code.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="System"><b>2. System functions</b></span></a><br>
+<div class="function_body">
+<table id="SystemGetClock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemGetClock</b></td><td><span class="script_type">int</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the raw system clock.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemGetClockFrequency" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemGetClockFrequency</b></td><td><span class="script_type">int</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the system clock frequency.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemGetLocale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemGetLocale</b></td><td><span class="script_type">string</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the system language description in a string ("FR","EN","ES","NL","IT").</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemGetPlatform" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemGetPlatform</b></td><td><span class="script_type">string</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the current platform ("Win32", "Linux32", "Wii").</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemHasMountPoint" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemHasMountPoint</b></td><td><span class="script_type">bool</span>: <span class="script_type">string</span> mount_point</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the specified mount point exists.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemLoadBindingPlugin" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemLoadBindingPlugin</b></td><td><span class="script_type">bool</span>: <span class="script_type">string</span> library_path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load a script binding API from a shared library.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemRand" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemRand</b></td><td><span class="script_type">int</span>: <span class="script_type">int</span> range</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a random number between [0;range].</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemSeedRand" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemSeedRand</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span> seed</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Initialize the random number sequence with a given seed.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemShowCursor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemShowCursor</b></td><td><span class="script_type">void</span>: <span class="script_type">bool</span> show</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Show/hide the platform cursor.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SystemSleep" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SystemSleep</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Sleep the current thread for a specified number of milliseconds.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

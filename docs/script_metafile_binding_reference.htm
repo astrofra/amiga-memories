@@ -1,0 +1,64 @@
+<html>
+ <head>
+  <title>Metafile Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Metafile Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_tagtype">TagType<br>None<ul><br><li><em>TagTypeBinary</em><li><em>TagTypeString</em><li><em>TagTypeInteger</em><li><em>TagTypeReal</em><li><em>TagTypeNode</em><li><em>TagTypeNone</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="MetaFile"><b>1. File functions</b></span></a><br>
+<div class="function_body">
+<table id="MetafileGetRoots" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileGetRoots</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return all root tags of a metafile in an array.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetafileLoad" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileLoad</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load metafile from file system.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetafileLoadFromString" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileLoadFromString</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>, <span class="script_type">string</span> content</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load metafile from a string.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetafileNew" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileNew</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new metafile, this object is managed, the VM will free it.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetafileSave" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileSave</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Save metafile to file system.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="MetaTag"><b>2. Tag functions</b></span></a><br>
+<div class="function_body">
+<table id="MetafileAddRoot" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileAddRoot</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>, <span class="script_type">string</span> tag_name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add metafile root, returns the newly created metatag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetafileAddRootWithValue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileAddRootWithValue</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>, <span class="script_type">string</span> tag_name, ...</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add metafile root, returns the newly created metatag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetafileGetTag" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileGetTag</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>, <span class="script_type">string</span> tag_path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get metatag from metafile, the metatag path is formatted as follow: tag:child:tag_id; (eg: 'Pref:Sound:Volume;').</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetafileGetTypedTag" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetafileGetTypedTag</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metafile</a>, <span class="script_type">string</span> tag_path, <a class="engine_enum" href=script_metafile_binding_reference.htm#enum_tagtype>TagType</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get metatag of a specific value type from a metafile.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagAddChild" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagAddChild</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>, <span class="script_type">string</span> tag_name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add metatag child, returns the newly created metatag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagAddChildWithValue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagAddChildWithValue</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>, <span class="script_type">string</span> tag_name, ...</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add metatag child, returns the newly created metatag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagGetChildren" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagGetChildren</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return all children of a metatag in an array.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagGetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagGetName</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get metatag name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagGetTag" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagGetTag</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>, <span class="script_type">string</span> tag_path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Find metatag child.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagGetTypedTag" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagGetTypedTag</b></td><td><a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>, <span class="script_type">string</span> tag_path, <a class="engine_enum" href=script_metafile_binding_reference.htm#enum_tagtype>TagType</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Find child of a specific value type from a metatag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagGetValue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagGetValue</b></td><td>...: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get metatag value.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MetatagSetValue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MetatagSetValue</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_metafile_binding_reference.htm>Metatag</a>, ...</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set metatag value, the value type is automatically handled.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

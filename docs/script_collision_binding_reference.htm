@@ -1,0 +1,76 @@
+<html>
+ <head>
+  <title>Collision Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Collision Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_shapemask">ShapeMask<br>Shape mask to filter out certain type of shape from intersection tests.<ul><br><li><em>CollisionTraceMesh</em><li><em>CollisionTraceSphere</em><li><em>CollisionTraceCuboid</em><li><em>CollisionTraceAll</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="CollisionShapeType"><b>1. Collision Shape Type functions</b></span></a><br>
+<div class="function_body">
+<table id="ShapeSetBox" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetBox</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> dimensions</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the shape as a box collision shape.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetCapsule" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetCapsule</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">float</span> radius, <span class="script_type">float</span> length</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the shape as a Z-oriented capsule collision shape.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetConvex" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetConvex</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the shape as a convex collision.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetCylinder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetCylinder</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">float</span> radius, <span class="script_type">float</span> length</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the shape as a Z-oriented cylinder collision shape.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetMesh" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetMesh</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the shape as a collision mesh.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetSphere" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetSphere</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">float</span> radius</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the shape as a sphere.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="CollisionShape"><b>2. Collision Shape functions</b></span></a><br>
+<div class="function_body">
+<table id="ShapeGetItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeGetItem</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the item this collision shape belongs to.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeGetMass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeGetMass</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the collision shape mass.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeGetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeGetPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the collision shape position in item space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeGetRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeGetRotation</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the collision shape rotation as an Euler triplet in item space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetFriction" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetFriction</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">float</span> dynamic_friction, <span class="script_type">float</span> static_friction</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set collision shape dynamic and static friction.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetMass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetMass</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">float</span> mass</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the collision shape mass. Do not forget to update the item collision setup to update changes.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetPosition</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the collision shape position in item space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetRestitution" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetRestitution</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <span class="script_type">float</span> restitution</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set collision shape restitution (1 for a perfect elastic collision).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ShapeSetRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ShapeSetRotation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a> shape, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the collision shape position from a Euler triplet in item space.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="CollisionItem"><b>3. Item functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemAddCollisionShape" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemAddCollisionShape</b></td><td><a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add a new collision shape to item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCollisionActivate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCollisionActivate</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span> active</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Activate or deactivate item collision.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetShapeFromIndex" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetShapeFromIndex</b></td><td><a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item collision shape from index.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetCollisionMask" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetCollisionMask</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> collision_mask</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item collision mask, this mask is a bit field.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetSelfMask" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetSelfMask</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> self_mask</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item self mask, this mask is a bit field.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

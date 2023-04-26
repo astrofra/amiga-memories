@@ -1,0 +1,31 @@
+<html>
+ <head>
+  <title>Raytracer Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Raytracer Binding Reference</div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="RaytracerGeneric"><b>1. Generic functions</b></span></a><br>
+<div class="function_body">
+<table id="NewRaytracer" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>NewRaytracer</b></td><td>Raytracer: GraphicResourceFactory</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new raytracer instance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RaytracerSetAntialias" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RaytracerSetAntialias</b></td><td><span class="script_type">void</span>: raytracer, <span class="script_type">bool</span> enable, <span class="script_type">int</span> sample_count, <span class="script_type">float</span> threshold, <span class="script_type">bool</span> jitter</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the raytracer antialias output. The number of AA sample can be set and jitered AA selected. Default threshold: 0.015.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RaytracerSetGlobalIllum" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RaytracerSetGlobalIllum</b></td><td><span class="script_type">void</span>: raytracer, <span class="script_type">bool</span> enable, <span class="script_type">int</span> sample_count, <span class="script_type">int</span> max_indirect_bounce</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Enable the raytracer global illumination. The number of GI sample can be set as well as a maximum number of indirect bounce.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RaytracerSetInterlace" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RaytracerSetInterlace</b></td><td><span class="script_type">void</span>: raytracer, <span class="script_type">bool</span> interlaced, <span class="script_type">bool</span> even_frame</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the raytracer interlace output. The frame parity is specified as the second parameter.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RaytracerSetScene" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RaytracerSetScene</b></td><td><span class="script_type">void</span>: raytracer, <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set raytracer scene, this function might be a little slow as it setups a lot data to work with.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RaytracerStartInterlacedSequence" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RaytracerStartInterlacedSequence</b></td><td><span class="script_type">void</span>: raytracer</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Start an interlaced sequence. This function should be called when beginning a new sequence in order to ensure correct frame parity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RaytracerTrace" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RaytracerTrace</b></td><td><span class="script_type">void</span>: raytracer, <span class="script_type">string</span> out_picture, <span class="script_type">int</span> width, <span class="script_type">int</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Raytrace current scene to a Targa picture file. Note that when rendering interlaced sequences one of two calls to this function will return false to notify you that the current frame was only buffered and not saved.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

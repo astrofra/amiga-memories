@@ -1,0 +1,82 @@
+<html>
+ <head>
+  <title>Mixer Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Mixer Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_channelloop">ChannelLoop<br>None<ul><br><li><em>LoopNone</em><li><em>LoopRepeat</em></ul><br><li id="enum_channelstate">ChannelState<br>None<ul><br><li><em>ChannelStateInvalid</em><li><em>ChannelStateStopped</em><li><em>ChannelStatePlaying</em><li><em>ChannelStatePaused</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="ChannelManagement"><b>1. Channel management functions</b></span></a><br>
+<div class="function_body">
+<table id="MixerChannelGetState" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelGetState</b></td><td><a class="engine_enum" href=script_mixer_binding_reference.htm#enum_channelstate>ChannelState</a>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, <span class="script_type">int</span> channel</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the channel state.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelPause" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelPause</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, <span class="script_type">int</span> channel</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Pause playback on a given channel.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelResume" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelResume</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, <span class="script_type">int</span> channel</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Resume playback on a given channel.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelStop" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelStop</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, <span class="script_type">int</span> channel</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Stop playback on a given channel.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelStopAll" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelStopAll</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Stop replay on all mixer channels.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="MixerControl"><b>2. Mixer control functions</b></span></a><br>
+<div class="function_body">
+<table id="MixerMute" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerMute</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Mute all sound output.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerSetGain" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerSetGain</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, <span class="script_type">float</span> gain</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the global mixer gain.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerSoundStart" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerSoundStart</b></td><td>Channel: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, <a class="engine_type" href=script_sound_binding_reference.htm>Sound</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Play a sound on the first channel available, the channel used for replay is returned. If no free channel was found -1 is returned.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerSoundStartFast" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerSoundStartFast</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, <a class="engine_type" href=script_sound_binding_reference.htm>Sound</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Play a sound on the first channel available, this function returns immediately and the channel used for replay is not returned.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerStreamStart" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerStreamStart</b></td><td>Channel: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, uri</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Play a stream on the first channel available, the channel used for replay is returned. If no free channel was found -1 is returned.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerStreamStartFast" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerStreamStartFast</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, uri</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Play a stream on the first channel available, this function returns immediately and the channel used for replay is not returned.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerUnmute" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerUnmute</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Unmute all sound output.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ChannelControl"><b>3. Channel control functions</b></span></a><br>
+<div class="function_body">
+<table id="MixerChannelLock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelLock</b></td><td>Channel: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Lock a new mixer channel.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelSetGain" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelSetGain</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel, <span class="script_type">float</span> gain</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set channel gain. Note: The channel gain is not reset by starting new sounds.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelSetLoopMode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelSetLoopMode</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel, <a class="engine_enum" href=script_mixer_binding_reference.htm#enum_channelloop>ChannelLoop</a> loop</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set channel loop mode.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelSetLoopPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelSetLoopPosition</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel, <span class="script_type">int</span> ms</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set channel loop position in millisecond, the loop mode must be set to LoopRepeat for this setting to have any effect.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelSetPanning" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelSetPanning</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel, <span class="script_type">float</span> panning</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set channel panning (Default: 0.5). Note: The channel panning is not reset by starting new sounds.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelSetPitch" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelSetPitch</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel, <span class="script_type">float</span> pitch</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set channel pitch (Default: 1.0). Note: The channel pitch is not reset by starting new sounds.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelStart" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelStart</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel, <a class="engine_type" href=script_sound_binding_reference.htm>Sound</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Play a sound on a specific channel. Returns true on success, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelStartStream" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelStartStream</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel, <span class="script_type">string</span> uri</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Play a stream on a specific channel. Returns true on success, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelUnlock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelUnlock</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a>, Channel</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Unlock channel.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MixerChannelUnlockAll" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MixerChannelUnlockAll</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_mixer_binding_reference.htm>Mixer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Unlock all channels.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

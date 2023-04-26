@@ -1,0 +1,70 @@
+<html>
+ <head>
+  <title>I/O Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">I/O Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_devicetype">DeviceType<br>None<ul><br><li><em>DeviceTypeKeyboard</em><li><em>DeviceTypeMouse</em><li><em>DeviceTypeGame</em></ul><br><li id="enum_deviceinput">DeviceInput<br>None<ul><br><li><em>DeviceAxisX</em><li><em>DeviceAxisY</em><li><em>DeviceAxisZ</em><li><em>DeviceAxisS</em><li><em>DeviceAxisT</em><li><em>DeviceAxisR</em><li><em>DeviceAxisRotX</em><li><em>DeviceAxisRotY</em><li><em>DeviceAxisRotZ</em><li><em>DeviceAxisRotS</em><li><em>DeviceAxisRotT</em><li><em>DeviceAxisRotR</em><li><em>
+				DeviceButton0</em><li><em>DeviceButton1</em><li><em>DeviceButton2</em><li><em>DeviceButton3</em><li><em>DeviceButton4</em><li><em>DeviceButton5</em><li><em>DeviceButton6</em><li><em>DeviceButton7</em><li><em>DeviceButton8</em><li><em>
+				DeviceButton9</em><li><em>DeviceButton10</em><li><em>DeviceButton11</em><li><em>DeviceButton12</em><li><em>DeviceButton13</em><li><em>DeviceButton14</em><li><em>DeviceButton15</em><li><em>
+				DeviceCrossUp</em><li><em> DeviceCrossDown</em><li><em> DeviceCrossLeft</em><li><em> DeviceCrossRight</em></ul><br><li id="enum_devicekey">DeviceKey<br>None<ul><br><li><em>KeyLShift</em><li><em>KeyRShift</em><li><em>KeyLCtrl</em><li><em>KeyRCtrl</em><li><em>KeyLAlt</em><li><em>KeyRAlt</em><li><em>KeyLWin</em><li><em>KeyRWin</em><li><em>
+				KeyTab</em><li><em>KeyCapsLock</em><li><em>KeySpace</em><li><em>KeyBackspace</em><li><em>KeyReturn</em><li><em>KeyInsert</em><li><em>KeySuppr</em><li><em>KeyHome</em><li><em>KeyEnd</em><li><em>KeyPageUp</em><li><em>KeyPageDown</em><li><em>
+				KeyUpArrow</em><li><em>KeyDownArrow</em><li><em>KeyLeftArrow</em><li><em>KeyRightArrow</em><li><em>
+				KeyEscape</em><li><em>
+				KeyF1</em><li><em>KeyF2</em><li><em>KeyF3</em><li><em>KeyF4</em><li><em>KeyF5</em><li><em>KeyF6</em><li><em>KeyF7</em><li><em>KeyF8</em><li><em>KeyF9</em><li><em>KeyF10</em><li><em>KeyF11</em><li><em>KeyF12</em><li><em>
+				KeyPrintScreen</em><li><em>KeyScrollLock</em><li><em>KeyPause</em><li><em>KeyNumLock</em><li><em>KeyReturn</em><li><em>
+				KeyNumpad0</em><li><em>KeyNumpad1</em><li><em>KeyNumpad2</em><li><em>KeyNumpad3</em><li><em>KeyNumpad4</em><li><em>KeyNumpad5</em><li><em>KeyNumpad6</em><li><em>KeyNumpad7</em><li><em>KeyNumpad8</em><li><em>KeyNumpad9</em><li><em>
+				KeyAdd</em><li><em>KeySub</em><li><em>KeyMul</em><li><em>KeyDiv</em><li><em>KeyEnter</em><li><em>
+				KeyA</em><li><em>KeyB</em><li><em>KeyC</em><li><em>KeyD</em><li><em>KeyE</em><li><em>KeyF</em><li><em>KeyG</em><li><em>KeyH</em><li><em>KeyI</em><li><em>KeyJ</em><li><em>KeyK</em><li><em>KeyL</em><li><em>KeyM</em><li><em>KeyN</em><li><em>KeyO</em><li><em>KeyP</em><li><em>KeyQ</em><li><em>KeyR</em><li><em>KeyS</em><li><em>KeyT</em><li><em>KeyU</em><li><em>KeyV</em><li><em>KeyW</em><li><em>KeyX</em><li><em>KeyY</em><li><em>KeyZ</em><li><em>
+				KeyButton0</em><li><em>KeyButton1</em><li><em>KeyButton2</em><li><em>KeyButton3</em><li><em>KeyButton4</em><li><em>KeyButton5</em><li><em>KeyButton6</em><li><em>KeyButton7</em><li><em>KeyButton8</em><li><em>KeyButton9</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="FileManipulation"><b>1. File manipulation functions</b></span></a><br>
+<div class="function_body">
+<table id="FileExists" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>FileExists</b></td><td><span class="script_type">bool</span>: <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the file 'name' can be accessed by the platform's file system.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="FileReadAsBlob" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>FileReadAsBlob</b></td><td>Blob: <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load a file as a Squirrel blob.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="FileWriteFromBlob" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>FileWriteFromBlob</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> name, Blob</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Write a Squirrel blob to a file.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="FileWriteFromString" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>FileWriteFromString</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> name, <span class="script_type">string</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Write a string to a file.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="InputDeviceQuery"><b>2. Input device query functions</b></span></a><br>
+<div class="function_body">
+<table id="DeviceSetEffect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>DeviceSetEffect</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set device effect.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetDeviceList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetDeviceList</b></td><td>List: <span class="script_type">void</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get a platform devices list.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetInputDevice" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetInputDevice</b></td><td><a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>: <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get a platform device from its name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetKeyboardDevice" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetKeyboardDevice</b></td><td><a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get platform keyboard device.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetMouseDevice" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetMouseDevice</b></td><td><a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get platform mouse device.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="InputDeviceState"><b>3. Input device state functions</b></span></a><br>
+<div class="function_body">
+<table id="DeviceInputLastValue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>DeviceInputLastValue</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>, <a class="engine_enum" href=script_i_o_binding_reference.htm#enum_deviceinput>DeviceInput</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns the value of a device input during the last update.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="DeviceInputValue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>DeviceInputValue</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>, <a class="engine_enum" href=script_i_o_binding_reference.htm#enum_deviceinput>DeviceInput</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns the current value of a device input.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="DeviceIsKeyDown" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>DeviceIsKeyDown</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>, <a class="engine_enum" href=script_i_o_binding_reference.htm#enum_devicekey>DeviceKey</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the given device key is currently down, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="DeviceKeyPressed" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>DeviceKeyPressed</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>, <a class="engine_enum" href=script_i_o_binding_reference.htm#enum_devicekey>DeviceKey</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the given device key was released during the current update, false oherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="DeviceWasKeyDown" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>DeviceWasKeyDown</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_i_o_binding_reference.htm>Inputdevice</a>, <a class="engine_enum" href=script_i_o_binding_reference.htm#enum_devicekey>DeviceKey</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the given device key was down during the last device update, false otherwise.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

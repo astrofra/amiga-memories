@@ -1,0 +1,85 @@
+<html>
+ <head>
+  <title>Animation System Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Animation System Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_animationloopmode">AnimationLoopMode<br>None<ul><br><li><em>AnimationConstant</em><li><em>AnimationRepeat</em><li><em>AnimationReset</em><li><em>AnimationOffsetRepeat</em><li><em>AnimationOscillate</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="Animation Source"><b>1. Provides control over an animation source.</b></span></a><br>
+<div class="function_body">
+<table id="AnimationSourceGetClock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGetClock</b></td><td><span class="script_type">float</span>: AnimationSource</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get animation source clock.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGetClockScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGetClockScale</b></td><td><span class="script_type">float</span>: AnimationSource</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get animation source clock scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceIsDone" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceIsDone</b></td><td><span class="script_type">bool</span>: AnimationSource</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if this animation source is done playing.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceIsRelative" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceIsRelative</b></td><td><span class="script_type">bool</span>: AnimationSource</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the animation source evaluation mode..</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceSetClock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceSetClock</b></td><td><span class="script_type">void</span>: AnimationSource, <span class="script_type">float</span> clock</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source clock.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceSetClockScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceSetClockScale</b></td><td><span class="script_type">void</span>: AnimationSource, <span class="script_type">float</span> clock_scale</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source clock scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceSetLoop" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceSetLoop</b></td><td><span class="script_type">void</span>: AnimationSource, <span class="script_type">float</span> loop_start, <span class="script_type">float</span> loop_end</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source loop point.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceSetLoopMode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceSetLoopMode</b></td><td><span class="script_type">void</span>: AnimationSource, <a class="engine_enum" href=script_animation_system_binding_reference.htm#enum_animationloopmode>AnimationLoopMode</a> mode</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source loop mode.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceSetRelative" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceSetRelative</b></td><td><span class="script_type">void</span>: AnimationSource, <span class="script_type">bool</span> relative</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source evaluation mode to relative instead of absolute.<br>Relative source offsets the value they modify instead of replacing it.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceSetWeight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceSetWeight</b></td><td><span class="script_type">void</span>: AnimationSource, <span class="script_type">float</span> weight, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source weight and weight blend duration.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceStop" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceStop</b></td><td><span class="script_type">void</span>: AnimationSource, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Stop an animation source. The motion weight can be brought down to 0 over a given blend duration before the source is stopped.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="Animation Source Group"><b>2. Provides control over a group of animation sources.</b></span></a><br>
+<div class="function_body">
+<table id="AnimationSourceGroupAddSource" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupAddSource</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>,  AnimationSource</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add an animation source to the group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupGetClock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupGetClock</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get animation source group clock.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupGetClockScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupGetClockScale</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get animation source group clock scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupGetSource" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupGetSource</b></td><td>AnimationSource: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return an animation source from the group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupGetSourceCount" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupGetSourceCount</b></td><td><span class="script_type">int</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the number of animation sources in this group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupIsDone" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupIsDone</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if this animation source group is done playing.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupSetClock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupSetClock</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <span class="script_type">float</span> clock</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source group clock.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupSetClockScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupSetClockScale</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <span class="script_type">float</span> clock_scale</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source group clock scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupSetLoop" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupSetLoop</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <span class="script_type">float</span> loop_start, <span class="script_type">float</span> loop_end</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source group loop point.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupSetLoopMode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupSetLoopMode</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <a class="engine_enum" href=script_animation_system_binding_reference.htm#enum_animationloopmode>AnimationLoopMode</a> mode</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source group loop mode.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupSetRelative" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupSetRelative</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <span class="script_type">bool</span> relative</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source evaluation mode to relative instead of absolute.<br>Relative source offsets the value they modify instead of replacing it.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupSetWeight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupSetWeight</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <span class="script_type">float</span> weight, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set animation source group weight and weight blend duration.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AnimationSourceGroupStop" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AnimationSourceGroupStop</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Stop an animation source group. The motion weight can be brought down to 0 over a given blend duration before the source group is stopped.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

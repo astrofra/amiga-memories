@@ -1,0 +1,85 @@
+<html>
+ <head>
+  <title>Project Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Project Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_projectscenetype">ProjectSceneType<br>None<ul><br><li><em>ProjectSceneTypeNone</em><li><em>ProjectSceneTypeScene2d</em><li><em>ProjectSceneTypeScene3d</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="ProjectGeneral"><b>1. General project functions</b></span></a><br>
+<div class="function_body">
+<table id="ProjectEnd" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectEnd</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Exit project.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectGetClock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectGetClock</b></td><td><a class="engine_type" href=script_clock_binding_reference.htm>Clock</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the project clock object.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectGetScriptInstance" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectGetScriptInstance</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the project script instance.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ProjectFontManagement"><b>2. UI Font management functions</b></span></a><br>
+<div class="function_body">
+<table id="ProjectDeleteUIFontAlias" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectDeleteUIFontAlias</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <span class="script_type">string</span> alias</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete a font alias from the font cache.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectGetUIFont" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectGetUIFont</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Retrieve a font from its name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectLoadUIFont" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectLoadUIFont</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load a TrueType font in the project font cache.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectLoadUIFontAliased" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectLoadUIFontAliased</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <span class="script_type">string</span> path, <span class="script_type">string</span> alias</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load a TrueType font under a specific alias.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ProjectLayerManagement"><b>3. Layer management functions</b></span></a><br>
+<div class="function_body">
+<table id="ProjectAddLayer" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectAddLayer</b></td><td><a class="engine_type" href=script_project_binding_reference.htm>Projectlayer</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a>, <span class="script_type">float</span> zorder</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new layer to display a given project scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectLayerGetScene" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectLayerGetScene</b></td><td><a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a>: <a class="engine_type" href=script_project_binding_reference.htm>Projectlayer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the scene instance this layer is displaying.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectLayerGetZOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectLayerGetZOrder</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_project_binding_reference.htm>Projectlayer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get project layer Z order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectLayerSetZOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectLayerSetZOrder</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_project_binding_reference.htm>Projectlayer</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set project layer Z order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectSetAll2DLayerOffset" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectSetAll2DLayerOffset</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <span class="script_type">float</span> x, <span class="script_type">float</span> y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the offset of all 2d layer in the current project stack. The offset is specified in the layer reference resolution.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ProjectSceneManagement"><b>4. Scene management functions</b></span></a><br>
+<div class="function_body">
+<table id="ProjectFindScene" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectFindScene</b></td><td><a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns an instance of a specific scene in the project, returns an invalid object if no such instance could be found.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectGetSceneLayerList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectGetSceneLayerList</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return all the project layers displaying a specific scene instance. A scene might be displayed by several different layers (eg. in order to display a split-screen view).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectInstantiateScene" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectInstantiateScene</b></td><td><a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Instantiate a project scene, do not forget to create a layer to display it.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectNewScene2D" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectNewScene2D</b></td><td><a class="engine_type" href=script_scene_reference.htm>Scene</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new scene 2D.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectNewScene3D" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectNewScene3D</b></td><td><a class="engine_type" href=script_scene_reference.htm>Scene</a>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new scene 3D.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectSceneActivate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectSceneActivate</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Activate or deactivate a project scene. When deactivated a scene is not updated and displayed anymore.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectSceneGetInstance" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectSceneGetInstance</b></td><td><a class="engine_type" href=script_scene_reference.htm>Scene</a>: <a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get a project scene instance object (might be Scene, Scene2d or UI).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectSceneIsActive" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectSceneIsActive</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the active state of a project scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectSceneSetGlobal" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectSceneSetGlobal</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Register scene as the global scene script object (g_scene). Note: The project changes the global scene before performing any operation on a scene already, you should rarely need this function.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ProjectUnloadScene" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ProjectUnloadScene</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_project_binding_reference.htm>Project</a>, <a class="engine_type" href=script_project_binding_reference.htm>Projectscene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Unload a project scene from memory. Note that only the scene graph, motions and groups are dropped. Engine cached resources are left untouched.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

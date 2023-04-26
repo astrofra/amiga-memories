@@ -1,0 +1,509 @@
+<html>
+ <head>
+  <title>User Interface and 2D Display Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">User Interface and 2D Display Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_spritestyle">SpriteStyle<br>None<ul><br><li><em>StyleBlendAdditive</em><li><em>StyleNonSensitive</em><li><em>StyleResolutionInvariant</em><li><em>
+		StyleNoDecoration</em><li><em>StyleTransformUV</em><li><em>StyleNoTitleBar</em><li><em>StyleMovable</em><li><em>StyleSnapToPixel</em></ul><br><li id="enum_widgetalign">WidgetAlign<br>None<ul><br><li><em>WidgetAlignDefault</em><li><em>WidgetAlignLeft</em><li><em>WidgetAlignTop</em><li><em>WidgetAlignMiddle</em><li><em>WidgetAlignRight</em><li><em>WidgetAlignBottom</em></ul><br><li id="enum_textalign">TextAlign<br>Text alignment.<ul><br><li><em>TextAlignLeft</em><li><em>TextAlignRight</em><li><em>TextAlignCenter</em><li><em>TextAlignJustify</em></ul><br><li id="enum_textformat">TextFormat<br>Text formatting.<ul><br><li><em>TextFormatStandard</em><li><em>TextFormatParagraph</em><li><em>TextFormatLine</em><li><em>TextFormatColumn</em></ul><br><li id="enum_uievent">UIEvent<br>None<ul><br><li><em>EventCursorDown</em><li><em>EventCursorHit</em><li><em>EventCursorUp</em><li><em>
+		EventCursorEnter</em><li><em>EventCursorLeave</em><li><em>EventCursorMove</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="UIManagement"><b>1. UI Management</b></span></a><br>
+<div class="function_body">
+<table id="SceneGetUI" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetUI</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the scene UI interface.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIGetInternalResolution" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIGetInternalResolution</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the UI system internal resolution.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIGetScreenToUIMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIGetScreenToUIMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the UI screen to UI matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIGetScriptInstance" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIGetScriptInstance</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the UI script instance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIGetUIToScreenMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIGetUIToScreenMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the UI screen to UI matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIRenderSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIRenderSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <a class="engine_type" href=script_resource_factory_binding_reference.htm>Resourcefactory</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup UI render resources.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UISetGlobalMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISetGlobalMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the UI global transformation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UISetInternalResolution" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISetInternalResolution</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> width, <span class="script_type">int</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the UI system internal resolution.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="UIFont"><b>2. UI Font Settings</b></span></a><br>
+<div class="function_body">
+<table id="UIFontComputeRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIFontComputeRect</b></td><td>rect: rect clip_rect, <span class="script_type">string</span> text, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a> font, <span class="script_type">table</span> param</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute the bounding rect of a formatted text string, does not perform any graphic output.
+		<br>
+		The following table keys are available:<br>
+		<ul>
+		<li><b>'color'</b>: Hexadecimal RGBA (eg. Red: xff0000ff)
+		<li><b>'align'</b>: TextAlign
+		<li><b>'format'</b>: TextFormat
+		<li><b>'tracking'</b>: Integer value specifying an extra space between glyphs.
+		<li><b>'heading'</b>: Integer value specifying an extra space between lines.
+		</ul></span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIFontSetFallback" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIFontSetFallback</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a> font, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a> fallback</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a font to query when a glyph is missing from this font.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIFontSetParametersOffset" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIFontSetParametersOffset</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a>, <span class="script_type">float</span> size_multiplier, <span class="script_type">float</span> tracking_offset, <span class="script_type">float</span> leading_offset</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set font-specific properties offset. This function is usually used to normalize font characteristics when porting an application to a different locale.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="UISkin"><b>3. UI Skin and Appearance</b></span></a><br>
+<div class="function_body">
+<table id="UISetSkin" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISetSkin</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, GraphicResourceFactory, <span class="script_type">string</span> bmp_top, <span class="script_type">string</span> bmp_left, <span class="script_type">string</span> bmp_right, <span class="script_type">string</span> bmp_bottom, <span class="script_type">string</span> bmp_top_left, <span class="script_type">string</span> bmp_top_right, <span class="script_type">string</span> bmp_bottom_left, <span class="script_type">string</span> bmp_bottom_right, <span class="script_type">int</span> hex_font_color, <span class="script_type">int</span> hex_title_color, <span class="script_type">int</span> space_title_top, <span class="script_type">int</span> space_title_bottom, <span class="script_type">int</span> title_font_size, <span class="script_type">string</span> title_font</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the UI window system skin.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="UIIO"><b>4. UI Cursor</b></span></a><br>
+<div class="function_body">
+<table id="UICreateCursor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UICreateCursor</b></td><td>UICursor: <span class="script_type">int</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new UI system cursor.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIGetSpriteBelowCursor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIGetSpriteBelowCursor</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the current sprite right below the cursor.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIGetWindowBelowCursor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIGetWindowBelowCursor</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the current window right below the cursor.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UILock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UILock</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, Sprite|Window</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Lock UI to a given sprite/window. All UI cursor events are sent to this sprite/window exclusively until the lock is released.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UISetCursorState" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISetCursorState</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, UICursor, <span class="script_type">float</span> x, <span class="script_type">float</span> y, <span class="script_type">bool</span> down</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the current cursor state, the UI system will process cursor events and perform calls to the corresponding handlers. <b>Note:</b> This call will trigger cursor related events immediately.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIUnlock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIUnlock</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Release the UI sprite/window lock.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="UIGlobal"><b>5. UI Global Effects</b></span></a><br>
+<div class="function_body">
+<table id="UIDeleteAllItems" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIDeleteAllItems</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete all window and sprite in scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIIsCommandListDone" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIIsCommandListDone</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the UI system command list unit is not executing, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UISetCommandList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISetCommandList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">string</span> command_list</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the UI system ACE command list.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UISetGlobalFadeColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISetGlobalFadeColor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">float</span> r, <span class="script_type">float</span> g, <span class="script_type">float</span> b</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the global fade effect color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UISetGlobalFadeEffect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISetGlobalFadeEffect</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">float</span> fade</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the global fade effect intensity (0.0 is fully faded, 1.0 is no effect).</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="UISprite"><b>6. UI Sprite</b></span></a><br>
+<div class="function_body">
+<table id="SpriteAddStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteAddStyle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a> style</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add a style to the sprite style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetName</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetOpacity</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite opacity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetParent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetParent</b></td><td>Window|Sprite: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite parent.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetPivot" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetPivot</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite pivot.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite position as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetRect</b></td><td>Rect: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the sprite rect.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetScreenRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetScreenRect</b></td><td>Rect: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the sprite rect in the virtual screen coordinate system.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetSize</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite size as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetStyle</b></td><td><a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteGetZOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteGetZOrder</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the sprite Z-order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteIsCommandListDone" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteIsCommandListDone</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the sprite ACE unit is idle, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteIsShown" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteIsShown</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the sprite is currently visible, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteRemoveStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteRemoveStyle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a> style</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Remove a style from the sprite style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteRenderSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteRenderSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <a class="engine_type" href=script_resource_factory_binding_reference.htm>Resourcefactory</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup the sprite render data.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteResetCommandList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteResetCommandList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset the sprite ACE unit.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetCommandList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetCommandList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">string</span> command_list</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite command list.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetEventHandler" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetEventHandler</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_uievent>UIEvent</a> event, <span class="script_type">function</span> callback</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a native Squirrel function as the callback function to a specific UI event.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetEventHandlerWithContext" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetEventHandlerWithContext</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_uievent>UIEvent</a> event, <a class="engine_type" href=script_instance_reference.htm>Instance</a> context, <span class="script_type">function</span> callback</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a native Squirrel function as the callback function to a specific UI event, the calling context can be specified (eg. a class instance to callback to one of its member function).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetFlip" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetFlip</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">bool</span> flip_horizontal, <span class="script_type">bool</span> flip_vertical</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Flip the sprite on one or both axises.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetOpacity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span> opacity</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite opacity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetParent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetParent</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, Window|Sprite</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite parent window or sprite.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetPivot" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetPivot</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span> pivot_x, <span class="script_type">float</span> pivot_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite pivot.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetPosition</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span> x, <span class="script_type">float</span> y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite position.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetRotation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span> angle</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite rotation (use the Deg() or Rad() macros to specify the unit).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetScale</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span> scale_x, <span class="script_type">float</span> scale_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetSize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span> width, <span class="script_type">float</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite size.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetStyle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a> style</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetTexture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetTexture</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite texture.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetTextureMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetTextureMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite texture matrix. Note: Do not forget to enable the transform UV style on the sprite for the matrix to be used.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetUVOrigin" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetUVOrigin</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span> u, <span class="script_type">float</span> v</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite UV origin in pixels.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteSetZOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteSetZOrder</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the sprite Z-order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SpriteShow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SpriteShow</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a>, <span class="script_type">bool</span> show</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Show/hide a sprite.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddNamedSprite" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddNamedSprite</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">string</span> name, <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <span class="script_type">float</span> origin_x, <span class="script_type">float</span> origin_y, <span class="script_type">float</span> width, <span class="script_type">float</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new sprite.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddSprite" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddSprite</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id, <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <span class="script_type">float</span> origin_x, <span class="script_type">float</span> origin_y, <span class="script_type">float</span> width, <span class="script_type">float</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new sprite. Note: This a legacy wrapper where the id integer is converted to a string and used as the sprite name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIDeleteSprite" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIDeleteSprite</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete a sprite.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UISpriteCentre" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UISpriteCentre</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sprite</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Centre a sprite on screen.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="UIWindow"><b>7. UI Window</b></span></a><br>
+<div class="function_body">
+<table id="UIAddNamedBitmapWindow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddNamedBitmapWindow</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">string</span> name, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">float</span> origin_x, <span class="script_type">float</span> origin_y, <span class="script_type">float</span> width, <span class="script_type">float</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new named bitmap window.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddNamedWindow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddNamedWindow</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">string</span> name, <span class="script_type">float</span> origin_x, <span class="script_type">float</span> origin_y, <span class="script_type">float</span> width, <span class="script_type">float</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new named window.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIDeleteWindow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIDeleteWindow</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete a window.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIWindowCentre" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIWindowCentre</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Centre the window on screen.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowAddStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowAddStyle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a> style</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add a style to the window style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowForceLayout" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowForceLayout</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Force a complete update of the window layout.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetBackgroundPicture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetBackgroundPicture</b></td><td><a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window background picture.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetCacheTexture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetCacheTexture</b></td><td><a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns the texture object that is used to display the window via the engine renderer.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetChild" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetChild</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">int</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get a window widget from its id.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetName</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetOpacity</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window opacity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetParent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetParent</b></td><td>Window|Sprite: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window parent.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetPivot" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetPivot</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window pivot.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window position as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetRect</b></td><td>Rect: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the window rect.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetScreenRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetScreenRect</b></td><td>Rect: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the window rect in the virtual screen coordinate system.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetSize</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window size as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetStyle</b></td><td><a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetTitle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetTitle</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window title.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowGetZOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowGetZOrder</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the window Z-order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowInvalidate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowInvalidate</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Force a complete update of the window layout and content.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowIsCommandListDone" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowIsCommandListDone</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the window ACE unit is idle, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowIsShown" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowIsShown</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the window is currently visible, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowRemoveStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowRemoveStyle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a> style</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Remove a style from the window style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowRenderSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowRenderSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_type" href=script_resource_factory_binding_reference.htm>Resourcefactory</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup the window render data.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowResetCommandList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowResetCommandList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset the window ACE unit.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetBackgroundColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetBackgroundColor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">int</span> hex_color</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window background color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetBackgroundPicture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetBackgroundPicture</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window background picture.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetBaseWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetBaseWidget</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window base widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetCommandList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetCommandList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">string</span> command_list</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window command list.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetEventHandler" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetEventHandler</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_uievent>UIEvent</a> event, <span class="script_type">function</span> callback</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a native Squirrel function as the callback function to a specific UI event.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetEventHandlerWithContext" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetEventHandlerWithContext</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_uievent>UIEvent</a> event, <a class="engine_type" href=script_instance_reference.htm>Instance</a> context, <span class="script_type">function</span> callback</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a native Squirrel function as the callback function to a specific UI event, the calling context can be specified (eg. a class instance to callback to one of its member function).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetFlip" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetFlip</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">bool</span> flip_horizontal, <span class="script_type">bool</span> flip_vertical</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Flip the window on one or both axises.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetOpacity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">float</span> opacity</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window opacity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetParent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetParent</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, Window|Sprite</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window parent window or sprite.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetPivot" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetPivot</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">float</span> pivot_x, <span class="script_type">float</span> pivot_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window pivot.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetPosition</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">float</span> x, <span class="script_type">float</span> y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window position.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetRotation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">float</span> angle</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window rotation (use the Deg() or Rad() macros to specify the unit).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetScale</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">float</span> scale_x, <span class="script_type">float</span> scale_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetSize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">float</span> width, <span class="script_type">float</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window size.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetStyle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetStyle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_spritestyle>SpriteStyle</a> style</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window style bitflag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetTitle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetTitle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">string</span> title</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window title.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowSetZOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowSetZOrder</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the window Z-order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WindowShow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WindowShow</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Window</a>, <span class="script_type">bool</span> show</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Show/hide a window.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="UIWidget"><b>8. UI Widget</b></span></a><br>
+<div class="function_body">
+<table id="UIAddBitmapWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddBitmapWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new bitmap widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddCanvasWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddCanvasWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id, <span class="script_type">int</span> width, <span class="script_type">int</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new canvas widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddCheckWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddCheckWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id, <span class="script_type">string</span> text, <span class="script_type">string</span> font, <span class="script_type">bool</span> initial_state</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new checkbox widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddContainerWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddContainerWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new container widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddHorizontalSizerWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddHorizontalSizerWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new horizontal sizer widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddSpacerWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddSpacerWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new spacer widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddTextWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddTextWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Textwidget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id, <span class="script_type">string</span> text, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a> font</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new static text widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIAddVerticalSizerWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIAddVerticalSizerWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <span class="script_type">int</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new vertical sizer widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="UIDeleteWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>UIDeleteWidget</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Ui</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete a widget.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="CanvasWidget"><b>9. Widget Canvas, a freely drawable widget</b></span></a><br>
+<div class="function_body">
+<table id="CanvasWidgetLock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CanvasWidgetLock</b></td><td><a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Canvas</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Lock the widget returning a user drawable picture object.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="CanvasWidgetUnlock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CanvasWidgetUnlock</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Canvas</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Unlock this widget canvas.<br><b>Note:</b> The picture object obtained through CanvasWidgetLock is not valid after calling this function.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SizerWidget"><b>10. Widget Sizer</b></span></a><br>
+<div class="function_body">
+<table id="SizerAddWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SizerAddWidget</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sizer</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add a widget to a sizer.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SizerSetBorderSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SizerSetBorderSize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sizer</a>, <span class="script_type">int</span> left, <span class="script_type">int</span> top, <span class="script_type">int</span> right, <span class="script_type">int</span> bottom</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set sizer border size.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SizerSetDrawDelimiter" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SizerSetDrawDelimiter</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Sizer</a>, <span class="script_type">bool</span> draw</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw/hide sizer delimiter.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ContainerWidget"><b>11. Widget Container</b></span></a><br>
+<div class="function_body">
+<table id="ContainerAddWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ContainerAddWidget</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Container</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <span class="script_type">float</span> origin_x, <span class="script_type">float</span> origin_y, <span class="script_type">float</span> width, <span class="script_type">float</span> height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add a widget at specified position to the container.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ContainerWidgetSetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ContainerWidgetSetPosition</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Container</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <span class="script_type">float</span> origin_x, <span class="script_type">float</span> origin_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a widget position in its container.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="BitmapWidget"><b>12. Widget Bitmap</b></span></a><br>
+<div class="function_body">
+<table id="BitmapSetPicture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>BitmapSetPicture</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Bitmap</a>, <span class="script_type">string</span> bitmap</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set bitmap widget bitmap from resource.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="TextWidget"><b>13. Widget Text</b></span></a><br>
+<div class="function_body">
+<table id="TextSetAlignment" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextSetAlignment</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Textwidget</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_textalign>TextAlign</a> align</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget text alignment method.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextSetColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextSetColor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Textwidget</a>, <span class="script_type">int</span> r, <span class="script_type">int</span> g, <span class="script_type">int</span> b, <span class="script_type">int</span> a</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget text color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextSetFormat" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextSetFormat</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Textwidget</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_textformat>TextFormat</a> format</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget text formatting method.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextSetParameters" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextSetParameters</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Textwidget</a>, <span class="script_type">table</span> param</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget text parameters.<br>
+		The following table keys are available:<br>
+		<ul>
+		<li><b>'color'</b>: Hexadecimal RGBA (eg. Red: xff0000ff)
+		<li><b>'align'</b>: TextAlign
+		<li><b>'format'</b>: TextFormat
+		<li><b>'tracking'</b>: Integer value specifying an extra space between glyphs.
+		<li><b>'heading'</b>: Integer value specifying an extra space between lines.
+		</ul></span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextSetSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextSetSize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Textwidget</a>, <span class="script_type">int</span> size</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget text font size.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TextSetText" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TextSetText</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Textwidget</a>, <span class="script_type">string</span> text</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget text.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="CheckWidget"><b>14. Widget Check</b></span></a><br>
+<div class="function_body">
+<table id="CheckWidgetGetState" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CheckWidgetGetState</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Check</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get check widget state.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="CheckWidgetGetText" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CheckWidgetGetText</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Check</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get check widget text label.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="CheckWidgetSetLabel" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CheckWidgetSetLabel</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Check</a>, <span class="script_type">string</span> text</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set check widget text label.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="CheckWidgetSetLabelFont" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CheckWidgetSetLabelFont</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Check</a>, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a> font</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set check widget text font.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="CheckWidgetSetLabelSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CheckWidgetSetLabelSize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Check</a>, <span class="script_type">int</span> size</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set check widget font size.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="CheckWidgetSetState" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CheckWidgetSetState</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Check</a>, <span class="script_type">bool</span> state</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set check widget state.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="MiscWidget"><b>15. Widget</b></span></a><br>
+<div class="function_body">
+<table id="CastToWidget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>CastToWidget</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>: WidgetDerived</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast any complex widget (such as containers, sizer, etc...) to its base widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetGetRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetGetRect</b></td><td>rect: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return widget rect in window space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetIsHidden" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetIsHidden</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return true if the widget is hidden, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetSetEventHandler" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetSetEventHandler</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_uievent>UIEvent</a> event, <span class="script_type">function</span> callback</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a native Squirrel function as the widget event callback.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetSetEventHandlerWithContext" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetSetEventHandlerWithContext</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_uievent>UIEvent</a> event, <a class="engine_type" href=script_instance_reference.htm>Instance</a> context, <span class="script_type">function</span> callback</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a native Squirrel function in a specific context (ie. a class) as a widget event callback.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetSetFormattingSize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetSetFormattingSize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <span class="script_type">float</span> ratio_x, <span class="script_type">float</span> ratio_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget formatting size ratio.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetSetHAlign" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetSetHAlign</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_widgetalign>WidgetAlign</a> alignment</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget horizontal alignment.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetSetHidden" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetSetHidden</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <span class="script_type">bool</span> hidden</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Show/hide widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetSetSensitive" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetSetSensitive</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <span class="script_type">bool</span> sensitive</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Enable/disable mouse/keyboard event on a widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetSetVAlign" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetSetVAlign</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a>, <a class="engine_enum" href=script_user_interface_and_2d_display_binding_reference.htm#enum_widgetalign>WidgetAlign</a> alignment</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set widget vertical alignment.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetToBitmap" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetToBitmap</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Bitmap</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast widget to bitmap widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetToCheck" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetToCheck</b></td><td><a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Check</a>: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast widget to check widget.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="WidgetToText" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>WidgetToText</b></td><td>text: <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Widget</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast widget to static text widget.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

@@ -1,0 +1,79 @@
+<html>
+ <head>
+  <title>Material Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Material Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_materialrenderflag">MaterialRenderFlag<br>None<ul><br><li><em>MaterialRenderUnlit</em><li><em> MaterialRenderSmooth</em><li><em> MaterialRenderNormalMapTangent</em><li><em> MaterialRenderNoFog</em><li><em> MaterialRenderDoubleSided</em><li><em> MaterialRenderWire</em><li><em> MaterialRenderVertexColor</em><li><em> MaterialRenderParralax</em><li><em> MaterialRenderToonShading</em><li><em> MaterialRenderNoDepthWrite</em><li><em> MaterialRenderNoDepthTest</em><li><em> MaterialRenderAdd</em><li><em> MaterialRenderAlpha</em><li><em> MaterialRenderAlphaSoftZ</em><li><em> MaterialRenderAlphaInShadow</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="MaterialRenderAttributes"><b>1. Render attributes functions</b></span></a><br>
+<div class="function_body">
+<table id="MaterialGetAlphaThreshold" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetAlphaThreshold</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material alpha threshold.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetAmbient" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetAmbient</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material ambient color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetDepthBias" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetDepthBias</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material depth bias.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetDiffuse" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetDiffuse</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material diffuse color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetGlossiness" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetGlossiness</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material glossiness.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetOpacity</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material opacity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetSelf" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetSelf</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material self color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetSpecular" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetSpecular</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material specular color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialGetTexture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetTexture</b></td><td><a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <span class="script_type">int</span> slot</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get texture at a given material slot.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetAlphaThreshold" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetAlphaThreshold</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <span class="script_type">float</span> v</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material alpha threshold.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetAmbient" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetAmbient</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> color</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material ambient color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetDepthBias" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetDepthBias</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <span class="script_type">float</span> v</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material depth bias.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetDiffuse" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetDiffuse</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> color</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material diffuse color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetGlossiness" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetGlossiness</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <span class="script_type">float</span> v</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material glossiness.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetOpacity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <span class="script_type">float</span> v</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material opacity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetSelf" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetSelf</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> color</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material self color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetSpecular" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetSpecular</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> color</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set material specular color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialSetTexture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialSetTexture</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> m, <span class="script_type">int</span> slot, <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a> t</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set texture at a given material slot.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="MaterialGeneric"><b>2. Generic functions</b></span></a><br>
+<div class="function_body">
+<table id="MaterialGetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialGetName</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> mat</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get material name.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="MaterialFlag"><b>3. Rendering flag functions</b></span></a><br>
+<div class="function_body">
+<table id="MaterialFlagGet" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialFlagGet</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> mat, <a class="engine_enum" href=script_material_binding_reference.htm#enum_materialrenderflag>MaterialRenderFlag</a> flag</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Test the value of a material render flag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MaterialFlagSet" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MaterialFlagSet</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_material_binding_reference.htm>Material</a> mat, <a class="engine_enum" href=script_material_binding_reference.htm#enum_materialrenderflag>MaterialRenderFlag</a> flag, <span class="script_type">bool</span> state</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the value of a material render flag.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

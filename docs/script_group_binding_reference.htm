@@ -1,0 +1,61 @@
+<html>
+ <head>
+  <title>Group Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Group Binding Reference</div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="GroupManagement"><b>1. Group management functions</b></span></a><br>
+<div class="function_body">
+<table id="GroupAddItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupAddItem</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add an item to an item group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupFindItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupFindItem</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Find an item in group from its name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupGetItemList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupGetItemList</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the group item list.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupGetRootItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupGetRootItem</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the root item of a group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupItemIsMember" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupItemIsMember</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if item the belongs to the group, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupRemoveItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupRemoveItem</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Remove an item from an item group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupRenderSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupRenderSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, RenderResourceFactory</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup rendering data for all members of a group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupReset" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupReset</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset all members of a group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupSetInvisible" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupSetInvisible</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Hide or show all members of a group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupSetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupSetName</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <span class="script_type">string</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the name of an item group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupSetRootItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupSetRootItem</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the root item of a group. All members of a group are linked to its root item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup all members of a group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GroupSetupScript" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupSetupScript</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup the script object of all members of a group.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="GroupTransform"><b>2. Group transformation functions</b></span></a><br>
+<div class="function_body">
+<table id="GroupOffsetMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupOffsetMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, matrix</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a 4x4 offset matrix to all group members.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="GroupMotion"><b>3. Group motion functions</b></span></a><br>
+<div class="function_body">
+<table id="GroupSetMotion" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GroupSetMotion</b></td><td><a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>: <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <span class="script_type">string</span> name, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set motion on all group items, specify the blend duration, stop all current animation sources.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

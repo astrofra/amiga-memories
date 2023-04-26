@@ -1,0 +1,257 @@
+<html>
+ <head>
+  <title>Scene</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Scene Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_importflag">ImportFlag<br>None<ul><br><li><em>ImportFlagCamera</em><li><em>ImportFlagLight</em><li><em>ImportFlagObject</em><li><em>ImportFlagTrigger</em><li><em>ImportFlagGroup</em><li><em>ImportFlagMotion</em><li><em>ImportFlagGlobals</em><li><em>ImportFlagCollision</em><li><em>ImportFlagPhysic</em><li><em>ImportFlagPath</em><li><em>ImportFlagAll</em></ul><br><li id="struct_traceresult">TraceResult<br>None<br><table class="struct_members_table"><tr><th>Type<th>Name<th>Description</tr><tr><td width=100px bgcolor="#EEEEEE"><span class="script_type">bool</span><td width=80px>hit<td>true if the ray hit something, false otherwise.</tr><tr><td width=100px bgcolor="#EEEEEE"><a class="engine_type" href=script_item_binding_reference.htm>Item</a><td width=80px>item<td>Item hit by the ray.</tr><tr><td width=100px bgcolor="#EEEEEE"><a class="engine_type" href=script_collision_binding_reference.htm>Colshape</a><td width=80px>shape<td>Collision shape hit by the ray.</tr><tr><td width=100px bgcolor="#EEEEEE"><a class="engine_type" href=script_material_binding_reference.htm>Material</a><td width=80px>material<td>Material at hit point.</tr><tr><td width=100px bgcolor="#EEEEEE"><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a><td width=80px>p<td>Hit point location in world space.</tr><tr><td width=100px bgcolor="#EEEEEE"><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a><td width=80px>n<td>Hit point normal in world space.</tr><tr><td width=100px bgcolor="#EEEEEE"><span class="script_type">float</span><td width=80px>d<td>Distance to hit point from ray origin.</tr></table></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneClock"><b>1. Clock functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneGetClockScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetClockScale</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get engine clock scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneResetClock" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneResetClock</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset engine clock.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetClockScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetClockScale</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set engine clock scale. All clock dependent components in the engine are affected by this scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetFixedDeltaFrame" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetFixedDeltaFrame</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Force a constant fixed delta frame value. Note: All clock dependent components will become frame rate dependent.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneMotion"><b>2. Motion functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneSetMotion" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetMotion</b></td><td><a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> name, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set motion on all scene items, specify the blend duration, stop all current animation sources.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetMotionAdd" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetMotionAdd</b></td><td><a class="engine_type" href=script_scene_reference.htm>Animationsourcegroup</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> name, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set motion on all scene items, specify the blend duration, current sources are not stopped.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneIO"><b>3. I/O functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneLoad" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneLoad</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Append scene content to a scene object. Returns true on success, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneLoadAndStoreGroup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneLoadAndStoreGroup</b></td><td><a class="engine_type" href=script_group_binding_reference.htm>Group</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span>, <a class="engine_enum" href=script_scene_reference.htm#enum_importflag>ImportFlag</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Append scene content to a scene object, store all appended content in a group.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ScenePreloadResources" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ScenePreloadResources</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, RenderResourceFactory, <span class="script_type">string</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load all scene geometries and dependencies. As long as the render factory cache is not explicitly emptied, all subsequent load request will return a cached instance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSave" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSave</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Save scene content to file. Returns true on success, false otherwise.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneManagement"><b>4. Management functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneAddCamera" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneAddCamera</b></td><td><a class="engine_type" href=script_camera_binding_reference.htm>Camera</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new camera.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneAddLight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneAddLight</b></td><td><a class="engine_type" href=script_light_binding_reference.htm>Light</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add a new light to scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneAddObject" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneAddObject</b></td><td><a class="engine_type" href=script_object_binding_reference.htm>Object</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Add a new object to scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneDeleteAllLights" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneDeleteAllLights</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete all lights from scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneDeleteContent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneDeleteContent</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete all scene content.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneDeleteItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneDeleteItem</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete item from scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneDeleteLight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneDeleteLight</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_light_binding_reference.htm>Light</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete light from scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneDeleteObject" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneDeleteObject</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_object_binding_reference.htm>Object</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete object from scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneEnableItemDeletionQueue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneEnableItemDeletionQueue</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Enable or disable the item deletion queue. Use SceneFlushDeletionQueue to manually empty the deletion queue.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneEnd" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneEnd</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the end scene flag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneFlushDeletionQueue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneFlushDeletionQueue</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Immediately delete all pending item deletion commands.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetCurrentCamera" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetCurrentCamera</b></td><td><a class="engine_type" href=script_camera_binding_reference.htm>Camera</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get scene current camera.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetGroupList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetGroupList</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return an array containing all scene groups.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetPath" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetPath</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the scene path.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetScriptInstance" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetScriptInstance</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get scene script instance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetScriptInstanceFromClass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetScriptInstanceFromClass</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> class_name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get scene script instance from class.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGroupActivate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGroupActivate</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_group_binding_reference.htm>Group</a>, <span class="script_type">bool</span> active</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set group member items active flag, effectively stops all physic, collision and display operations from happening on all group items.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneItemActivate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneItemActivate</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span> active</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item active flag, effectively stops all physic, collision and display operations from happening.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneItemActivateHierarchy" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneItemActivateHierarchy</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span> active</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item active flag on an item and its children.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ScenePushRenderable" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ScenePushRenderable</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Push the scene renderable onto a renderer render queue.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneRecordLocation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneRecordLocation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">For each item, record current transformation as the default transformation.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneRenderSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneRenderSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_resource_factory_binding_reference.htm>Resourcefactory</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup scene render resources.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneReset" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneReset</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset a scene object. Note: All items are move back to their default transformation if recorded.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetCurrentCamera" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetCurrentCamera</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_camera_binding_reference.htm>Camera</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set camera as scene current camera.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetGlobal" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetGlobal</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scene as the script global object.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetItemDeletionDelay" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetItemDeletionDelay</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item deletion delay.
+		Deprecated: Please use SceneEnableItemDeletionQueue.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetItemStatic" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetItemStatic</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Flag item as static, improves culling performance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetRenderless" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetRenderless</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Controls automatic rendering of the scene, if the scene is renderless it is up to the user to implement its rendering in the OnRender event.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetScript" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetScript</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> script_file, <span class="script_type">string</span> script_class</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scene script file and class to instantiate.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneUpdate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneUpdate</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Update scene, run all logic, physic and call script callbacks.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneEnvironment"><b>5. Environment functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneGetAmbientColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetAmbientColor</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the scene ambient color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetAmbientIntensity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetAmbientIntensity</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the scene ambient intensity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetBackgroundColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetBackgroundColor</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the scene background color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetFogColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetFogColor</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the fog color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetFogFar" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetFogFar</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the fog Z far.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetFogNear" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetFogNear</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the fog Z near.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetTimeOfDay" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetTimeOfDay</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get time of day as a normalized value.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetAmbientColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetAmbientColor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scene ambient color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetAmbientIntensity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetAmbientIntensity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scene ambient intensity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetBackgroundColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetBackgroundColor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scene background color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetFog" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetFog</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">bool</span> enable, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> color, <span class="script_type">float</span> z_near, <span class="script_type">float</span> z_far</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Control scene fog.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetTimeOfDay" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetTimeOfDay</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">float</span> time</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set time of day as a normalized value.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneRender"><b>6. Rendering functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneRegisterAsPropertyCallback" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneRegisterAsPropertyCallback</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scene as the renderer property callback.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneDebug"><b>7. Debug/profile functions</b></span></a><br>
+<div class="function_body">
+<table id="ScenePrintItemList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ScenePrintItemList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Dump scene item list to log.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneItem"><b>8. Item management functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneDuplicateItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneDuplicateItem</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Duplicate an item and all its properties, returns the new instance.<br>You need to call SceneSetupItem() and ItemRenderSetup() on the new instance if you use this function at runtime.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneFindItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneFindItem</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: Scene|Instance, <span class="script_type">string</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Find an item in scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneFindItemChild" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneFindItemChild</b></td><td><span class="script_type">void</span>: Scene|Instance, <a class="engine_type" href=script_item_binding_reference.htm>Item</a> parent, <span class="script_type">string</span> child_name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Find child item of a given item in scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetItemChildrenList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetItemChildrenList</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns an array of all the children items in the scene of a given parent item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetItemList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetItemList</b></td><td><span class="script_type">array</span>: Scene|Instance</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns an array of all items in the scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetupItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetupItem</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup an item. You need to call ItemRenderSetup() to setup the render object of this item.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneGroup"><b>9. Group management functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneDeleteGroup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneDeleteGroup</b></td><td><span class="script_type">void</span>: Scene|Instance, <a class="engine_type" href=script_group_binding_reference.htm>Group</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Delete a group and all its members from a scene.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneFindGroup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneFindGroup</b></td><td><a class="engine_type" href=script_group_binding_reference.htm>Group</a>: Scene|Instance, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Find a group in scene from its name.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ScenePhysic"><b>10. Physic functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneFindConstraint" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneFindConstraint</b></td><td><a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Find a constraint in scene from its name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneGetPhysicFrequency" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneGetPhysicFrequency</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns the physic system update frequency in Hertz.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ScenePhysicAllocateCollisionNode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ScenePhysicAllocateCollisionNode</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">int</span> max_node, <span class="script_type">int</span> max_contact</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Allocate physic system internal structures. A collision node is used for each collision occurring during the collision detection phase. Many contacts can be generated for each collision occurring.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ScenePhysicEnableDeactivation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ScenePhysicEnableDeactivation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Enable or disable physic system item deactivation.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetGravity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetGravity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set default physic system gravity (Default: Earth gravity: 0.0, -9.8, 0.0). Note: This only affects the gravity for newly created items. In order to modify the gravity for a given item please use the item binding Physics functions.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetPhysicConstraintSolverIteration" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetPhysicConstraintSolverIteration</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">int</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the number of iteration used by the physic constraint solver.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetPhysicContactSolverIteration" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetPhysicContactSolverIteration</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">int</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the number of iteration used by the physic contact solver.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneSetPhysicFrequency" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneSetPhysicFrequency</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the physic system update frequency (default: 75 Hertz).</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SceneCollision"><b>11. Collision functions</b></span></a><br>
+<div class="function_body">
+<table id="SceneCollisionRaytrace" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneCollisionRaytrace</b></td><td><a class="engine_struct" href=script_scene_reference.htm#struct_traceresult>TraceResult</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> from, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> direction, <span class="script_type">int</span> collision_mask, <a class="engine_enum" href=script_collision_binding_reference.htm#enum_shapemask>ShapeMask</a>, <span class="script_type">float</span> max_distance</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Raytrace the collision system, collision shape type and collision ids can be filtered through bit mask usage.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneRaytraceTriggerList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneRaytraceTriggerList</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> ray_origin, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> ray_direction, <span class="script_type">float</span> ray_length</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Raytrace scene triggers, return the trigger item hit.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

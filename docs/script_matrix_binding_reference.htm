@@ -1,0 +1,109 @@
+<html>
+ <head>
+  <title>Matrix Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Matrix Binding Reference</div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="MatrixGeneric"><b>1. Global functions</b></span></a><br>
+<div class="function_body">
+<table id="EulerFromDirection" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>EulerFromDirection</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> direction</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Convert a world space direction vector to Euler angles.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="MatrixToEuler" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>MatrixToEuler</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>, <a class="engine_enum" href=script_item_binding_reference.htm#enum_rotationorder>RotationOrder</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Convert a world space matrix to euler angles.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RotationMatrixFromDirection" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RotationMatrixFromDirection</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>: <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> direction</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Convert a world space direction vector to a 3x3 rotation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RotationMatrixX" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RotationMatrixX</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>, <span class="script_type">float</span> angle</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a 3x3 rotation matrix around the X axis, angle is in degree.<br>local m = RotationMatrixX(Deg(45))</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RotationMatrixY" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RotationMatrixY</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>, <span class="script_type">float</span> angle</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a 3x3 rotation matrix around the Y axis, angle is in degree.<br>local m = RotationMatrixY(Deg(45))</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RotationMatrixZ" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RotationMatrixZ</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>, <span class="script_type">float</span> angle</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a 3x3 rotation matrix around the Z axis, angle is in degree.<br>local m = RotationMatrixZ(Deg(45))</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="TransformationMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>TransformationMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> euler, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> scale, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> pivot</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a position, rotation, scale, offset 4x4 matrix.<br>The offset is applied first, scale second, rotation third and finally position is applied.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="Matrix4Generic"><b>2. Matrix 4x4</b></span></a><br>
+<div class="function_body">
+<table id="AsMatrix3" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AsMatrix3</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return matrix as a 3x3 matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetColumn" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetColumn</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a matrix column as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetInverseMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetInverseMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return inverse matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetRow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetRow</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a matrix row as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="Print" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>Print</b></td><td><span class="script_type">void</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Output matrix content to the engine log.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RotationFromMatrix3" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RotationFromMatrix3</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a> orientation</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the rotation part of a 4x4 transformation matrix from a 3x3 matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SetColumn" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SetColumn</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span> index, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> column</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a matrix column from a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SetRow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SetRow</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span> index, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> row</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a matrix row from a vector.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="Matrix4Component"><b>3. Transformation matrix component accessor.</b></span></a><br>
+<div class="function_body">
+<table id="GetBack" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetBack</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the transformation matrix down axis vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetDown" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetDown</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the transformation matrix down axis vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetFront" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetFront</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the transformation matrix front axis vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetLeft" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetLeft</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the transformation matrix left axis vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the transformation matrix position vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetRight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetRight</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the transformation matrix right axis vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetUp" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetUp</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the transformation matrix up axis vector.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="Matrix3Generic"><b>4. Matrix 3x3</b></span></a><br>
+<div class="function_body">
+<table id="AsEuler" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AsEuler</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: [RotationOrder method]</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a 3x3 orientation matrix as an Euler triplet.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="AsMatrix4" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>AsMatrix4</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return matrix as a 4x4 matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="FromOrthonormalBasis" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>FromOrthonormalBasis</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>: <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> u, [Vector v]</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Build an orientation matrix from one or two basis vectors.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetColumn" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetColumn</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a matrix column as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="GetRow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>GetRow</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a matrix row as a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SetColumn" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SetColumn</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span> index, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> column</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a matrix column from a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SetRow" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SetRow</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span> index, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> row</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set a matrix row from a vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SlerpTo" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SlerpTo</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>: <span class="script_type">float</span> t, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a> to</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Interpolate a 3x3 orientation matrix to another 3s3 orientation matrix using spherical linear interpolation.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

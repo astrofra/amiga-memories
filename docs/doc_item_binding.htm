@@ -1,0 +1,68 @@
+<html>
+<link rel="stylesheet" href="reference.css" type="text/css" />
+<body>
+<h1>Item Reference</h1>
+<hr />
+<h2>1) Event list.</h2>
+<div align="center">
+  <table width="90%" border="1" cellspacing="0" cellpadding="5">
+    <tr>
+      <td width="22%" valign="top"><strong>OnSetup</strong>(Item item) { ... }</td>
+      <td width="78%">Called when the item is to be setup by the scene manager.</td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>OnReset</strong>(Item item) { ... }</td>
+      <td>Called when the item is to be reset by the scene manager.</td>
+    </tr>
+    <tr>
+      <td valign="top"> <strong>OnUpdate</strong>(Item item) { ... }</td>
+      <td><p>Called with each update of the scene.</p>
+      <pre>class ItemMovingAlongTheXAxis<br />{<br />    /*<br />      This code is framerate dependent.<br />    */<br />    function OnUpdate(item)<br />    {<br />        local    position = ItemGetPosition(item);<br />        ItemSetPosition(item, position + Vector(1.0, 0.0, 0.0));<br />    }<br />}
+        </pre></td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>OnLogicUpdate</strong>(Item item, float dt) { ... }</td>
+      <td><p>Called <strong>on average</strong> at a user-defined frequency.<br />
+        It is very   important to understand that no interruption of the current program execution   ever takes place to ensure proper call frequency of the function.<br />
+        The call   frequency is only guaranteed over a large period of time and several calls to an   item OnLogicUpdate() callback could be done in a single scene update.</p>
+        <p><strong>Note: When updating the item transformation within this function   nEngine takes care of interpolating the current frame transformation for you to   ensure smooth motion even with a very low frequency logic update.</strong></p>
+      <pre>class ItemMovingAlongTheXAxis<br />{<br />    /*<br />      This code is framerate independent, yet does not jitter.<br />    */<br />    function OnLogicUpdate(item, dt)<br />    {<br />        local    position = ItemGetPosition(item);<br />        ItemSetLogicPosition(item, position + Vector(1.0, 0.0, 0.0));<br />    }<br />}</pre></td>
+    </tr>
+    <tr>
+      <td valign="top"> <strong>OnCollision</strong>(Item item, with) { ... }</td>
+      <td><p>Called whenever the item is involved in a collision with another   item.<br />
+        Both the item in collision and the other offending item are passed as   parameters to the function.</p>
+        <p>For performance reasons the call might not take place right after the   collision is detected but later on during the scene update. While no collisions   are missed this can cause a problem in the case of non physic items enabling   their physics upon colliding as the physic system might be evaluated prior to   the callback being called.</p>
+      <p><em>You are guaranteed to only receive one callback for each item pair in   collision: A-&gt;B or B-&gt;A but not both (Note: Both A and B will receive the   callback however).</em></p></td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>OnCollisionEx</strong>(Item item, Item with, Contact contact, bool direction) { ... }</td>
+      <td><p>This is a more complete version of the OnCollision() callback with an extra   contact structure passed as a third parameter.<br />
+        The contact structure is   declared as:</p>
+        <pre>
+struct CollisionContact<br />{<br />    int      count               // Number of contact in the collision pair.<br />    Vector   p[]                 // World position of the contacts.<br />    Vector   n[]                 // World normal of the contacts.<br />}
+</pre>
+        <p>The direction boolean indicates in which direction the contact structure   vectors go. If direction is false you should reverse the normal vectors so that   they come toward the first item parameter to the   function.</p>
+        <p><strong>Notes:</strong> </p>
+        <ul>
+          <li><strong>Use the faster OnCollision() callback.<br />
+          </strong>When you don't need   the contact information in order to save CPU. The engine will skip the contact   information table creation when two items using OnCollision() collide.</li>
+          <li><strong>Not all contacts in the system might be reported to the   callback.<br />
+          </strong>The physic engine performs many internal steps that can   potentially generate a lot of contacts. Similar contacts are merged into a   single contact before being send to the callback.</li>
+          <li><strong>OnCollisionEx() shadows OnCollision().</strong><br />
+            If an item's script   defines both callbacks only the OnCollisionEx will be used.</li>
+      </ul></td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>OnDelete</strong>(Item item) {...}</td>
+      <td>Called when the item is deleted. When this function is called the item is   still registered in the scene graph.</td>
+    </tr>
+    <tr>
+      <td valign="top"><strong>OnTrigger</strong>(Item item, Item trigger_item)</td>
+      <td><pre>function OnTriggger(item, trigger_item)<br />{<br />     print(&quot;Item &quot; + ItemGetName(item) + &quot; entered in the trigger &quot; + ItemGetName(trigger_item))<br />}</pre></td>
+    </tr>
+  </table>
+</div>
+<h2 align="left">2) ACE Command list.</h2>
+</body>
+</html>

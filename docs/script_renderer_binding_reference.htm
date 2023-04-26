@@ -1,0 +1,133 @@
+<html>
+ <head>
+  <title>Renderer Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Renderer Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_materialblendoperator">MaterialBlendOperator<br>None<ul><br><li><em>MaterialBlendNone</em><li><em>MaterialBlendAdd</em><li><em>MaterialBlendAlpha</em></ul><br><li id="enum_materialrenderword">MaterialRenderWord<br>None<ul><br><li><em>MaterialRenderNone</em><li><em>MaterialRenderDoubleSided</em><li><em>MaterialRenderNoZWrite</em><li><em>MaterialRenderNoZTest</em></ul><br><li id="enum_renderersystemword">RendererSystemWord<br>None<ul><br><li><em>RenderVSync</em></ul><br><li id="enum_renderercontrolword">RendererControlWord<br>None<ul><br><li><em>RenderMotionBlur</em><li><em>RenderShadowMapping</em><li><em>RenderBloom</em><li><em>RenderDepthOfField</em></ul><br><li id="enum_writeralign">WriterAlign<br>None<ul><br><li><em>WriterAlignLeft</em><li><em>WriterAlignRight</em><li><em>WriterAlignMiddle</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="RendererRegistry"><b>1. Renderer registry functions.</b></span></a><br>
+<div class="function_body">
+<table id="RendererRegistryGetKey" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererRegistryGetKey</b></td><td>value: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <span class="script_type">string</span> key</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get renderer registry key value.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererRegistrySetKey" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererRegistrySetKey</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <span class="script_type">string</span> key, value</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set renderer registry key value.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="RenderResource"><b>2. Render resource functions</b></span></a><br>
+<div class="function_body">
+<table id="RendererTextureUpdate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererTextureUpdate</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Update texture from a picture, valid all changes to the renderer texture memory.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="RenderViewport"><b>3. Viewport functions</b></span></a><br>
+<div class="function_body">
+<table id="RendererClearClippingPlane" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererClearClippingPlane</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Clear the user clipping plane.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererClearFrame" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererClearFrame</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">float</span> r, <span class="script_type">float</span> g, <span class="script_type">float</span> b</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Clear viewport with a normalized float color.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererGetGlobalAspectRatio" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererGetGlobalAspectRatio</b></td><td><span class="script_type">float</span>: <span class="script_type">void</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get renderer global aspect ratio correction.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererGetViewport" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererGetViewport</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get viewport as a vector composed of the following values: { start_x, start_y, end_x, end_y }.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetClipping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetClipping</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <span class="script_type">float</span> start_x, <span class="script_type">float</span> start_y, <span class="script_type">float</span> end_x, <span class="script_type">float</span> end_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set clipping rect in normalized coordinates.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetClippingPlane" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetClippingPlane</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> p, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> n</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set user clipping plane.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetGlobalAspectRatio" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetGlobalAspectRatio</b></td><td><span class="script_type">float</span>: <span class="script_type">float</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set renderer global aspect ratio correction, returns the previous value.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetIdentityWorldMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetIdentityWorldMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the renderer current world matrix as the identity matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetOutputTexture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetOutputTexture</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set output texture.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetViewItemAndApplyView" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetViewItemAndApplyView</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Change view item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetViewport" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetViewport</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <span class="script_type">float</span> start_x, <span class="script_type">float</span> start_y, <span class="script_type">float</span> end_x, <span class="script_type">float</span> end_y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set viewport.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetWorldMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetWorldMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the renderer current world matrix.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="RenderRender"><b>4. Rendering functions</b></span></a><br>
+<div class="function_body">
+<table id="RendererDrawCross" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererDrawCross</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> origin</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw a 3d cross.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererDrawCrossColored" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererDrawCrossColored</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> origin, color</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw a 3d colored cross.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererDrawLine" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererDrawLine</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> start, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> end</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw a line.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererDrawLineColored" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererDrawLineColored</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> start, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> end, color</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw a colored line.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererDrawTriangle" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererDrawTriangle</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> v0, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> v1, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> v2, Color c0, Color c1, Color c2, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_materialblendoperator>MaterialBlendOperator</a>, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_materialrenderword>MaterialRenderWord</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw a triangle in world space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererDrawTriangleTextured" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererDrawTriangleTextured</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> v0, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> v1, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> v2, <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <a class="engine_type" href=script_uv_binding_reference.htm>Uv</a> uv0, <a class="engine_type" href=script_uv_binding_reference.htm>Uv</a> uv1, <a class="engine_type" href=script_uv_binding_reference.htm>Uv</a> uv2, Color c0, Color c1, Color c2, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_materialblendoperator>MaterialBlendOperator</a>, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_materialrenderword>MaterialRenderWord</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw a textured triangle in world space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererRenderQueue" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererRenderQueue</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Render queue.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererRenderQueueReset" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererRenderQueueReset</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Empty the renderer render queue, this is not done automatically so that you may render several viewpoints of the same render queue.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="RenderWriter"><b>5. Raster writer functions</b></span></a><br>
+<div class="function_body">
+<table id="LoadRasterFont" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>LoadRasterFont</b></td><td><a class="engine_type" href=script_renderer_binding_reference.htm>Rasterfont</a>: RenderResourceFactory, <span class="script_type">string</span> description, <span class="script_type">string</span> map_base_path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load a font for the raster-based renderer writer.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RasterFontGetBaseline" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RasterFontGetBaseline</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Rasterfont</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the raster font baseline.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RasterFontGetLineHeight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RasterFontGetLineHeight</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Rasterfont</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the raster font line height.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererWrite" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererWrite</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_renderer_binding_reference.htm>Rasterfont</a> font, <span class="script_type">string</span> text, <span class="script_type">float</span> x, <span class="script_type">float</span> y, <span class="script_type">float</span> scale, <span class="script_type">bool</span> square_aspect_ratio, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_writeralign>WriterAlign</a> alignment, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> rgba</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Write a text using the raster-based writer.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="RenderObsolete"><b>6. Obsolete functions</b></span></a><br>
+<div class="function_body">
+<table id="RendererGetControlWord" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererGetControlWord</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_renderercontrolword>RendererControlWord</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get renderer control word.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererGetSystemWord" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererGetSystemWord</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_renderersystemword>RendererSystemWord</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get renderer system word.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetControlWord" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetControlWord</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_renderercontrolword>RendererControlWord</a>, <span class="script_type">bool</span> set</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set renderer control word.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererSetSystemWord" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererSetSystemWord</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_enum" href=script_renderer_binding_reference.htm#enum_renderersystemword>RendererSystemWord</a>, <span class="script_type">bool</span> set</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set renderer system word.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="RenderDebug"><b>7. Debugging functions</b></span></a><br>
+<div class="function_body">
+<table id="RendererGetStatistics" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererGetStatistics</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return a renderer statistic object.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererGrabDisplayToPicture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererGrabDisplayToPicture</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Grab the renderer frame buffer to a picture.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererGrabDisplayToTexture" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererGrabDisplayToTexture</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a>, <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Grab the renderer frame buffer to a texture.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="RendererResetStatistics" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>RendererResetStatistics</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_renderer_binding_reference.htm>Renderer</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset internal statistic object.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

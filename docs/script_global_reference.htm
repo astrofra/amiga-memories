@@ -1,0 +1,102 @@
+<html>
+ <head>
+  <title>Global</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Global Reference</div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="@@GlobalSection@@"><b>1. Global</b></span></a><br>
+<div class="function_body">
+<table id="beginPolygon" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>beginPolygon</b></td><td><span class="script_type">void</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Begin declaration of a new polygon.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="clear" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>clear</b></td><td><span class="script_type">void</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Clear current template definition, keep the current material table.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="clearMaterial" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>clearMaterial</b></td><td><span class="script_type">void</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Push a material on the template material table.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="endPolygon" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>endPolygon</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span> material</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">End declaration of the current polygon and specify its material index.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="instantiate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>instantiate</b></td><td><a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a>: <a class="engine_type" href=script_engine_binding_reference.htm>Engine</a> engine, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Instantiate the current template as a named geometry.
+	Note: If the geometry name is already found in the current engine cache, a
+	cached copy will be returned instead of a new instantiation.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="pushColor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>pushColor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Push a color on the current polygon declaration.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="pushMaterial" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>pushMaterial</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Push a material path on the template material table.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="pushNormal" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>pushNormal</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Push a normal on the current polygon declaration.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="pushUV" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>pushUV</b></td><td><span class="script_type">void</span>: <span class="script_type">int</span> channel, <a class="engine_type" href=script_uv_binding_reference.htm>Uv</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Push an UV on a channel of the current polygon declaration.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="pushVertex" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>pushVertex</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Push a vertex on the current polygon declaration.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="setVertexMergeThreshold" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>setVertexMergeThreshold</b></td><td><span class="script_type">void</span>: <span class="script_type">float</span> threshold</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the vertex merging algorithm threshold.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SystemMisc"><b>2. Miscellaneous platform functions</b></span></a><br>
+<div class="function_body">
+<table id="PlatformOpenURL" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformOpenURL</b></td><td><span class="script_type">bool</span>: <span class="script_type">string</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Open an URL using the platform browser if available.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PlatformSendToBackground" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformSendToBackground</b></td><td><span class="script_type">bool</span>: <span class="script_type">bool</span> kill</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Send the current application to background, optionally try to kill it.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SystemVisibility"><b>3. Platform visibility functions</b></span></a><br>
+<div class="function_body">
+<table id="PlatformOpenAppPage" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformOpenAppPage</b></td><td><span class="script_type">void</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Open the platform specific application page, use this to send the user to your rating page.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SystemLicensing"><b>4. Licensing functions</b></span></a><br>
+<div class="function_body">
+<table id="PlatformLicensingCheck" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformLicensingCheck</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> license_info</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Launch an asynchronous licensing request, the result will be sent to your script global 'OnLicensingEvent(String event)' function.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PlatformLicensingIsSupported" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformLicensingIsSupported</b></td><td><span class="script_type">bool</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the current platform supports app license verification.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SystemBilling"><b>5. In-app billing functions</b></span></a><br>
+<div class="function_body">
+<table id="PlatformBillingConfirmEvent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformBillingConfirmEvent</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Confirm a billing event (like a purchase or a refund).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PlatformBillingIsSupported" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformBillingIsSupported</b></td><td><span class="script_type">bool</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the current platform supports in-app billing (in-app purchase).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PlatformBillingRequestPurchase" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformBillingRequestPurchase</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> id</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Launch a purchase intent for the specified virtual good identifier. Returns true of the intent was successfully launched. Results will be transmitted to you through the global 'OnBillingEvent(String event, String item)' script callback.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PlatformBillingRestorePurchases" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformBillingRestorePurchases</b></td><td><span class="script_type">void</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Restore all managed purchases.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PlatformGetLocale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformGetLocale</b></td><td><span class="script_type">string</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the current platform locale ISO2 code string (ISO 3166 two-character alphabetic code).</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SystemAnalytics"><b>6. Analytics functions</b></span></a><br>
+<div class="function_body">
+<table id="PlatformAnalyticsLogEvent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformAnalyticsLogEvent</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Log an analytics event.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PlatformAnalyticsServeFullscreenAd" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformAnalyticsServeFullscreenAd</b></td><td><span class="script_type">void</span>: <span class="script_type">string</span> location</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Serve a fullscreen ad.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="SystemHardware"><b>7. Host device functions</b></span></a><br>
+<div class="function_body">
+<table id="PlatformGetDeviceName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PlatformGetDeviceName</b></td><td><span class="script_type">string</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the device name the platform is currently running on.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

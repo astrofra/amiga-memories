@@ -1,0 +1,40 @@
+<html>
+ <head>
+  <title>Physic Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Physic Binding Reference</div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="ConstraintManagement"><b>1. Constraint management functions</b></span></a><br>
+<div class="function_body">
+<table id="ConstraintEnable" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintEnable</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Enable/disable constraint.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="SceneAddPointConstraint" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>SceneAddPointConstraint</b></td><td><a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a>: <a class="engine_type" href=script_scene_reference.htm>Scene</a>, <span class="script_type">string</span> name, <a class="engine_type" href=script_item_binding_reference.htm>Item</a> a, <a class="engine_type" href=script_item_binding_reference.htm>Item</a> b, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> pivot_a, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> pivot_b</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new point constraint between two items. The pivot position is in item space. The null item can be set as item B to specify an unmovable world space hook.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ConstraintConfiguration"><b>2. Constraint configuration functions</b></span></a><br>
+<div class="function_body">
+<table id="ConstraintGetItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintGetItem</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get constraint item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ConstraintGetPivotA" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintGetPivotA</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the constraint item A pivot vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ConstraintGetPivotB" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintGetPivotB</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the constraint item B pivot vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ConstraintSetItemA" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintSetItemA</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set constraint item A.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ConstraintSetItemB" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintSetItemB</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set constraint item B.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ConstraintSetPivotA" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintSetPivotA</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> pivot</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the constraint item A pivot vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ConstraintSetPivotB" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ConstraintSetPivotB</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_physic_binding_reference.htm>Constraint</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> pivot</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the constraint item B pivot vector.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

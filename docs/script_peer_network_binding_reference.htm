@@ -1,0 +1,22 @@
+<html>
+ <head>
+  <title>Peer Network Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Peer Network Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_hardwarebutton">HardwareButton<br>None<ul><br><li><em>HardwareButtonHome</em><li><em>HardwareButtonMenu</em><li><em>HardwareButtonBack</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="PeerNetHandshake"><b>1. Handshaking functions</b></span></a><br>
+<div class="function_body">
+<table id="PeerNetOpenClient" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PeerNetOpenClient</b></td><td><span class="script_type">bool</span>: <span class="script_type">string</span> ip, <span class="script_type">int</span> port</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Open a client connection to a given ip address and port.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PeerNetOpenServer" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PeerNetOpenServer</b></td><td><span class="script_type">bool</span>: <span class="script_type">string</span> ip, <span class="script_type">int</span> port</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Open a listening server connection on a given ip address and port. Note: A server connection is usually opened on the local host ip "127.0.0.1".</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="PeerNetRuntime"><b>2. Networking functions</b></span></a><br>
+<div class="function_body">
+<table id="PeerNetUpdate" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PeerNetUpdate</b></td><td><span class="script_type">void</span>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Update the peer network interface, dispatches pending events and call their associated callbacks. This function must be called frequently to refresh the interface and prevent connection loss.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

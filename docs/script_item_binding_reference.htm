@@ -1,0 +1,568 @@
+<html>
+ <head>
+  <title>Item Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Item Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_physicmode">PhysicMode<br>None<ul><br><li><em>PhysicModeNone</em><li><em>PhysicModeStatic</em><li><em>PhysicModeDynamic</em><li><em>PhysicModeKinematic</em></ul><br><li id="enum_physicflag">PhysicFlag<br>None<ul><br><li><em>PhysicFlagNone</em><li><em>PhysicFlagNoGravity</em><li><em>PhysicFlagNoForceField</em><li><em>PhysicFlagMobile</em><li><em>PhysicFlagGhost</em></ul><br><li id="enum_rotationorder">RotationOrder<br>None<ul><br><li><em>OrientationEuler</em><li><em>OrientationMatrix</em><li><em>OrientationQuaternion</em><li><em>OrientationExternal</em></ul><br><li id="enum_itemtype">ItemType<br>None<ul><br><li><em>ItemTypeNone</em><li><em>ItemTypeCamera</em><li><em>ItemTypeObject</em><li><em>ItemTypeLight</em><li><em>ItemTypeTrigger</em><li><em>ItemTypeEmitter</em><li><em>ItemTypeInstance</em></ul><br><li id="enum_itemflag">ItemFlag<br>None<ul><br><li><em>ItemFlagNone</em><li><em>ItemFlagBillboard</em><li><em>ItemFlagSolveOverlap</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemRegistry"><b>1. Item registry functions.</b></span></a><br>
+<div class="function_body">
+<table id="ItemRegistryGetKey" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemRegistryGetKey</b></td><td>value: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> key</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item registry key value.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemRegistrySetKey" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemRegistrySetKey</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> key, value</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item registry key value.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemACE"><b>2. ACE functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemIsCommandListDone" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemIsCommandListDone</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset item asynchronous command list (see ACE).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemResetCommandList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemResetCommandList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset item asynchronous command list (see ACE).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetCommandList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetCommandList</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> command_list</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item asynchronous command list (see ACE).</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemRender"><b>3. Rendering functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemGetMinMax" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetMinMax</b></td><td>MinMax: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the axis aligned bounding box in world space of the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetOpacity</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item opacity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetOpacity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetOpacity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> opacity</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item opacity.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemMotion"><b>4. Motion functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemGetMotionCount" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetMotionCount</b></td><td><span class="script_type">int</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the number of motion in the item motion bank.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetMotionFromIndex" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetMotionFromIndex</b></td><td><a class="engine_type" href=script_motion_system_binding_reference.htm>Motion</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get a motion from its index in the item motion bank.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetMotion" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetMotion</b></td><td>AnimationSource: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> name, <span class="script_type">float</span> blend</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Start a new motion on this item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetMotionRelative" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetMotionRelative</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span> relative</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set this item to use relative motion source. Motion started on this item will automatically be set to the correct evaluation mode (relative/absolute).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemStopAllMotions" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemStopAllMotions</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Stop all motions on this item.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemTransform"><b>5. Transformation functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemComputeLocalMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemComputeLocalMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute item local matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemComputeMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemComputeMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute item matrix and inverse matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemComputeMinMax" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemComputeMinMax</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute item minmax.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetChildList" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetChildList</b></td><td><span class="script_type">array</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns an array containing child items of this item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetInverseMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetInverseMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the inverse 4x4 item transformation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLocalMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLocalMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the 4x4 item transformation matrix in parent space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLocalMinMax" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLocalMinMax</b></td><td>MinMax: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the non-transformed item minmax.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the 4x4 item transformation matrix in world space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetParent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetParent</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item parent item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPivot" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPivot</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item pivot.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item position in parent space (world space if no parent).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPreviousWorldPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPreviousWorldPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return item position in world space during the previously rendered frame.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetRotation</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item rotation in Euler angles (x, y, z).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetRotationMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetRotationMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the 3x3 item rotation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetRotationOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetRotationOrder</b></td><td><a class="engine_enum" href=script_item_binding_reference.htm#enum_rotationorder>RotationOrder</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the item rotation order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetScale</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetTarget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetTarget</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item target position in world space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetWorldMinMax" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetWorldMinMax</b></td><td>MinMax: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the non-transformed item minmax.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetWorldPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetWorldPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return item position in world space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemHasTarget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemHasTarget</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the item is set to target a specific location.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemRecordLocation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemRecordLocation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Record item start location, item is set back to this location when reseted.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetLinkInheritsPositionOnly" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetLinkInheritsPositionOnly</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span> inherits</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the item to inherits only the position from its parent item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the 4x4 item transformation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetNoTarget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetNoTarget</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set no item target.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetParent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetParent</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a> parent</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item parent item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetPivot" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetPivot</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> pivot</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item pivot.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetPosition</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item position in parent space (world space if no parent).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetRotation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> euler</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item rotation in Euler angles (x, y, z).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetRotationMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetRotationMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a> rotation</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the 3x3 item rotation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetRotationOrder" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetRotationOrder</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_enum" href=script_item_binding_reference.htm#enum_rotationorder>RotationOrder</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the item rotation order.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetRotationQuaternion" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetRotationQuaternion</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_quaternion_binding_reference.htm>Quaternion</a> rotation</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item rotation quaternion.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetScale</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> scale</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item scale.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetTarget" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetTarget</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> world_target</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item target position in world space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSnapshotMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSnapshotMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Snapshot matrix as item transformation.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSnapshotTransformation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSnapshotTransformation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Snapshot current item transformation matrix to the current orientation method.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemCast"><b>6. Cast functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemCastToCamera" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCastToCamera</b></td><td><a class="engine_type" href=script_camera_binding_reference.htm>Camera</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast item to camera.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCastToEmitter" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCastToEmitter</b></td><td><a class="engine_type" href=script_emitter_binding_reference.htm>Emitter</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast item to emitter.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCastToInstance" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCastToInstance</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast item to instance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCastToLight" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCastToLight</b></td><td><a class="engine_type" href=script_light_binding_reference.htm>Light</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast item to light.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCastToObject" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCastToObject</b></td><td><a class="engine_type" href=script_object_binding_reference.htm>Object</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast item to object.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCastToTrigger" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCastToTrigger</b></td><td><a class="engine_type" href=script_trigger_binding_reference.htm>Trigger</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast item to trigger.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemDerivedCastToItem" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemDerivedCastToItem</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: ItemDerived</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Cast an item derived object (camera, object, light, trigger) to an item.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemState"><b>7. State functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemHierarchySetInvisible" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemHierarchySetInvisible</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item and children display flag, item and children are still updated but not displayed anymore.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemIsActive" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemIsActive</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return true if the given item is active, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemIsInvisible" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemIsInvisible</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the visibility state of the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetInvisible" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetInvisible</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">bool</span> invisible</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item display flag, item is still updated but not displayed anymore.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="Item"><b>8. General functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemCompare" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCompare</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compare two items, returns true is both items are the same.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetChild" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetChild</b></td><td><a class="engine_type" href=script_item_binding_reference.htm>Item</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item child.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetFlags" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetFlags</b></td><td><a class="engine_enum" href=script_item_binding_reference.htm#enum_itemflag>ItemFlag</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item flags.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetGeometry" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetGeometry</b></td><td><a class="engine_type" href=script_geometry_binding_reference.htm>Geometry</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item geometry, an item may have no geometry. (see EngineObjectIsValid)</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetName</b></td><td><span class="script_type">string</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemRenderSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemRenderSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_resource_factory_binding_reference.htm>Resourcefactory</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup an item render data.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemReset" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemReset</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetFlags" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetFlags</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_enum" href=script_item_binding_reference.htm#enum_itemflag>ItemFlag</a> flag, <span class="script_type">bool</span> set</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set or remove one or more item flags.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetName" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetName</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetPriority" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetPriority</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> priority</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item priority, please refer to the nEngine documentation for details.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetup</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup item.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemSkin"><b>9. Skinning related functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemGetSkinBoneItemsGroup" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetSkinBoneItemsGroup</b></td><td><a class="engine_type" href=script_group_binding_reference.htm>Group</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the item skin bone items as an item group.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemPhysicState"><b>10. Physic state functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemIsSleeping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemIsSleeping</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if the item is sleeping, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicGetFlag" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicGetFlag</b></td><td><a class="engine_enum" href=script_item_binding_reference.htm#enum_physicflag>PhysicFlag</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item physic flag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicSetFlag" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicSetFlag</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_enum" href=script_item_binding_reference.htm#enum_physicflag>PhysicFlag</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item physic flag.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSleep" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSleep</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Put item physic system to sleep. All collision and physic evaluations stop.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemWake" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemWake</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Wake item physic system. All collision and physic evaluations resume.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemPhysic"><b>11. Physic functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemApplyForce" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyForce</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> force</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a force at a specific position in world space to the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyImpulse" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyImpulse</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> impulse</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply an impulse at a specific position in world space to the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyLinearForce" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyLinearForce</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> force</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a force to the item center of mass. Rotation is not affected.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyLinearImpulse" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyLinearImpulse</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> impulse</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply an impulse to the item center of mass. Rotation is not affected.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyTorque" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyTorque</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> torque</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a torque to the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCollided" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCollided</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if item collided during the last physic step, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetAngularDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetAngularDamping</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item angular damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetAngularVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetAngularVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item angular velocity (rad.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetCenterOfMass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetCenterOfMass</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item center of mass position in item space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetGravity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetGravity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item gravity (m.s²).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLinearAcceleration" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLinearAcceleration</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item linear acceleration (m.s²).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLinearDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLinearDamping</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item linear damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLinearVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLinearVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item linear velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLocalPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLocalPointVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item local point velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetMass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetMass</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item mass (Kg).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPhysicMode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPhysicMode</b></td><td><a class="engine_enum" href=script_item_binding_reference.htm#enum_physicmode>PhysicMode</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item physic mode.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPreviousLinearVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPreviousLinearVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item previous linear velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetSpeed" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetSpeed</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item speed as evaluated from the physic system (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetWorldPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetWorldPointVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item world point velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicCharacterSetRotationMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicCharacterSetRotationMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set physics character rotation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicCharacterSetVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicCharacterSetVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> V</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set physics character controller velocity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicResetTransformation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicResetTransformation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> euler</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset item physic transformation to specific location (in item local space).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicSetAngularFactor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicSetAngularFactor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> factor</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scale factor for all forces applied to this item angular velocity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicSetLinearFactor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicSetLinearFactor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> factor</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scale factor for all forces applied to this item linear velocity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleGetWheelMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleGetWheelMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get a specific wheel matrix from the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetBrake" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetBrake</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> F</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set brake force F for a specific wheel in the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetForce" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetForce</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> F</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set engine force F for a specific wheel in the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetFriction" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetFriction</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> friction_slip</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set friciton on a specific wheel of the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetSteering" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetSteering</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> angle</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set steering on a specific wheel of the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPointVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> local_position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute the velocity of an item particle, particle position is in item space (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetAngularDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetAngularDamping</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> damping</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item angular damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetAngularVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetAngularVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> angular_velocity</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item angular velocity (rad.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetGravity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetGravity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> g</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item gravity (m.s²).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetGravityScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetGravityScale</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> scale</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item gravity scale (g = world_gravity * scale).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetInertiaTensorAndCom" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetInertiaTensorAndCom</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a> tensor, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> center_of_mass</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute item inertia tensor and center of mass from the associated collision shape description.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetLinearDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetLinearDamping</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> damping</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item linear damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetLinearVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetLinearVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> linear_velocity</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item linear velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetPhysicMode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetPhysicMode</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_enum" href=script_item_binding_reference.htm#enum_physicmode>PhysicMode</a> mode</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item physic mode.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemUpdateInertiaTensorFromCollision" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemUpdateInertiaTensorFromCollision</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute item inertia tensor and center of mass from the associated collision shape description.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemWorldPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemWorldPointVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> world_position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute the velocity of an item particle, particle position is in world space (m.s).</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemPhysic"><b>12. Physic functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemApplyForce" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyForce</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> force</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a force at a specific position in world space to the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyImpulse" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyImpulse</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> impulse</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply an impulse at a specific position in world space to the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyLinearForce" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyLinearForce</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> force</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a force to the item center of mass. Rotation is not affected.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyLinearImpulse" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyLinearImpulse</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> impulse</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply an impulse to the item center of mass. Rotation is not affected.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemApplyTorque" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemApplyTorque</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> torque</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a torque to the item.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemCollided" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemCollided</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Returns true if item collided during the last physic step, false otherwise.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetAngularDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetAngularDamping</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item angular damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetAngularVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetAngularVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item angular velocity (rad.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetCenterOfMass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetCenterOfMass</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item center of mass position in item space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetGravity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetGravity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item gravity (m.s²).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLinearAcceleration" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLinearAcceleration</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item linear acceleration (m.s²).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLinearDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLinearDamping</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item linear damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLinearVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLinearVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item linear velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetLocalPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetLocalPointVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item local point velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetMass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetMass</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item mass (Kg).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPhysicMode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPhysicMode</b></td><td><a class="engine_enum" href=script_item_binding_reference.htm#enum_physicmode>PhysicMode</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item physic mode.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPreviousLinearVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPreviousLinearVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item previous linear velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetSpeed" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetSpeed</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item speed as evaluated from the physic system (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetWorldPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetWorldPointVelocity</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item world point velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicCharacterSetRotationMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicCharacterSetRotationMatrix</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a> m</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set physics character rotation matrix.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicCharacterSetVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicCharacterSetVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> V</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set physics character controller velocity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicResetTransformation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicResetTransformation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> euler</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Reset item physic transformation to specific location (in item local space).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicSetAngularFactor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicSetAngularFactor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> factor</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scale factor for all forces applied to this item angular velocity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicSetLinearFactor" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicSetLinearFactor</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> factor</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set the scale factor for all forces applied to this item linear velocity.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleGetWheelMatrix" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleGetWheelMatrix</b></td><td><a class="engine_type" href=script_matrix_binding_reference.htm>Matrix4</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get a specific wheel matrix from the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetBrake" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetBrake</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> F</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set brake force F for a specific wheel in the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetForce" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetForce</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> F</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set engine force F for a specific wheel in the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetFriction" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetFriction</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> friction_slip</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set friciton on a specific wheel of the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicVehicleSetSteering" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicVehicleSetSteering</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> wheel_index, <span class="script_type">float</span> angle</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set steering on a specific wheel of the vehicle model.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPointVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> local_position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute the velocity of an item particle, particle position is in item space (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetAngularDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetAngularDamping</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> damping</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item angular damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetAngularVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetAngularVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> angular_velocity</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item angular velocity (rad.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetGravity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetGravity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> g</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item gravity (m.s²).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetGravityScale" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetGravityScale</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> scale</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item gravity scale (g = world_gravity * scale).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetInertiaTensorAndCom" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetInertiaTensorAndCom</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_matrix_binding_reference.htm>Matrix3</a> tensor, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> center_of_mass</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute item inertia tensor and center of mass from the associated collision shape description.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetLinearDamping" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetLinearDamping</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> damping</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item linear damping.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetLinearVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetLinearVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> linear_velocity</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item linear velocity (m.s).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetPhysicMode" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetPhysicMode</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_enum" href=script_item_binding_reference.htm#enum_physicmode>PhysicMode</a> mode</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item physic mode.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemUpdateInertiaTensorFromCollision" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemUpdateInertiaTensorFromCollision</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute item inertia tensor and center of mass from the associated collision shape description.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemWorldPointVelocity" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemWorldPointVelocity</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> world_position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Compute the velocity of an item particle, particle position is in world space (m.s).</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemPhysicHack"><b>13. Physic hacking API functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemGetPhysicPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPhysicPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item physic position.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPhysicPreviousPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPhysicPreviousPosition</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item physic previous position.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetPhysicRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetPhysicRotation</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item physic rotation.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemPhysicSynchronizeCollision" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPhysicSynchronizeCollision</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Synchronize the collision interface to the physic interface.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetPhysicPosition" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetPhysicPosition</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> position</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item physic position. Warning: Tampering with the internal physic state is likely to cause troubles, use with extreme care! You have been warned.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetPhysicRotation" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetPhysicRotation</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> euler</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item physic rotation. Warning: Tampering with the internal physic state is likely to cause troubles, use with extreme care! You have been warned.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemScript"><b>14. Script functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemGetScriptInstance" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetScriptInstance</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the first item script instance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetScriptInstanceCount" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetScriptInstanceCount</b></td><td><span class="script_type">int</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get the number of item script instance.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetScriptInstanceFromClass" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetScriptInstanceFromClass</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> class_name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get an item script instance from the name of the class it instantiates.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetScriptInstanceFromIndex" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetScriptInstanceFromIndex</b></td><td><a class="engine_type" href=script_instance_reference.htm>Instance</a>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">int</span> index</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get an item script instance from its index.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemGetScriptLogicFrequency" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemGetScriptLogicFrequency</b></td><td><span class="script_type">float</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Get item script logic update frequency (Hz).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemHasScript" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemHasScript</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> class_name</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Test if a specific script is assigned to an item. The script is identified by its class name.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetScript" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetScript</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">string</span> file, <span class="script_type">string</span> class</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item script file and class to instantiate.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetScriptLogicFrequency" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetScriptLogicFrequency</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a>, <span class="script_type">float</span> fq</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set item script logic update frequency (Hz).</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="ItemSetupScript" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemSetupScript</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Setup item script.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="ItemDebug"><b>15. Debugging functions</b></span></a><br>
+<div class="function_body">
+<table id="ItemPrint" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>ItemPrint</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_item_binding_reference.htm>Item</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Print item instance address in memory.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>

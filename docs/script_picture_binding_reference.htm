@@ -1,0 +1,78 @@
+<html>
+ <head>
+  <title>Picture Binding</title>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+ </head>
+<body>
+        <div class="section_header">Picture Binding Reference</div><div class="section_body">Enumerations and Structures<ul><li id="enum_blendmode">BlendMode<br>None<ul><br><li><em>BlendReplace</em><li><em>BlendAdd</em><li><em>BlendCompose</em><li><em>BlendComposeFast</em><li><em>BlendMultiply</em><li><em>BlendMultiply2x</em><li><em>BlendAlphaAdd</em><li><em>BlendAlphaMultiply</em><li><em>BlendAlphaMultiply2x</em><li><em>RgbToAlpha</em></ul><br></ul></div><div class="section_body">
+<a href="func_index.htm" target=topic><span id="PictureManagement"><b>1. Management functions</b></span></a><br>
+<div class="function_body">
+<table id="PictureClone" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureClone</b></td><td><a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> source</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Clone a picture object.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureNew" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureNew</b></td><td><a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>: </td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Create a new picture object.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="PictureDrawing"><b>2. Drawing functions</b></span></a><br>
+<div class="function_body">
+<table id="PictureAlloc" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureAlloc</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, width, height</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Allocate the picture buffer.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureApplyConvolution" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureApplyConvolution</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">int</span> kernel_width, <span class="script_type">int</span> kernel_height, <span class="script_type">array</span> kernel_values, <span class="script_type">float</span> filter_weight, <span class="script_type">int</span> pass_count</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Apply a convolution filter to the picture using a user specified kernel of values.<br>
+			  The <em>weight</em> and <em>pass</em> parameters will be 1 in most use case.<br>
+			  Kernel values are integer in the nominal range [0;255].</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureFill" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureFill</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> rgba</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Fill the picture with a solid color defined from an RGBA vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureFillLockAlpha" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureFillLockAlpha</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> rgba</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Fill the picture with a solid color defined from an RGBA vector, does not write to alpha.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureFillRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureFillRect</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> rgba, Rect</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Fill a rectangle inside the picture with a solid color defined from an RGBA vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureGetPixel" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureGetPixel</b></td><td><a class="engine_type" href=script_vector_binding_reference.htm>Vector</a>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">float</span> x, <span class="script_type">float</span> y</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the picture pixel at coordinate {x, y} in picture space as a RGBA vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureGetRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureGetRect</b></td><td>Rect: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a></td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Return the picture rectangle in picture space.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureLine" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureLine</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_texture_binding_reference.htm>Texture</a>, <span class="script_type">float</span> start_x, <span class="script_type">float</span> start_y, <span class="script_type">float</span> end_x, <span class="script_type">float</span> end_y, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> rgba</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Draw a line, color is specified as an RGBA vector. Alpha is supported.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureLoadContent" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureLoadContent</b></td><td><span class="script_type">bool</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Load picture content from file.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureSaveTGA" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureSaveTGA</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">string</span> path</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Save picture content to Targa.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureSetPixel" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureSetPixel</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">float</span> x, <span class="script_type">float</span> y, <a class="engine_type" href=script_vector_binding_reference.htm>Vector</a> rgba</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Set picture pixel at coordinate {x, y} in picture space from an RGBA vector.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureWriteText" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureWriteText</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, rect, <span class="script_type">string</span> text, <a class="engine_type" href=script_user_interface_and_2d_display_binding_reference.htm>Font</a> font, TextState</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Render formatted text to a picture.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="PictureManipulation"><b>3. Manipulation functions</b></span></a><br>
+<div class="function_body">
+<table id="PictureFlip" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureFlip</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">bool</span> horizontal, <span class="script_type">bool</span> vertical</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Flip picture on one or both axis.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureResize" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureResize</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a>, <span class="script_type">float</span> w, <span class="script_type">float</span> h</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Resize picture.</span></td></tr></table>
+</div></div>
+<div class="section_body">
+<a href="func_index.htm" target=topic><span id="PictureBlitting"><b>4. Blitting functions</b></span></a><br>
+<div class="function_body">
+<table id="PictureBlit" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureBlit</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> source, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> destination, <a class="engine_enum" href=script_picture_binding_reference.htm#enum_blendmode>BlendMode</a> mode</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Blit a picture to another picture, the blend mode can be specified.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureBlitRect" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureBlitRect</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> source, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> destination, Rect source, Rect destination, <a class="engine_enum" href=script_picture_binding_reference.htm#enum_blendmode>BlendMode</a> mode</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Blit a picture to another picture, both clipping zones and the blend mode can be specified.</span></td></tr></table>
+<hr class="function_delimiter">
+<table id="PictureBlitRectMasked" width="100%" border="0" cellpadding="2" cellspacing="0"><tr><td width="20%" class="engine_type"><b>PictureBlitRectMasked</b></td><td><span class="script_type">void</span>: <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> source, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> destination, <a class="engine_type" href=script_picture_binding_reference.htm>Picture</a> mask, Rect source, Rect destination</td></tr></table>
+<table width="100%%" border="0" cellpadding="2" cellspacing="0"><tr><td width="320" colspan="2"><span class="function_desc">Blit a picture to another picture using a third picture alpha channel as an opacity mask.</span></td></tr></table>
+</div></div>
+</body></html><div class="section_body_outline">GameStart 2001-2012</div>
