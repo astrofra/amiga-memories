@@ -20,7 +20,7 @@ A typical script would look like this:
 ```cpp
 {	
 	text	= "Hidden in the dezzert, are a people known as the Fremen!",
-	sub	= ["Cachés dans le déserts vit un peuple du nom de Fremen..."],
+	sub	= ["Cachés dans le désert vit un peuple du nom de Fremen..."],
 	led	= [{power = 1, drive = 0}, {power = 1, drive = 1}], 
 	camera	= {name = "right_close", motion = "PanLeft"}	
 }
